@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Juan Pallarès</title>
-    <description>A Sample blog using Jekyll Metro</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 31 Aug 2014 17:37:53 +0200</pubDate>
-    <lastBuildDate>Sun, 31 Aug 2014 17:37:53 +0200</lastBuildDate>
+    <description>.NET Software Engineer</description>
+    <link>http://jpallares.github.io/</link>
+    <atom:link href="http://jpallares.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 31 Aug 2014 17:48:43 +0200</pubDate>
+    <lastBuildDate>Sun, 31 Aug 2014 17:48:43 +0200</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -28,8 +28,8 @@ Creating a post by using a blog creation and publishing tool that is compatible 
 &lt;p&gt;By default, blogs are set up so that approval is required before posts are published. This can be helpful if numerous people are publishing content, or if a post could contain sensitive content. By default, people who have permission to manage lists can approve blog posts, but you can customize those settings. &lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Jul 2014 17:30:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/2014/07/07/another-sharepoint-post</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2014/07/07/another-sharepoint-post</guid>
+        <link>http://jpallares.github.io/blog/2014/07/07/another-sharepoint-post</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2014/07/07/another-sharepoint-post</guid>
         
         <category>SharePoint</category>
         
@@ -85,8 +85,8 @@ not be indented with tabs or spaces. Markdown is smart enough not
 to add extra (unwanted) &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags around HTML block-level tags.&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Jun 2014 01:30:58 +0200</pubDate>
-        <link>http://localhost:4000/blog/2014/06/25/markdown-basics</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2014/06/25/markdown-basics</guid>
+        <link>http://jpallares.github.io/blog/2014/06/25/markdown-basics</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2014/06/25/markdown-basics</guid>
         
         <category>Design</category>
         
@@ -285,8 +285,8 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 25 Jun 2014 01:28:58 +0200</pubDate>
-        <link>http://localhost:4000/blog/2014/06/25/another-sample-markdown</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2014/06/25/another-sample-markdown</guid>
+        <link>http://jpallares.github.io/blog/2014/06/25/another-sample-markdown</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2014/06/25/another-sample-markdown</guid>
         
         <category>Design</category>
         
@@ -315,8 +315,8 @@ Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in
 Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how they won the game&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Jun 2014 23:28:58 +0200</pubDate>
-        <link>http://localhost:4000/blog/2014/06/23/a-sample-pangram</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2014/06/23/a-sample-pangram</guid>
+        <link>http://jpallares.github.io/blog/2014/06/23/a-sample-pangram</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2014/06/23/a-sample-pangram</guid>
         
         <category>Sample</category>
         
@@ -359,8 +359,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Wed, 11 Dec 2013 11:28:58 +0100</pubDate>
-        <link>http://localhost:4000/blog/2013/12/11/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2013/12/11/welcome-to-jekyll</guid>
+        <link>http://jpallares.github.io/blog/2013/12/11/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2013/12/11/welcome-to-jekyll</guid>
         
         <category>Welcome</category>
         
@@ -392,8 +392,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Fire up your SharePoint Designer and you should get a clean start. &lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Oct 2013 17:30:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/2013/10/11/clearing-sharepoint-designer-cache</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2013/10/11/clearing-sharepoint-designer-cache</guid>
+        <link>http://jpallares.github.io/blog/2013/10/11/clearing-sharepoint-designer-cache</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2013/10/11/clearing-sharepoint-designer-cache</guid>
         
         <category>SharePoint</category>
         
@@ -475,8 +475,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;These steps should ensure that you get your PerformancePoint service up and running.&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Apr 2013 17:30:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint</guid>
+        <link>http://jpallares.github.io/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint</link>
+        <guid isPermaLink="true">http://jpallares.github.io/blog/2013/04/20/dashboard-designer-cannot-connect-to-performancepoint</guid>
         
         <category>SharePoint</category>
         
