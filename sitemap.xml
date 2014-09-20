@@ -3,8 +3,26 @@
   
   
   <url>
-    <loc>http://jpallares.github.io/author-override/</loc>
-    <lastmod>2014-07-31T00:00:00+02:00</lastmod>
+    <loc>http://jpallares.github.io/books/programar-limpio-clean-code-handbook-of/</loc>
+    <lastmod>2014-04-21T17:15:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/whileprintingrecords/variable%20global/crystal%20reports/mostrar-columnas-como-una-fila-separada/</loc>
+    <lastmod>2014-03-06T19:30:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/nuget/error/visual%20studio/proxy/problemas-con-nuget-conectando-traves/</loc>
+    <lastmod>2014-02-27T20:00:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/windows%20store/windows%208.1/error/windows-81-arreglar-error-we-werent/</loc>
+    <lastmod>2013-08-25T11:03:00+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -21,6 +39,18 @@
   </url>
   
   <url>
+    <loc>http://jpallares.github.io/plexbmc/xbmc/plex/media%20center/media-center-automatizado-ii-xbmc-vs/</loc>
+    <lastmod>2013-07-09T16:37:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/showrss/media%20center/torrent/filebot/script/utorrent/media-center-automatizado-i-descarga/</loc>
+    <lastmod>2013-06-30T10:04:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://jpallares.github.io/readability-feature-post/</loc>
     <lastmod>2013-05-23T00:00:00+02:00</lastmod>
     <priority>0.8</priority>
@@ -33,8 +63,56 @@
   </url>
   
   <url>
+    <loc>http://jpallares.github.io/fun/humor/code/software%20engineer/situaciones-en-la-vida-del-programador/</loc>
+    <lastmod>2013-04-30T10:58:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/multiref/xsl/pipeline/xml/biztalk/tratando-xml-multiref-en-biztalk/</loc>
+    <lastmod>2013-02-14T09:13:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/sql%20server%202008/management%20studio/sql%20server/formatear-queries-en-sql-management/</loc>
+    <lastmod>2013-01-21T10:50:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/sql%20server%202008/ide/.net/management%20studio/visual%20studio/no-funciona-intellisense-en-sql-server/</loc>
+    <lastmod>2012-09-27T15:58:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/iis/windows/authentication/configurar-windows-authenticacion-en/</loc>
+    <lastmod>2012-09-21T16:04:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://jpallares.github.io/readability-post/</loc>
     <lastmod>2012-05-22T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/escribir-en-teclado-americano-us/</loc>
+    <lastmod>2012-05-15T13:53:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/vmware/virtual%20machine/biztalk/virtual%20pc/hyper-v/transformar-hyper-v-vhd-vmware-vmxvmdk/</loc>
+    <lastmod>2012-04-02T13:13:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://jpallares.github.io/.net/puerto/biztalk/desmontar-array-en-un-puerto-de-biztalk/</loc>
+    <lastmod>2012-03-29T09:37:00+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -47,28 +125,28 @@
   
   <url>
     <loc>http://jpallares.github.io/</loc>
-    <lastmod>2014-09-03T21:04:18+02:00</lastmod>
+    <lastmod>2014-09-20T20:10:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://jpallares.github.io/theme-setup/</loc>
-    <lastmod>2014-09-03T21:04:18+02:00</lastmod>
+    <lastmod>2014-09-20T20:10:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://jpallares.github.io/posts/</loc>
-    <lastmod>2014-09-03T21:04:18+02:00</lastmod>
+    <lastmod>2014-09-20T20:10:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://jpallares.github.io/about/</loc>
-    <lastmod>2014-09-03T21:04:18+02:00</lastmod>
+    <lastmod>2014-09-20T20:10:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
