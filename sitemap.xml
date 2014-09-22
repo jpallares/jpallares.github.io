@@ -27,18 +27,6 @@
   </url>
   
   <url>
-    <loc>http://juan.pallares.me/code-highlighting-post/</loc>
-    <lastmod>2013-08-16T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://juan.pallares.me/sample-link-post/</loc>
-    <lastmod>2013-08-12T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/</loc>
     <lastmod>2013-07-09T16:37:00+02:00</lastmod>
     <priority>0.8</priority>
@@ -47,18 +35,6 @@
   <url>
     <loc>http://juan.pallares.me/media-center-automatizado-i-descarga/</loc>
     <lastmod>2013-06-30T10:04:00+02:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://juan.pallares.me/readability-feature-post/</loc>
-    <lastmod>2013-05-23T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://juan.pallares.me/sample-post-images/</loc>
-    <lastmod>2013-05-22T00:00:00+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -93,12 +69,6 @@
   </url>
   
   <url>
-    <loc>http://juan.pallares.me/readability-post/</loc>
-    <lastmod>2012-05-22T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>http://juan.pallares.me/escribir-en-teclado-americano-us/</loc>
     <lastmod>2012-05-15T13:53:00+02:00</lastmod>
     <priority>0.8</priority>
@@ -116,37 +86,31 @@
     <priority>0.8</priority>
   </url>
   
-  <url>
-    <loc>http://juan.pallares.me/sample-post/</loc>
-    <lastmod>2011-03-10T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2014-09-22T21:07:59+02:00</lastmod>
+    <lastmod>2014-09-22T21:41:20+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/theme-setup/</loc>
-    <lastmod>2014-09-22T21:07:59+02:00</lastmod>
+    <lastmod>2014-09-22T21:41:20+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2014-09-22T21:07:59+02:00</lastmod>
+    <lastmod>2014-09-22T21:41:20+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/cv/</loc>
-    <lastmod>2014-09-22T21:07:59+02:00</lastmod>
+    <lastmod>2014-09-22T21:41:20+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
