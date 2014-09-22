@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Juan Pallarès</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://jpallares.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="http://jpallares.github.io" />
-<updated>2014-09-20T20:10:49+02:00</updated>
-<id>http://jpallares.github.io/</id>
+<link rel="self" type="application/atom+xml" href="http://juan.pallares.me/feed.xml" />
+<link rel="alternate" type="text/html" href="http://juan.pallares.me" />
+<updated>2014-09-22T18:16:00+02:00</updated>
+<id>http://juan.pallares.me/</id>
 <author>
   <name>Juan Pallarès</name>
-  <uri>http://jpallares.github.io/</uri>
+  <uri>http://juan.pallares.me/</uri>
   <email>juan@pallares.me</email>
 </author>
 
@@ -17,19 +17,19 @@
 
 <entry>
   <title type="html"><![CDATA[Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/books/programar-limpio-clean-code-handbook-of/" />
-  <id>http://jpallares.github.io/books/programar-limpio-clean-code-handbook-of</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/programar-limpio-clean-code-handbook-of/" />
+  <id>http://juan.pallares.me/programar-limpio-clean-code-handbook-of</id>
   <published>2014-04-21T17:15:00+02:00</published>
   <updated>2014-04-21T17:15:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Me acabo de leer el libro &lt;a href=&quot;http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882&quot; target=&quot;_blank&quot;&gt;Clean Code&lt;/a&gt;, de Robet C. Martin. Lo he encontrado muy interesante y a pesar que los ejemplos son en Java (y no C# por ejemplo) no es relevante de cara a entender los conceptos que explica. Lo recomiendo encarecidamente.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-UcU6wS0YRNc/U1VRTY873PI/AAAAAAAAup0/GjqxlKiR5r0/s1600/41XojFFhYlL._SS500_.jpg&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://1.bp.blogspot.com/-UcU6wS0YRNc/U1VRTY873PI/AAAAAAAAup0/GjqxlKiR5r0/s1600/41XojFFhYlL._SS500_.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;Empieza explicando como programar correctamente diferentes aspectos (nombres, funciones, comentarios, formateos, manejo de errores, clases, etc..) para luego hacer un ejemplo práctico de refactoring.&lt;br /&gt;Acaba con una recopilación de &quot;Code smells&quot;, problemas típicos en el código que hay que evitar (y refactorizar si lo encontramos)&lt;br /&gt;&lt;br /&gt;También comenta de paso los principios SOLID y otros conceptos muy importante que nunca esta de más recordar.&lt;br /&gt;&lt;br /&gt;Ahora probaré a con la segunda parte (&lt;a href=&quot;http://www.amazon.es/The-Clean-Coder-Professional-Programmers-ebook/dp/B0050JLC9Y/ref=pd_sim_kinc_1?ie=UTF8&amp;amp;refRID=04YBVE4FECWHJYX6HNCK&quot; target=&quot;_blank&quot;&gt;The Clean Coder&lt;/a&gt;). Os mantengo informados&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/books/programar-limpio-clean-code-handbook-of/&quot;&gt;Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on April 21, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/programar-limpio-clean-code-handbook-of/&quot;&gt;Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on April 21, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -37,19 +37,19 @@ Me acabo de leer el libro &lt;a href=&quot;http://www.amazon.com/Clean-Code-Hand
 
 <entry>
   <title type="html"><![CDATA[Mostrar columnas como una fila separada por comas en Crystal Reports]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/whileprintingrecords/variable%20global/crystal%20reports/mostrar-columnas-como-una-fila-separada/" />
-  <id>http://jpallares.github.io/whileprintingrecords/variable%20global/crystal%20reports/mostrar-columnas-como-una-fila-separada</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/" />
+  <id>http://juan.pallares.me/mostrar-columnas-como-una-fila-separada</id>
   <published>2014-03-06T19:30:00+01:00</published>
   <updated>2014-03-06T19:30:00+01:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-ONNIymTq6k8/UxMfiA0IJfI/AAAAAAAAt5I/g7pIhUjeMRo/s1600/descarga.jpeg&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://4.bp.blogspot.com/-ONNIymTq6k8/UxMfiA0IJfI/AAAAAAAAt5I/g7pIhUjeMRo/s1600/descarga.jpeg&quot; height=&quot;61&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances y demás información. Uno de los últimos requerimientos era mostrar la información en una sola línea separada por comas en lugar de una columna. Antes:&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;CONCEPTO &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; PRECIO&lt;br /&gt;concepto1 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3% &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;24€&lt;br /&gt;concepto1 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5% &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;10€&lt;br /&gt;concepto1 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;2% &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;40€&lt;br /&gt;concepto2 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4% &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;15€&lt;br /&gt;concepto2 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5% &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;10€&lt;/blockquote&gt;Después:&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;CONCEPTO&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; PRECIO&lt;br /&gt;concepto1 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3% 24€, 5% 10€, 2% 40€&lt;br /&gt;concepto2 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4% 15€, 5% 10€&lt;/blockquote&gt;Para poder realizar esto hay dos puntos claves, la instrucción &quot;WhilePrintingRecords&quot; y una variable global, una variable que pueda ser accedida desde fórmulas diferentes.&lt;br /&gt;&lt;br /&gt;Pasamos a comentar paso por paso. Lo primero es crear una fórmula en el Detalle, el cual suprimiremos (ocultaremos). Fijaos que esta en sintaxis VisualBasic&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;WhilePrintingRecords&lt;br /&gt;&lt;br /&gt;global precioList as string&lt;br /&gt;&lt;br /&gt;if len(precioList&amp;nbsp;) = 0 then&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;precioList&amp;nbsp;= {db.porcentajeVariable} + &quot; &amp;nbsp;&quot;&amp;nbsp;+&amp;nbsp;{db.precioVariable}&lt;br /&gt;else&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;precioList&amp;nbsp;=&amp;nbsp;precioList&amp;nbsp;+ &quot;, &quot; + {db.porcentajeVariable}&amp;nbsp;+ &quot; &amp;nbsp;&quot;&amp;nbsp;+&lt;br /&gt;&amp;nbsp;{db.nombreVariable}&lt;br /&gt;end if&lt;br /&gt;&lt;br /&gt;formula = &quot;&quot;&lt;/blockquote&gt;El segundo paso es crear otra formula en el pie de grupo donde mostraremos el acumulado y lo reiniciaremos:&lt;br /&gt;&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;WhilePrintingRecords&lt;br /&gt;global nameList as string&lt;br /&gt;formula = nameList&lt;br /&gt;nameList = &quot;&quot;&lt;/blockquote&gt;Espero que os sirva!&lt;br /&gt;&lt;br /&gt;Fuente &lt;a href=&quot;http://scn.sap.com/thread/1620836&quot; target=&quot;_blank&quot;&gt;Foro SAP Community Network&lt;/a&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/whileprintingrecords/variable%20global/crystal%20reports/mostrar-columnas-como-una-fila-separada/&quot;&gt;Mostrar columnas como una fila separada por comas en Crystal Reports&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on March 06, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/&quot;&gt;Mostrar columnas como una fila separada por comas en Crystal Reports&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on March 06, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -57,19 +57,19 @@ Me acabo de leer el libro &lt;a href=&quot;http://www.amazon.com/Clean-Code-Hand
 
 <entry>
   <title type="html"><![CDATA[Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/nuget/error/visual%20studio/proxy/problemas-con-nuget-conectando-traves/" />
-  <id>http://jpallares.github.io/nuget/error/visual%20studio/proxy/problemas-con-nuget-conectando-traves</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/problemas-con-nuget-conectando-traves/" />
+  <id>http://juan.pallares.me/problemas-con-nuget-conectando-traves</id>
   <published>2014-02-27T20:00:00+01:00</published>
   <updated>2014-02-27T20:00:00+01:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Me encontré el otro día con que no podía instalar paquetes desde NuGet en Visual Studio 2010. El error era &lt;i&gt;&quot;Error 407 Proxy Authentication Required&quot;&lt;/i&gt;. No funcionaba tampoco desde la &lt;i&gt;Package Manager Console&lt;/i&gt;. Recordé que recientemente había actualizado la password que usaba para el proxy (bueno, realmente estaba obligado por la política de caducidad).&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-QoNckcdN0vw/UxB7MxkeFDI/AAAAAAAAtxk/y6l-nr9Tbb0/s1600/nuget.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://1.bp.blogspot.com/-QoNckcdN0vw/UxB7MxkeFDI/AAAAAAAAtxk/y6l-nr9Tbb0/s1600/nuget.png&quot; height=&quot;97&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;Al parecer NuGet no reconocía esta nueva password, aunque me la solicitara y yo la introdujera internamente no la actualizaba porque seguía saliendo el error.&lt;br /&gt;&lt;br /&gt;Al final, como no, &lt;a href=&quot;http://stackoverflow.com/questions/9232160/nuget-behind-proxy&quot; target=&quot;_blank&quot;&gt;stackoverflow al rescate&lt;/a&gt;. La solución era configurar la password mediante el fichero NuGet.config que podemos encontrar en &lt;em style=&quot;background-color: white; border: 0px; font-family: Arial, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 14px; line-height: 17.804800033569336px; margin: 0px; padding: 0px; vertical-align: baseline;&quot;&gt;C:\Users\nombreusuario\AppData\Roaming,&amp;nbsp;&lt;/em&gt;al menos en mi máquina con Windows 7.&lt;br /&gt;&lt;br /&gt;Para poder añadir estos campos al fichero XML la mejor opción es bajarse &lt;a href=&quot;http://nuget.codeplex.com/releases/view/100803&quot; target=&quot;_blank&quot;&gt;NuGet.exe desde aquí&lt;/a&gt; y ejecutar los siguientes comandos:&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;nuget.exe config -set http_proxy=http://my.proxy.address:port&lt;br /&gt;nuget.exe config -set http_proxy.user=mydomain\myUserName&lt;br /&gt;nuget.exe config -set http_proxy.password=mySuperSecretPassword&lt;/blockquote&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/nuget/error/visual%20studio/proxy/problemas-con-nuget-conectando-traves/&quot;&gt;Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on February 27, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/problemas-con-nuget-conectando-traves/&quot;&gt;Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on February 27, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -77,19 +77,19 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 <entry>
   <title type="html"><![CDATA[Windows 8.1 - Arreglar error "We weren't able to connect to the store..."]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/windows%20store/windows%208.1/error/windows-81-arreglar-error-we-werent/" />
-  <id>http://jpallares.github.io/windows%20store/windows%208.1/error/windows-81-arreglar-error-we-werent</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/windows-81-arreglar-error-we-werent/" />
+  <id>http://juan.pallares.me/windows-81-arreglar-error-we-werent</id>
   <published>2013-08-25T11:03:00+02:00</published>
   <updated>2013-08-25T11:03:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-keMk4FxND_4/UhnjBUIO3sI/AAAAAAAArMo/JoTFyOgs7h8/s1600/windows_81v2-590x327.jpg&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;177&quot; src=&quot;http://1.bp.blogspot.com/-keMk4FxND_4/UhnjBUIO3sI/AAAAAAAArMo/JoTFyOgs7h8/s320/windows_81v2-590x327.jpg&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;Hola,&lt;br /&gt;&lt;br /&gt;Si os habéis decidido por probar la beta de Windows 8.1 puede que os hayais encontrado con el siguiente error al intentar entrar a la Windows Store&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;background-color: white; color: #333333; font-family: Georgia, &#39;Bitstream Charter&#39;, serif; font-size: 16px; line-height: 24px;&quot;&gt;“We weren’t able to connect to the store. This might have happened because of a server problem or the network connection timed out. Please wait a few minutes and try again.”&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;No había forma de acceder a la Store, incluso reiniciando, hice búsquedas porque al parecer es un &quot;known issue&quot; pero lo único que sirvió fué verificar la cuenta de usuario. Dentro de la configuración de cuentas, en vuestra cuenta, saldrá un link (debajo del mail) para verificar vuestro usuario y introducir la contraseña por enésima vez. Una vez hecho esto, desaparece el link y la Windows Store volverá a funcionar.&lt;br /&gt;&lt;br /&gt;Esta es la apariencia de mi cuenta una vez verificada:&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-6aLLe7C6WmU/UhnjtQN9eSI/AAAAAAAArMw/nNeRLAif6D8/s1600/Captura.PNG&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;297&quot; src=&quot;http://4.bp.blogspot.com/-6aLLe7C6WmU/UhnjtQN9eSI/AAAAAAAArMw/nNeRLAif6D8/s400/Captura.PNG&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/windows%20store/windows%208.1/error/windows-81-arreglar-error-we-werent/&quot;&gt;Windows 8.1 - Arreglar error "We weren't able to connect to the store..."&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on August 25, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/windows-81-arreglar-error-we-werent/&quot;&gt;Windows 8.1 - Arreglar error "We weren't able to connect to the store..."&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on August 25, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -97,14 +97,14 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 <entry>
   <title type="html"><![CDATA[Syntax Highlighting Post]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/code-highlighting-post/" />
-  <id>http://jpallares.github.io/code-highlighting-post</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/code-highlighting-post/" />
+  <id>http://juan.pallares.me/code-highlighting-post</id>
   <updated>2014-08-09 19:39:56 +0200T00:00:00-00:00</updated>
   <published>2013-08-16T00:00:00+02:00</published>
   
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Syntax_highlighting&quot;&gt;Syntax highlighting&lt;/a&gt; is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;/p&gt;
@@ -209,7 +209,7 @@ end
 &lt;script src=&quot;https://gist.github.com/mmistakes/6589546.js&quot;&gt; &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on August 16, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on August 16, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -217,13 +217,13 @@ end
 
 <entry>
   <title type="html"><![CDATA[Sample Link Post]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/sample-link-post/" />
-  <id>http://jpallares.github.io/sample-link-post</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/sample-link-post/" />
+  <id>http://juan.pallares.me/sample-link-post</id>
   <published>2013-08-12T00:00:00+02:00</published>
   <updated>2013-08-12T00:00:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
@@ -234,7 +234,7 @@ end
 
 &lt;p&gt;Some &lt;a href=&quot;http://www.mademistakes.com&quot;&gt;link&lt;/a&gt; can also be shown.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on August 12, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on August 12, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -242,19 +242,19 @@ end
 
 <entry>
   <title type="html"><![CDATA[Media Center automatizado (II) XBMC vs. Plex]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/plexbmc/xbmc/plex/media%20center/media-center-automatizado-ii-xbmc-vs/" />
-  <id>http://jpallares.github.io/plexbmc/xbmc/plex/media%20center/media-center-automatizado-ii-xbmc-vs</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/" />
+  <id>http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs</id>
   <published>2013-07-09T16:37:00+02:00</published>
   <updated>2013-07-09T16:37:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/2013/06/media-center-automatizado-i-descarga.html&quot; target=&quot;_blank&quot;&gt; ya tenemos nuestros episodios y películas bajados y clasificados&lt;/a&gt;. Ahora necesitamos acceder a ellos y reproducirlos cómodamente. Las dos opciones gratuitas más comunes para gestionar un media center suelen ser Plex y XBMC. Es importante mencionar que son opciones parecidas pues Plex es un fork de XBMC en 2008.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://3.bp.blogspot.com/-amKiqbSDUis/UdwlzRXIB7I/AAAAAAAAqjc/cRTnZePDYR0/s1600/as-the-xbmc.gif&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;133&quot; src=&quot;http://3.bp.blogspot.com/-amKiqbSDUis/UdwlzRXIB7I/AAAAAAAAqjc/cRTnZePDYR0/s200/as-the-xbmc.gif&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: left;&quot;&gt;&lt;a href=&quot;http://xbmc.org/&quot; target=&quot;_blank&quot;&gt;XBMC&lt;/a&gt;&amp;nbsp;es la opción que permite más opciones, mas configuración. Originalmente apareció para ser instalado sobre una Xbox (de ahí el nombre) pero actualmente se puede instalar prácticamente sobre cualquier SO, incluso Android.&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: left;&quot;&gt;Tiene una cantidad ingente de plugins y personalmente estoy enamorado del plugin de subtitulos que los busca de forma muy comoda (un click) y lo auto-asocia al vídeo que se esta reproduciendo al instante. Olvídate del tediosos proceso: búsqueda, descarga de un .zip, descomprimir, renombrar.&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: left;&quot;&gt;Esta pensado para estar debajo de tu TV y reproducir el contenido ahí, en otras palabras, no esta pensado para actuar como servidor, importante este punto en comparación con Plex.&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: left;&quot;&gt;Tiene también muchos skins para adaptar su aspecto a tus gustos.&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-Ue-976ElejM/UdwlzjU_xUI/AAAAAAAAqjg/ln9tEZtTM2A/s1600/plex-icon.jpg&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em; text-align: left;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;200&quot; src=&quot;http://1.bp.blogspot.com/-Ue-976ElejM/UdwlzjU_xUI/AAAAAAAAqjg/ln9tEZtTM2A/s200/plex-icon.jpg&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;a href=&quot;http://www.plexapp.com/&quot; target=&quot;_blank&quot;&gt;Plex&lt;/a&gt; es más sencillo, más practico, instala, dime donde están los vídeos y a funcionar. Puedes echar a faltar los plugins y skins pero a cambio tienes un servidor. Para que lo quiero? Pues muy fácil, empiezo una película en la TV del salón pero la dejo a medias, al día siguiente me apetece verla desde el ordenador en otra habitación pues Plex ya me sugiere seguir desde el mismo lugar donde la dejé de ver. Pero es más, que estoy de viaje (y tengo una buena conexión de red) y me apetece ver ese capítulo desde el móvil, pues también se puede con la aplicación Plex de móvil (iOS, Android, Windows Phone). Además Plex se ocupa de transformar el vídeo al tamaño y calidad de cada dispositivo cliente, de forma transparente, not bad!&lt;br /&gt;Las últimas televisiones Samsung y LG suelen tener la opción de instalar un cliente Plex, por lo que es posible tener un ordenador en una cuarto oscuro con Plex instalado y la TV accediendo via wifi, un trasto menos en el comedor.&lt;br /&gt;&lt;br /&gt;La elección depende mucho de cada caso, gustos y prioridades. En mi caso Plex era sí o sí, pues quería aprovechar un ordenador viejo como servidor y suelo ver vídeo desde al menos dos lugares, comedor y habitación. Además filebot ya se ocupaba de descargarme subtítulos por lo que no necesitaba el plugin de XBMC&lt;br /&gt;&lt;br /&gt;Pero hay una tercera vía, para quien quiera lo mejor de ambos mundos:&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://wiki.xbmc.org/?title=Add-on%3APleXBMC&quot; target=&quot;_blank&quot;&gt;PleXBMC&lt;/a&gt; - Un plugin para XBMC que permite acceder y reproducir el contenido de un servidor Plex. Así podrías tener un servidor Plex y un cliente XBMC, lo he probado y funciona sin problemas.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/plexbmc/xbmc/plex/media%20center/media-center-automatizado-ii-xbmc-vs/&quot;&gt;Media Center automatizado (II) XBMC vs. Plex&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on July 09, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/&quot;&gt;Media Center automatizado (II) XBMC vs. Plex&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on July 09, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -262,19 +262,19 @@ Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/20
 
 <entry>
   <title type="html"><![CDATA[Media Center automatizado (I) Descarga automática de series / películas y clasificación]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/showrss/media%20center/torrent/filebot/script/utorrent/media-center-automatizado-i-descarga/" />
-  <id>http://jpallares.github.io/showrss/media%20center/torrent/filebot/script/utorrent/media-center-automatizado-i-descarga</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/media-center-automatizado-i-descarga/" />
+  <id>http://juan.pallares.me/media-center-automatizado-i-descarga</id>
   <published>2013-06-30T10:04:00+02:00</published>
   <updated>2013-06-30T10:04:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://www.blogcdn.com/www.engadget.com/media/2009/05/9-27-07-dma2200-front-shot_reflecti.jpg&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;194&quot; src=&quot;http://www.blogcdn.com/www.engadget.com/media/2009/05/9-27-07-dma2200-front-shot_reflecti.jpg&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando quiero y sin publicidad. También me he aficionado a ver las películas en versión original.&lt;br /&gt;&lt;br /&gt;Desde tiempo atrás quería automatizar el proceso de búsqueda y descarga, por comodidad y también porque a veces no me entero que ha empezado una temporada nueva. Importante decir que las veo en versión original, por lo que hay mucha mas gente compartiendo y son más fáciles de encontrar y descargar.&lt;br /&gt;&lt;br /&gt;Tengo un ordenador de sobremesa bastante olvidado, mi antiguo pc gamer, y decidí que ese sería mi nuevo media center.&lt;br /&gt;&lt;br /&gt;En este primer paso del tutorial vamos a ver como descargar automaticamente de forma desatendida.&lt;br /&gt;&lt;br /&gt;Vamos con los ingredientes:&lt;br /&gt;- &lt;a href=&quot;http://www.utorrent.com/&quot; target=&quot;_blank&quot;&gt;uTorrent&lt;/a&gt; - Mi cliente torrent preferido, puedes usar otro si quiere pero debe soportar RSS&lt;br /&gt;&lt;br /&gt;- &lt;a href=&quot;http://showrss.karmorra.info/&quot; target=&quot;_blank&quot;&gt;showRSS&lt;/a&gt; - Este servicio generará un RSS con las series que le indiques. No tiene mucho misterio, te registras, escoges tus series y copiar el RSS y lo añades a utorrent. Sección feeds botón derecho, añadir&lt;br /&gt;&lt;br /&gt;- &lt;a href=&quot;http://filebot.net/&quot; target=&quot;_blank&quot;&gt;fileBot&lt;/a&gt; - Renombrador y organizador de series/pelis. En este caso instalar sin más.&lt;br /&gt;&lt;br /&gt;- &lt;a href=&quot;http://www.filebot.net/forums/viewtopic.php?f=4&amp;amp;t=215&quot; target=&quot;_blank&quot;&gt;script de FileBot para uTorrent&lt;/a&gt; - Aquí viene lo mejor. Este script se ejecutará cuando tus torrents (que se han bajado automáticamente) acaben de bajarse:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Descomprimir fichero si viene en zip/rar&lt;/li&gt;&lt;li&gt;Distingue entre películas y series y las gestiona por separado&lt;/li&gt;&lt;li&gt;Descarga los&amp;nbsp;subtítulos&amp;nbsp;que correspondan en el idioma que indiques&lt;/li&gt;&lt;li&gt;Los clasifica siguiendo este esquema:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Peliculas&amp;nbsp;{output}/Movies/Name (Year)/Name (Year) [CD123].ext&lt;/li&gt;&lt;li&gt;Series&amp;nbsp;{output}/TV Shows/Name/Season N/Name - S00E00 - Title.ext&lt;/li&gt;&lt;li&gt;Musica&amp;nbsp;{output}/Music/Artist/Album/Artist - Title.ext&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Descarga carátulas y más media&lt;/li&gt;&lt;li&gt;Notifica XBMC or Plex (más sobre esto en próximos posts)&lt;/li&gt;&lt;li&gt;Envía report por email&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Tenéis información sobre más posibilidades en el foro enlazado arriba, pero con esto tendremos más que suficiente. Para configurarlo, en &quot;uTorrent -&amp;gt; Preferences -&amp;gt; Run program -&amp;gt; Run program when torrent finishes&quot; pegamos:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: white; color: #0b5690; font-family: monospace; font-size: 12px; font-weight: bold; line-height: 16.796875px;&quot;&gt;filebot -script fn:amc --output &quot;X:/path/to/media&quot; --log-file amc.log --action copy --conflict override -non-strict --def music=y subtitles=en artwork=y &quot;ut_dir=%D&quot; &quot;ut_file=%F&quot; &quot;ut_kind=%K&quot; &quot;ut_title=%N&quot; &quot;ut_label=%L&quot; &quot;ut_state=%S&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Cambiamos el output a la carpeta que nos interese, podemos añadir subtítulos en castellano con subtitles=en,es y FIN!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Ejecución manual del script&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Tengo que confesar que por algún motivo, este script no se ejecuta siempre, algo en utorrent no tengo configurado correctamente y provoca que acabe la descarga pero no ejecute el script. En estos casos ejecuto el script de forma manual con un fichero .bat especificando la carpeta de origen:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: white; color: #0b5690; font-family: monospace; font-size: 12px; font-weight: bold; line-height: 16.796875px;&quot;&gt;filebot -script fn:amc &quot;/path/to/input/&quot; --output &quot;X:/path/to/output&quot; --action copy -non-strict&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Importante decir que hay que ejecutarlo como Administrador&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Ahora ya tenemos los vídeos, falta reproducirlos de forma cómoda. En la próxima comentaré la comparativa que hice de XBMC y Plex, por cual me decidí y como integrarlo con el sistema de descarga automática que hemos montado hoy&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/showrss/media%20center/torrent/filebot/script/utorrent/media-center-automatizado-i-descarga/&quot;&gt;Media Center automatizado (I) Descarga automática de series / películas y clasificación&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on June 30, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/media-center-automatizado-i-descarga/&quot;&gt;Media Center automatizado (I) Descarga automática de series / películas y clasificación&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on June 30, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -282,13 +282,13 @@ Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/20
 
 <entry>
   <title type="html"><![CDATA[Post with Large Feature Image and Text]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/readability-feature-post/" />
-  <id>http://jpallares.github.io/readability-feature-post</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/readability-feature-post/" />
+  <id>http://juan.pallares.me/readability-feature-post</id>
   <published>2013-05-23T00:00:00+02:00</published>
   <updated>2013-05-23T00:00:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;p&gt;This is a sample post with a large feature image&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; up top and tons of text. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
@@ -340,7 +340,7 @@ Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/20
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on May 23, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on May 23, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -348,13 +348,13 @@ Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/20
 
 <entry>
   <title type="html"><![CDATA[A Post with Images]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/sample-post-images/" />
-  <id>http://jpallares.github.io/sample-post-images</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/sample-post-images/" />
+  <id>http://juan.pallares.me/sample-post-images</id>
   <published>2013-05-22T00:00:00+02:00</published>
   <updated>2013-05-22T00:00:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;p&gt;Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use &lt;code&gt;figure&lt;/code&gt; with the appropriate &lt;code&gt;class&lt;/code&gt;. Each instance of &lt;code&gt;figure&lt;/code&gt; is auto-numbered and displayed in the caption.&lt;/p&gt;
@@ -408,7 +408,7 @@ Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/20
 	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on May 22, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on May 22, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -416,19 +416,19 @@ Como explique en la entrada anterior,&lt;a href=&quot;http://blog.pallares.me/20
 
 <entry>
   <title type="html"><![CDATA[Situaciones en la vida del programador]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/fun/humor/code/software%20engineer/situaciones-en-la-vida-del-programador/" />
-  <id>http://jpallares.github.io/fun/humor/code/software%20engineer/situaciones-en-la-vida-del-programador</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/situaciones-en-la-vida-del-programador/" />
+  <id>http://juan.pallares.me/situaciones-en-la-vida-del-programador</id>
   <published>2013-04-30T10:58:00+02:00</published>
   <updated>2013-04-30T10:58:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Algo de humor, muchos os&amp;nbsp;sentiréis&amp;nbsp;identificados:&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px;&quot;&gt;Cuando leo un documento técnico escrito por el equipo de marketing&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img alt=&quot;Cuando leo un documento técnico escrito por el equipo de marketing&quot; border=&quot;0&quot; height=&quot;270&quot; src=&quot;http://helektron.com/wp-content/uploads/2013/02/Cuando-leo-un-documento-t%C3%A9cnico-escrito-por-el-marketing.gif&quot; style=&quot;border: 0px; box-sizing: border-box; height: auto; margin: 0px; max-width: 100%; padding: 0px;&quot; width=&quot;447&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px;&quot;&gt;Cuando el product manager utiliza jerga de desarrolladores&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img alt=&quot;Cuando el product manager utiliza jerga de desarrolladores&quot; border=&quot;0&quot; height=&quot;240&quot; src=&quot;http://helektron.com/wp-content/uploads/2013/02/Cuando-el-product-manager-utiliza-jerga-de-desarrolladores.gif&quot; style=&quot;border: 0px; box-sizing: border-box; height: auto; margin: 0px; max-width: 100%; padding: 0px;&quot; width=&quot;320&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px;&quot;&gt;Cuando hago una puesta en producción&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img alt=&quot;code-34&quot; height=&quot;253&quot; src=&quot;http://helektron.com/wp-content/uploads/2013/02/Situaciones-en-la-vida-de-un-programador-34.gif&quot; style=&quot;border: 0px; box-sizing: border-box; height: auto; margin: 0px; max-width: 100%; padding: 0px;&quot; width=&quot;480&quot; /&gt;&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px;&quot;&gt;Cuando mi regexp devuelve exactamente eso que esperaba&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img alt=&quot;code-03&quot; border=&quot;0&quot; height=&quot;130&quot; src=&quot;http://helektron.com/wp-content/uploads/2013/02/Situaciones-en-la-vida-de-un-programador-3.gif&quot; style=&quot;border: 0px; box-sizing: border-box; height: auto; margin: 0px; max-width: 100%; padding: 0px;&quot; width=&quot;270&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px;&quot;&gt;Cuando el becario me propone realizar la web con Joomla!&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img alt=&quot;code-05&quot; border=&quot;0&quot; height=&quot;285&quot; src=&quot;http://helektron.com/wp-content/uploads/2013/02/Situaciones-en-la-vida-de-un-programador-5.gif&quot; style=&quot;border: 0px; box-sizing: border-box; height: auto; margin: 0px; max-width: 100%; padding: 0px;&quot; width=&quot;245&quot; /&gt;&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px;&quot;&gt;Cuando el jefe de proyecto salta sobre mi pantalla por sorpresa&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img alt=&quot;code-20&quot; border=&quot;0&quot; height=&quot;288&quot; src=&quot;http://helektron.com/wp-content/uploads/2013/02/Situaciones-en-la-vida-de-un-programador-20.gif&quot; style=&quot;border: 0px; box-sizing: border-box; height: auto; margin: 0px; max-width: 100%; padding: 0px;&quot; width=&quot;216&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;Cuando mostramos a cliente una genial pero aún incompleta funcionalidad al cliente&lt;/div&gt;&lt;div style=&quot;background-color: white; color: #666666; font-family: &#39;Lucida Grande&#39;, Arial, &#39;Lucida Sans Unicode&#39;, sans-serif; font-size: 13px; line-height: 19px; margin-bottom: 1.2em; padding: 0px;&quot;&gt;&lt;img src=&quot;http://24.media.tumblr.com/e18488212d4b2e24c6802df28282dc03/tumblr_mlibgaIlUD1rk30kxo1_250.gif&quot; /&gt;&lt;/div&gt;&lt;br /&gt;Más aquí:&lt;br /&gt;&lt;a href=&quot;http://helektron.com/situaciones-en-la-vida-de-un-programador/&quot;&gt;http://helektron.com/situaciones-en-la-vida-de-un-programador/&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://thejoysofcode.com/&quot;&gt;http://thejoysofcode.com/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/fun/humor/code/software%20engineer/situaciones-en-la-vida-del-programador/&quot;&gt;Situaciones en la vida del programador&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on April 30, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/situaciones-en-la-vida-del-programador/&quot;&gt;Situaciones en la vida del programador&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on April 30, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -436,19 +436,19 @@ Algo de humor, muchos os&amp;nbsp;sentiréis&amp;nbsp;identificados:&lt;br /&gt;
 
 <entry>
   <title type="html"><![CDATA[Tratando XML multiref en Biztalk]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/multiref/xsl/pipeline/xml/biztalk/tratando-xml-multiref-en-biztalk/" />
-  <id>http://jpallares.github.io/multiref/xsl/pipeline/xml/biztalk/tratando-xml-multiref-en-biztalk</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/tratando-xml-multiref-en-biztalk/" />
+  <id>http://juan.pallares.me/tratando-xml-multiref-en-biztalk</id>
   <published>2013-02-14T09:13:00+01:00</published>
   <updated>2013-02-14T09:13:00+01:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-XRewEOvAM04/UxB7pO6R22I/AAAAAAAAtxs/nQX45MgPwdI/s1600/biztalk-logo.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://2.bp.blogspot.com/-XRewEOvAM04/UxB7pO6R22I/AAAAAAAAtxs/nQX45MgPwdI/s1600/biztalk-logo.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: justify;&quot;&gt;Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XML en un formato no aceptado por Biztalk. Tenía etiquetas multiref y esto no le gustaba.&lt;/div&gt;&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;&amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;soapenv:Body&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;ns1:sendSmsSubmissionResponse soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:ns1=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;sendSmsSubmissionReturn href=&quot;#id0&quot; /&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/ns1:sendSmsSubmissionResponse&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;multiRef id=&quot;id0&quot; soapenc:root=&quot;0&quot; soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xsi:type=&quot;ns2:SubmissionStatus&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:ns2=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;id xsi:type=&quot;soapenc:string&quot;&amp;gt;4336723&amp;lt;/id&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;message xsi:type=&quot;soapenc:string&quot;&amp;gt;Submisso enviada para processamento.&amp;lt;/message&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;status href=&quot;#id1&quot; /&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/multiRef&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;multiRef id=&quot;id1&quot; soapenc:root=&quot;0&quot; soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xsi:type=&quot;xsd:int&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&amp;gt;0&amp;lt;/multiRef&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/soapenv:Body&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;lt;/soapenv:Envelope&amp;gt;&lt;/blockquote&gt;&lt;br /&gt;&lt;br /&gt;Para poder tratarlo en Biztalk, tuve que desarollar un pequeño código XSL (stylesheet) que después introduje en la Pipeline de entrada custom para decodificarlo.&lt;br /&gt;&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;&amp;lt;xsl:stylesheet version=&quot;1.0&quot;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; xmlns:ns2=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:key name=&quot;multiref-by-id&quot; match=&quot;multiRef&quot; use=&quot;@id&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;/&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;xsl:apply-templates select=&quot;@* |*&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/xsl:template&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;*[starts-with(@href, &#39;#&#39;)]&quot;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;lt;xsl:copy&amp;gt; &amp;nbsp; &amp;nbsp; &lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;xsl:apply-templates select=&quot;@* |&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;key(&#39;multiref-by-id&#39;, substring-after(@href, &#39;#&#39;))/@*[not(local-name()=&#39;id&#39; or local-name()=&#39;type&#39;)] |&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; key(&#39;multiref-by-id&#39;, substring-after(@href, &#39;#&#39;))/node()&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/xsl:template&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;@href[starts-with(., &#39;#&#39;)] | multiRef[@id] | @soapenc:root&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;@*|node()&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;xsl:apply-templates select=&quot;@*|node()&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/xsl:template&amp;gt;&lt;br /&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/blockquote&gt;&lt;br /&gt;&lt;br /&gt;Una vez hecho esto, todo funcionó como la seda. Para el .xsl me inspiré en &lt;a href=&quot;http://stackoverflow.com/questions/5185389/creating-xslt-transform-to-flatten-multiref-encoded-soap-message&quot; target=&quot;_blank&quot;&gt;esta respuesta de StackOverflow&lt;/a&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/multiref/xsl/pipeline/xml/biztalk/tratando-xml-multiref-en-biztalk/&quot;&gt;Tratando XML multiref en Biztalk&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on February 14, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/tratando-xml-multiref-en-biztalk/&quot;&gt;Tratando XML multiref en Biztalk&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on February 14, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -456,19 +456,19 @@ Algo de humor, muchos os&amp;nbsp;sentiréis&amp;nbsp;identificados:&lt;br /&gt;
 
 <entry>
   <title type="html"><![CDATA[Formatear queries en SQL Management Studio]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/sql%20server%202008/management%20studio/sql%20server/formatear-queries-en-sql-management/" />
-  <id>http://jpallares.github.io/sql%20server%202008/management%20studio/sql%20server/formatear-queries-en-sql-management</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/formatear-queries-en-sql-management/" />
+  <id>http://juan.pallares.me/formatear-queries-en-sql-management</id>
   <published>2013-01-21T10:50:00+01:00</published>
   <updated>2013-01-21T10:50:00+01:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearlo de una forma rápida&lt;br /&gt;&lt;br /&gt;La herramienta que yo utilizo es&amp;nbsp;&lt;a href=&quot;http://www.architectshack.com/PoorMansTSqlFormatter.ashx&quot; target=&quot;_blank&quot;&gt;Poor Man&#39;s T-SQL Formatter&lt;/a&gt;, sencilla, se puede utilizar como add-in del SQL Management Studio. Además utiliza las misma hotkey que en Visual Studio (Ctrl+K, Ctrl+F)&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-lHrHw2yKwVg/UP0dQJi_XqI/AAAAAAAAoeg/1Aob40DbnI0/s1600/SQLqueryFormat.PNG&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;320&quot; src=&quot;http://2.bp.blogspot.com/-lHrHw2yKwVg/UP0dQJi_XqI/AAAAAAAAoeg/1Aob40DbnI0/s320/SQLqueryFormat.PNG&quot; width=&quot;295&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;Con esta herramienta y el &lt;a href=&quot;http://blog.pallares.me/2012/09/no-funciona-intellisense-en-sql-server.html&quot; target=&quot;_blank&quot;&gt;Intellisense&lt;/a&gt;, séreis imparables :)
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/sql%20server%202008/management%20studio/sql%20server/formatear-queries-en-sql-management/&quot;&gt;Formatear queries en SQL Management Studio&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on January 21, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/formatear-queries-en-sql-management/&quot;&gt;Formatear queries en SQL Management Studio&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on January 21, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -476,19 +476,19 @@ En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearl
 
 <entry>
   <title type="html"><![CDATA[No funciona Intellisense en SQL Server Management Studio 2008]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/sql%20server%202008/ide/.net/management%20studio/visual%20studio/no-funciona-intellisense-en-sql-server/" />
-  <id>http://jpallares.github.io/sql%20server%202008/ide/.net/management%20studio/visual%20studio/no-funciona-intellisense-en-sql-server</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/no-funciona-intellisense-en-sql-server/" />
+  <id>http://juan.pallares.me/no-funciona-intellisense-en-sql-server</id>
   <published>2012-09-27T15:58:00+02:00</published>
   <updated>2012-09-27T15:58:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://geekdeck.com/wp-content/uploads/2010/04/sql_server_2008_r2.jpg&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://geekdeck.com/wp-content/uploads/2010/04/sql_server_2008_r2.jpg&quot; /&gt;&lt;/a&gt;&lt;/div&gt;Después de configurar todo el entorno de desarollo en una nueva máquina, me doy cuenta que en el Microsoft SQL Management Studio 2008 R2 no funciona el Intellisense&lt;br /&gt;&lt;br /&gt;La opción esta marcada y incluso desinstalar e instalar no soluciona el problema&lt;br /&gt;&lt;br /&gt;Finalmente la solución como siempre en &lt;a href=&quot;http://stackoverflow.com/questions/552458/why-is-sql-server-2008-management-studio-intellisense-not-working&quot;&gt;stackoverflow&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Al parecer es un &lt;a href=&quot;https://connect.microsoft.com/SQLServer/feedback/details/650569/ssms-2008-r2-is-losing-intellisense-after-installing-visual-studio-2010-sp1&quot;&gt;issue ya conocido&lt;/a&gt;, al instalar SP1 al Visual Studio el Intellsense del Management Studio deja de funcionar&lt;br /&gt;&lt;br /&gt;Afortunadamente tiene solución, bajar esta &lt;a href=&quot;http://support.microsoft.com/kb/2507770&quot;&gt;actualización para SQL Server 2008 R2&lt;/a&gt;, en concreto el paquete:&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;background-color: white; font-family: &#39;Segoe UI&#39;, Arial, Verdana, Tahoma, sans-serif; font-size: 11px;&quot;&gt;SQLServer2008R2_RTM_CU7_2507770_10_50_1777_x64&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;background-color: white; font-family: &#39;Segoe UI&#39;, Arial, Verdana, Tahoma, sans-serif; font-size: 11px;&quot;&gt;o&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;background-color: white; font-family: &#39;Segoe UI&#39;, Arial, Verdana, Tahoma, sans-serif; font-size: 11px;&quot;&gt;SQLServer2008R2_RTM_CU7_2507770_10_50_1777_x86&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Una vez instalado, Intellisense funciona a la perfección&lt;br /&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/sql%20server%202008/ide/.net/management%20studio/visual%20studio/no-funciona-intellisense-en-sql-server/&quot;&gt;No funciona Intellisense en SQL Server Management Studio 2008&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on September 27, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/no-funciona-intellisense-en-sql-server/&quot;&gt;No funciona Intellisense en SQL Server Management Studio 2008&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on September 27, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -496,19 +496,19 @@ En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearl
 
 <entry>
   <title type="html"><![CDATA[Configurar Windows Authenticacion en IIS 7]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/iis/windows/authentication/configurar-windows-authenticacion-en/" />
-  <id>http://jpallares.github.io/iis/windows/authentication/configurar-windows-authenticacion-en</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/configurar-windows-authenticacion-en/" />
+  <id>http://juan.pallares.me/configurar-windows-authenticacion-en</id>
   <published>2012-09-21T16:04:00+02:00</published>
   <updated>2012-09-21T16:04:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Si instalas IIS con la configuración por defecto esta no incluye Autenticación de Windows&lt;br /&gt;&lt;br /&gt;Te puedes volver loco intentando configurar esa autenticación cuando el problema es básicamente que no esta instalada&lt;br /&gt;&lt;br /&gt;Para hacerlo basta con marcar este checkbox dentro de Activar o desactivar características de Windows&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-DNU_0D3FzY0/UFyPwlfYbWI/AAAAAAAAmEo/yQIVoLL_dFw/s1600/Captura.PNG&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://4.bp.blogspot.com/-DNU_0D3FzY0/UFyPwlfYbWI/AAAAAAAAmEo/yQIVoLL_dFw/s1600/Captura.PNG&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/iis/windows/authentication/configurar-windows-authenticacion-en/&quot;&gt;Configurar Windows Authenticacion en IIS 7&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on September 21, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/configurar-windows-authenticacion-en/&quot;&gt;Configurar Windows Authenticacion en IIS 7&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on September 21, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -516,13 +516,13 @@ Si instalas IIS con la configuración por defecto esta no incluye Autenticación
 
 <entry>
   <title type="html"><![CDATA[Testing Readability with a Bunch of Text]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/readability-post/" />
-  <id>http://jpallares.github.io/readability-post</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/readability-post/" />
+  <id>http://juan.pallares.me/readability-post</id>
   <published>2012-05-22T00:00:00+02:00</published>
   <updated>2012-05-22T00:00:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
@@ -566,7 +566,7 @@ Si instalas IIS con la configuración por defecto esta no incluye Autenticación
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on May 22, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on May 22, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -574,19 +574,19 @@ Si instalas IIS con la configuración por defecto esta no incluye Autenticación
 
 <entry>
   <title type="html"><![CDATA[Escribir @ en teclado americano (US)]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/escribir-en-teclado-americano-us/" />
-  <id>http://jpallares.github.io/escribir-en-teclado-americano-us</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/escribir-en-teclado-americano-us/" />
+  <id>http://juan.pallares.me/escribir-en-teclado-americano-us</id>
   <published>2012-05-15T13:53:00+02:00</published>
   <updated>2012-05-15T13:53:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Si tienes un contraseña que contiene la @ y estas usando una distribución de teclado que no es la española, te puedes volver loco viendo que tu contraseña nunca es aceptada, solución:&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;@ en teclado US = Shift + 2&lt;/div&gt;&lt;div&gt;@ en teclado español = Alt + 2&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/escribir-en-teclado-americano-us/&quot;&gt;Escribir @ en teclado americano (US)&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on May 15, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/escribir-en-teclado-americano-us/&quot;&gt;Escribir @ en teclado americano (US)&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on May 15, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -594,19 +594,19 @@ Si tienes un contraseña que contiene la @ y estas usando una distribución de t
 
 <entry>
   <title type="html"><![CDATA[Transformar Hyper-V (.vhd) a VMware (.vmx/.vmdk)]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/vmware/virtual%20machine/biztalk/virtual%20pc/hyper-v/transformar-hyper-v-vhd-vmware-vmxvmdk/" />
-  <id>http://jpallares.github.io/vmware/virtual%20machine/biztalk/virtual%20pc/hyper-v/transformar-hyper-v-vhd-vmware-vmxvmdk</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/transformar-hyper-v-vhd-vmware-vmxvmdk/" />
+  <id>http://juan.pallares.me/transformar-hyper-v-vhd-vmware-vmxvmdk</id>
   <published>2012-04-02T13:13:00+02:00</published>
   <updated>2012-04-02T13:13:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Necesitaba una máquina virtual para crear mis aplicaciones de Biztalk. Buscando encuentro que desde Microsoft puedes bajar el &lt;a href=&quot;http://www.microsoft.com/download/en/details.aspx?id=14865&quot;&gt;Biztalk Server 2010 Developer Training Kit &lt;/a&gt;que incluye:&lt;br /&gt;- Microsoft Windows Server 2008 R2&lt;br /&gt;- Biztalk Server 2010&lt;br /&gt;- Visual Studio 2010&lt;br /&gt;- SQL Server 2008&lt;br /&gt;&lt;br /&gt;Todo configurado y listo para usar....pero, siempre hay peros, la imagen es para ejecutarla en un servidor Hyper-V y no disponemos de ninguno.&lt;br /&gt;&lt;br /&gt;Google me lleva a un blog donde explican &lt;a href=&quot;http://www.kanwalkhipple.com/blog/Lists/Posts/Post.aspx?ID=5&quot;&gt;como convertir de Hyper-V a VMware&lt;/a&gt;. Me pongo manos a la obra en un PC con Windows 7 de un compañero (igual que en el tutorial) pero no hay éxito, me da error siempre que intento convertir con el VMware Converter, tras probar varios workarounds me rindo y vuelvo a mi &quot;querida&quot; máquina con Windows XP 32bits a pesar de tener un procesador de 64 (a mi no me preguntéis)&lt;br /&gt;&lt;br /&gt;Me da por probar, ya puestos, a hacer los mismos pasos desde XP con el denostado &lt;a href=&quot;http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;amp;id=24439&quot;&gt;Virtual PC 2007&lt;/a&gt;...funcionó a la primera sin tener que renombrar archivos y bastante rápido
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/vmware/virtual%20machine/biztalk/virtual%20pc/hyper-v/transformar-hyper-v-vhd-vmware-vmxvmdk/&quot;&gt;Transformar Hyper-V (.vhd) a VMware (.vmx/.vmdk)&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on April 02, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/transformar-hyper-v-vhd-vmware-vmxvmdk/&quot;&gt;Transformar Hyper-V (.vhd) a VMware (.vmx/.vmdk)&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on April 02, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -614,19 +614,19 @@ Necesitaba una máquina virtual para crear mis aplicaciones de Biztalk. Buscando
 
 <entry>
   <title type="html"><![CDATA[Desmontar array en un puerto de Biztalk]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/.net/puerto/biztalk/desmontar-array-en-un-puerto-de-biztalk/" />
-  <id>http://jpallares.github.io/.net/puerto/biztalk/desmontar-array-en-un-puerto-de-biztalk</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/desmontar-array-en-un-puerto-de-biztalk/" />
+  <id>http://juan.pallares.me/desmontar-array-en-un-puerto-de-biztalk</id>
   <published>2012-03-29T09:37:00+02:00</published>
   <updated>2012-03-29T09:37:00+02:00</updated>
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
 Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de formas de mejorarla.&amp;nbsp;Aquí&amp;nbsp;explicaré como me &quot;ahorro&quot; toda una orquestación configurando un puerto y un schema de una manera determinada&lt;br /&gt;&lt;br /&gt;ANTES:&lt;br /&gt;&lt;br /&gt;Había que pedir un array de mensajes a un servicio y luego desmontarlo,&amp;nbsp;mi solución fue un clásico bucle&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-X6WmmM7bD_4/T2m7ktAAceI/AAAAAAAAV4k/5JWmYYThHDM/s1600/debatch.PNG&quot; imageanchor=&quot;1&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;584&quot; src=&quot;http://4.bp.blogspot.com/-X6WmmM7bD_4/T2m7ktAAceI/AAAAAAAAV4k/5JWmYYThHDM/s640/debatch.PNG&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;DESPUÉS:&lt;br /&gt;&lt;br /&gt;Gracias a &lt;a href=&quot;http://seroter.wordpress.com/2010/04/08/debatching-inbound-messages-from-biztalk-wcf-sql-adapter/&quot;&gt;este artículo&lt;/a&gt;, vi como conseguir que entraran los mensajes uno por uno. Básicamente los pasos necesarios son:&lt;br /&gt;&lt;br /&gt;- Crear un ReceivePort del tipo Scheduler que vaya generando llamadas&lt;br /&gt;- Crear un SendPort TwoWay que ataque al servicio, con un filtro para que le vayan entrando las llamas creadas por el Scheduler&lt;br /&gt;- Recibir los mensajes de respuesta directamente en la orquestación con un Direct Port y un Receive Message con filtro&lt;br /&gt;- Editar los esquemas del paquete en cuestión, de la siguiente forma:&lt;br /&gt;&lt;br /&gt;El nodo Schema le activamos el modo Envelope&lt;br /&gt;&lt;br /&gt;&lt;img alt=&quot;2010.4.8sql12&quot; src=&quot;http://seroter.files.wordpress.com/2010/04/2010-4-8sql12_thumb.jpg?w=454&amp;amp;h=213&quot; /&gt;&lt;br /&gt;&lt;br /&gt;Editamos el XPATH del nodo raiz y le hacemos apuntar al nodo superior al nodo leaf&lt;br /&gt;&lt;br /&gt;&lt;img alt=&quot;2010.4.8sql13&quot; src=&quot;http://seroter.files.wordpress.com/2010/04/2010-4-8sql13_thumb.jpg?w=454&amp;amp;h=254&quot; /&gt;&lt;br /&gt;&lt;br /&gt;Finalmente, el nodo leaf le cambiamos el MaxOccurrence a 1&lt;br /&gt;&lt;br /&gt;Saludos!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;/div&gt;
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/.net/puerto/biztalk/desmontar-array-en-un-puerto-de-biztalk/&quot;&gt;Desmontar array en un puerto de Biztalk&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on March 29, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/desmontar-array-en-un-puerto-de-biztalk/&quot;&gt;Desmontar array en un puerto de Biztalk&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on March 29, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -634,14 +634,14 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 <entry>
   <title type="html"><![CDATA[Sample Post]]></title>
-  <link rel="alternate" type="text/html" href="http://jpallares.github.io/sample-post/" />
-  <id>http://jpallares.github.io/sample-post</id>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/sample-post/" />
+  <id>http://juan.pallares.me/sample-post</id>
   <updated>2013-05-31T00:00:00-00:00</updated>
   <published>2011-03-10T00:00:00+01:00</published>
   
   <author>
     <name>Juan Pallarès</name>
-    <uri>http://jpallares.github.io</uri>
+    <uri>http://juan.pallares.me</uri>
     <email>juan@pallares.me</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -704,7 +704,7 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p class=&quot;image-pull-right&quot;&gt;&lt;img src=&quot;http://jpallares.github.io/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;image-pull-right&quot;&gt;&lt;img src=&quot;http://juan.pallares.me/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
@@ -806,7 +806,7 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; You can also add notices by appending &lt;code&gt;{: .notice}&lt;/code&gt; to a paragraph.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://jpallares.github.io/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://jpallares.github.io&quot;&gt;Juan Pallarès&lt;/a&gt; on March 10, 2011.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès&lt;/a&gt; on March 10, 2011.&lt;/p&gt;</content>
 </entry>
 
 </feed>
