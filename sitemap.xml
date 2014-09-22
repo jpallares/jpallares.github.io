@@ -125,28 +125,28 @@
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2014-09-22T18:16:00+02:00</lastmod>
+    <lastmod>2014-09-22T19:07:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/theme-setup/</loc>
-    <lastmod>2014-09-22T18:16:00+02:00</lastmod>
+    <lastmod>2014-09-22T19:07:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2014-09-22T18:16:00+02:00</lastmod>
+    <lastmod>2014-09-22T19:07:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://juan.pallares.me/about/</loc>
-    <lastmod>2014-09-22T18:16:00+02:00</lastmod>
+    <loc>http://juan.pallares.me/CV/</loc>
+    <lastmod>2014-09-22T19:07:24+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
