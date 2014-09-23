@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Mostrar columnas como una fila separada por comas en Crystal Reports &#8211; Juan Pallarès</title>
+<title>Mostrar columnas como una fila separada por comas en Crystal Reports &#8211; Juan Pallarès - .NET Software Engineer</title>
 <meta name="description" content="
 Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances y demás información. Uno de los últimos requerimientos era mostrar la información en una sola línea separada por comas en lugar de una columna. Antes:CONCEPTO &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PRECIOconcepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3% &nbsp; &nbsp; &nbsp; &nbsp;24€concepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5% &nbsp; &nbsp; &nbsp; &nbsp;10€concepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2% &nbsp; &nbsp; &nbsp; &nbsp;40€concepto2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4% &nbsp; &nbsp; &nbsp; &nbsp;15€concepto2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5% &nbsp; &nbsp; &nbsp; &nbsp;10€Después:CONCEPTO&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PRECIOconcepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3% 24€, 5% 10€, 2% 40€concepto2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4% 15€, 5% 10€Para poder realizar esto hay dos puntos claves, la instrucción "WhilePrintingRecords" y una variable global, una variable que pueda ser accedida desde fórmulas diferentes.Pasamos a comentar paso por paso. Lo primero es crear una fórmula en el Detalle, el cual suprimiremos (ocultaremos). Fijaos que esta en sintaxis VisualBasicWhilePrintingRecordsglobal precioList as stringif len(precioList&nbsp;) = 0 then&nbsp; &nbsp; &nbsp;precioList&nbsp;= {db.porcentajeVariable} + " &nbsp;"&nbsp;+&nbsp;{db.precioVariable}else&nbsp; &nbsp; &nbsp;precioList&nbsp;=&nbsp;precioList&nbsp;+ ", " + {db.porcentajeVariable}&nbsp;+ " &nbsp;"&nbsp;+&nbsp;{db.nombreVariable}end ifformula = ""El segundo paso es crear otra formula en el pie de grupo donde mostraremos el acumulado y lo reiniciaremos:WhilePrintingRecordsglobal nameList as stringformula = nameListnameList = ""Espero que os sirva!Fuente Foro SAP Community Network
 
@@ -38,14 +38,14 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
 
 ">
 <meta property="og:url" content="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/">
-<meta property="og:site_name" content="Juan Pallarès">
+<meta property="og:site_name" content="Juan Pallarès - .NET Software Engineer">
 
 
 
 
 
 <link rel="canonical" href="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/">
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Feed">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès - .NET Software Engineer Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
 <!-- http://t.co/dKP3o1e -->
@@ -91,7 +91,7 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://juan.pallares.me">Juan Pallarès</a>
+		<a href="http://juan.pallares.me">Juan Pallarès - .NET Software Engineer</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
@@ -120,9 +120,9 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
 
-<h3>Juan Pallarès</h3>
+<h3>Juan Pallarès Garbí</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -156,9 +156,9 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
 
-<h3>Juan Pallarès</h3>
+<h3>Juan Pallarès Garbí</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -178,6 +178,8 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
         <p class="byline"><strong>Mostrar columnas como una fila separada por comas en Crystal Reports</strong> was published on <time datetime="2014-03-06T19:30:00+01:00">March 06, 2014</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
   
   </article>
 </div><!-- /#main -->
@@ -209,7 +211,7 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
   </script>
 </div><!-- /.google-ads -->
 
-<span>&copy; 2014 Juan Pallarès. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2014 Juan Pallarès Garbí. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->
@@ -233,6 +235,30 @@ Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jpallares'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 	        
 

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Media Center automatizado (I) Descarga automática de series / películas y clasificación &#8211; Juan Pallarès</title>
+<title>Media Center automatizado (I) Descarga automática de series / películas y clasificación &#8211; Juan Pallarès - .NET Software Engineer</title>
 <meta name="description" content="
 Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando quiero y sin publicidad. También me he aficionado a ver las películas en versión original.Desde tiempo atrás quería automatizar el proceso de búsqueda y descarga, por comodidad y también porque a veces no me entero que ha empezado una temporada nueva. Importante decir que las veo en versión original, por lo que hay mucha mas gente compartiendo y son más fáciles de encontrar y descargar.Tengo un ordenador de sobremesa bastante olvidado, mi antiguo pc gamer, y decidí que ese sería mi nuevo media center.En este primer paso del tutorial vamos a ver como descargar automaticamente de forma desatendida.Vamos con los ingredientes:- uTorrent - Mi cliente torrent preferido, puedes usar otro si quiere pero debe soportar RSS- showRSS - Este servicio generará un RSS con las series que le indiques. No tiene mucho misterio, te registras, escoges tus series y copiar el RSS y lo añades a utorrent. Sección feeds botón derecho, añadir- fileBot - Renombrador y organizador de series/pelis. En este caso instalar sin más.- script de FileBot para uTorrent - Aquí viene lo mejor. Este script se ejecutará cuando tus torrents (que se han bajado automáticamente) acaben de bajarse:Descomprimir fichero si viene en zip/rarDistingue entre películas y series y las gestiona por separadoDescarga los&nbsp;subtítulos&nbsp;que correspondan en el idioma que indiquesLos clasifica siguiendo este esquema:Peliculas&nbsp;{output}/Movies/Name (Year)/Name (Year) [CD123].extSeries&nbsp;{output}/TV Shows/Name/Season N/Name - S00E00 - Title.extMusica&nbsp;{output}/Music/Artist/Album/Artist - Title.extDescarga carátulas y más mediaNotifica XBMC or Plex (más sobre esto en próximos posts)Envía report por emailTenéis información sobre más posibilidades en el foro enlazado arriba, pero con esto tendremos más que suficiente. Para configurarlo, en "uTorrent -&gt; Preferences -&gt; Run program -&gt; Run program when torrent finishes" pegamos:filebot -script fn:amc --output "X:/path/to/media" --log-file amc.log --action copy --conflict override -non-strict --def music=y subtitles=en artwork=y "ut_dir=%D" "ut_file=%F" "ut_kind=%K" "ut_title=%N" "ut_label=%L" "ut_state=%S"Cambiamos el output a la carpeta que nos interese, podemos añadir subtítulos en castellano con subtitles=en,es y FIN!Ejecución manual del scriptTengo que confesar que por algún motivo, este script no se ejecuta siempre, algo en utorrent no tengo configurado correctamente y provoca que acabe la descarga pero no ejecute el script. En estos casos ejecuto el script de forma manual con un fichero .bat especificando la carpeta de origen:filebot -script fn:amc "/path/to/input/" --output "X:/path/to/output" --action copy -non-strictImportante decir que hay que ejecutarlo como AdministradorAhora ya tenemos los vídeos, falta reproducirlos de forma cómoda. En la próxima comentaré la comparativa que hice de XBMC y Plex, por cual me decidí y como integrarlo con el sistema de descarga automática que hemos montado hoy
 
@@ -38,14 +38,14 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
 
 ">
 <meta property="og:url" content="http://juan.pallares.me/media-center-automatizado-i-descarga/">
-<meta property="og:site_name" content="Juan Pallarès">
+<meta property="og:site_name" content="Juan Pallarès - .NET Software Engineer">
 
 
 
 
 
 <link rel="canonical" href="http://juan.pallares.me/media-center-automatizado-i-descarga/">
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Feed">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès - .NET Software Engineer Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
 <!-- http://t.co/dKP3o1e -->
@@ -91,7 +91,7 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://juan.pallares.me">Juan Pallarès</a>
+		<a href="http://juan.pallares.me">Juan Pallarès - .NET Software Engineer</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
@@ -120,9 +120,9 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
 
-<h3>Juan Pallarès</h3>
+<h3>Juan Pallarès Garbí</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -156,9 +156,9 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
 
-<h3>Juan Pallarès</h3>
+<h3>Juan Pallarès Garbí</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -178,6 +178,8 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
         <p class="byline"><strong>Media Center automatizado (I) Descarga automática de series / películas y clasificación</strong> was published on <time datetime="2013-06-30T10:04:00+02:00">June 30, 2013</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
   
   </article>
 </div><!-- /#main -->
@@ -209,7 +211,7 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
   </script>
 </div><!-- /.google-ads -->
 
-<span>&copy; 2014 Juan Pallarès. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2014 Juan Pallarès Garbí. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->
@@ -233,6 +235,30 @@ Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando qu
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jpallares'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 	        
 

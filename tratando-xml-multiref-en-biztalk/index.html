@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Tratando XML multiref en Biztalk &#8211; Juan Pallarès</title>
+<title>Tratando XML multiref en Biztalk &#8211; Juan Pallarès - .NET Software Engineer</title>
 <meta name="description" content="
 Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XML en un formato no aceptado por Biztalk. Tenía etiquetas multiref y esto no le gustaba.&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt; &lt;soapenv:Body&gt;  &lt;ns1:sendSmsSubmissionResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://mobicomp.com/smsexpress/webservice/server/message"&gt;   &lt;sendSmsSubmissionReturn href="#id0" /&gt;  &lt;/ns1:sendSmsSubmissionResponse&gt;  &lt;multiRef id="id0" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns2:SubmissionStatus" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://mobicomp.com/smsexpress/webservice/server/message"&gt;   &lt;id xsi:type="soapenc:string"&gt;4336723&lt;/id&gt;   &lt;message xsi:type="soapenc:string"&gt;Submisso enviada para processamento.&lt;/message&gt;   &lt;status href="#id1" /&gt;  &lt;/multiRef&gt;  &lt;multiRef id="id1" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="xsd:int" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"&gt;0&lt;/multiRef&gt; &lt;/soapenv:Body&gt;&nbsp;&lt;/soapenv:Envelope&gt;Para poder tratarlo en Biztalk, tuve que desarollar un pequeño código XSL (stylesheet) que después introduje en la Pipeline de entrada custom para decodificarlo.&lt;xsl:stylesheet version="1.0"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:ns2="http://mobicomp.com/smsexpress/webservice/server/message"&gt; &lt;xsl:key name="multiref-by-id" match="multiRef" use="@id"/&gt;  &lt;xsl:template match="/"&gt;  &lt;xsl:copy&gt;   &lt;xsl:apply-templates select="@* |*"/&gt;  &lt;/xsl:copy&gt; &lt;/xsl:template&gt; &lt;xsl:template match="*[starts-with(@href, '#')]"&gt;&nbsp; &nbsp; &lt;xsl:copy&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;xsl:apply-templates select="@* |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;key('multiref-by-id', substring-after(@href, '#'))/@*[not(local-name()='id' or local-name()='type')] |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; key('multiref-by-id', substring-after(@href, '#'))/node()"/&gt;  &lt;/xsl:copy&gt; &lt;/xsl:template&gt; &lt;xsl:template match="@href[starts-with(., '#')] | multiRef[@id] | @soapenc:root"/&gt; &lt;xsl:template match="@*|node()"&gt;  &lt;xsl:copy&gt;   &lt;xsl:apply-templates select="@*|node()"/&gt;  &lt;/xsl:copy&gt; &lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;Una vez hecho esto, todo funcionó como la seda. Para el .xsl me inspiré en esta respuesta de StackOverflow
 
@@ -38,14 +38,14 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
 
 ">
 <meta property="og:url" content="http://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
-<meta property="og:site_name" content="Juan Pallarès">
+<meta property="og:site_name" content="Juan Pallarès - .NET Software Engineer">
 
 
 
 
 
 <link rel="canonical" href="http://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Feed">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès - .NET Software Engineer Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
 <!-- http://t.co/dKP3o1e -->
@@ -91,7 +91,7 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://juan.pallares.me">Juan Pallarès</a>
+		<a href="http://juan.pallares.me">Juan Pallarès - .NET Software Engineer</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
@@ -120,9 +120,9 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
 
-<h3>Juan Pallarès</h3>
+<h3>Juan Pallarès Garbí</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -156,9 +156,9 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
 
-<h3>Juan Pallarès</h3>
+<h3>Juan Pallarès Garbí</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -178,6 +178,8 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
         <p class="byline"><strong>Tratando XML multiref en Biztalk</strong> was published on <time datetime="2013-02-14T09:13:00+01:00">February 14, 2013</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
   
   </article>
 </div><!-- /#main -->
@@ -209,7 +211,7 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
   </script>
 </div><!-- /.google-ads -->
 
-<span>&copy; 2014 Juan Pallarès. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2014 Juan Pallarès Garbí. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->
@@ -233,6 +235,30 @@ Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XM
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jpallares'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 	        
 
