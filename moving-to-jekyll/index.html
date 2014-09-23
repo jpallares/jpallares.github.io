@@ -134,8 +134,7 @@
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>After some time using a very simple google site as landing page and a blogger blog I decided to move everything 
-to <a href="https://pages.github.com">Github pages</a> + <a href="https://help.github.com/articles/using-jekyll-with-pages">Jekyll</a>.</p>
+      <p>After some time using a very simple google site as landing page and a blogger blog I decided to move everything to <a href="https://pages.github.com">Github pages</a> + <a href="https://help.github.com/articles/using-jekyll-with-pages">Jekyll</a>.</p>
 
 <p>In my humble opinion under this platform everything looks way more professional. 
 To achieve this look a I used <a href="http://mademistakes.com/articles/minimal-mistakes-jekyll-theme/">Minimal Mistakes Jekyll theme</a>.
@@ -149,10 +148,19 @@ It comes with very cool fetures such as:</p>
   <li>Google analytics</li>
 </ul>
 
+<p>In order to import all my previous posts from blogger I just used the blogger2jekyll tool, following the steps <a href="http://blog.slaks.net/2013-05-31/migrating-from-blogger-to-jekyll">here</a></p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">npm</span> <span class="nt">install</span> <span class="nt">-g</span> <span class="nt">blogger2jekyll</span>
+<span class="nt">blogger2jekyll</span>  <span class="o">/</span><span class="nt">path</span><span class="o">/</span><span class="nt">to</span><span class="o">/</span><span class="nt">blog-dd-mm-yyyy</span><span class="nc">.xml</span> <span class="o">./</span><span class="nt">_posts</span></code></pre></div>
+
+<p>I had some issues because by default it disabled the comments on the posts, or considered the tags as categories but I didn’t have so much posts so I just changed them after manually.</p>
+
 <blockquote>
   <p>An important thing for me is that githubpages is for free, also if you use our own domain because I’m not posting everyday and I don’t plan to monetize the site,
  I just want a cool landing page and blog.</p>
 </blockquote>
+
+<p>I still need to get used to markdown language, and to “commit” my new posts but hope I can write more often in this platform.</p>
 
 
       <hr />
