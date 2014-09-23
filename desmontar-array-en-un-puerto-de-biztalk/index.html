@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Desmontar array en un puerto de Biztalk &#8211; Juan Pallarès - .NET Software Engineer</title>
+<title>Desmontar array en un puerto de Biztalk &#8211; Juan Pallarès Garbí</title>
 <meta name="description" content="
 Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de formas de mejorarla.&nbsp;Aquí&nbsp;explicaré como me "ahorro" toda una orquestación configurando un puerto y un schema de una manera determinadaANTES:Había que pedir un array de mensajes a un servicio y luego desmontarlo,&nbsp;mi solución fue un clásico bucleDESPUÉS:Gracias a este artículo, vi como conseguir que entraran los mensajes uno por uno. Básicamente los pasos necesarios son:- Crear un ReceivePort del tipo Scheduler que vaya generando llamadas- Crear un SendPort TwoWay que ataque al servicio, con un filtro para que le vayan entrando las llamas creadas por el Scheduler- Recibir los mensajes de respuesta directamente en la orquestación con un Direct Port y un Receive Message con filtro- Editar los esquemas del paquete en cuestión, de la siguiente forma:El nodo Schema le activamos el modo EnvelopeEditamos el XPATH del nodo raiz y le hacemos apuntar al nodo superior al nodo leafFinalmente, el nodo leaf le cambiamos el MaxOccurrence a 1Saludos!
 
@@ -38,14 +38,14 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 ">
 <meta property="og:url" content="http://juan.pallares.me/desmontar-array-en-un-puerto-de-biztalk/">
-<meta property="og:site_name" content="Juan Pallarès - .NET Software Engineer">
+<meta property="og:site_name" content="Juan Pallarès Garbí">
 
 
 
 
 
 <link rel="canonical" href="http://juan.pallares.me/desmontar-array-en-un-puerto-de-biztalk/">
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès - .NET Software Engineer Feed">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
 <!-- http://t.co/dKP3o1e -->
@@ -91,7 +91,7 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://juan.pallares.me">Juan Pallarès - .NET Software Engineer</a>
+		<a href="http://juan.pallares.me">Juan Pallarès Garbí</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
@@ -120,9 +120,9 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
 
-<h3>Juan Pallarès Garbí</h3>
+<h3>Juan Pallarès</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -156,9 +156,9 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
 
-<h3>Juan Pallarès Garbí</h3>
+<h3>Juan Pallarès</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -189,11 +189,11 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
   <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
     <ul>
     
+      <li><a href="http://juan.pallares.me/moving-to-jekyll/" title="Moving to Jekyll">Moving to Jekyll</a></li>
+    
       <li><a href="http://juan.pallares.me/programar-limpio-clean-code-handbook-of/" title="Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin">Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin</a></li>
     
       <li><a href="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/" title="Mostrar columnas como una fila separada por comas en Crystal Reports">Mostrar columnas como una fila separada por comas en Crystal Reports</a></li>
-    
-      <li><a href="http://juan.pallares.me/problemas-con-nuget-conectando-traves/" title="Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)">Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)</a></li>
     
     </ul>
     <hr />
@@ -211,7 +211,7 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
   </script>
 </div><!-- /.google-ads -->
 
-<span>&copy; 2014 Juan Pallarès Garbí. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2014 Juan Pallarès. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->

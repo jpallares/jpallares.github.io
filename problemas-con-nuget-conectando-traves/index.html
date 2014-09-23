@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required) &#8211; Juan Pallarès - .NET Software Engineer</title>
+<title>Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required) &#8211; Juan Pallarès Garbí</title>
 <meta name="description" content="
 Me encontré el otro día con que no podía instalar paquetes desde NuGet en Visual Studio 2010. El error era "Error 407 Proxy Authentication Required". No funcionaba tampoco desde la Package Manager Console. Recordé que recientemente había actualizado la password que usaba para el proxy (bueno, realmente estaba obligado por la política de caducidad).Al parecer NuGet no reconocía esta nueva password, aunque me la solicitara y yo la introdujera internamente no la actualizaba porque seguía saliendo el error.Al final, como no, stackoverflow al rescate. La solución era configurar la password mediante el fichero NuGet.config que podemos encontrar en C:\Users\nombreusuario\AppData\Roaming,&nbsp;al menos en mi máquina con Windows 7.Para poder añadir estos campos al fichero XML la mejor opción es bajarse NuGet.exe desde aquí y ejecutar los siguientes comandos:nuget.exe config -set http_proxy=http://my.proxy.address:portnuget.exe config -set http_proxy.user=mydomain\myUserNamenuget.exe config -set http_proxy.password=mySuperSecretPassword
 
@@ -38,14 +38,14 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 ">
 <meta property="og:url" content="http://juan.pallares.me/problemas-con-nuget-conectando-traves/">
-<meta property="og:site_name" content="Juan Pallarès - .NET Software Engineer">
+<meta property="og:site_name" content="Juan Pallarès Garbí">
 
 
 
 
 
 <link rel="canonical" href="http://juan.pallares.me/problemas-con-nuget-conectando-traves/">
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès - .NET Software Engineer Feed">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
 <!-- http://t.co/dKP3o1e -->
@@ -91,7 +91,7 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://juan.pallares.me">Juan Pallarès - .NET Software Engineer</a>
+		<a href="http://juan.pallares.me">Juan Pallarès Garbí</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
@@ -120,9 +120,9 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
 
-<h3>Juan Pallarès Garbí</h3>
+<h3>Juan Pallarès</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -156,9 +156,9 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 
 
-	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès Garbí bio photo"></a>
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
 
-<h3>Juan Pallarès Garbí</h3>
+<h3>Juan Pallarès</h3>
 <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
 <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
 <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
@@ -189,11 +189,11 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
   <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
     <ul>
     
+      <li><a href="http://juan.pallares.me/moving-to-jekyll/" title="Moving to Jekyll">Moving to Jekyll</a></li>
+    
       <li><a href="http://juan.pallares.me/programar-limpio-clean-code-handbook-of/" title="Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin">Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin</a></li>
     
       <li><a href="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/" title="Mostrar columnas como una fila separada por comas en Crystal Reports">Mostrar columnas como una fila separada por comas en Crystal Reports</a></li>
-    
-      <li><a href="http://juan.pallares.me/windows-81-arreglar-error-we-werent/" title="Windows 8.1 - Arreglar error "We weren't able to connect to the store..."">Windows 8.1 - Arreglar error "We weren't able to connect to the store..."</a></li>
     
     </ul>
     <hr />
@@ -211,7 +211,7 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
   </script>
 </div><!-- /.google-ads -->
 
-<span>&copy; 2014 Juan Pallarès Garbí. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2014 Juan Pallarès. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->
