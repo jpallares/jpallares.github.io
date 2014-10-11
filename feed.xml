@@ -4,13 +4,40 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://juan.pallares.me/feed.xml" />
 <link rel="alternate" type="text/html" href="http://juan.pallares.me" />
-<updated>2014-09-23T22:16:35+02:00</updated>
+<updated>2014-10-11T11:07:36+02:00</updated>
 <id>http://juan.pallares.me/</id>
 <author>
   <name>Juan Pallarès</name>
   <uri>http://juan.pallares.me/</uri>
   <email>juan@pallares.me</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Engineering culture at Spotify]]></title>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/engineering%20culture%20at%20Spotify/" />
+  <id>http://juan.pallares.me/engineering culture at Spotify</id>
+  <updated>2014-10-11T00:00:00-00:00</updated>
+  <published>2014-10-10T00:00:00+02:00</published>
+  
+  <author>
+    <name>Juan Pallarès</name>
+    <uri>http://juan.pallares.me</uri>
+    <email>juan@pallares.me</email>
+  </author>
+  <content type="html">&lt;p&gt;Sometimes people think Agile is only for small companies and impossible for the big ones. 
+Here you have an example how it can be also implemented in a large organization such as &lt;a href=&quot;https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/&quot;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/85490944?byline=0&quot; width=&quot;500&quot; height=&quot;313&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;http://vimeo.com/85490944&quot;&gt;Spotify Engineering Culture - part 1&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/user14023874&quot;&gt;Spotify Training &amp;amp; Development&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/94950270?byline=0&quot; width=&quot;500&quot; height=&quot;313&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;http://vimeo.com/94950270&quot;&gt;Spotify Engineering Culture - part 2&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/user14023874&quot;&gt;Spotify Training &amp;amp; Development&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/engineering%20culture%20at%20Spotify/&quot;&gt;Engineering culture at Spotify&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès Garbí&lt;/a&gt; on October 10, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   

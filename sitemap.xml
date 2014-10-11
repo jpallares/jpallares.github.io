@@ -3,123 +3,162 @@
   
   
   <url>
+    <loc>http://juan.pallares.me/engineering%20culture%20at%20Spotify/</loc>
+    
+    <lastmod>2014-10-10T00:00:00+02:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://juan.pallares.me/moving-to-jekyll/</loc>
+    
     <lastmod>2014-09-24T00:00:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/programar-limpio-clean-code-handbook-of/</loc>
+    
     <lastmod>2014-04-21T17:15:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/</loc>
+    
     <lastmod>2014-03-06T19:30:00+01:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/problemas-con-nuget-conectando-traves/</loc>
+    
     <lastmod>2014-02-27T20:00:00+01:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/windows-81-arreglar-error-we-werent/</loc>
+    
     <lastmod>2013-08-25T11:03:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/</loc>
+    
     <lastmod>2013-07-09T16:37:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/media-center-automatizado-i-descarga/</loc>
+    
     <lastmod>2013-06-30T10:04:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/situaciones-en-la-vida-del-programador/</loc>
+    
     <lastmod>2013-04-30T10:58:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/tratando-xml-multiref-en-biztalk/</loc>
+    
     <lastmod>2013-02-14T09:13:00+01:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/formatear-queries-en-sql-management/</loc>
+    
     <lastmod>2013-01-21T10:50:00+01:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/no-funciona-intellisense-en-sql-server/</loc>
+    
     <lastmod>2012-09-27T15:58:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/configurar-windows-authenticacion-en/</loc>
+    
     <lastmod>2012-09-21T16:04:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/escribir-en-teclado-americano-us/</loc>
+    
     <lastmod>2012-05-15T13:53:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/transformar-hyper-v-vhd-vmware-vmxvmdk/</loc>
+    
     <lastmod>2012-04-02T13:13:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/desmontar-array-en-un-puerto-de-biztalk/</loc>
+    
     <lastmod>2012-03-29T09:37:00+02:00</lastmod>
+    
     <priority>0.8</priority>
   </url>
   
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2014-09-23T22:16:35+02:00</lastmod>
+    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/theme-setup/</loc>
-    <lastmod>2014-09-23T22:16:35+02:00</lastmod>
+    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2014-09-23T22:16:35+02:00</lastmod>
+    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/cv/</loc>
-    <lastmod>2014-09-23T22:16:35+02:00</lastmod>
+    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
   
   
 </urlset>
