@@ -3,7 +3,15 @@
   
   
   <url>
-    <loc>http://juan.pallares.me/engineering%20culture%20at%20Spotify/</loc>
+    <loc>http://juan.pallares.me/markdown-syntax/</loc>
+    
+    <lastmod>2014-10-26T00:00:00+02:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://juan.pallares.me/engineering-culture-at-Spotify/</loc>
     
     <lastmod>2014-10-10T00:00:00+02:00</lastmod>
     
@@ -133,28 +141,28 @@
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
+    <lastmod>2014-10-26T12:39:29+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/theme-setup/</loc>
-    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
+    <lastmod>2014-10-26T12:39:29+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
+    <lastmod>2014-10-26T12:39:29+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/cv/</loc>
-    <lastmod>2014-10-11T11:07:36+02:00</lastmod>
+    <lastmod>2014-10-26T12:39:29+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

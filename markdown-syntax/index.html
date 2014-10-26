@@ -1,0 +1,401 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Markdown syntax introduction &#8211; Juan Pallarès Garbí</title>
+<meta name="description" content="What is it?
+
+">
+<meta name="keywords" content="markdown, syntax, blogging, HTML">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Markdown syntax introduction">
+<meta name="twitter:description" content="What is it?
+
+">
+<meta name="twitter:site" content="@juanpallares">
+<meta name="twitter:creator" content="@juanpallares">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://juan.pallares.me/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown syntax introduction">
+<meta property="og:description" content="What is it?
+
+">
+<meta property="og:url" content="http://juan.pallares.me/markdown-syntax/">
+<meta property="og:site_name" content="Juan Pallarès Garbí">
+
+
+
+
+
+<link rel="canonical" href="http://juan.pallares.me/markdown-syntax/">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+<link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://juan.pallares.me/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://juan.pallares.me/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://juan.pallares.me/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://juan.pallares.me/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://juan.pallares.me/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://juan.pallares.me/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://juan.pallares.me/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://juan.pallares.me/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://juan.pallares.me/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://juan.pallares.me/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://juan.pallares.me">Juan Pallarès Garbí</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://juan.pallares.me/posts/" >All Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://juan.pallares.me/cv/" >cv</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+
+<h3>Juan Pallarès</h3>
+<p>.NET Software Engineer, football and technology lover from Barcelona.</p>
+<a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+
+<a href="http://plus.google.com/+JuanPallarèsGarbí" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/juanpallares" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/jpallares" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/500843/juan" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+  </div>
+  <article>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://juan.pallares.me/markdown-syntax/" rel="bookmark" title="Markdown syntax introduction">Markdown syntax introduction</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h3 id="what-is-it">What is it?</h3>
+
+<p>Markdown is a <strong>plain text formatting syntax designed so that it optionally can be converted to HTML using a tool by the same name</strong>. Markdown is popularly used to format readme files, for writing messages in online discussion forums or in text editors for the quick creation of rich text documents.</p>
+
+<p>Thus, “Markdown” is two things: (1) a plain text formatting syntax; and (2) a software tool, written in Perl, that converts the plain text formatting to HTML. 
+The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. While Markdown’s syntax has been influenced by several existing text-to-HTML filters — including Setext, atx, Textile, reStructuredText, Grutatext, and EtText, the single biggest source of inspiration for Markdown’s syntax is the format of plain text email.Markdown’s syntax is intended for one purpose: to be used as a format for writing for the web.</p>
+
+<p class="notice"><strong>Markdown is not a replacement for HTML</strong>, or even close to it. Its syntax is very small, corresponding only to a very small subset of HTML tags. The idea is not to create a syntax that makes it easier to insert HTML tags. The idea for Markdown is to make it easy to read, write, and edit prose. HTML is a publishing format; Markdown is a writing format. Thus, Markdown’s formatting syntax only addresses issues that can be conveyed in plain text.</p>
+
+<h3 id="iniline-html">Iniline HTML</h3>
+
+<p>For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.
+The only restrictions are that block-level HTML elements — e.g.<code> &lt;div&gt;,&lt;table&gt;, &lt;pre&gt;, &lt;p&gt;</code>, etc. — must be separated from surrounding content by blank lines, and the start and end tags of the block should not be indented with tabs or spaces. Markdown is smart enough not to add extra (unwanted) <code>&lt;p&gt;</code> tags around HTML block-level tags.</p>
+
+<h3 id="some-history">Some history</h3>
+
+<p>The Markdown language was created in 2004 by John Gruber with substantial contributions from Aaron Swartz, with the goal of allowing people “to write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)”. Gruber wrote a Perl script, Markdown.pl, which converts marked-up text input to valid, well-formed XHTML or HTML. Markdown has since been re-implemented by others as a Perl module available on CPAN (Text::Markdown), and in a variety of other programming languages. It is distributed under a BSD-style license and is included with, or available as a plugin for, several content-management systems.
+Sites such as GitHub, reddit, Diaspora, Stack Exchange, OpenStreetMap, and SourceForge use variants of Markdown to facilitate discussion between users.</p>
+
+<h3 id="editors">Editors</h3>
+
+<p>While Markdown is a minimal markup language and is easily read and edited with a normal text editor, there are specially designed editors that preview the files with styles. There are a variety of such editors available for all major platforms; one such graphical editor for Windows is <a href="http://markdownpad.com/">MarkdownPad</a>. There are syntax highlighting plugins for Markdown built into emacs, gedit, and vim.
+There are also online potions such us <a href="http://daringfireball.net/projects/markdown/dingus">Dingus</a> and <a href="https://stackedit.io/">StackEdit</a>.</p>
+
+<h3 id="examples">Examples</h3>
+
+<p>The best way to understand markdown is to see it in use, here we can see a left column with the Markdown input and right column with the HTML output:</p>
+
+<h4 id="headers">Headers</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">A</span> <span class="nt">First</span> <span class="nt">Level</span> <span class="nt">Header</span>
+<span class="o">====================</span>
+<span class="nt">A</span> <span class="nt">Second</span> <span class="nt">Level</span> <span class="nt">Header</span>
+<span class="nt">---------------------</span>
+<span class="err">###</span> <span class="nt">Another</span> <span class="nt">deeper</span> <span class="nt">heading</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">h1</span><span class="o">&gt;</span><span class="nt">A</span> <span class="nt">First</span> <span class="nt">Level</span> <span class="nt">Header</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nt">h2</span><span class="o">&gt;</span><span class="nt">A</span> <span class="nt">Second</span> <span class="nt">Level</span> <span class="nt">Header</span><span class="o">&lt;/</span><span class="nt">h2</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nt">h3</span><span class="o">&gt;</span><span class="nt">Another</span> <span class="nt">deeper</span> <span class="nt">heading</span><span class="o">&lt;/</span><span class="nt">h3</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="paragraphs">Paragraphs</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Paragraphs</span> <span class="nt">are</span> <span class="nt">separated</span>
+<span class="nt">by</span> <span class="nt">a</span> <span class="nt">blank</span> <span class="nt">line</span><span class="o">.</span>
+ 
+<span class="nt">Let</span> <span class="nt">2</span> <span class="nt">spaces</span> <span class="nt">at</span> <span class="nt">the</span> <span class="nt">end</span> <span class="nt">of</span> <span class="nt">a</span> <span class="nt">line</span> <span class="nt">to</span> <span class="nt">do</span> <span class="nt">a</span>  <span class="nt">line</span> <span class="nt">break</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Paragraphs</span> <span class="nt">are</span> <span class="nt">separated</span>
+<span class="nt">by</span> <span class="nt">a</span> <span class="nt">blank</span> <span class="nt">line</span><span class="o">.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+ 
+<span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Let</span> <span class="nt">2</span> <span class="nt">spaces</span> <span class="nt">at</span> <span class="nt">the</span> <span class="nt">end</span> <span class="nt">of</span> <span class="nt">a</span> <span class="nt">line</span> <span class="nt">to</span> <span class="nt">do</span> <span class="nt">a</span><span class="o">&lt;</span><span class="nt">br</span> <span class="o">/&gt;</span>
+<span class="nt">line</span> <span class="nt">break</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="blockquote">Blockquote</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&gt;</span> <span class="nt">This</span> <span class="nt">is</span> <span class="nt">a</span> <span class="nt">blockquote</span><span class="o">.</span>
+<span class="o">&gt;</span> 
+<span class="o">&gt;</span> <span class="nt">This</span> <span class="nt">is</span> <span class="nt">the</span> <span class="nt">second</span> <span class="nt">paragraph</span> <span class="nt">in</span> <span class="nt">the</span> <span class="nt">blockquote</span><span class="o">.</span>
+<span class="o">&gt;</span>
+<span class="o">&gt;</span> <span class="err">##</span> <span class="nt">This</span> <span class="nt">is</span> <span class="nt">an</span> <span class="nt">H2</span> <span class="nt">in</span> <span class="nt">a</span> <span class="nt">blockquote</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">blockquote</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">This</span> <span class="nt">is</span> <span class="nt">a</span> <span class="nt">blockquote</span><span class="o">.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">This</span> <span class="nt">is</span> <span class="nt">the</span> <span class="nt">second</span> <span class="nt">paragraph</span> <span class="nt">in</span> <span class="nt">the</span> <span class="nt">blockquote</span><span class="o">.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;</span><span class="nt">h2</span><span class="o">&gt;</span><span class="nt">This</span> <span class="nt">is</span> <span class="nt">an</span> <span class="nt">H2</span> <span class="nt">in</span> <span class="nt">a</span> <span class="nt">blockquote</span><span class="o">&lt;/</span><span class="nt">h2</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">blockquote</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="emphasize">Emphasize</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Some</span> <span class="nt">of</span> <span class="nt">these</span> <span class="nt">words</span> <span class="o">*</span><span class="nt">are</span> <span class="nt">emphasized</span><span class="o">*.</span>
+<span class="nt">Some</span> <span class="nt">of</span> <span class="nt">these</span> <span class="nt">words</span> <span class="nt">_are</span> <span class="nt">emphasized</span> <span class="nt">also_</span><span class="o">.</span>
+
+<span class="nt">Use</span> <span class="nt">two</span> <span class="nt">asterisks</span> <span class="nt">for</span> <span class="o">**</span><span class="nt">strong</span> <span class="nt">emphasis</span><span class="o">**.</span>
+<span class="nt">Or</span><span class="o">,</span> <span class="nt">if</span> <span class="nt">you</span> <span class="nt">prefer</span><span class="o">,</span> <span class="nt">__use</span> <span class="nt">two</span> <span class="nt">underscores</span> <span class="nt">instead__</span><span class="o">.</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Some</span> <span class="nt">of</span> <span class="nt">these</span> <span class="nt">words</span> <span class="o">&lt;</span><span class="nt">em</span><span class="o">&gt;</span><span class="nt">are</span> <span class="nt">emphasized</span><span class="o">&lt;/</span><span class="nt">em</span><span class="o">&gt;.</span>
+<span class="nt">Some</span> <span class="nt">of</span> <span class="nt">these</span> <span class="nt">words</span> <span class="o">&lt;</span><span class="nt">em</span><span class="o">&gt;</span><span class="nt">are</span> <span class="nt">emphasized</span> <span class="nt">also</span><span class="o">&lt;/</span><span class="nt">em</span><span class="o">&gt;.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Use</span> <span class="nt">two</span> <span class="nt">asterisks</span> <span class="nt">for</span> <span class="o">&lt;</span><span class="nt">strong</span><span class="o">&gt;</span><span class="nt">strong</span> <span class="nt">emphasis</span><span class="o">&lt;/</span><span class="nt">strong</span><span class="o">&gt;.</span>
+<span class="nt">Or</span><span class="o">,</span> <span class="nt">if</span> <span class="nt">you</span> <span class="nt">prefer</span><span class="o">,</span> <span class="o">&lt;</span><span class="nt">strong</span><span class="o">&gt;</span><span class="nt">use</span> <span class="nt">two</span> <span class="nt">underscores</span> <span class="nt">instead</span><span class="o">&lt;/</span><span class="nt">strong</span><span class="o">&gt;.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="links">Links</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">A</span> <span class="o">[</span><span class="nt">link</span><span class="o">](</span><span class="nt">http</span><span class="o">://</span><span class="nt">example</span><span class="nc">.com</span><span class="o">).</span>
+<span class="nt">This</span> <span class="nt">is</span> <span class="nt">an</span> <span class="o">[</span><span class="nt">example</span> <span class="nt">link</span><span class="o">](</span><span class="nt">http</span><span class="o">://</span><span class="nt">example</span><span class="nc">.com</span><span class="o">/</span> <span class="s2">&quot;With a Title&quot;</span><span class="o">).</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">A</span> <span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;http://example.com&quot;</span><span class="o">&gt;</span><span class="nt">link</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">This</span> <span class="nt">is</span> <span class="nt">an</span> <span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;http://example.com/&quot;</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&quot;With a Title&quot;</span><span class="o">&gt;</span> <span class="nt">example</span> <span class="nt">link</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="lists">Lists</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">*</span>   <span class="nt">Candy</span><span class="o">.</span>
+<span class="o">*</span>   <span class="nt">Gum</span><span class="o">.</span>
+<span class="o">*</span>   <span class="nt">Booze</span><span class="o">.</span>
+<span class="o">(</span><span class="nt">Unordered</span> <span class="o">(</span><span class="nt">bulleted</span><span class="o">)</span> <span class="nt">lists</span> <span class="nt">use</span> <span class="nt">asterisks</span><span class="o">,</span> <span class="nt">pluses</span><span class="o">,</span> <span class="nt">and</span> <span class="nt">hyphens</span> <span class="o">(*,</span> <span class="o">+,</span> <span class="nt">and</span> <span class="nt">-</span><span class="o">)</span> <span class="nt">as</span> <span class="nt">list</span> <span class="nt">markers</span><span class="o">)</span>
+<span class="nt">1</span><span class="o">.</span>  <span class="nt">Red</span>
+<span class="nt">2</span><span class="o">.</span>  <span class="nt">Green</span>
+<span class="nt">3</span><span class="o">.</span>  <span class="nt">Blue</span>
+
+<span class="nt">And</span> <span class="nt">if</span> <span class="nt">you</span> <span class="nt">have</span> <span class="nt">sub</span> <span class="nt">points</span><span class="o">,</span> <span class="nt">put</span> <span class="nt">two</span> <span class="nt">spaces</span> <span class="nt">before</span> <span class="nt">the</span> <span class="nt">dash</span> <span class="nt">or</span> <span class="nt">star</span><span class="o">:</span>
+<span class="nt">Like</span> <span class="nt">this</span>
+<span class="nt">And</span> <span class="nt">this</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">ul</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Candy</span><span class="o">.&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Gum</span><span class="o">.&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Booze</span><span class="o">.&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">ul</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">ol</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Red</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Green</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Blue</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">ol</span><span class="o">&gt;</span>  
+<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">And</span> <span class="nt">if</span> <span class="nt">you</span> <span class="nt">have</span> <span class="nt">sub</span> <span class="nt">points</span><span class="o">,</span> <span class="nt">put</span> <span class="nt">two</span> <span class="nt">spaces</span> <span class="nt">before</span> <span class="nt">the</span> <span class="nt">dash</span> <span class="nt">or</span> <span class="nt">star</span><span class="o">:</span>
+	<span class="o">&lt;</span><span class="nt">ul</span><span class="o">&gt;</span>
+		<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Like</span> <span class="nt">this</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+		<span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">And</span> <span class="nt">this</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+	<span class="o">&lt;/</span><span class="nt">ul</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="reference">Reference</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">I</span> <span class="nt">get</span> <span class="nt">10</span> <span class="nt">times</span> <span class="nt">more</span> <span class="nt">traffic</span> <span class="nt">from</span> <span class="o">[</span><span class="nt">Google</span><span class="o">][</span><span class="nt">1</span><span class="o">]</span> <span class="nt">than</span> <span class="nt">from</span>
+<span class="o">[</span><span class="nt">Yahoo</span><span class="o">][</span><span class="nt">2</span><span class="o">]</span> <span class="nt">or</span> <span class="o">[</span><span class="nt">MSN</span><span class="o">][</span><span class="nt">3</span><span class="o">].</span>
+
+<span class="o">[</span><span class="nt">1</span><span class="o">]:</span> <span class="nt">http</span><span class="o">://</span><span class="nt">google</span><span class="nc">.com</span><span class="o">/</span>        <span class="s2">&quot;Google&quot;</span>
+<span class="o">[</span><span class="nt">2</span><span class="o">]:</span> <span class="nt">http</span><span class="o">://</span><span class="nt">search</span><span class="nc">.yahoo.com</span><span class="o">/</span>  <span class="s2">&quot;Yahoo Search&quot;</span>
+<span class="o">[</span><span class="nt">3</span><span class="o">]:</span> <span class="nt">http</span><span class="o">://</span><span class="nt">search</span><span class="nc">.msn.com</span><span class="o">/</span>    <span class="s2">&quot;MSN Search&quot;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">I</span> <span class="nt">get</span> <span class="nt">10</span> <span class="nt">times</span> <span class="nt">more</span> <span class="nt">traffic</span> <span class="nt">from</span> <span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;http://google.com/&quot;</span>
+<span class="nt">title</span><span class="o">=</span><span class="s2">&quot;Google&quot;</span><span class="o">&gt;</span><span class="nt">Google</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span> <span class="nt">than</span> <span class="nt">from</span> <span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;http://search.yahoo.com/&quot;</span>
+<span class="nt">title</span><span class="o">=</span><span class="s2">&quot;Yahoo Search&quot;</span><span class="o">&gt;</span><span class="nt">Yahoo</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span> <span class="nt">or</span> <span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;http://search.msn.com/&quot;</span>
+<span class="nt">title</span><span class="o">=</span><span class="s2">&quot;MSN Search&quot;</span><span class="o">&gt;</span><span class="nt">MSN</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span></code></pre></div>
+
+<h4 id="image">Image</h4>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">![</span><span class="nt">alt</span> <span class="nt">text</span><span class="o">](/</span><span class="nt">path</span><span class="o">/</span><span class="nt">to</span><span class="o">/</span><span class="nt">img</span><span class="nc">.jpg</span> <span class="s2">&quot;Title&quot;</span><span class="o">)</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;/path/to/img.jpg&quot;</span> <span class="nt">alt</span><span class="o">=</span><span class="s2">&quot;alt text&quot;</span> <span class="nt">title</span><span class="o">=</span><span class="s2">&quot;Title&quot;</span> <span class="o">/&gt;</span></code></pre></div>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo"></a>
+
+<h3>Juan Pallarès</h3>
+<p>.NET Software Engineer, football and technology lover from Barcelona.</p>
+<a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+
+<a href="http://plus.google.com/+JuanPallarèsGarbí" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/juanpallares" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/jpallares" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/500843/juan" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Markdown syntax introduction</strong> was published on <time datetime="2014-10-26T00:00:00+02:00">October 26, 2014</time> and last modified on <time datetime="2014-26-10">2014-26-10</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://juan.pallares.me/engineering-culture-at-Spotify/" title="Engineering culture at Spotify">Engineering culture at Spotify</a></li>
+    
+      <li><a href="http://juan.pallares.me/moving-to-jekyll/" title="Moving to Jekyll">Moving to Jekyll</a></li>
+    
+      <li><a href="http://juan.pallares.me/programar-limpio-clean-code-handbook-of/" title="Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin">Programar limpio. Clean Code: A Handbook of Agile Software Craftsmanship. Robert C. Martin</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    <div class="google-ads">
+  <!-- 320 x 50 ad -->
+  <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:320px;height:50px"
+       data-ad-client=""
+       data-ad-slot=""></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div><!-- /.google-ads -->
+
+<span>&copy; 2014 Juan Pallarès. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://juan.pallares.me/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://juan.pallares.me/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-54458401-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jpallares'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
+
+</body>
+</html>
