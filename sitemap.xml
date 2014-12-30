@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://juan.pallares.me/jekyll-windows/</loc>
+    
+    <lastmod>2014-12-30T00:00:00+01:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://juan.pallares.me/resharper-favourite-hotkeys/</loc>
     
     <lastmod>2014-11-16T00:00:00+01:00</lastmod>
@@ -149,28 +157,28 @@
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2014-11-16T15:00:21+01:00</lastmod>
+    <lastmod>2014-12-30T11:57:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/theme-setup/</loc>
-    <lastmod>2014-11-16T15:00:21+01:00</lastmod>
+    <lastmod>2014-12-30T11:57:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2014-11-16T15:00:21+01:00</lastmod>
+    <lastmod>2014-12-30T11:57:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/cv/</loc>
-    <lastmod>2014-11-16T15:00:21+01:00</lastmod>
+    <lastmod>2014-12-30T11:57:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

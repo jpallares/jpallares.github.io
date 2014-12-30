@@ -4,13 +4,51 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://juan.pallares.me/feed.xml" />
 <link rel="alternate" type="text/html" href="http://juan.pallares.me" />
-<updated>2014-11-16T15:00:21+01:00</updated>
+<updated>2014-12-30T11:57:38+01:00</updated>
 <id>http://juan.pallares.me/</id>
 <author>
   <name>Juan Pallarès</name>
   <uri>http://juan.pallares.me/</uri>
   <email>juan@pallares.me</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Using Jekyll on Windows]]></title>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/jekyll-windows/" />
+  <id>http://juan.pallares.me/jekyll-windows</id>
+  <updated>2014-12-30T00:00:00-00:00</updated>
+  <published>2014-12-30T00:00:00+01:00</published>
+  
+  <author>
+    <name>Juan Pallarès</name>
+    <uri>http://juan.pallares.me</uri>
+    <email>juan@pallares.me</email>
+  </author>
+  <content type="html">&lt;p&gt;I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.&lt;/p&gt;
+
+&lt;p&gt;Following the steps on 
+&lt;a href=&quot;http://jekyll-windows.juthilo.com/&quot;&gt;Run Jekyll on Windows&lt;/a&gt; I didn’t find any issues. 
+The steps are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install Ruby&lt;/li&gt;
+  &lt;li&gt;Instal Ruby DevKit&lt;/li&gt;
+  &lt;li&gt;Install Jekyll gem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you are using the same theme as me (Minimal Mistakes), there are &lt;a href=&quot;https://mademistakes.com/articles/minimal-mistakes-jekyll-theme/#installation&quot;&gt;some specific commands&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Don’t forget to install &lt;a href=&quot;https://www.python.org/downloads/release/python-278/&quot;&gt;Python 2.7.8&lt;/a&gt; if you still don¡t have it and remember to add “python” to the system path , the installer can make it for you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Enjoy windows lovers!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/jekyll-windows/&quot;&gt;Using Jekyll on Windows&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès Garbí&lt;/a&gt; on December 30, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   
