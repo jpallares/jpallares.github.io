@@ -5,17 +5,17 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Using Jekyll on Windows &#8211; Juan Pallarès Garbí</title>
-<meta name="description" content="I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.
+<title>C# in depth by Jon Skeet &#8211; Juan Pallarès Garbí</title>
+<meta name="description" content="I just finished reading C# in depth by Jon Skeet, the book covers the evolution from the first version of C# until C# 5 (at least the edition I read). Explaining in detail all the new features that have been added during time.
 
 ">
-<meta name="keywords" content="blog, jekyll, windows, ruby, python">
+<meta name="keywords" content="c#, job skeet, book">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Using Jekyll on Windows">
-<meta name="twitter:description" content="I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.
+<meta name="twitter:title" content="C# in depth by Jon Skeet">
+<meta name="twitter:description" content="I just finished reading C# in depth by Jon Skeet, the book covers the evolution from the first version of C# until C# 5 (at least the edition I read). Explaining in detail all the new features that have been added during time.
 
 ">
 <meta name="twitter:site" content="@juanpallares">
@@ -27,18 +27,18 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Using Jekyll on Windows">
-<meta property="og:description" content="I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.
+<meta property="og:title" content="C# in depth by Jon Skeet">
+<meta property="og:description" content="I just finished reading C# in depth by Jon Skeet, the book covers the evolution from the first version of C# until C# 5 (at least the edition I read). Explaining in detail all the new features that have been added during time.
 
 ">
-<meta property="og:url" content="http://juan.pallares.me/jekyll-windows/">
+<meta property="og:url" content="http://juan.pallares.me/C%23-in-depth-jon-skeet/">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
 
 
 
 
 
-<link rel="canonical" href="http://juan.pallares.me/jekyll-windows/">
+<link rel="canonical" href="http://juan.pallares.me/C%23-in-depth-jon-skeet/">
 <link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
@@ -136,29 +136,46 @@
   <article>
     <div class="headline-wrap">
       
-        <h1><a href="http://juan.pallares.me/jekyll-windows/" rel="bookmark" title="Using Jekyll on Windows">Using Jekyll on Windows</a></h1>
+        <h1><a href="http://juan.pallares.me/C%23-in-depth-jon-skeet/" rel="bookmark" title="C# in depth by Jon Skeet">C# in depth by Jon Skeet</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.</p>
+      <p>I just finished reading <a href="http://www.amazon.com/Depth-3rd-Edition-Jon-Skeet/dp/161729134X">C# in depth by Jon Skeet</a>, the book covers the evolution from the first version of C# until C# 5 (at least the edition I read). Explaining in detail all the new features that have been added during time.</p>
 
-<p>Following the steps on 
-<a href="http://jekyll-windows.juthilo.com/">Run Jekyll on Windows</a> I didn’t find any issues. 
-The steps are:</p>
+<p>The book is divided in 5 parts:</p>
 
 <ol>
-  <li>Install Ruby</li>
-  <li>Instal Ruby DevKit</li>
-  <li>Install Jekyll gem</li>
+  <li>
+    <p><strong>C# 1 core foundations</strong> This is an introduction to the book - experienced developers could skip it completely if they really wanted to</p>
+  </li>
+  <li><strong>C# 2 new features</strong>
+    <ul>
+      <li>Generics</li>
+      <li>Nullable types</li>
+      <li>Anonymous methods in delegates</li>
+      <li>Yield statement</li>
+      <li>Minor features like partial types, stacic classes, separate getter/setter property access, namespace aliases, exposiing internals to selected assemblies…  </li>
+    </ul>
+  </li>
+  <li><strong>C# 3 LINQ</strong>
+    <ul>
+      <li>Features contributing LINQ (automatically implemented properties, implicit typing of local variables, simplified initialization, implicity typed arrays and anonymous types)</li>
+      <li>Lambda expressions and expression trees</li>
+      <li>Extension methodds</li>
+      <li>Query expressions and LINQ to objects</li>
+      <li>LINQ beyond collections  </li>
+    </ul>
+  </li>
+  <li><strong>C# 4 Dynamic typing</strong> and minor changes
+    <ul>
+      <li>Optional parameters, generic variance…</li>
+      <li>Dynamic binding in static language  </li>
+    </ul>
+  </li>
+  <li><strong>C# 5 Asynchrony with async/await</strong></li>
 </ol>
 
-<p>If you are using the same theme as me (Minimal Mistakes), there are <a href="https://mademistakes.com/articles/minimal-mistakes-jekyll-theme/#installation">some specific commands</a></p>
-
-<blockquote>
-  <p>Don’t forget to install <a href="https://www.python.org/downloads/release/python-278/">Python 2.7.8</a> if you still don¡t have it and remember to add “python” to the system path , the installer can make it for you.</p>
-</blockquote>
-
-<p>Enjoy windows lovers!</p>
+<p class="notice">I recommend this book to all the C# experienced developers who want to improve his knowledge about they language they use daily.</p>
 
       <hr />
       <footer role="contentinfo">
@@ -186,7 +203,7 @@ The steps are:</p>
 
 
         </div>
-        <p class="byline"><strong>Using Jekyll on Windows</strong> was published on <time datetime="2014-12-30T00:00:00+01:00">December 30, 2014</time> and last modified on <time datetime="2014-12-30">December 30, 2014</time>.</p>
+        <p class="byline"><strong>C# in depth by Jon Skeet</strong> was published on <time datetime="2015-01-18T00:00:00+01:00">January 18, 2015</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   
@@ -200,7 +217,7 @@ The steps are:</p>
   <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
     <ul>
     
-      <li><a href="http://juan.pallares.me/C%23-in-depth-jon-skeet/" title="C# in depth by Jon Skeet">C# in depth by Jon Skeet</a></li>
+      <li><a href="http://juan.pallares.me/jekyll-windows/" title="Using Jekyll on Windows">Using Jekyll on Windows</a></li>
     
       <li><a href="http://juan.pallares.me/resharper-favourite-hotkeys/" title="Resharper favourite hotkeys">Resharper favourite hotkeys</a></li>
     
