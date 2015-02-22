@@ -5,21 +5,17 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Formatear queries en SQL Management Studio &#8211; Juan Pallarès Garbí</title>
-<meta name="description" content="
-En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearlo de una forma rápidaLa herramienta que yo utilizo es&nbsp;Poor Man's T-SQL Formatter, sencilla, se puede utilizar como add-in del SQL Management Studio. Además utiliza las misma hotkey que en Visual Studio (Ctrl+K, Ctrl+F)Con esta herramienta y el Intellisense, séreis imparables :)
-
+<title>Some thoughts about pair programming &#8211; Juan Pallarès Garbí</title>
+<meta name="description" content="After pair programming pretty often for the last months this is what I think about it:
 
 ">
-<meta name="keywords" content="SQL Server 2008, Management Studio, SQL Server">
+<meta name="keywords" content="pair programming, xp, developing, software">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Formatear queries en SQL Management Studio">
-<meta name="twitter:description" content="
-En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearlo de una forma rápidaLa herramienta que yo utilizo es&nbsp;Poor Man's T-SQL Formatter, sencilla, se puede utilizar como add-in del SQL Management Studio. Además utiliza las misma hotkey que en Visual Studio (Ctrl+K, Ctrl+F)Con esta herramienta y el Intellisense, séreis imparables :)
-
+<meta name="twitter:title" content="Some thoughts about pair programming">
+<meta name="twitter:description" content="After pair programming pretty often for the last months this is what I think about it:
 
 ">
 <meta name="twitter:site" content="@juanpallares">
@@ -31,20 +27,18 @@ En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearl
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Formatear queries en SQL Management Studio">
-<meta property="og:description" content="
-En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearlo de una forma rápidaLa herramienta que yo utilizo es&nbsp;Poor Man's T-SQL Formatter, sencilla, se puede utilizar como add-in del SQL Management Studio. Además utiliza las misma hotkey que en Visual Studio (Ctrl+K, Ctrl+F)Con esta herramienta y el Intellisense, séreis imparables :)
-
+<meta property="og:title" content="Some thoughts about pair programming">
+<meta property="og:description" content="After pair programming pretty often for the last months this is what I think about it:
 
 ">
-<meta property="og:url" content="http://juan.pallares.me/formatear-queries-en-sql-management/">
+<meta property="og:url" content="http://juan.pallares.me/pair-programming/">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
 
 
 
 
 
-<link rel="canonical" href="http://juan.pallares.me/formatear-queries-en-sql-management/">
+<link rel="canonical" href="http://juan.pallares.me/pair-programming/">
 <link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 <link rel="author" href="http://plus.google.com/+JuanPallarèsGarbí?rel=author">
 
@@ -142,13 +136,47 @@ En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearl
   <article>
     <div class="headline-wrap">
       
-        <h1><a href="http://juan.pallares.me/formatear-queries-en-sql-management/" rel="bookmark" title="Formatear queries en SQL Management Studio">Formatear queries en SQL Management Studio</a></h1>
+        <h1><a href="http://juan.pallares.me/pair-programming/" rel="bookmark" title="Some thoughts about pair programming">Some thoughts about pair programming</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <div class="css-full-post-content js-full-post-content">
-En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearlo de una forma rápida<br /><br />La herramienta que yo utilizo es&nbsp;<a href="http://www.architectshack.com/PoorMansTSqlFormatter.ashx" target="_blank">Poor Man's T-SQL Formatter</a>, sencilla, se puede utilizar como add-in del SQL Management Studio. Además utiliza las misma hotkey que en Visual Studio (Ctrl+K, Ctrl+F)<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-lHrHw2yKwVg/UP0dQJi_XqI/AAAAAAAAoeg/1Aob40DbnI0/s1600/SQLqueryFormat.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-lHrHw2yKwVg/UP0dQJi_XqI/AAAAAAAAoeg/1Aob40DbnI0/s320/SQLqueryFormat.PNG" width="295" /></a></div><br /><br />Con esta herramienta y el <a href="http://blog.pallares.me/2012/09/no-funciona-intellisense-en-sql-server.html" target="_blank">Intellisense</a>, séreis imparables :)
-</div>
+      <p>After pair programming pretty often for the last months this is what I think about it:</p>
+
+<ul>
+  <li>
+    <p>Pair programming improves <strong>code quality</strong>. </p>
+  </li>
+  <li>
+    <p>Pair programming improves <strong>team focus</strong> (for example when the guy behind you says “hey is that stuff really necessary for this sprint?”). </p>
+  </li>
+  <li>
+    <p>Surprisingly many developers that are strongly against pair programming actually haven’t tried it, and quickly learn to like it once they do try it. </p>
+  </li>
+  <li>
+    <p>Pair programming is exhaustive and should not be done all day.</p>
+  </li>
+  <li>
+    <p>Pair programming should be done in complex stories  only(related with the previous). </p>
+  </li>
+  <li>
+    <p><strong>Shifting pairs</strong> frequently is good.</p>
+  </li>
+  <li>
+    <p>Pair programming does improve <strong>knowledge spread</strong> within the group (Related with the previous too).</p>
+  </li>
+  <li>
+    <p>Some people just aren’t comfortable with pair programming. Don’t throw out an excellent programmer just because he isn’t comfortable with pair programming. </p>
+  </li>
+  <li>
+    <p><strong>Code review is an OK alternative</strong> to pair programming.</p>
+  </li>
+  <li>
+    <p>It’s useful that the “navigator” (the guy not using the keyboard) has a computer of his own as well. Not for development, but for doing little spikes when necessary, browsing documentation when the “driver” (the guy at the keyboard) gets stuck, etc.</p>
+  </li>
+</ul>
+
+<p class="notice">Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.</p>
+
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">
@@ -175,7 +203,7 @@ En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearl
 
 
         </div>
-        <p class="byline"><strong>Formatear queries en SQL Management Studio</strong> was published on <time datetime="2013-01-21T10:50:00+01:00">January 21, 2013</time>.</p>
+        <p class="byline"><strong>Some thoughts about pair programming</strong> was published on <time datetime="2015-02-22T00:00:00+01:00">February 22, 2015</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   
@@ -189,11 +217,11 @@ En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearl
   <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
     <ul>
     
-      <li><a href="http://juan.pallares.me/pair-programming/" title="Some thoughts about pair programming">Some thoughts about pair programming</a></li>
-    
       <li><a href="http://juan.pallares.me/C%23-in-depth-jon-skeet/" title="C# in depth by Jon Skeet">C# in depth by Jon Skeet</a></li>
     
       <li><a href="http://juan.pallares.me/jekyll-windows/" title="Using Jekyll on Windows">Using Jekyll on Windows</a></li>
+    
+      <li><a href="http://juan.pallares.me/resharper-favourite-hotkeys/" title="Resharper favourite hotkeys">Resharper favourite hotkeys</a></li>
     
     </ul>
     <hr />
