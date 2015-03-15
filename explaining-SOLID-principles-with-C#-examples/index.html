@@ -1,0 +1,562 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Explaining SOLID principles with C# examples &#8211; Juan Pallarès Garbí</title>
+<meta name="description" content="What is SOLID?
+
+">
+<meta name="keywords" content="SOLID, C#, code, examples">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Explaining SOLID principles with C# examples">
+<meta name="twitter:description" content="What is SOLID?
+
+">
+<meta name="twitter:site" content="@juanpallares">
+<meta name="twitter:creator" content="@juanpallares">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://juan.pallares.me/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Explaining SOLID principles with C# examples">
+<meta property="og:description" content="What is SOLID?
+
+">
+<meta property="og:url" content="http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/">
+<meta property="og:site_name" content="Juan Pallarès Garbí">
+
+
+
+
+
+<link rel="canonical" href="http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/">
+<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://juan.pallares.me/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://juan.pallares.me/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://juan.pallares.me/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://juan.pallares.me/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://juan.pallares.me/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://juan.pallares.me/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://juan.pallares.me/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://juan.pallares.me/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://juan.pallares.me/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://juan.pallares.me/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://juan.pallares.me/">Juan Pallarès Garbí</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				        
+				    
+				    <li><a href="http://juan.pallares.me/posts/" >All Posts</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="http://juan.pallares.me/cv/" >cv</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="http://juan.pallares.me/images/bio-photo.jpg" class="bio-photo" alt="Juan Pallarès bio photo">
+
+
+  <h3 itemprop="name">Juan Pallarès</h3>
+  <p>.NET Software Engineer, football and technology lover from Barcelona.</p>
+  <a href="mailto:juan@pallares.me" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+  <a href="http://twitter.com/juanpallares" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  <a href="http://plus.google.com/+JuanPallarèsGarbí" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+  <a href="http://linkedin.com/in/juanpallares" class="author-social" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a>
+  
+  
+  
+  <a href="http://github.com/jpallares" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  <a href="http://stackoverflow.com/users/500843/juan" class="author-social" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i> Stackoverflow</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/" rel="bookmark" title="Explaining SOLID principles with C# examples">Explaining SOLID principles with C# examples</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h3 id="what-is-solid">What is SOLID?</h3>
+
+<p><a href="http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29">SOLID</a> are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time, which helps to create good software architecture. The SOLID acronym stands for:  </p>
+
+<ul>
+  <li><strong>S</strong> - Single responsibility principle  </li>
+  <li><strong>O</strong> - Open closed principle  </li>
+  <li><strong>L</strong> - Liskov substitution principle  </li>
+  <li><strong>I</strong> - Interface segregation principle  </li>
+  <li><strong>D</strong> - Dependency inversion principle</li>
+</ul>
+
+<h3 id="single-responsability-principle-srp">Single responsability principle (SRP)</h3>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">Engine</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">IgnitionResult</span> <span class="nf">Start</span><span class="p">(</span><span class="n">Starter</span> <span class="n">starter</span><span class="p">,</span> <span class="n">Battery</span> <span class="n">battery</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//we would put code here to handle the logic for checking</span>
+        <span class="c1">//whether or not the batter is charged</span>
+ 
+        <span class="c1">//then we check the result of our logic</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">battery</span><span class="p">.</span><span class="n">IsCharged</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">//we could put logic here to handle</span>
+            <span class="c1">//the actual ignition process</span>
+            <span class="k">return</span> <span class="n">IgnitionResult</span><span class="p">.</span><span class="n">Success</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="c1">//uh oh! the battery is not charged</span>
+            <span class="c1">//Failure!</span>
+            <span class="k">return</span> <span class="n">IgnitionResult</span><span class="p">.</span><span class="n">Failure</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>What is wrong with the above code? Should we really have all the battery logic inside the start method? and the ignition process? No, we shouldn’t, it has multiple responsability.</p>
+
+<p>Single responsabolity principle says that <strong>a class should only have one responsability</strong>. So the solution is moving the logic to the Starter and Battery classes and let the start method just start the engine.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">Engine</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">IgnitionResult</span> <span class="nf">Start</span><span class="p">(</span><span class="n">Starter</span> <span class="n">starter</span><span class="p">,</span> <span class="n">Battery</span> <span class="n">battery</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">starter</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">battery</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Starter</span>
+<span class="p">{</span> 
+    <span class="k">public</span> <span class="n">IgnitionResult</span> <span class="nf">Start</span><span class="p">(</span><span class="n">Battery</span> <span class="n">battery</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//since the Battery class now contains that actual charge validation</span>
+        <span class="c1">//logic, the Starter merely checks the value of that property</span>
+        <span class="c1">//and the Battery takes care of the rest</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">battery</span><span class="p">.</span><span class="n">IsCharged</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">//we can put the ignition logic here</span>
+            <span class="k">return</span> <span class="n">IgnitionResult</span><span class="p">.</span><span class="n">Success</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">IgnitionResult</span><span class="p">.</span><span class="n">Failure</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<h3 id="open-closed-principle-ocp">Open-closed principle (OCP)</h3>
+
+<p>Following the same approach let’s see what’s wrong with this code:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">class</span> <span class="nc">Customer</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="kt">int</span> <span class="n">_CustType</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">CustType</span>
+    <span class="p">{</span>
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_CustType</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">set</span> <span class="p">{</span> <span class="n">_CustType</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">double</span> <span class="nf">getDiscount</span><span class="p">(</span><span class="kt">double</span> <span class="n">TotalSales</span><span class="p">)</span>
+    <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">_CustType</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="n">TotalSales</span> <span class="p">-</span> <span class="m">100</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="n">TotalSales</span> <span class="p">-</span> <span class="m">50</span><span class="p">;</span>
+            <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>If in the future we want to add more customer types, we will need to modify the class adding more ifs. This class should be <strong>closed for modification open for extension</strong>. We fix the code crating a derived class SilverCustomer that will override the discount method. And when we get another Customer type? another derived class!:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">class</span> <span class="nc">Customer</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">virtual</span> <span class="kt">double</span> <span class="nf">getDiscount</span><span class="p">(</span><span class="kt">double</span> <span class="n">TotalSales</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">TotalSales</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">SilverCustomer</span> <span class="p">:</span> <span class="n">Customer</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">double</span> <span class="nf">getDiscount</span><span class="p">(</span><span class="kt">double</span> <span class="n">TotalSales</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="n">getDiscount</span><span class="p">(</span><span class="n">TotalSales</span><span class="p">)</span> <span class="p">-</span> <span class="m">50</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<h3 id="liskov-substitution-principle-lsp">Liskov substitution principle (LSP)</h3>
+
+<p><strong>Derived classes should be perfectly substitutable for their base classes</strong>.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">namespace</span> <span class="nn">SolidDemo</span>
+<span class="p">{</span>
+    <span class="k">class</span> <span class="nc">Program</span>
+    <span class="p">{</span>
+        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Apple</span> <span class="n">apple</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Orange</span><span class="p">();</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">apple</span><span class="p">.</span><span class="n">GetColor</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Apple</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">virtual</span> <span class="kt">string</span> <span class="nf">GetColor</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="s">&quot;Red&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Orange</span> <span class="p">:</span> <span class="n">Apple</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">GetColor</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="s">&quot;Orange&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>In the above code an Orange cannot replace an Apple so the code doesn’t follow the Liskov principle. How can we fix it? Creating a generic base class for both fruits.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">namespace</span> <span class="nn">SolidDemo</span>
+<span class="p">{</span>
+    <span class="k">class</span> <span class="nc">Program</span>
+    <span class="p">{</span>
+        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Fruit</span> <span class="n">fruit</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Orange</span><span class="p">();</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fruit</span><span class="p">.</span><span class="n">GetColor</span><span class="p">());</span>
+            <span class="n">fruit</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Apple</span><span class="p">();</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fruit</span><span class="p">.</span><span class="n">GetColor</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">Fruit</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">abstract</span> <span class="kt">string</span> <span class="nf">GetColor</span><span class="p">();</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Apple</span> <span class="p">:</span> <span class="n">Fruit</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">GetColor</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="s">&quot;Red&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Orange</span> <span class="p">:</span> <span class="n">Apple</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">GetColor</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="s">&quot;Orange&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<h3 id="interface-segregation-principle-isp">Interface segregation principle (ISP)</h3>
+
+<p>The goal behind ISP is that <strong>no client consuming an interface should be forced to depend on methods it does not use</strong>. For example, you might have a class that implements an interface called IPersist.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">interface</span> <span class="n">IPersist</span>
+<span class="p">{</span>
+	<span class="kt">bool</span> <span class="nf">Save</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">BookingLog</span> <span class="p">:</span> <span class="n">IPersist</span>
+<span class="p">{</span>
+	<span class="k">public</span> <span class="kt">bool</span> <span class="nf">Save</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">)</span>
+	<span class="p">{</span>
+	   <span class="c1">// saving code.</span>
+	   <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">public</span> <span class="k">void</span> <span class="nf">Log</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">)</span>
+	<span class="p">{</span>
+	   <span class="c1">// log code</span>
+	<span class="p">}</span>
+
+	<span class="k">public</span> <span class="k">void</span> <span class="nf">SendLogNotification</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">)</span>
+	<span class="p">{</span>
+	   <span class="c1">// notifying code</span>
+	<span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Now if we update IPersist to include the two new methods we have in ReservationLog class, it might be useful for more implementations of IPersist.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">interface</span> <span class="n">IPersist</span>
+<span class="p">{</span>
+	<span class="kt">bool</span> <span class="nf">Save</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">);</span>
+	<span class="k">void</span> <span class="nf">Log</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">);</span>
+	<span class="k">void</span> <span class="nf">SendLogNotification</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Well…that was a mistake, now we are forcing all the classes that implement IPersist to implement methods they are not using. We are clearly breaking the interface segregation principle. In fact, IPersist is not just persisting (saving) now is also logging.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">BookingDatabase</span> <span class="p">:</span> <span class="n">IPersist</span>
+<span class="p">{</span>
+	<span class="k">public</span> <span class="kt">bool</span> <span class="nf">Save</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">)</span>
+	<span class="p">{</span>
+	   <span class="c1">// code to save on database</span>
+	   <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">public</span> <span class="k">void</span> <span class="nf">Log</span><span class="p">(</span><span class="n">BookingDetails</span> <span class="n">reservation</span><span class="p">)</span>
+	<span class="p">{</span>
+	   <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+	<span class="p">}</span>
+
+	<span class="k">public</span> <span class="k">void</span> <span class="nf">SendLogNotification</span><span class="p">(</span><span class="n">ReservationDetails</span> <span class="n">reservation</span><span class="p">)</span>
+	<span class="p">{</span>
+	   <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>To fix it is really easy, we need a new interface to separate responsabilities. And then only the classes that need to log will implement the new interface.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">interface</span> <span class="n">ILog</span>
+<span class="p">{</span>
+   <span class="k">void</span> <span class="nf">Log</span><span class="p">(</span><span class="n">ReservationDetails</span> <span class="n">reservation</span><span class="p">);</span>
+   <span class="k">void</span> <span class="nf">SendLogNotification</span><span class="p">(</span><span class="n">ReservationDetails</span> <span class="n">reservation</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">ReservationLog</span> <span class="p">:</span> <span class="n">IPersist</span><span class="p">,</span> <span class="n">ILog</span></code></pre></div>
+
+<h3 id="dependency-inversion-principle-dip">Dependency inversion principle (DIP)</h3>
+
+<ul>
+  <li><strong>High-level modules should not depend on low-level modules. Both should depend on abstractions.</strong></li>
+  <li><strong>Abstractions should not depend upon details. Details should depend upon abstractions.</strong></li>
+</ul>
+
+<p>If we follow the Dependency inversion principle we will be able to build loosely coupled classes.</p>
+
+<p>Let’s see an example that violates the principle:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">ProductService</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="n">ProductDiscount</span> <span class="n">_productDiscount</span><span class="p">;</span>
+    <span class="k">private</span> <span class="n">ProductRepository</span> <span class="n">_productRepository</span><span class="p">;</span>
+ 
+    <span class="k">public</span> <span class="nf">ProductService</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">_productDiscount</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ProductDiscount</span><span class="p">();</span>
+        <span class="n">_productRepository</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ProductRepository</span><span class="p">();</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">GetProducts</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">productsFromDataStore</span> <span class="p">=</span> <span class="n">_productRepository</span><span class="p">.</span><span class="n">FindAll</span><span class="p">();</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">Product</span> <span class="n">p</span> <span class="k">in</span> <span class="n">productsFromDataStore</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">p</span><span class="p">.</span><span class="n">AdjustPrice</span><span class="p">(</span><span class="n">_productDiscount</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">productsFromDataStore</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Notice high level modules call low level modules and instantiate their dependencies as they need them. Here ProductService calls ProductRepository, but before startintg it needs to create a new one up using the ‘new’ keyword. <strong>Two dependencies are created in the constructor with the ‘new’ keyword. This breaks the Single Responsibility Principle as the class is forced to carry out work that’s not really its concern.</strong>  </p>
+
+<p>The ProductService is thus tightly coupled to those two concrete classes. Obtaining the correct pricing and data store strategy should not be the responsibility of the ProductService. And whenever those strategies change you must update the ProductService class. It is also difficult to test ProductService in isolation.</p>
+
+<p>In order to remove the hard dependency we will inject in the constructor new abstractions that we will create for the discount and for the repository.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">ProductService</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="n">IProductRepository</span> <span class="n">_productRepository</span><span class="p">;</span>
+ 
+    <span class="k">public</span> <span class="nf">ProductService</span><span class="p">(</span><span class="n">IProductRepository</span> <span class="n">productRepository</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_productRepository</span> <span class="p">=</span> <span class="n">productRepository</span><span class="p">;</span>
+    <span class="p">}</span>
+ 
+    <span class="k">public</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">GetProducts</span><span class="p">(</span><span class="n">IProductDiscountStrategy</span> <span class="n">productDiscount</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">productsFromDataStore</span> <span class="p">=</span> <span class="n">_productRepository</span><span class="p">.</span><span class="n">FindAll</span><span class="p">();</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">Product</span> <span class="n">p</span> <span class="k">in</span> <span class="n">productsFromDataStore</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">p</span><span class="p">.</span><span class="n">AdjustPrice</span><span class="p">(</span><span class="n">productDiscount</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">productsFromDataStore</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Now anyone using Product Service will know they need an implementation of IProductRepository and IProductStrategy, but not an specific one.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>I hope the examples I picked were good enough to understand the SOLID principles. This was just an introduction, there is <a href="http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod">much more detail available</a>.</p>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>
+</div><!-- /.social-share -->
+        <p class="byline"><strong>Explaining SOLID principles with C# examples</strong> was published on <time datetime="2015-03-15T00:00:00+01:00">March 15, 2015</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://juan.pallares.me/pair-programming/" title="Some thoughts about pair programming">Some thoughts about pair programming</a></li>
+    
+      <li><a href="http://juan.pallares.me/C%23-in-depth-jon-skeet/" title="C# in depth by Jon Skeet">C# in depth by Jon Skeet</a></li>
+    
+      <li><a href="http://juan.pallares.me/jekyll-windows/" title="Using Jekyll on Windows">Using Jekyll on Windows</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2015 Juan Pallarès. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://juan.pallares.me/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://juan.pallares.me/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-54458401-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jpallares'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
+
+</body>
+</html>
