@@ -5,17 +5,19 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Using Jekyll on Windows &#8211; Juan Pallarès Garbí</title>
-<meta name="description" content="I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.
+<title>M101N MongoDB for .NET &#8211; Juan Pallarès Garbí</title>
+<meta name="description" content="I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
+I recommend it to every developer who wants to get to know this famous NoSQL database.
 
 ">
-<meta name="keywords" content="blog, jekyll, windows, ruby, python">
+<meta name="keywords" content="mongo, .NET, mongodb, course">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Using Jekyll on Windows">
-<meta name="twitter:description" content="I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.
+<meta name="twitter:title" content="M101N MongoDB for .NET">
+<meta name="twitter:description" content="I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
+I recommend it to every developer who wants to get to know this famous NoSQL database.
 
 ">
 <meta name="twitter:site" content="@juanpallares">
@@ -27,18 +29,19 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Using Jekyll on Windows">
-<meta property="og:description" content="I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.
+<meta property="og:title" content="M101N MongoDB for .NET">
+<meta property="og:description" content="I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
+I recommend it to every developer who wants to get to know this famous NoSQL database.
 
 ">
-<meta property="og:url" content="http://juan.pallares.me/jekyll-windows/">
+<meta property="og:url" content="http://juan.pallares.me/mongodb-for-NET-M101N/">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
 
 
 
 
 
-<link rel="canonical" href="http://juan.pallares.me/jekyll-windows/">
+<link rel="canonical" href="http://juan.pallares.me/mongodb-for-NET-M101N/">
 <link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -145,29 +148,50 @@
   <article class="post">
     <div class="headline-wrap">
       
-        <h1><a href="http://juan.pallares.me/jekyll-windows/" rel="bookmark" title="Using Jekyll on Windows">Using Jekyll on Windows</a></h1>
+        <h1><a href="http://juan.pallares.me/mongodb-for-NET-M101N/" rel="bookmark" title="M101N MongoDB for .NET">M101N MongoDB for .NET</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>I have a Macbook Air and a desktop PC. As a .NET developer I expend more “productive” time on the PC, even if I have a windows partition installed on the Macbook. I started using Jekyll on the MacOS since it was the easy, standard way, but I like flexibility and started looking for how to use it from Windows, I wanted to create new posts from my PC basically.</p>
+      <p>I just finished the online course <a href="https://university.mongodb.com/courses/M101N/about">M101N MongoDB for .NET</a> and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
+I recommend it to every developer who wants to get to know this famous <a href="http://www.mongodb.com/nosql-explained">NoSQL</a> database.</p>
 
-<p>Following the steps on 
-<a href="http://jekyll-windows.juthilo.com/">Run Jekyll on Windows</a> I didn’t find any issues. 
-The steps are:</p>
+<p>There are also <a href="https://university.mongodb.com/courses/catalog">another possible courses</a> such as:</p>
 
-<ol>
-  <li>Install Ruby</li>
-  <li>Instal Ruby DevKit</li>
-  <li>Install Jekyll gem</li>
-</ol>
+<ul>
+  <li>MongoDB for Java developers</li>
+  <li>MongoDB for Node.js developers</li>
+  <li>MongoDB for DBAs</li>
+  <li>…</li>
+</ul>
 
-<p>If you are using the same theme as me (Minimal Mistakes), there are <a href="https://mademistakes.com/articles/minimal-mistakes-jekyll-theme/#installation">some specific commands</a></p>
+<p>Querying in MongoDB is with <em>JavaScript</em> and it takes some time to set your mind to use it instead of SQL. I’ll leave your with some SQL statements and the equivalent in MongoDB:</p>
 
-<blockquote>
-  <p>Don’t forget to install <a href="https://www.python.org/downloads/release/python-278/">Python 2.7.8</a> if you still don¡t have it and remember to add “python” to the system path , the installer can make it for you.</p>
-</blockquote>
+<h4 id="simple-query">Simple query</h4>
 
-<p>Enjoy windows lovers!</p>
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span> <span class="n">users</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">find</span><span class="p">()</span></code></pre></div>
+
+<h4 id="filter">Filter</h4>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span> <span class="n">users</span>
+<span class="k">WHERE</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">25</span>
+<span class="k">AND</span>   <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">50</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span>
+   <span class="p">{</span> <span class="nx">age</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$gt</span><span class="o">:</span> <span class="mi">25</span><span class="p">,</span> <span class="nx">$lte</span><span class="o">:</span> <span class="mi">50</span> <span class="p">}</span> <span class="p">}</span>
+<span class="p">)</span></code></pre></div>
+
+<h4 id="filter-and-order">Filter and order</h4>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span> <span class="n">users</span>
+<span class="k">WHERE</span> <span class="n">status</span> <span class="o">=</span> <span class="ss">&quot;A&quot;</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">user_id</span> <span class="k">DESC</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span> <span class="p">{</span> <span class="nx">status</span><span class="o">:</span> <span class="s2">&quot;A&quot;</span> <span class="p">}</span> <span class="p">).</span><span class="nx">sort</span><span class="p">(</span> <span class="p">{</span> <span class="nx">user_id</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">)</span></code></pre></div>
 
       <hr />
       <footer role="contentinfo">
@@ -175,17 +199,17 @@ The steps are:</p>
   <h4>Share on</h4>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/jekyll-windows/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/mongodb-for-NET-M101N/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/jekyll-windows/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/mongodb-for-NET-M101N/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=http://juan.pallares.me/jekyll-windows/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=http://juan.pallares.me/mongodb-for-NET-M101N/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
   </ul>
 </div><!-- /.social-share -->
-        <p class="byline"><strong>Using Jekyll on Windows</strong> was published on <time datetime="2014-12-30T00:00:00+01:00">December 30, 2014</time> and last modified on <time datetime="2014-12-30">December 30, 2014</time>.</p>
+        <p class="byline"><strong>M101N MongoDB for .NET</strong> was published on <time datetime="2015-05-17T00:00:00+02:00">May 17, 2015</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   
@@ -199,11 +223,11 @@ The steps are:</p>
   <h4>You might also enjoy <small class="pull-right">(<a href="http://juan.pallares.me/posts/">View all posts</a>)</small></h4>
     <ul>
     
-      <li><a href="http://juan.pallares.me/mongodb-for-NET-M101N/" title="M101N MongoDB for .NET">M101N MongoDB for .NET</a></li>
-    
       <li><a href="http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/" title="Explaining SOLID principles with C# examples">Explaining SOLID principles with C# examples</a></li>
     
       <li><a href="http://juan.pallares.me/pair-programming/" title="Some thoughts about pair programming">Some thoughts about pair programming</a></li>
+    
+      <li><a href="http://juan.pallares.me/C%23-in-depth-jon-skeet/" title="C# in depth by Jon Skeet">C# in depth by Jon Skeet</a></li>
     
     </ul>
     <hr />

@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://juan.pallares.me/mongodb-for-NET-M101N/</loc>
+    
+    <lastmod>2015-05-17T00:00:00+02:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://juan.pallares.me/explaining-SOLID-principles-with-C%23-examples/</loc>
     
     <lastmod>2015-03-15T00:00:00+01:00</lastmod>
@@ -181,21 +189,21 @@
   
   <url>
     <loc>http://juan.pallares.me/cv/</loc>
-    <lastmod>2015-03-15T21:47:42+01:00</lastmod>
+    <lastmod>2015-05-17T17:46:54+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2015-03-15T21:47:42+01:00</lastmod>
+    <lastmod>2015-05-17T17:46:54+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2015-03-15T21:47:42+01:00</lastmod>
+    <lastmod>2015-05-17T17:46:54+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
