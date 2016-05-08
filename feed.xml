@@ -4,13 +4,55 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://juan.pallares.me/feed.xml" />
 <link rel="alternate" type="text/html" href="http://juan.pallares.me" />
-<updated>2016-01-05T18:03:19+01:00</updated>
+<updated>2016-05-08T15:53:48+02:00</updated>
 <id>http://juan.pallares.me/</id>
 <author>
   <name>Juan Pallarès</name>
   <uri>http://juan.pallares.me/</uri>
   <email>juan@pallares.me</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Professional Scrum Master certification]]></title>
+  <link rel="alternate" type="text/html" href="http://juan.pallares.me/professional-scrum-master/" />
+  <id>http://juan.pallares.me/professional-scrum-master</id>
+  <published>2016-05-08T00:00:00+02:00</published>
+  <updated>2016-05-08T00:00:00+02:00</updated>
+  <author>
+    <name>Juan Pallarès</name>
+    <uri>http://juan.pallares.me</uri>
+    <email>juan@pallares.me</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;I recently obtained the Professional Scrum Master certification (PSM I) issued by &lt;a href=&quot;scrum.org&quot;&gt;scrum.org&lt;/a&gt;. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;There’s no Sprint 0&lt;/strong&gt;. Also no hardening Sprint, integration Sprint, release Sprint, planning Sprint, etc. All Sprints are the same.&lt;/li&gt;
+  &lt;li&gt;Only the &lt;strong&gt;Development Team&lt;/strong&gt; are &lt;strong&gt;required&lt;/strong&gt; to participate in the &lt;strong&gt;Daily Scrums&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;There’s always only &lt;strong&gt;one Product Backlog&lt;/strong&gt; and &lt;strong&gt;one Product Owner&lt;/strong&gt;, no matter how many teams are working on the project.&lt;/li&gt;
+  &lt;li&gt;There are no roles other than those three standard ones, and &lt;strong&gt;none of them manage the rest&lt;/strong&gt;, development teams self organize.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With this input a lot of questions that may appear in the test can be answered much more easily. Apart for the tips, the preparation shoul be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Read the &lt;a href=&quot;http://scrumguides.org/scrum-guide.html&quot;&gt;scrum guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Read books such as - Scrum and Xp From the trenches, Kanban &amp;amp; Scrum&lt;/li&gt;
+  &lt;li&gt;Work with SCRUM framework in your current employment (if possible)&lt;/li&gt;
+  &lt;li&gt;Do Scrum Open assessment several times and takes notes of the erros, don’t stop until you get 100% always&lt;/li&gt;
+  &lt;li&gt;Read the &lt;a href=&quot;http://www.agilemanifesto.org/principles.html&quot;&gt;agile manifesto&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;During the exam, use the bookmarks to mark the questions you have some doubts and go through them in a second iteration (hahaha the scrum way!)&lt;/p&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/professional-scrum-master/&quot;&gt;Professional Scrum Master certification&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès Garbí&lt;/a&gt; on May 08, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -1164,28 +1206,6 @@ Algo de humor, muchos os&amp;nbsp;sentiréis&amp;nbsp;identificados:&lt;br /&gt;
 &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-XRewEOvAM04/UxB7pO6R22I/AAAAAAAAtxs/nQX45MgPwdI/s1600/biztalk-logo.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://2.bp.blogspot.com/-XRewEOvAM04/UxB7pO6R22I/AAAAAAAAtxs/nQX45MgPwdI/s1600/biztalk-logo.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: justify;&quot;&gt;Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XML en un formato no aceptado por Biztalk. Tenía etiquetas multiref y esto no le gustaba.&lt;/div&gt;&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;&amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;soapenv:Body&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;ns1:sendSmsSubmissionResponse soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:ns1=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;sendSmsSubmissionReturn href=&quot;#id0&quot; /&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/ns1:sendSmsSubmissionResponse&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;multiRef id=&quot;id0&quot; soapenc:root=&quot;0&quot; soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xsi:type=&quot;ns2:SubmissionStatus&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:ns2=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;id xsi:type=&quot;soapenc:string&quot;&amp;gt;4336723&amp;lt;/id&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;message xsi:type=&quot;soapenc:string&quot;&amp;gt;Submisso enviada para processamento.&amp;lt;/message&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;status href=&quot;#id1&quot; /&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/multiRef&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;multiRef id=&quot;id1&quot; soapenc:root=&quot;0&quot; soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xsi:type=&quot;xsd:int&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&amp;gt;0&amp;lt;/multiRef&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/soapenv:Body&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;lt;/soapenv:Envelope&amp;gt;&lt;/blockquote&gt;&lt;br /&gt;&lt;br /&gt;Para poder tratarlo en Biztalk, tuve que desarollar un pequeño código XSL (stylesheet) que después introduje en la Pipeline de entrada custom para decodificarlo.&lt;br /&gt;&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;&amp;lt;xsl:stylesheet version=&quot;1.0&quot;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; xmlns:ns2=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:key name=&quot;multiref-by-id&quot; match=&quot;multiRef&quot; use=&quot;@id&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;/&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;xsl:apply-templates select=&quot;@* |*&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/xsl:template&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;*[starts-with(@href, &#39;#&#39;)]&quot;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;lt;xsl:copy&amp;gt; &amp;nbsp; &amp;nbsp; &lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;xsl:apply-templates select=&quot;@* |&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;key(&#39;multiref-by-id&#39;, substring-after(@href, &#39;#&#39;))/@*[not(local-name()=&#39;id&#39; or local-name()=&#39;type&#39;)] |&lt;br /&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; key(&#39;multiref-by-id&#39;, substring-after(@href, &#39;#&#39;))/node()&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/xsl:template&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;@href[starts-with(., &#39;#&#39;)] | multiRef[@id] | @soapenc:root&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;xsl:template match=&quot;@*|node()&quot;&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;   &lt;/span&gt;&amp;lt;xsl:apply-templates select=&quot;@*|node()&quot;/&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt;  &lt;/span&gt;&amp;lt;/xsl:copy&amp;gt;&lt;br /&gt;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&amp;lt;/xsl:template&amp;gt;&lt;br /&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/blockquote&gt;&lt;br /&gt;&lt;br /&gt;Una vez hecho esto, todo funcionó como la seda. Para el .xsl me inspiré en &lt;a href=&quot;http://stackoverflow.com/questions/5185389/creating-xslt-transform-to-flatten-multiref-encoded-soap-message&quot; target=&quot;_blank&quot;&gt;esta respuesta de StackOverflow&lt;/a&gt;
 &lt;/div&gt;
     &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/tratando-xml-multiref-en-biztalk/&quot;&gt;Tratando XML multiref en Biztalk&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès Garbí&lt;/a&gt; on February 14, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Formatear queries en SQL Management Studio]]></title>
-  <link rel="alternate" type="text/html" href="http://juan.pallares.me/formatear-queries-en-sql-management/" />
-  <id>http://juan.pallares.me/formatear-queries-en-sql-management</id>
-  <published>2013-01-21T10:50:00+01:00</published>
-  <updated>2013-01-21T10:50:00+01:00</updated>
-  <author>
-    <name>Juan Pallarès</name>
-    <uri>http://juan.pallares.me</uri>
-    <email>juan@pallares.me</email>
-  </author>
-  <content type="html">
-    &lt;div class=&quot;css-full-post-content js-full-post-content&quot;&gt;
-En ocasiones copiamos queries SQL desde otras fuentes y nos gustaría formatearlo de una forma rápida&lt;br /&gt;&lt;br /&gt;La herramienta que yo utilizo es&amp;nbsp;&lt;a href=&quot;http://www.architectshack.com/PoorMansTSqlFormatter.ashx&quot; target=&quot;_blank&quot;&gt;Poor Man&#39;s T-SQL Formatter&lt;/a&gt;, sencilla, se puede utilizar como add-in del SQL Management Studio. Además utiliza las misma hotkey que en Visual Studio (Ctrl+K, Ctrl+F)&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-lHrHw2yKwVg/UP0dQJi_XqI/AAAAAAAAoeg/1Aob40DbnI0/s1600/SQLqueryFormat.PNG&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;320&quot; src=&quot;http://2.bp.blogspot.com/-lHrHw2yKwVg/UP0dQJi_XqI/AAAAAAAAoeg/1Aob40DbnI0/s320/SQLqueryFormat.PNG&quot; width=&quot;295&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;Con esta herramienta y el &lt;a href=&quot;http://blog.pallares.me/2012/09/no-funciona-intellisense-en-sql-server.html&quot; target=&quot;_blank&quot;&gt;Intellisense&lt;/a&gt;, séreis imparables :)
-&lt;/div&gt;
-    &lt;p&gt;&lt;a href=&quot;http://juan.pallares.me/formatear-queries-en-sql-management/&quot;&gt;Formatear queries en SQL Management Studio&lt;/a&gt; was originally published by Juan Pallarès at &lt;a href=&quot;http://juan.pallares.me&quot;&gt;Juan Pallarès Garbí&lt;/a&gt; on January 21, 2013.&lt;/p&gt;
   </content>
 </entry>
 

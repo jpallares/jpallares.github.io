@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://juan.pallares.me/professional-scrum-master/</loc>
+    
+    <lastmod>2016-05-08T00:00:00+02:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://juan.pallares.me/Technical%20debt/</loc>
     
     <lastmod>2016-01-04T00:00:00+01:00</lastmod>
@@ -205,21 +213,21 @@
   
   <url>
     <loc>http://juan.pallares.me/cv/</loc>
-    <lastmod>2016-01-05T18:03:19+01:00</lastmod>
+    <lastmod>2016-05-08T15:53:48+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/posts/</loc>
-    <lastmod>2016-01-05T18:03:19+01:00</lastmod>
+    <lastmod>2016-05-08T15:53:48+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://juan.pallares.me/</loc>
-    <lastmod>2016-01-05T18:03:19+01:00</lastmod>
+    <lastmod>2016-05-08T15:53:48+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
