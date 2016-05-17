@@ -19,7 +19,7 @@
 
 
 
-<title>Some thoughts about pair programming - Juan Pallarès Garbí</title>
+<title>Technical debt - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Some thoughts about pair programming">
+<meta property="og:title" content="Technical debt">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/pair-programming/">
-  <meta property="og:url" content="http://juan.pallares.me/pair-programming/">
+  <link rel="canonical" href="http://juan.pallares.me/Technical-debt/">
+  <meta property="og:url" content="http://juan.pallares.me/Technical-debt/">
 
 
 
-  <meta property="og:description" content="After pair programming pretty often for the last months this is what I think about it:">
+  <meta property="og:description" content="The analogy">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Some thoughts about pair programming">
-  <meta name="twitter:description" content="After pair programming pretty often for the last months this is what I think about it:">
-  <meta name="twitter:url" content="http://juan.pallares.me/pair-programming/">
+  <meta name="twitter:title" content="Technical debt">
+  <meta name="twitter:description" content="The analogy">
+  <meta name="twitter:url" content="http://juan.pallares.me/Technical-debt/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,12 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2015-02-22T00:00:00+00:00">
+  <meta property="article:published_time" content="2016-01-04T00:00:00+00:00">
   
-    <link rel="next" href="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/" title="Explaining SOLID principles with C# examples">
+    <link rel="next" href="http://juan.pallares.me/professional-scrum-master/" title="Professional Scrum Master certification">
   
   
-    <link rel="prev" href="http://juan.pallares.me/C-in-depth-jon-skeet/" title="C# in depth by Jon Skeet">
+    <link rel="prev" href="http://juan.pallares.me/MEAN-Hackaton/" title="MEAN Hackaton">
   
 
 
@@ -232,63 +232,91 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Some thoughts about pair programming">
-    <meta itemprop="description" content="After pair programming pretty often for the last months this is what I think about it:">
-    <meta itemprop="datePublished" content="February 22, 2015">
+    <meta itemprop="headline" content="Technical debt">
+    <meta itemprop="description" content="The analogy">
+    <meta itemprop="datePublished" content="January 04, 2016">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Some thoughts about pair programming
+          <h1 class="page__title" itemprop="headline">Technical debt
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
-  1 
+  4 
 </p>
           
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p>After pair programming pretty often for the last months this is what I think about it:</p>
+        <h2 id="the-analogy">The analogy</h2>
+
+<p>The term was first used by Ward Cunninham in 1992. He realized financial debt could be compared to technical debt in order to understand easily causes and consequences of it.</p>
 
 <ul>
-  <li>
-    <p>Pair programming improves <strong>code quality</strong>.</p>
-  </li>
-  <li>
-    <p>Pair programming improves <strong>team focus</strong> (for example when the guy behind you says “hey is that stuff really necessary for this sprint?”).</p>
-  </li>
-  <li>
-    <p>Surprisingly many developers that are strongly against pair programming actually haven’t tried it, and quickly learn to like it once they do try it.</p>
-  </li>
-  <li>
-    <p>Pair programming is exhaustive and should not be done all day.</p>
-  </li>
-  <li>
-    <p>Pair programming should be done in complex stories  only(related with the previous).</p>
-  </li>
-  <li>
-    <p><strong>Shifting pairs</strong> frequently is good.</p>
-  </li>
-  <li>
-    <p>Pair programming does improve <strong>knowledge spread</strong> within the group (Related with the previous too).</p>
-  </li>
-  <li>
-    <p>Some people just aren’t comfortable with pair programming. Don’t throw out an excellent programmer just because he isn’t comfortable with pair programming.</p>
-  </li>
-  <li>
-    <p><strong>Code review is an OK alternative</strong> to pair programming.</p>
-  </li>
-  <li>
-    <p>It’s useful that the “navigator” (the guy not using the keyboard) has a computer of his own as well. Not for development, but for doing little spikes when necessary, browsing documentation when the “driver” (the guy at the keyboard) gets stuck, etc.</p>
-  </li>
+  <li>When in a project software it is decided to skip design decisions is like borrowing money from the bank.</li>
+  <li>How do we pay this credit? When refactoring of this code is done principal is being payed.</li>
+  <li>But all the credits have interest, don’t they? In technical debt after you skipped some design decisions for later the development will be slower, this will mean interest is being payed.</li>
+  <li>We could say that when the whole project is a mess because interest was never payed is similar to when a company goes bankrupt.</li>
 </ul>
 
-<p class="notice">Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.</p>
+<p><img src="../images/TechnicalDebt.png" alt="Technical debt" title="Technical debt" /></p>
+
+<h2 id="definition">Definition</h2>
+
+<p>When defining it explicitly, not using and analogy, the definition I prefer is the following: <strong>“You may need to use suboptimal designs in the short term, because the schedule does not allow longer term designs to be used”.</strong>
+It is important to clarify that technical debt is only valid when used consciously and when there is a plan to refactor in the future and how you will do it. Another term commonly used is “Design debt”.</p>
+
+<p>Since I did the <a href="http://pallares.me/mongodb-for-NET-M101N/">MongoDB course</a> I got involved in organizing a Hackaton in the <a href="http://mean.io/">MEAN stack</a>.</p>
+
+<h2 id="example-with-possible-scenarios1">Example with Possible scenarios<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></h2>
+
+<p>Now let’s make an example. We are a software Company, an start-up. We are just beginning we don’t have much money, but we are lucky some possible customers are coming to see a prototype next week. We would get an initial investment that would help us grow.
+Problem? We don’t have enough time to develop the user roles in the application in a proper way, with all the infrastructure.
+What could we do? There are 3 possible scenarios:</p>
+
+<ul>
+  <li>We decide consciously to develop just two types of users (admin, normal user) enough to see the functionality by the customers and simple enough to develop on time. Let’s say we use 4 story points, and will have to use 22 in the future for the refactor. We get 5 new clients and money from them.</li>
+  <li>Another option is to not skip design and develop the whole infrastructure now, we wouldn’t be on time for the clients, no money would arrive, but the overall effort would be only 21 instead of 4+22.</li>
+  <li>And the last option, we do it “quick” now and forget about refactoring. Very risky decision because if we don’t refactor the debt will grow exponentially and eventually we wouldn’t be able to fix the situation.</li>
+</ul>
+
+<p>As you may be guessing, the best option is the first one. It’s one of the main reasons of taking debt, to arrive to a deadline but paying it as soon as possible before it gets out of hand.</p>
+
+<h2 id="when-to-take-debt---design-payoff-line2">When to take debt - Design payoff line<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></h2>
+<p><img src="../images/DesignPayoffLine.png" alt="Design payoff line" title="Design payoff line" /></p>
+
+<p>As we saw with the previous example, technical debt is only worth up to a certain point. 
+This graph tries to compare delivered functionality versus time in two different projects, one with good design (orange line) and another without design (blue line). The problem with no-design, is that by not putting effort into the design, the code base deteriorates and becomes harder to modify, which lowers the productivity soon after the project grows. Good design keeps its productivity more constant so at some point (the design payoff line) it overtakes the cumulative functionality of the no-design project and will continue to do better.
+The million dollar question is, where is the design payoff line? At what time exactly is not worth it anymore? Of course this depends a lot in the project and other variables but maybe a lot sooner than expected, maybe just a few weeks from the start. This is of course an hypothesis, there is no proof, but it’s something many experienced people believes in.</p>
+
+<h2 id="what-is-not-technical-debt">What is not technical debt</h2>
+
+<p>People can get confused and think that when somebody is writing smelly code is acquiring technical debt, no it isn’t.
+Writing bad code is not technical debt, this is important to be clarified. When a development team produces poor quality code does not mean they are acquiring debt. In fact, you can take debt with good quality code, but not designed to grow in the future easily (without design).
+If either the managers or the developers are not aware that they are creating technical debt and the implications this will have in the future, then we also can not consider it technical debt.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>To sum up:
+Technical debt is a concept that should be known by the technical and the non-technical part of the Company.
+Ignoring it can drive projects to failure due to accumulating to much debt and not paying it on time.
+It can also help us in some scenarios to deliver a functionality.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://medium.com/@joaomilho/festina-lente-e29070811b84#.r5modcn0r">https://medium.com/@joaomilho/festina-lente-e29070811b84#.r5modcn0r</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="http://martinfowler.com/bliki/DesignStaminaHypothesis.html">http://martinfowler.com/bliki/DesignStaminaHypothesis.html</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
         
       </section>
@@ -313,11 +341,11 @@
     
       
       
-      <a href="http://juan.pallares.me/tags/#developing" class="page__taxonomy-item" rel="tag">developing</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#development" class="page__taxonomy-item" rel="tag">development</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#pair-programming" class="page__taxonomy-item" rel="tag">pair programming</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#risk" class="page__taxonomy-item" rel="tag">risk</a><span class="sep">, </span>
     
       
       
@@ -325,7 +353,7 @@
     
       
       
-      <a href="http://juan.pallares.me/tags/#xp" class="page__taxonomy-item" rel="tag">xp</a>
+      <a href="http://juan.pallares.me/tags/#technical-debt" class="page__taxonomy-item" rel="tag">technical debt</a>
     
     </span>
   </p>
@@ -334,7 +362,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2015-02-22T00:00:00+00:00">February 22, 2015</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2016-01-04T00:00:00+00:00">January 04, 2016</time></p>
         
       </footer>
 
@@ -343,13 +371,13 @@
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/pair-programming/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/Technical-debt/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/pair-programming/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/Technical-debt/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/pair-programming/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://juan.pallares.me/Technical-debt/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/pair-programming/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/Technical-debt/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -357,11 +385,11 @@
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/C-in-depth-jon-skeet/" class="pagination--pager" title="C# in depth by Jon Skeet
+      <a href="http://juan.pallares.me/MEAN-Hackaton/" class="pagination--pager" title="MEAN Hackaton
 "></a>
     
     
-      <a href="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/" class="pagination--pager" title="Explaining SOLID principles with C# examples
+      <a href="http://juan.pallares.me/professional-scrum-master/" class="pagination--pager" title="Professional Scrum Master certification
 "></a>
     
   </nav>
@@ -424,40 +452,6 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/Technical-debt/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "http://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Technical debt
-</h2>
-      
-        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-  4 
-</p>
-      
-      <p class="archive__item-excerpt" itemprop="description">The analogy
-
-</p>
-    </article>
-  </a>
-</div>
-        
-          
-
-
-
-<div class="grid__item">
-  
     <a href="http://juan.pallares.me/MEAN-Hackaton/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -510,10 +504,44 @@
         <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
-  1 
+   1 
 </p>
       
       <p class="archive__item-excerpt" itemprop="description">I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the...</p>
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "http://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">Explaining SOLID principles with C# examples
+</h2>
+      
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  5 
+</p>
+      
+      <p class="archive__item-excerpt" itemprop="description">What is SOLID?
+
+</p>
     </article>
   </a>
 </div>
