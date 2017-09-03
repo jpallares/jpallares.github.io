@@ -32,8 +32,8 @@
 <meta property="og:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">
-  <meta property="og:url" content="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">
+  <link rel="canonical" href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/">
+  <meta property="og:url" content="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/">
 
 
 
@@ -44,7 +44,7 @@
   <meta name="twitter:site" content="@juanpallares">
   <meta name="twitter:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
   <meta name="twitter:description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended 24/7 way.">
-  <meta name="twitter:url" content="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">
+  <meta name="twitter:url" content="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,12 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-03-18T00:00:00+01:00">
+  <meta property="article:published_time" content="2017-05-03T00:00:00+02:00">
   
-    <link rel="next" href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
+    <link rel="next" href="http://juan.pallares.me/Raspbery-pi-iii-bonus-track-pi-hole-pivpn/" title="Raspberry Pi 3 (III) Bonus track, Pi-hole PiVPN...">
   
   
-    <link rel="prev" href="http://juan.pallares.me/lean/" title="Lean introduction">
+    <link rel="prev" href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
   
 
 
@@ -234,7 +234,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
     <meta itemprop="description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended 24/7 way.">
-    <meta itemprop="datePublished" content="March 18, 2017">
+    <meta itemprop="datePublished" content="May 03, 2017">
     
 
     <div class="page__inner-wrap">
@@ -247,56 +247,75 @@
       
 
       <section class="page__content" itemprop="text">
-        <h3 id="why">Why?</h3>
+        <p>Following the guide to have a Raspberry hadling all the media downloads at home, let’s continue:</p>
 
-<p>I recently bought a Raspberry pi 3, it was improvised I had bought a Pine A64 but it was taking ages to arrive, then the new powerful version of the Pi appeared and I could not resist, Amazon and in couple days at home.</p>
+<h3 id="bittorrent-client">BitTorrent client</h3>
 
-<p><img src="../images/raspberrypi.jpg" alt="Raspberyy Pi 3" title="Raspberry Pi 3" /></p>
+<p>There are several options available for downloading torrents. The one I chose is <a href="http://deluge-torrent.org/">Deluge</a> because of being free, light-weight and ad-free. It also has a “client-server” mode very useful for head-less raspberry and some plugins available that make it very flexible.</p>
 
-<p>My plan for it was basically replicating the automatic downloading of torrents (movies and tv shows mainly). I had it in a PC so I had powered on all day. This way I would take advantage of the Pi low consumption. Also I would take the chance to refresh my unix knowledge.</p>
+<p>The <a href="https://tektab.com/2015/11/10/running-a-always-on-torrent-box-with-raspberry-pi-deluge-on-raspbian/">installation</a> is pretty straightforward and after it you will be able to control it from a client you can install on windows/mac/linux. Also a webUI is available. In case your are intesred, here you have some <a href="http://dev.deluge-torrent.org/wiki/UserGuide/Service/systemd">useful data</a> for a more advanced installation. Remember to configure it to download the torrents to the disk we mounted in the <a href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">previous post</a>, unless you want to run out of space in the pi very fast.</p>
 
-<p>Ingredientes:</p>
+<h3 id="tv-shows---sonarr">TV shows - Sonarr</h3>
 
-<ul>
-  <li>Raspberry Pi</li>
-  <li><a href="https://www.amazon.es/gp/product/B00J2BU7WO/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1">SD Card</a> - 16Gb is more than enough, we will use an external disk for video storage</li>
-  <li><a href="https://www.amazon.es/gp/product/B00W7S1BFG/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1">Case</a> (optional)</li>
-  <li><a href="https://www.amazon.es/gp/product/B01DDW0P1U/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1">Power cable</a> (optional, you may have a spare one but I wanted a quality one with enough amperage)</li>
-</ul>
+<p><img src="../images/sonarr1.png" alt="Sonarr" /></p>
 
-<h3 id="first-steps">First steps</h3>
+<p>Sonarr will handle all the TV shows downloads. I’m in love with <a href="https://sonarr.tv/">Sonarr</a> and the moment you start using it you will feel the same. The <a href="https://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/">installation</a> is a little bit more tricky since it involves Mono. Once you have it running, remember to configure it to use the deluge client you installed before (or any other you chose).</p>
 
-<p>As you already know the Pi works with linux, there are all kind of images available to download but I choose the <a href="https://www.raspberrypi.org/help/videos/">recommended one</a>, Raspbian, looking for flexibility. The installation is very easy but keep in mind you will need a monitor with HDMI connection and a keyboard plugged in the Pi.</p>
+<p class="notice">Skip the configuration about moving/renaming in Sonarr and CouchPotato. Filebot will handle it</p>
 
-<p>Once you have Raspbian up and running, next thing is to configure the Pi to be able to <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md">work remotely with SHH</a>, then you can leave it somewhere hidden just connected to the power and the network (I recommend using the ethernet even if the Pi has wifi and the ethernet port is 10/100Mb only, I guess I’m old school)</p>
+<p>Also you need to set up some indexers for the content (rarbg in my case at the time of writing). After that is easy, just add the shows you are interested in and the quality you want and they will be downloaded automatically when released, skip the part about moving/renaming for the moment. A calendar will be created:</p>
 
-<h3 id="mounting-external-drive">Mounting external drive</h3>
+<p><img src="../images/sonarr2.png" alt="Sonarr calendar" /></p>
 
-<p>For media storage I used a 1TB USB external drive connected to the router, the process is a little bit more complicated than it if you have it directly connected to the Pi, but easy anyway. I followed the steps <a href="http://raspberrypi.stackexchange.com/questions/40974/access-network-samba-share-from-pi-client">here</a>. Basically these commands (for anonymous access):</p>
+<p>If it wasn’t enough you can also configure notification in “Connections”. In my case I have pushbullet telling me when a TV show has been grabbed. Later you will see this is not necessary with Filebot.</p>
+
+<h3 id="movies---couch-potato">Movies - Couch Potato</h3>
+
+<p>My love doesn’t go only to Sonarr, <a href="https://couchpota.to/">CouchPotato</a> is also deep in my heart, I guess I have “software polygamy”. Downloading movies will become very easy.</p>
+
+<p><img src="../images/couchpotato.png" alt="CouchPotato" /></p>
+
+<p>After a very easy installation, the configuration is similar to Sonarr, set you downloader (deluge), indexers and were to download the movies. Skip the part about moving/renaming like before. Once configured what CouchPotato will do for you is download the movies you are interested in the moment they are available in a good enough quality (can be configured), add them to your wanted list and go to the cinema only when really necessary. You can also automatically add movies that have more than an 8 in IMDB….boom!</p>
+
+<h3 id="moving-and-renaming-media-and-getting-subtitles---filebot">Moving and renaming media and getting subtitles - Filebot</h3>
+
+<p>And the last part, we got the movies, the shows but they have strange names, you still need subtitles and the media is placed in a downloads folder….<a href="http://www.filebot.net/">Filebot</a> “the ultimate tv renamer / subtitle downloader” comes to rescue you.</p>
+
+<p>Ok, it’s true, Sonarr and CouchPotato can do the renaming and moving on their own but what about the subtitles? and what about having a software specialized for that? much better isn’t it?</p>
+
+<p><a href="https://www.filebot.net/forums/viewtopic.php?t=3974">Installation on the pi</a> has some difficulty but if I did it you can. Remember to set it up with you OpenSubtitles user.</p>
+
+<p>After it, I use Filebot with commands, scripts I configured, not the UI. In Deluge you need to install the <a href="https://www.filebot.net/forums/viewtopic.php?t=3974">Execute plugin</a>. This plugin allows you to run a script after downloading a file, and that’s what we will do:</p>
 
 <figure class="highlight"><pre><code class="language-console" data-lang="console">```
-apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
-mkdir /mnt/abc
-mount -t cifs //server/share /mnt/abc
+#!/bin/bash
+
+torrentid=$1
+torrentname=$2
+torrentpath=$3
+
+/usr/share/filebot/filebot.sh -script fn:amc --output "/media/netdisk/PlexMedia" --log-file /home/pi/amc.log --action move --conflict override -non-strict --def subtitles=en,es artwork=y clean=y reportError=y gmail=esbroma:XXXXXXXXXXX pushbullet=XXXXXXXXXXXX "ut_dir=$torrentpath/$torrentname" "ut_kind=multi" "ut_title=$torrentname"
 ```</code></pre></figure>
 
-<p>I also configured a cronjob so in every reboot it automonts the network disk</p>
+<p>Basically, the script.sh is moving the media to the PlexMedia folder, there will create a folder for Movies and other for Tv Shows, inside them a folder per movie/tv show and inside TV shows a folder per season. It will also rename it, grab subtitles (if available) in this case in english and spanish. It will also notify me by email and by pushbullet. As you may have noticed, a log is created to track possible issues.</p>
+
+<p>Another possible script you can configure is one that looks for subtitles from time to time. It can be necessary because very often you will download media freshly released and the subtitles won’t be available yet.</p>
 
 <figure class="highlight"><pre><code class="language-console" data-lang="console">```
-@reboot sleep 10 &amp;&amp; mount -a
+#!/bin/bash
+
+/usr/share/filebot/filebot.sh -script fn:suball "/media/netdisk/PlexMedia" --log-file /home/pi/subtitle.log -non-strict --def maxAgeDays=7 subtitles=en,es ignoreTextLanguage=en,es reportError=y pushbullet=XXXXXXXXXXXX
 ```</code></pre></figure>
 
-<h3 id="rpi-monitor">RPi-Monitor</h3>
+<p>In this example, I’m looking for missing subtitles in media that is one week older at most.</p>
 
-<p>To close this first post about the Pi, I want to talk about the RPi-Monitor, as the name says it’s a monitor that tells you basic information about the status of the Pi:</p>
+<h3 id="playing-the-media---plex-on-the-pi">Playing the media - Plex on the Pi?</h3>
 
-<p><img src="../images/rpi-monitor.PNG" alt="RPi-Monitor" /></p>
+<p>Ok, now that we have everything, we want to play it, I prefer Plex over Kodi, because of my own needs but feel free to use any player you want, even DLNA would work.</p>
 
-<p>It’s perfect to detect if suddenly the CPU is under heavy load or it’s becoming too hot. It also helps track if you have the latest software installed.</p>
+<p>I tried to <a href="https://raspberrypi.stackexchange.com/questions/50031/raspberry-pi-3-as-plex-media-server-local-without-transcoding">use Plex on the raspberri pi</a>, and did some <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=35&amp;t=151924&amp;p=999730#p999730">research</a> to see if it was possible. But no luck, only with media that is not too high quality. At the end I run Plex on another computer that uses the media on the net disk. Is in this Plex server where I installed <a href="https://forums.plex.tv/discussion/186575">SubZero</a> channel, it will help you download subtitles too (yes I hate searching and adding subtitles manually).</p>
 
-<h3 id="this-is-only-the-beginning">This is only the beginning</h3>
-
-<p>Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)</p>
+<p>And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.</p>
 
         
       </section>
@@ -346,7 +365,7 @@ mount -t cifs //server/share /mnt/abc
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2017-03-18T00:00:00+01:00">March 18, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2017-05-03T00:00:00+02:00">May 03, 2017</time></p>
         
       </footer>
 
@@ -355,13 +374,13 @@ mount -t cifs //server/share /mnt/abc
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -369,11 +388,11 @@ mount -t cifs //server/share /mnt/abc
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/lean/" class="pagination--pager" title="Lean introduction
+      <a href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader
 "></a>
     
     
-      <a href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader
+      <a href="http://juan.pallares.me/Raspbery-pi-iii-bonus-track-pi-hole-pivpn/" class="pagination--pager" title="Raspberry Pi 3 (III) Bonus track, Pi-hole PiVPN…
 "></a>
     
   </nav>
@@ -431,7 +450,7 @@ mount -t cifs //server/share /mnt/abc
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/">
+    <a href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       

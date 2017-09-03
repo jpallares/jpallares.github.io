@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="http://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="http://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2017-05-03T22:01:24+02:00</updated><id>http://juan.pallares.me/</id><title>Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title>Raspberry Pi 3 a.k.a the 24/7 auto downloader (II)</title><link href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-ii/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader (II)" /><published>2017-05-03T00:00:00+02:00</published><updated>2017-05-03T00:00:00+02:00</updated><id>http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-ii</id><content type="html" xml:base="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-ii/">&lt;p&gt;Following the &lt;a href=&quot;http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/&quot;&gt;guide to have a Raspberry hadling all the media downloads at home&lt;/a&gt;, let’s continue:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="http://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="http://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2017-09-03T20:18:33+02:00</updated><id>http://juan.pallares.me/</id><title>Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title>Raspberry Pi 3 (III) Bonus track, Pi-hole PiVPN…</title><link href="http://juan.pallares.me/Raspbery-pi-iii-bonus-track-pi-hole-pivpn/" rel="alternate" type="text/html" title="Raspberry Pi 3 (III) Bonus track, Pi-hole PiVPN..." /><published>2017-09-03T00:00:00+02:00</published><updated>2017-09-03T00:00:00+02:00</updated><id>http://juan.pallares.me/Raspbery-pi-iii-bonus track-pi-hole-pivpn</id><content type="html" xml:base="http://juan.pallares.me/Raspbery-pi-iii-bonus-track-pi-hole-pivpn/">&lt;p&gt;In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.&lt;/p&gt;
+
+&lt;h3 id=&quot;pi-holehttpspi-holenet---block-ads-in-your-local-network&quot;&gt;&lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-hole&lt;/a&gt; - Block ads in your local network&lt;/h3&gt;
+
+&lt;p&gt;I’m used to have always installed an ad-blocker on my browser, the web ads got out of hand long time ago with giant banners that block all the screen so it’s more like a survival thing. The problem comes with the phone browser, there are no good blockers there.&lt;/p&gt;
+
+&lt;p&gt;So imagine a software that blocks the ads but not once they are in the browser, before, they don’t even arrive to your network, your network performance improves, this is Pi-Hole. It even blocks the ads you get on the phone games, amazing.&lt;/p&gt;
+
+&lt;p&gt;The installation is very easy and once you have done you can access to manager web with all the info about what’s being blocked, etc.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;curl -sSL https://install.pi-hole.net | bash&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/pihole.PNG&quot; alt=&quot;Pi-hole&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pivpnhttpwwwpivpnio&quot;&gt;&lt;a href=&quot;http://www.pivpn.io/&quot;&gt;PiVPN&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;It’s really useful to have a VPN available if you need to use internet in a typical airport “free wifi”, the ones that are not recommended to use with sensible data. PiVPN installs &lt;strong&gt;OpenVPN&lt;/strong&gt; on your raspberri in a very simple way. It all starts with a curl command like with pi-hole&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;curl -L https://install.pivpn.io | bash&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Once installed you can create clients for windows/mac/android/iphone.&lt;/p&gt;
+
+&lt;p&gt;###Free DNS&lt;/p&gt;
+
+&lt;p&gt;The only totally free dns provider I found, that does not even send an email monthly to reactivate your account is &lt;a href=&quot;freedns.afraid.org&quot;&gt;freedns.afraid.org&lt;/a&gt;. You can refresh the IP with a cron job (later more detail about that)&lt;/p&gt;
+
+&lt;h3 id=&quot;backup&quot;&gt;Backup&lt;/h3&gt;
+
+&lt;p&gt;You can create a backup (.img) of your SD card to a network / USB drive while the card is inserted in your pi.&lt;/p&gt;
+
+&lt;p&gt;Create an image of the card currently in the pi to a network drive / USB drive using the &lt;strong&gt;dd&lt;/strong&gt; command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;sudo dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/my.img bs=1M&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;(replace &lt;strong&gt;/dev/mmcblk0p2&lt;/strong&gt; with your own SD card and &lt;strong&gt;/home/pi/networkdrive/my.img&lt;/strong&gt; with your own network drive / USB drive + image file name)&lt;/p&gt;
+
+&lt;p&gt;And if we want this to run periodically? keep reading&lt;/p&gt;
+
+&lt;h3 id=&quot;self-maintenance-with-cron-jobs&quot;&gt;Self maintenance with cron jobs&lt;/h3&gt;
+
+&lt;p&gt;Last but not least, since the raspberry will be running 24/7 it’s a good idea to run some commands from time to time to have everything running smoothly. I do it with &lt;a href=&quot;https://en.wikipedia.org/wiki/Cron&quot;&gt;cron&lt;/a&gt; jobs. If you run this command&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;sudo crontab -e&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You’ll see the jobs that need root rights to run. I have the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;@daily dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/rasp-`date +\%Y\%m\%d\%H\%M\%S`.img bs=1M
+
+0 3 * * * /usr/bin/apt-get update &amp;amp;&amp;amp;  /usr/bin/apt-get upgrade -q -y &amp;gt;&amp;gt; /var/log/apt/myupdates.log
+
+0 5 * * 0 reboot&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Well the first one is the command that makes the backup but the name depends on the date and time so I can have backups of several days in the same folder.&lt;/p&gt;
+
+&lt;p&gt;The second one is simply and update and an upgrade that writes a log for debug purposes. It runs daily at 3am. The third is that once a week I want the raspberry to do a reboot at 5am.&lt;/p&gt;
+
+&lt;p&gt;Now if I run this other command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;crontab -e&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I can see more jobs I have, one is the free DNS to work&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;0 5 * * * find /media/netdisk/backup/ -mindepth 1 -type f -mtime +3 -delete&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The only one left deletes the backup files older than 3 days, otherwise my HD was full very easily and I had to delete the backups manually, no way!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="raspberry pi" /><category term="block" /><category term="ad" /><category term="VPN" /><summary>Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)</summary></entry><entry><title>Raspberry Pi 3 a.k.a the 24/7 auto downloader</title><link href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader" /><published>2017-05-03T00:00:00+02:00</published><updated>2017-05-03T00:00:00+02:00</updated><id>http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)</id><content type="html" xml:base="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/">&lt;p&gt;Following the guide to have a Raspberry hadling all the media downloads at home, let’s continue:&lt;/p&gt;
 
 &lt;h3 id=&quot;bittorrent-client&quot;&gt;BitTorrent client&lt;/h3&gt;
 
@@ -8,7 +72,7 @@
 
 &lt;h3 id=&quot;tv-shows---sonarr&quot;&gt;TV shows - Sonarr&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/sonarr1.PNG&quot; alt=&quot;Sonarr&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/sonarr1.png&quot; alt=&quot;Sonarr&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sonarr will handle all the TV shows downloads. I’m in love with &lt;a href=&quot;https://sonarr.tv/&quot;&gt;Sonarr&lt;/a&gt; and the moment you start using it you will feel the same. The &lt;a href=&quot;https://www.htpcguides.com/install-sonarr-raspberry-pi-mono-310/&quot;&gt;installation&lt;/a&gt; is a little bit more tricky since it involves Mono. Once you have it running, remember to configure it to use the deluge client you installed before (or any other you chose).&lt;/p&gt;
 
@@ -16,7 +80,7 @@
 
 &lt;p&gt;Also you need to set up some indexers for the content (rarbg in my case at the time of writing). After that is easy, just add the shows you are interested in and the quality you want and they will be downloaded automatically when released, skip the part about moving/renaming for the moment. A calendar will be created:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/sonarr2.PNG&quot; alt=&quot;Sonarr calendar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/sonarr2.png&quot; alt=&quot;Sonarr calendar&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If it wasn’t enough you can also configure notification in “Connections”. In my case I have pushbullet telling me when a TV show has been grabbed. Later you will see this is not necessary with Filebot.&lt;/p&gt;
 
@@ -24,7 +88,7 @@
 
 &lt;p&gt;My love doesn’t go only to Sonarr, &lt;a href=&quot;https://couchpota.to/&quot;&gt;CouchPotato&lt;/a&gt; is also deep in my heart, I guess I have “software polygamy”. Downloading movies will become very easy.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/couchpotato.PNG&quot; alt=&quot;CouchPotato&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/couchpotato.png&quot; alt=&quot;CouchPotato&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After a very easy installation, the configuration is similar to Sonarr, set you downloader (deluge), indexers and were to download the movies. Skip the part about moving/renaming like before. Once configured what CouchPotato will do for you is download the movies you are interested in the moment they are available in a good enough quality (can be configured), add them to your wanted list and go to the cinema only when really necessary. You can also automatically add movies that have more than an 8 in IMDB….boom!&lt;/p&gt;
 
@@ -38,21 +102,25 @@
 
 &lt;p&gt;After it, I use Filebot with commands, scripts I configured, not the UI. In Deluge you need to install the &lt;a href=&quot;https://www.filebot.net/forums/viewtopic.php?t=3974&quot;&gt;Execute plugin&lt;/a&gt;. This plugin allows you to run a script after downloading a file, and that’s what we will do:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;#!/bin/bash
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;```
+#!/bin/bash
 
 torrentid=$1
 torrentname=$2
 torrentpath=$3
 
-/usr/share/filebot/filebot.sh -script fn:amc --output &quot;/media/netdisk/PlexMedia&quot; --log-file /home/pi/amc.log --action move --conflict override -non-strict --def subtitles=en,es artwork=y clean=y reportError=y gmail=esbroma:XXXXXXXXXXX pushbullet=XXXXXXXXXXXX &quot;ut_dir=$torrentpath/$torrentname&quot; &quot;ut_kind=multi&quot; &quot;ut_title=$torrentname&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+/usr/share/filebot/filebot.sh -script fn:amc --output &quot;/media/netdisk/PlexMedia&quot; --log-file /home/pi/amc.log --action move --conflict override -non-strict --def subtitles=en,es artwork=y clean=y reportError=y gmail=esbroma:XXXXXXXXXXX pushbullet=XXXXXXXXXXXX &quot;ut_dir=$torrentpath/$torrentname&quot; &quot;ut_kind=multi&quot; &quot;ut_title=$torrentname&quot;
+```&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Basically, the script.sh is moving the media to the PlexMedia folder, there will create a folder for Movies and other for Tv Shows, inside them a folder per movie/tv show and inside TV shows a folder per season. It will also rename it, grab subtitles (if available) in this case in english and spanish. It will also notify me by email and by pushbullet. As you may have noticed, a log is created to track possible issues.&lt;/p&gt;
 
 &lt;p&gt;Another possible script you can configure is one that looks for subtitles from time to time. It can be necessary because very often you will download media freshly released and the subtitles won’t be available yet.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;#!/bin/bash
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;```
+#!/bin/bash
 
-/usr/share/filebot/filebot.sh -script fn:suball &quot;/media/netdisk/PlexMedia&quot; --log-file /home/pi/subtitle.log -non-strict --def maxAgeDays=7 subtitles=en,es ignoreTextLanguage=en,es reportError=y pushbullet=XXXXXXXXXXXX&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+/usr/share/filebot/filebot.sh -script fn:suball &quot;/media/netdisk/PlexMedia&quot; --log-file /home/pi/subtitle.log -non-strict --def maxAgeDays=7 subtitles=en,es ignoreTextLanguage=en,es reportError=y pushbullet=XXXXXXXXXXXX
+```&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;In this example, I’m looking for missing subtitles in media that is one week older at most.&lt;/p&gt;
 
@@ -62,7 +130,7 @@ torrentpath=$3
 
 &lt;p&gt;I tried to &lt;a href=&quot;https://raspberrypi.stackexchange.com/questions/50031/raspberry-pi-3-as-plex-media-server-local-without-transcoding&quot;&gt;use Plex on the raspberri pi&lt;/a&gt;, and did some &lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?f=35&amp;amp;t=151924&amp;amp;p=999730#p999730&quot;&gt;research&lt;/a&gt; to see if it was possible. But no luck, only with media that is not too high quality. At the end I run Plex on another computer that uses the media on the net disk. Is in this Plex server where I installed &lt;a href=&quot;https://forums.plex.tv/discussion/186575&quot;&gt;SubZero&lt;/a&gt; channel, it will help you download subtitles too (yes I hate searching and adding subtitles manually).&lt;/p&gt;
 
-&lt;p&gt;And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="raspberry pi" /><category term="download" /><category term="auto" /><category term="tvshows" /><category term="movies" /><summary>Series of posts in which I&#39;ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitles and the media in an unattended 24/7 way.</summary></entry><entry><title>Raspberry Pi 3 a.k.a the 24/7 auto downloader</title><link href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader" /><published>2017-03-18T00:00:00+01:00</published><updated>2017-03-18T00:00:00+01:00</updated><id>http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader</id><content type="html" xml:base="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
+&lt;p&gt;And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="raspberry pi" /><category term="download" /><category term="auto" /><category term="tvshows" /><category term="movies" /><summary>Series of posts in which I&#39;ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended 24/7 way.</summary></entry><entry><title>Raspberry Pi 3 a.k.a the 24/7 auto downloader</title><link href="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader" /><published>2017-03-18T00:00:00+01:00</published><updated>2017-03-18T00:00:00+01:00</updated><id>http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader</id><content type="html" xml:base="http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/">&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
 
 &lt;p&gt;I recently bought a Raspberry pi 3, it was improvised I had bought a Pine A64 but it was taking ages to arrive, then the new powerful version of the Pi appeared and I could not resist, Amazon and in couple days at home.&lt;/p&gt;
 
@@ -213,7 +281,28 @@ During the event they showed this video I wanted to share, it shows in a practic
 
 &lt;p&gt;During the exam, use the bookmarks to mark the questions you have some doubts and go through them in a second iteration (hahaha the scrum way!)&lt;/p&gt;
 
-&lt;p&gt;Good luck!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="scrum master" /><category term="scrum.org" /><category term="agile" /><category term="scrum" /><category term="training" /><category term="certification" /><summary>I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:</summary></entry><entry><title>Technical debt</title><link href="http://juan.pallares.me/Technical-debt/" rel="alternate" type="text/html" title="Technical debt" /><published>2016-01-04T00:00:00+01:00</published><updated>2016-01-04T00:00:00+01:00</updated><id>http://juan.pallares.me/Technical debt</id><content type="html" xml:base="http://juan.pallares.me/Technical-debt/">&lt;h2 id=&quot;the-analogy&quot;&gt;The analogy&lt;/h2&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="scrum master" /><category term="scrum.org" /><category term="agile" /><category term="scrum" /><category term="training" /><category term="certification" /><summary>I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:
+
+
+  There’s no Sprint 0. Also no hardening Sprint, integration Sprint, release Sprint, planning Sprint, etc. All Sprints are the same.
+  Only the Development Team are required to participate in the Daily Scrums.
+  There’s always only one Product Backlog and one Product Owner, no matter how many teams are working on the project.
+  There are no roles other than those three standard ones, and none of them manage the rest, development teams self organize.
+
+
+With this input a lot of questions that may appear in the test can be answered much more easily. Apart for the tips, the preparation shoul be:
+
+
+  Read the scrum guide
+  Read books such as - Scrum and Xp From the trenches, Kanban &amp;amp; Scrum
+  Work with SCRUM framework in your current employment (if possible)
+  Do Scrum Open assessment several times and takes notes of the erros, don’t stop until you get 100% always
+  Read the agile manifesto
+
+
+During the exam, use the bookmarks to mark the questions you have some doubts and go through them in a second iteration (hahaha the scrum way!)
+
+Good luck!</summary></entry><entry><title>Technical debt</title><link href="http://juan.pallares.me/Technical-debt/" rel="alternate" type="text/html" title="Technical debt" /><published>2016-01-04T00:00:00+01:00</published><updated>2016-01-04T00:00:00+01:00</updated><id>http://juan.pallares.me/Technical debt</id><content type="html" xml:base="http://juan.pallares.me/Technical-debt/">&lt;h2 id=&quot;the-analogy&quot;&gt;The analogy&lt;/h2&gt;
 
 &lt;p&gt;The term was first used by Ward Cunninham in 1992. He realized financial debt could be compared to technical debt in order to understand easily causes and consequences of it.&lt;/p&gt;
 
@@ -297,7 +386,28 @@ It can also help us in some scenarios to deliver a functionality.&lt;/p&gt;
 
 &lt;p&gt;People got really engaged and didn’t even want to make breaks. We, the MEAN “experts”, were giving support to the teams during all the coding and gave an example application of a library so they could get the basic structure to start.&lt;/p&gt;
 
-&lt;p&gt;We were really surprised by the results and the winning team made a really interesting app. It was difficult to believe they did it in such a short period of time.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="MEAN" /><category term="hackaton" /><category term="mongodb" /><category term="angular.js" /><category term="express" /><category term="node.js" /><summary>Since I did the MongoDB course I got involved in organizing a Hackaton in the MEAN stack.</summary></entry><entry><title>M101N MongoDB for .NET</title><link href="http://juan.pallares.me/mongodb-for-NET-M101N/" rel="alternate" type="text/html" title="M101N MongoDB for .NET" /><published>2015-05-17T00:00:00+02:00</published><updated>2015-05-17T00:00:00+02:00</updated><id>http://juan.pallares.me/mongodb-for-NET-M101N</id><content type="html" xml:base="http://juan.pallares.me/mongodb-for-NET-M101N/">&lt;p&gt;I just finished the online course &lt;a href=&quot;https://university.mongodb.com/courses/M101N/about&quot;&gt;M101N MongoDB for .NET&lt;/a&gt; and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
+&lt;p&gt;We were really surprised by the results and the winning team made a really interesting app. It was difficult to believe they did it in such a short period of time.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="MEAN" /><category term="hackaton" /><category term="mongodb" /><category term="angular.js" /><category term="express" /><category term="node.js" /><summary>Since I did the MongoDB course I got involved in organizing a Hackaton in the MEAN stack.
+
+What the hell is MEAN?
+
+MEAN is an opinionated fullstack javascript framework which simplifies and accelerates web application development.
+
+
+  M stands for MongoDB
+  E stands for express - minimal and flexible node.js web application framework
+  A stands for Angular.js - lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+  N stands for Node.js - a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications
+
+
+As you see it covers everything, database, server and web. It let’s you do decent web apps in a short time.
+
+Hackaton
+
+The people got divided in teams of three and after a brief introduction of the MEAN stack  (20 minutes per technology) they had literally one day and a half to make something cool.
+
+People got really engaged and didn’t even want to make breaks. We, the MEAN “experts”, were giving support to the teams during all the coding and gave an example application of a library so they could get the basic structure to start.
+
+We were really surprised by the results and the winning team made a really interesting app. It was difficult to believe they did it in such a short period of time.</summary></entry><entry><title>M101N MongoDB for .NET</title><link href="http://juan.pallares.me/mongodb-for-NET-M101N/" rel="alternate" type="text/html" title="M101N MongoDB for .NET" /><published>2015-05-17T00:00:00+02:00</published><updated>2015-05-17T00:00:00+02:00</updated><id>http://juan.pallares.me/mongodb-for-NET-M101N</id><content type="html" xml:base="http://juan.pallares.me/mongodb-for-NET-M101N/">&lt;p&gt;I just finished the online course &lt;a href=&quot;https://university.mongodb.com/courses/M101N/about&quot;&gt;M101N MongoDB for .NET&lt;/a&gt; and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
 I recommend it to every developer who wants to get to know this famous &lt;a href=&quot;http://www.mongodb.com/nosql-explained&quot;&gt;NoSQL&lt;/a&gt; database.&lt;/p&gt;
 
 &lt;p&gt;There are also &lt;a href=&quot;https://university.mongodb.com/courses/catalog&quot;&gt;another possible courses&lt;/a&gt; such as:&lt;/p&gt;
@@ -337,7 +447,45 @@ I recommend it to every developer who wants to get to know this famous &lt;a hre
 &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_id&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;user_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="mongo" /><category term=".NET" /><category term="mongodb" /><category term="course" /><category term="certification" /><summary>I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
-I recommend it to every developer who wants to get to know this famous NoSQL database.</summary></entry><entry><title>Explaining SOLID principles with C# examples</title><link href="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/" rel="alternate" type="text/html" title="Explaining SOLID principles with C# examples" /><published>2015-03-15T00:00:00+01:00</published><updated>2015-03-15T00:00:00+01:00</updated><id>http://juan.pallares.me/Explaining-SOLID-principles-with-C#-examples</id><content type="html" xml:base="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/">&lt;h3 id=&quot;what-is-solid&quot;&gt;What is SOLID?&lt;/h3&gt;
+I recommend it to every developer who wants to get to know this famous NoSQL database.
+
+There are also another possible courses such as:
+
+
+  MongoDB for Java developers
+  MongoDB for Node.js developers
+  MongoDB for DBAs
+  …
+
+
+Querying in MongoDB is with JavaScript and it takes some time to set your mind to use it instead of SQL. I’ll leave your with some SQL statements and the equivalent in MongoDB:
+
+Simple query
+
+SELECT *
+FROM users
+
+db.users.find()
+
+Filter
+
+SELECT *
+FROM users
+WHERE age &amp;gt; 25
+AND   age &amp;lt;= 50
+
+db.users.find(
+   { age: { $gt: 25, $lte: 50 } }
+)
+
+Filter and order
+
+SELECT *
+FROM users
+WHERE status = &quot;A&quot;
+ORDER BY user_id DESC
+
+db.users.find( { status: &quot;A&quot; } ).sort( { user_id: -1 } )</summary></entry><entry><title>Explaining SOLID principles with C# examples</title><link href="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/" rel="alternate" type="text/html" title="Explaining SOLID principles with C# examples" /><published>2015-03-15T00:00:00+01:00</published><updated>2015-03-15T00:00:00+01:00</updated><id>http://juan.pallares.me/Explaining-SOLID-principles-with-C#-examples</id><content type="html" xml:base="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/">&lt;h3 id=&quot;what-is-solid&quot;&gt;What is SOLID?&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29&quot;&gt;SOLID&lt;/a&gt; are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time, which helps to create good software architecture. The SOLID acronym stands for:&lt;/p&gt;
 
@@ -587,7 +735,7 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 
 &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReservationLog&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IPersist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ILog&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;###Dependency inversion principle (DIP)&lt;/p&gt;
+&lt;h3 id=&quot;dependency-inversion-principle-dip&quot;&gt;Dependency inversion principle (DIP)&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;High-level modules should not depend on low-level modules. Both should depend on abstractions.&lt;/strong&gt;&lt;/li&gt;
@@ -685,39 +833,39 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;notice&quot;&gt;Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="pair programming" /><category term="xp" /><category term="developing" /><category term="software" /><summary>After pair programming pretty often for the last months this is what I think about it:</summary></entry><entry><title>C# in depth by Jon Skeet</title><link href="http://juan.pallares.me/C-in-depth-jon-skeet/" rel="alternate" type="text/html" title="C# in depth by Jon Skeet" /><published>2015-01-18T00:00:00+01:00</published><updated>2015-01-18T00:00:00+01:00</updated><id>http://juan.pallares.me/C#-in-depth-jon-skeet</id><content type="html" xml:base="http://juan.pallares.me/C-in-depth-jon-skeet/">&lt;p&gt;I just finished reading &lt;a href=&quot;http://www.amazon.com/Depth-3rd-Edition-Jon-Skeet/dp/161729134X&quot;&gt;C# in depth by Jon Skeet&lt;/a&gt;, the book covers the evolution from the first version of C# until C# 5 (at least the edition I read). Explaining in detail all the new features that have been added during time.&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="pair programming" /><category term="xp" /><category term="developing" /><category term="software" /><summary>After pair programming pretty often for the last months this is what I think about it:
 
-&lt;p&gt;The book is divided in 5 parts:&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;C# 1 core foundations&lt;/strong&gt; This is an introduction to the book - experienced developers could skip it completely if they really wanted to&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;C# 2 new features&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Generics&lt;/li&gt;
-      &lt;li&gt;Nullable types&lt;/li&gt;
-      &lt;li&gt;Anonymous methods in delegates&lt;/li&gt;
-      &lt;li&gt;Yield statement&lt;/li&gt;
-      &lt;li&gt;Minor features like partial types, stacic classes, separate getter/setter property access, namespace aliases, exposiing internals to selected assemblies…&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;C# 3 LINQ&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Features contributing LINQ (automatically implemented properties, implicit typing of local variables, simplified initialization, implicity typed arrays and anonymous types)&lt;/li&gt;
-      &lt;li&gt;Lambda expressions and expression trees&lt;/li&gt;
-      &lt;li&gt;Extension methodds&lt;/li&gt;
-      &lt;li&gt;Query expressions and LINQ to objects&lt;/li&gt;
-      &lt;li&gt;LINQ beyond collections&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;C# 4 Dynamic typing&lt;/strong&gt; and minor changes
-    &lt;ul&gt;
-      &lt;li&gt;Optional parameters, generic variance…&lt;/li&gt;
-      &lt;li&gt;Dynamic binding in static language&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;C# 5 Asynchrony with async/await&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
+  
+    Pair programming improves code quality.
+  
+  
+    Pair programming improves team focus (for example when the guy behind you says “hey is that stuff really necessary for this sprint?”).
+  
+  
+    Surprisingly many developers that are strongly against pair programming actually haven’t tried it, and quickly learn to like it once they do try it.
+  
+  
+    Pair programming is exhaustive and should not be done all day.
+  
+  
+    Pair programming should be done in complex stories  only(related with the previous).
+  
+  
+    Shifting pairs frequently is good.
+  
+  
+    Pair programming does improve knowledge spread within the group (Related with the previous too).
+  
+  
+    Some people just aren’t comfortable with pair programming. Don’t throw out an excellent programmer just because he isn’t comfortable with pair programming.
+  
+  
+    Code review is an OK alternative to pair programming.
+  
+  
+    It’s useful that the “navigator” (the guy not using the keyboard) has a computer of his own as well. Not for development, but for doing little spikes when necessary, browsing documentation when the “driver” (the guy at the keyboard) gets stuck, etc.
+  
 
-&lt;p class=&quot;notice&quot;&gt;I recommend this book to all the C# experienced developers who want to improve his knowledge about they language they use daily.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="c#" /><category term="jonskeet" /><category term="book" /><summary>I just finished reading C# in depth by Jon Skeet, the book covers the evolution from the first version of C# until C# 5 (at least the edition I read). Explaining in detail all the new features that have been added during time.</summary></entry></feed>
+
+Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.</summary></entry></feed>
