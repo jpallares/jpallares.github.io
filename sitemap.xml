@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://juan.pallares.me/Raspbery-pi-iii-bonus-track-pi-hole-pivpn/</loc>
+<loc>http://juan.pallares.me/raspberry-pi-hole-vpn/</loc>
 <lastmod>2017-09-03T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader-(II)/</loc>
+<loc>http://juan.pallares.me/raspberry-pi-autodownloader-2/</loc>
 <lastmod>2017-05-03T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://juan.pallares.me/Raspbery-pi-aka-the-247-auto-downloader/</loc>
+<loc>http://juan.pallares.me/raspberry-pi-autodownloader/</loc>
 <lastmod>2017-03-18T00:00:00+01:00</lastmod>
 </url>
 <url>
@@ -131,5 +131,11 @@
 </url>
 <url>
 <loc>http://juan.pallares.me/tags/</loc>
+</url>
+<url>
+<loc>http://juan.pallares.me/page2/</loc>
+</url>
+<url>
+<loc>http://juan.pallares.me/page3/</loc>
 </url>
 </urlset>

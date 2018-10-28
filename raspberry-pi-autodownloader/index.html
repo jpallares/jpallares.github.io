@@ -19,7 +19,7 @@
 
 
 
-<title>Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required) - Juan Pallarès Garbí</title>
+<title>Raspberry Pi 3 a.k.a the 24/7 auto downloader - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)">
+<meta property="og:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/problemas-con-nuget-conectando-traves/">
-  <meta property="og:url" content="http://juan.pallares.me/problemas-con-nuget-conectando-traves/">
+  <link rel="canonical" href="http://juan.pallares.me/raspberry-pi-autodownloader/">
+  <meta property="og:url" content="http://juan.pallares.me/raspberry-pi-autodownloader/">
 
 
 
-  <meta property="og:description" content="Me encontré el otro día con que no podía instalar paquetes desde NuGet en Visual Studio 2010. El error era &quot;Error 407 Proxy Authentication Required&quot;. No funcionaba tampoco desde la Package Manager Console. Recordé que recientemente había actualizado la password que usaba para el proxy (bueno, realmente estaba obligado por la política de caducidad).Al parecer NuGet no reconocía esta nueva password, aunque me la solicitara y yo la introdujera internamente no la actualizaba porque seguía saliendo el error.Al final, como no, stackoverflow al rescate. La solución era configurar la password mediante el fichero NuGet.config que podemos encontrar en C:\Users\nombreusuario\AppData\Roaming,&nbsp;al menos en mi máquina con Windows 7.Para poder añadir estos campos al fichero XML la mejor opción es bajarse NuGet.exe desde aquí y ejecutar los siguientes comandos:nuget.exe config -set http_proxy=http://my.proxy.address:portnuget.exe config -set http_proxy.user=mydomain\myUserNamenuget.exe config -set http_proxy.password=mySuperSecretPassword">
+  <meta property="og:description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended …">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)">
-  <meta name="twitter:description" content="Me encontré el otro día con que no podía instalar paquetes desde NuGet en Visual Studio 2010. El error era &quot;Error 407 Proxy Authentication Required&quot;. No funcionaba tampoco desde la Package Manager Console. Recordé que recientemente había actualizado la password que usaba para el proxy (bueno, realmente estaba obligado por la política de caducidad).Al parecer NuGet no reconocía esta nueva password, aunque me la solicitara y yo la introdujera internamente no la actualizaba porque seguía saliendo el error.Al final, como no, stackoverflow al rescate. La solución era configurar la password mediante el fichero NuGet.config que podemos encontrar en C:\Users\nombreusuario\AppData\Roaming,&nbsp;al menos en mi máquina con Windows 7.Para poder añadir estos campos al fichero XML la mejor opción es bajarse NuGet.exe desde aquí y ejecutar los siguientes comandos:nuget.exe config -set http_proxy=http://my.proxy.address:portnuget.exe config -set http_proxy.user=mydomain\myUserNamenuget.exe config -set http_proxy.password=mySuperSecretPassword">
-  <meta name="twitter:url" content="http://juan.pallares.me/problemas-con-nuget-conectando-traves/">
+  <meta name="twitter:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
+  <meta name="twitter:description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended …">
+  <meta name="twitter:url" content="http://juan.pallares.me/raspberry-pi-autodownloader/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,12 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2014-02-27T20:00:00+01:00">
+  <meta property="article:published_time" content="2017-03-18T00:00:00+01:00">
   
-    <link rel="next" href="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/" title="Mostrar columnas como una fila separada por comas en Crystal Reports">
+    <link rel="next" href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II">
   
   
-    <link rel="prev" href="http://juan.pallares.me/windows-81-arreglar-error-we-werent/" title="Windows 8.1 - Arreglar error &quot;We weren&#39;t able to connect to the store...&quot;">
+    <link rel="prev" href="http://juan.pallares.me/lean/" title="Lean introduction">
   
 
 
@@ -230,24 +230,73 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)">
-    <meta itemprop="description" content="Me encontré el otro día con que no podía instalar paquetes desde NuGet en Visual Studio 2010. El error era &quot;Error 407 Proxy Authentication Required&quot;. No funcionaba tampoco desde la Package Manager Console. Recordé que recientemente había actualizado la password que usaba para el proxy (bueno, realmente estaba obligado por la política de caducidad).Al parecer NuGet no reconocía esta nueva password, aunque me la solicitara y yo la introdujera internamente no la actualizaba porque seguía saliendo el error.Al final, como no, stackoverflow al rescate. La solución era configurar la password mediante el fichero NuGet.config que podemos encontrar en C:\Users\nombreusuario\AppData\Roaming,&nbsp;al menos en mi máquina con Windows 7.Para poder añadir estos campos al fichero XML la mejor opción es bajarse NuGet.exe desde aquí y ejecutar los siguientes comandos:nuget.exe config -set http_proxy=http://my.proxy.address:portnuget.exe config -set http_proxy.user=mydomain\myUserNamenuget.exe config -set http_proxy.password=mySuperSecretPassword">
-    <meta itemprop="datePublished" content="February 27, 2014">
+    <meta itemprop="headline" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
+    <meta itemprop="description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended …">
+    <meta itemprop="datePublished" content="March 18, 2017">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Problemas con NuGet conectando a través de un proxy (Error 407 Proxy Authentication Required)
+          <h1 class="page__title" itemprop="headline">Raspberry Pi 3 a.k.a the 24/7 auto downloader
 </h1>
           
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <div class="css-full-post-content js-full-post-content">
-Me encontré el otro día con que no podía instalar paquetes desde NuGet en Visual Studio 2010. El error era <i>"Error 407 Proxy Authentication Required"</i>. No funcionaba tampoco desde la <i>Package Manager Console</i>. Recordé que recientemente había actualizado la password que usaba para el proxy (bueno, realmente estaba obligado por la política de caducidad).<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-QoNckcdN0vw/UxB7MxkeFDI/AAAAAAAAtxk/y6l-nr9Tbb0/s1600/nuget.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-QoNckcdN0vw/UxB7MxkeFDI/AAAAAAAAtxk/y6l-nr9Tbb0/s1600/nuget.png" height="97" width="320" /></a></div><br /><br /><div class="separator" style="clear: both; text-align: center;"></div>Al parecer NuGet no reconocía esta nueva password, aunque me la solicitara y yo la introdujera internamente no la actualizaba porque seguía saliendo el error.<br /><br />Al final, como no, <a href="http://stackoverflow.com/questions/9232160/nuget-behind-proxy" target="_blank">stackoverflow al rescate</a>. La solución era configurar la password mediante el fichero NuGet.config que podemos encontrar en <em style="background-color: white; border: 0px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif; font-size: 14px; line-height: 17.804800033569336px; margin: 0px; padding: 0px; vertical-align: baseline;">C:\Users\nombreusuario\AppData\Roaming,&nbsp;</em>al menos en mi máquina con Windows 7.<br /><br />Para poder añadir estos campos al fichero XML la mejor opción es bajarse <a href="http://nuget.codeplex.com/releases/view/100803" target="_blank">NuGet.exe desde aquí</a> y ejecutar los siguientes comandos:<br /><blockquote class="tr_bq">nuget.exe config -set http_proxy=http://my.proxy.address:port<br />nuget.exe config -set http_proxy.user=mydomain\myUserName<br />nuget.exe config -set http_proxy.password=mySuperSecretPassword</blockquote>
+        <h3 id="why">Why?</h3>
+
+<p>I recently bought a Raspberry pi 3, it was improvised I had bought a Pine A64 but it was taking ages to arrive, then the new powerful version of the Pi appeared and I could not resist, Amazon and in couple days at home.</p>
+
+<p><img src="../images/raspberrypi.jpg" alt="Raspberry Pi 3" title="Raspberry Pi 3" /></p>
+
+<p>My plan for it was basically replicating the automatic downloading of torrents (movies and tv shows mainly). I had it in a PC so I had powered on all day. This way I would take advantage of the Pi low consumption. Also I would take the chance to refresh my unix knowledge.</p>
+
+<p>Ingredientes:</p>
+
+<ul>
+  <li>Raspberry Pi</li>
+  <li><a href="https://www.amazon.es/gp/product/B00J2BU7WO/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1">SD Card</a> - 16Gb is more than enough, we will use an external disk for video storage</li>
+  <li><a href="https://www.amazon.es/gp/product/B00W7S1BFG/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1">Case</a> (optional)</li>
+  <li><a href="https://www.amazon.es/gp/product/B01DDW0P1U/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1">Power cable</a> (optional, you may have a spare one but I wanted a quality one with enough amperage)</li>
+</ul>
+
+<h3 id="first-steps">First steps</h3>
+
+<p>As you already know the Pi works with linux, there are all kind of images available to download but I choose the <a href="https://www.raspberrypi.org/help/videos/">recommended one</a>, Raspbian, looking for flexibility. The installation is very easy but keep in mind you will need a monitor with HDMI connection and a keyboard plugged in the Pi.</p>
+
+<p>Once you have Raspbian up and running, next thing is to configure the Pi to be able to <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md">work remotely with SHH</a>, then you can leave it somewhere hidden just connected to the power and the network (I recommend using the ethernet even if the Pi has wifi and the ethernet port is 10/100Mb only, I guess I’m old school)</p>
+
+<h3 id="mounting-external-drive">Mounting external drive</h3>
+
+<p>For media storage I used a 1TB USB external drive connected to the router, the process is a little bit more complicated than it if you have it directly connected to the Pi, but easy anyway. I followed the steps <a href="http://raspberrypi.stackexchange.com/questions/40974/access-network-samba-share-from-pi-client">here</a>. Basically these commands (for anonymous access):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
+mkdir /mnt/abc
+mount -t cifs //server/share /mnt/abc
+</code></pre>
 </div>
+
+<p>I also configured a cronjob so in every reboot it automonts the network disk</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@reboot sleep 10 &amp;&amp; mount -a
+</code></pre>
+</div>
+
+<h3 id="rpi-monitor">RPi-Monitor</h3>
+
+<p>To close this first post about the Pi, I want to talk about the RPi-Monitor, as the name says it’s a monitor that tells you basic information about the status of the Pi:</p>
+
+<p><img src="../images/rpi-monitor.png" alt="RPi-Monitor" title="RPi-Monitor" /></p>
+
+<p>It’s perfect to detect if suddenly the CPU is under heavy load or it’s becoming too hot. It also helps track if you have the latest software installed.</p>
+
+<h3 id="this-is-only-the-beginning">This is only the beginning</h3>
+
+<p>Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)</p>
+
+
         
       </section>
 
@@ -271,19 +320,23 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
     
       
       
-      <a href="http://juan.pallares.me/tags/#error" class="page__taxonomy-item" rel="tag">error</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#auto" class="page__taxonomy-item" rel="tag">auto</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#nuget" class="page__taxonomy-item" rel="tag">NuGet</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#download" class="page__taxonomy-item" rel="tag">download</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#proxy" class="page__taxonomy-item" rel="tag">proxy</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#movies" class="page__taxonomy-item" rel="tag">movies</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#visual-studio" class="page__taxonomy-item" rel="tag">Visual Studio</a>
+      <a href="http://juan.pallares.me/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">raspberry pi</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://juan.pallares.me/tags/#tvshow" class="page__taxonomy-item" rel="tag">tvshow</a>
     
     </span>
   </p>
@@ -292,7 +345,7 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2014-02-27T20:00:00+01:00">February 27, 2014</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2017-03-18T00:00:00+01:00">March 18, 2017</time></p>
         
       </footer>
 
@@ -301,13 +354,13 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/problemas-con-nuget-conectando-traves/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/problemas-con-nuget-conectando-traves/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/problemas-con-nuget-conectando-traves/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/problemas-con-nuget-conectando-traves/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -315,11 +368,11 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/windows-81-arreglar-error-we-werent/" class="pagination--pager" title="Windows 8.1 - Arreglar error “We weren’t able to connect to the store…”
+      <a href="http://juan.pallares.me/lean/" class="pagination--pager" title="Lean introduction
 "></a>
     
     
-      <a href="http://juan.pallares.me/mostrar-columnas-como-una-fila-separada/" class="pagination--pager" title="Mostrar columnas como una fila separada por comas en Crystal Reports
+      <a href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II
 "></a>
     
   </nav>
@@ -404,33 +457,6 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "http://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Raspberry Pi 3 a.k.a the 24/7 auto downloader
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended …
-</p>
-    </article>
-  </a>
-</div>
-        
-          
-
-
-
-<div class="grid__item">
-  
     <a href="http://juan.pallares.me/lean/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -447,6 +473,32 @@ Me encontré el otro día con que no podía instalar paquetes desde NuGet en Vis
 </h2>
       
       <p class="archive__item-excerpt" itemprop="description">After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on making obvious what adds value by reducing ever...</p>
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="http://juan.pallares.me/professional-scrum-master/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "http://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">Professional Scrum Master certification
+</h2>
+      
+      <p class="archive__item-excerpt" itemprop="description">I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official train...</p>
     </article>
   </a>
 </div>

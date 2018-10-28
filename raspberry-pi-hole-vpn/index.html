@@ -19,7 +19,7 @@
 
 
 
-<title>Professional Scrum Master certification - Juan Pallarès Garbí</title>
+<title>Raspberry Pi 3 III Pi-hole PiVPN - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Professional Scrum Master certification">
+<meta property="og:title" content="Raspberry Pi 3 III Pi-hole PiVPN">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/professional-scrum-master/">
-  <meta property="og:url" content="http://juan.pallares.me/professional-scrum-master/">
+  <link rel="canonical" href="http://juan.pallares.me/raspberry-pi-hole-vpn/">
+  <meta property="og:url" content="http://juan.pallares.me/raspberry-pi-hole-vpn/">
 
 
 
-  <meta property="og:description" content="I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:">
+  <meta property="og:description" content="Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Professional Scrum Master certification">
-  <meta name="twitter:description" content="I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:">
-  <meta name="twitter:url" content="http://juan.pallares.me/professional-scrum-master/">
+  <meta name="twitter:title" content="Raspberry Pi 3 III Pi-hole PiVPN">
+  <meta name="twitter:description" content="Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)">
+  <meta name="twitter:url" content="http://juan.pallares.me/raspberry-pi-hole-vpn/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,10 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2016-05-08T00:00:00+02:00">
-  
-    <link rel="next" href="http://juan.pallares.me/lean/" title="Lean introduction">
+  <meta property="article:published_time" content="2017-09-03T00:00:00+02:00">
   
   
-    <link rel="prev" href="http://juan.pallares.me/Technical-debt/" title="Technical debt">
+    <link rel="prev" href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II">
   
 
 
@@ -230,43 +228,99 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Professional Scrum Master certification">
-    <meta itemprop="description" content="I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:">
-    <meta itemprop="datePublished" content="May 08, 2016">
+    <meta itemprop="headline" content="Raspberry Pi 3 III Pi-hole PiVPN">
+    <meta itemprop="description" content="Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)">
+    <meta itemprop="datePublished" content="September 03, 2017">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Professional Scrum Master certification
+          <h1 class="page__title" itemprop="headline">Raspberry Pi 3 III Pi-hole PiVPN
 </h1>
           
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p>I recently obtained the Professional Scrum Master certification (PSM I) issued by <a href="scrum.org">scrum.org</a>. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:</p>
+        <p>In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.</p>
 
-<ul>
-  <li><strong>There’s no Sprint 0</strong>. Also no hardening Sprint, integration Sprint, release Sprint, planning Sprint, etc. All Sprints are the same.</li>
-  <li>Only the <strong>Development Team</strong> are <strong>required</strong> to participate in the <strong>Daily Scrums</strong>.</li>
-  <li>There’s always only <strong>one Product Backlog</strong> and <strong>one Product Owner</strong>, no matter how many teams are working on the project.</li>
-  <li>There are no roles other than those three standard ones, and <strong>none of them manage the rest</strong>, development teams self organize.</li>
-</ul>
+<h3 id="pi-holehttpspi-holenet---block-ads-in-your-local-network"><a href="https://pi-hole.net/">Pi-hole</a> - Block ads in your local network</h3>
 
-<p>With this input a lot of questions that may appear in the test can be answered much more easily. Apart for the tips, the preparation shoul be:</p>
+<p>I’m used to have always installed an ad-blocker on my browser, the web ads got out of hand long time ago with giant banners that block all the screen so it’s more like a survival thing. The problem comes with the phone browser, there are no good blockers there.</p>
 
-<ul>
-  <li>Read the <a href="http://scrumguides.org/scrum-guide.html">scrum guide</a></li>
-  <li>Read books such as - Scrum and Xp From the trenches, Kanban &amp; Scrum</li>
-  <li>Work with SCRUM framework in your current employment (if possible)</li>
-  <li>Do Scrum Open assessment several times and takes notes of the erros, don’t stop until you get 100% always</li>
-  <li>Read the <a href="http://www.agilemanifesto.org/principles.html">agile manifesto</a></li>
-</ul>
+<p>So imagine a software that blocks the ads but not once they are in the browser, before, they don’t even arrive to your network, your network performance improves, this is Pi-Hole. It even blocks the ads you get on the phone games, amazing.</p>
 
-<p>During the exam, use the bookmarks to mark the questions you have some doubts and go through them in a second iteration (hahaha the scrum way!)</p>
+<p>The installation is very easy and once you have done you can access to manager web with all the info about what’s being blocked, etc.</p>
 
-<p>Good luck!</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>curl -sSL https://install.pi-hole.net | bash
+</code></pre>
+</div>
+
+<p><img src="../images/pihole.png" alt="Pi-hole" title="Pi-hole" /></p>
+
+<h3 id="pivpnhttpwwwpivpnio"><a href="http://www.pivpn.io/">PiVPN</a></h3>
+
+<p>It’s really useful to have a VPN available if you need to use internet in a typical airport “free wifi”, the ones that are not recommended to use with sensible data. PiVPN installs <strong>OpenVPN</strong> on your raspberri in a very simple way. It all starts with a curl command like with pi-hole</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>curl -L https://install.pivpn.io | bash
+</code></pre>
+</div>
+
+<p>Once installed you can create clients for windows/mac/android/iphone.</p>
+
+<h3 id="free-dns">Free DNS</h3>
+
+<p>The only totally free dns provider I found, that does not even send an email monthly to reactivate your account is freedns.afraid.org. You can refresh the IP with a cron job (later more detail about that)</p>
+
+<h3 id="backup">Backup</h3>
+<p>You can create a backup (.img) of your SD card to a network / USB drive while the card is inserted in your pi.</p>
+
+<p>Create an image of the card currently in the pi to a network drive / USB drive using the dd command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/my.img bs=1M
+</code></pre>
+</div>
+
+<p>(replace <strong>/dev/mmcblk0p2</strong> with your own SD card and <strong>/home/pi/networkdrive/my.img</strong> with your own network drive / USB drive + image file name)</p>
+
+<p>And if we want this to run periodically? keep reading</p>
+
+<h3 id="self-maintenance-with-cron-jobs">Self maintenance with cron jobs</h3>
+
+<p>Last but not least, since the raspberry will be running 24/7 it’s a good idea to run some commands from time to time to have everything running smoothly. I do it with <a href="https://en.wikipedia.org/wiki/Cron">cron</a> jobs. If you run this command</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo crontab -e
+</code></pre>
+</div>
+
+<p>You’ll see the jobs that need root rights to run. I have the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@daily dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/rasp-`date +\%Y\%m\%d\%H\%M\%S`.img bs=1M
+
+0 3 * * * /usr/bin/apt-get update &amp;&amp;  /usr/bin/apt-get upgrade -q -y &gt;&gt; /var/log/apt/myupdates.log
+
+0 5 * * 0 reboot
+</code></pre>
+</div>
+
+<p>Well the first one is the command that makes the backup but the name depends on the date and time so I can have backups of several days in the same folder.</p>
+
+<p>The second one is simply and update and an upgrade that writes a log for debug purposes. It runs daily at 3am. The third is that once a week I want the raspberry to do a reboot at 5am.</p>
+
+<p>Now if I run this other command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>crontab -e
+</code></pre>
+</div>
+
+<p>I can see more jobs I have, one is the free DNS to work</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>0 5 * * * find /media/netdisk/backup/ -mindepth 1 -type f -mtime +3 -delete
+</code></pre>
+</div>
+
+<p>The only one left deletes the backup files older than 3 days, otherwise my HD was full very easily and I had to delete the backups manually, no way!</p>
 
         
       </section>
@@ -291,27 +345,31 @@
     
       
       
-      <a href="http://juan.pallares.me/tags/#agile" class="page__taxonomy-item" rel="tag">agile</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#ad" class="page__taxonomy-item" rel="tag">ad</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#certification" class="page__taxonomy-item" rel="tag">certification</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#block" class="page__taxonomy-item" rel="tag">block</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#scrum-master" class="page__taxonomy-item" rel="tag">scrum master</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#openvpn" class="page__taxonomy-item" rel="tag">openvpn</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#scrum" class="page__taxonomy-item" rel="tag">scrum</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#pi-hole" class="page__taxonomy-item" rel="tag">pi-hole</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#scrum-org" class="page__taxonomy-item" rel="tag">scrum.org</a><span class="sep">, </span>
+      <a href="http://juan.pallares.me/tags/#pivpn" class="page__taxonomy-item" rel="tag">pivpn</a><span class="sep">, </span>
     
       
       
-      <a href="http://juan.pallares.me/tags/#training" class="page__taxonomy-item" rel="tag">training</a>
+      <a href="http://juan.pallares.me/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">raspberry pi</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://juan.pallares.me/tags/#vpn" class="page__taxonomy-item" rel="tag">VPN</a>
     
     </span>
   </p>
@@ -320,7 +378,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2016-05-08T00:00:00+02:00">May 08, 2016</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2017-09-03T00:00:00+02:00">September 03, 2017</time></p>
         
       </footer>
 
@@ -329,13 +387,13 @@
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/professional-scrum-master/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/raspberry-pi-hole-vpn/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/professional-scrum-master/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/raspberry-pi-hole-vpn/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/professional-scrum-master/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http://juan.pallares.me/raspberry-pi-hole-vpn/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/professional-scrum-master/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/raspberry-pi-hole-vpn/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -343,12 +401,11 @@
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/Technical-debt/" class="pagination--pager" title="Technical debt
+      <a href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II
 "></a>
     
     
-      <a href="http://juan.pallares.me/lean/" class="pagination--pager" title="Lean introduction
-"></a>
+      <a href="#" class="pagination--pager disabled"></a>
     
   </nav>
 
@@ -371,33 +428,6 @@
     <div class="page__related">
       
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  
-    <a href="http://juan.pallares.me/raspberry-pi-hole-vpn/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "http://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Raspberry Pi 3 III Pi-hole PiVPN
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)
-</p>
-    </article>
-  </a>
-</div>
         
           
 
@@ -475,6 +505,32 @@
 </h2>
       
       <p class="archive__item-excerpt" itemprop="description">After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on making obvious what adds value by reducing ever...</p>
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="http://juan.pallares.me/professional-scrum-master/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "http://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">Professional Scrum Master certification
+</h2>
+      
+      <p class="archive__item-excerpt" itemprop="description">I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official train...</p>
     </article>
   </a>
 </div>
