@@ -32,8 +32,8 @@
 <meta property="og:title" content="Media Center automatizado (I) Descarga automática de series / películas y clasificación">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/media-center-automatizado-i-descarga/">
-  <meta property="og:url" content="http://juan.pallares.me/media-center-automatizado-i-descarga/">
+  <link rel="canonical" href="https://juan.pallares.me/media-center-automatizado-i-descarga/">
+  <meta property="og:url" content="https://juan.pallares.me/media-center-automatizado-i-descarga/">
 
 
 
@@ -44,12 +44,12 @@
   <meta name="twitter:site" content="@juanpallares">
   <meta name="twitter:title" content="Media Center automatizado (I) Descarga automática de series / películas y clasificación">
   <meta name="twitter:description" content="Sigo varias series que no se emiten aquí y las descargo. Así las veo cuando quiero y sin publicidad. También me he aficionado a ver las películas en versión original.Desde tiempo atrás quería automatizar el proceso de búsqueda y descarga, por comodidad y también porque a veces no me entero que ha empezado una temporada nueva. Importante decir que las veo en versión original, por lo que hay mucha mas gente compartiendo y son más fáciles de encontrar y descargar.Tengo un ordenador de sobremesa bastante olvidado, mi antiguo pc gamer, y decidí que ese sería mi nuevo media center.En este primer paso del tutorial vamos a ver como descargar automaticamente de forma desatendida.Vamos con los ingredientes:- uTorrent - Mi cliente torrent preferido, puedes usar otro si quiere pero debe soportar RSS- showRSS - Este servicio generará un RSS con las series que le indiques. No tiene mucho misterio, te registras, escoges tus series y copiar el RSS y lo añades a utorrent. Sección feeds botón derecho, añadir- fileBot - Renombrador y organizador de series/pelis. En este caso instalar sin más.- script de FileBot para uTorrent - Aquí viene lo mejor. Este script se ejecutará cuando tus torrents (que se han bajado automáticamente) acaben de bajarse:Descomprimir fichero si viene en zip/rarDistingue entre películas y series y las gestiona por separadoDescarga los&nbsp;subtítulos&nbsp;que correspondan en el idioma que indiquesLos clasifica siguiendo este esquema:Peliculas&nbsp;{output}/Movies/Name (Year)/Name (Year) [CD123].extSeries&nbsp;{output}/TV Shows/Name/Season N/Name - S00E00 - Title.extMusica&nbsp;{output}/Music/Artist/Album/Artist - Title.extDescarga carátulas y más mediaNotifica XBMC or Plex (más sobre esto en próximos posts)Envía report por emailTenéis información sobre más posibilidades en el foro enlazado arriba, pero con esto tendremos más que suficiente. Para configurarlo, en &quot;uTorrent -&gt; Preferences -&gt; Run program -&gt; Run program when torrent finishes&quot; pegamos:filebot -script fn:amc --output &quot;X:/path/to/media&quot; --log-file amc.log --action copy --conflict override -non-strict --def music=y subtitles=en artwork=y &quot;ut_dir=%D&quot; &quot;ut_file=%F&quot; &quot;ut_kind=%K&quot; &quot;ut_title=%N&quot; &quot;ut_label=%L&quot; &quot;ut_state=%S&quot;Cambiamos el output a la carpeta que nos interese, podemos añadir subtítulos en castellano con subtitles=en,es y FIN!Ejecución manual del scriptTengo que confesar que por algún motivo, este script no se ejecuta siempre, algo en utorrent no tengo configurado correctamente y provoca que acabe la descarga pero no ejecute el script. En estos casos ejecuto el script de forma manual con un fichero .bat especificando la carpeta de origen:filebot -script fn:amc &quot;/path/to/input/&quot; --output &quot;X:/path/to/output&quot; --action copy -non-strictImportante decir que hay que ejecutarlo como AdministradorAhora ya tenemos los vídeos, falta reproducirlos de forma cómoda. En la próxima comentaré la comparativa que hice de XBMC y Plex, por cual me decidí y como integrarlo con el sistema de descarga automática que hemos montado hoy">
-  <meta name="twitter:url" content="http://juan.pallares.me/media-center-automatizado-i-descarga/">
+  <meta name="twitter:url" content="https://juan.pallares.me/media-center-automatizado-i-descarga/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://juan.pallares.me/images/Untitled.png">
+      <meta name="twitter:image" content="https://juan.pallares.me/images/Untitled.png">
     
   
 
@@ -68,10 +68,10 @@
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2013-06-30T10:04:00+02:00">
   
-    <link rel="next" href="http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/" title="Media Center automatizado (II) XBMC vs. Plex">
+    <link rel="next" href="https://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/" title="Media Center automatizado (II) XBMC vs. Plex">
   
   
-    <link rel="prev" href="http://juan.pallares.me/situaciones-en-la-vida-del-programador/" title="Situaciones en la vida del programador">
+    <link rel="prev" href="https://juan.pallares.me/situaciones-en-la-vida-del-programador/" title="Situaciones en la vida del programador">
   
 
 
@@ -80,8 +80,8 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "url": "http://juan.pallares.me",
-      "logo": "http://juan.pallares.me/images/Untitled.png"
+      "url": "https://juan.pallares.me",
+      "logo": "https://juan.pallares.me/images/Untitled.png"
     }
   </script>
 
@@ -92,7 +92,7 @@
       "@context" : "http://schema.org",
       "@type" : "person",
       "name" : "Juan Pallarès Garbí",
-      "url" : "http://juan.pallares.me",
+      "url" : "https://juan.pallares.me",
       "sameAs" : ["https://twitter.com/juanpallares","https://instagram.com/juan.pallares","https://www.linkedin.com/in/juanpallares"]
     }
   </script>
@@ -104,7 +104,7 @@
 
 <!-- end SEO -->
 
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+<link href="https://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -116,7 +116,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://juan.pallares.me/assets/css/main.css">
+<link rel="stylesheet" href="https://juan.pallares.me/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
@@ -139,10 +139,10 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://juan.pallares.me/">Juan Pallarès Garbí</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://juan.pallares.me/">Juan Pallarès Garbí</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://juan.pallares.me/cv/">cv</a></li>
+            <li class="masthead__menu-item"><a href="https://juan.pallares.me/cv/">cv</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -170,7 +170,7 @@
 
   <div class="author__avatar">
     
-    	<img src="http://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
+    	<img src="https://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
     
   </div>
 
@@ -208,7 +208,7 @@
         <li><a href="https://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
-        <li><a href="https://www.stackoverflow.com/users/http://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+        <li><a href="https://www.stackoverflow.com/users/https://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       
       
       
@@ -256,47 +256,6 @@
         
 
 
-  
-
-
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i>  </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#filebot" class="page__taxonomy-item" rel="tag">filebot</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#media-center" class="page__taxonomy-item" rel="tag">media center</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#script" class="page__taxonomy-item" rel="tag">script</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#showrss" class="page__taxonomy-item" rel="tag">showrss</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#torrent" class="page__taxonomy-item" rel="tag">torrent</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#utorrent" class="page__taxonomy-item" rel="tag">utorrent</a>
-    
-    </span>
-  </p>
-
-
 
 
         
@@ -309,13 +268,13 @@
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/media-center-automatizado-i-descarga/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -323,11 +282,11 @@
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/situaciones-en-la-vida-del-programador/" class="pagination--pager" title="Situaciones en la vida del programador
+      <a href="https://juan.pallares.me/situaciones-en-la-vida-del-programador/" class="pagination--pager" title="Situaciones en la vida del programador
 "></a>
     
     
-      <a href="http://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/" class="pagination--pager" title="Media Center automatizado (II) XBMC vs. Plex
+      <a href="https://juan.pallares.me/media-center-automatizado-ii-xbmc-vs/" class="pagination--pager" title="Media Center automatizado (II) XBMC vs. Plex
 "></a>
     
   </nav>
@@ -358,14 +317,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-hole-vpn/">
+    <a href="https://juan.pallares.me/raspberry-pi-hole-vpn/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -385,14 +344,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader-2/">
+    <a href="https://juan.pallares.me/raspberry-pi-autodownloader-2/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -412,14 +371,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader/">
+    <a href="https://juan.pallares.me/raspberry-pi-autodownloader/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -439,14 +398,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/lean/">
+    <a href="https://juan.pallares.me/lean/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -479,15 +438,15 @@
       <li><a href="http://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="http://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
+    <li><a href="https://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 
-    <script src="http://juan.pallares.me/assets/js/main.min.js"></script>
+    <script src="https://juan.pallares.me/assets/js/main.min.js"></script>
 
 
 

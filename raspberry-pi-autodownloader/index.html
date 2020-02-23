@@ -32,8 +32,8 @@
 <meta property="og:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/raspberry-pi-autodownloader/">
-  <meta property="og:url" content="http://juan.pallares.me/raspberry-pi-autodownloader/">
+  <link rel="canonical" href="https://juan.pallares.me/raspberry-pi-autodownloader/">
+  <meta property="og:url" content="https://juan.pallares.me/raspberry-pi-autodownloader/">
 
 
 
@@ -44,12 +44,12 @@
   <meta name="twitter:site" content="@juanpallares">
   <meta name="twitter:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
   <meta name="twitter:description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended …">
-  <meta name="twitter:url" content="http://juan.pallares.me/raspberry-pi-autodownloader/">
+  <meta name="twitter:url" content="https://juan.pallares.me/raspberry-pi-autodownloader/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://juan.pallares.me/images/Untitled.png">
+      <meta name="twitter:image" content="https://juan.pallares.me/images/Untitled.png">
     
   
 
@@ -68,10 +68,10 @@
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2017-03-18T00:00:00+01:00">
   
-    <link rel="next" href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II">
+    <link rel="next" href="https://juan.pallares.me/raspberry-pi-autodownloader-2/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II">
   
   
-    <link rel="prev" href="http://juan.pallares.me/lean/" title="Lean introduction">
+    <link rel="prev" href="https://juan.pallares.me/lean/" title="Lean introduction">
   
 
 
@@ -80,8 +80,8 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "url": "http://juan.pallares.me",
-      "logo": "http://juan.pallares.me/images/Untitled.png"
+      "url": "https://juan.pallares.me",
+      "logo": "https://juan.pallares.me/images/Untitled.png"
     }
   </script>
 
@@ -92,7 +92,7 @@
       "@context" : "http://schema.org",
       "@type" : "person",
       "name" : "Juan Pallarès Garbí",
-      "url" : "http://juan.pallares.me",
+      "url" : "https://juan.pallares.me",
       "sameAs" : ["https://twitter.com/juanpallares","https://instagram.com/juan.pallares","https://www.linkedin.com/in/juanpallares"]
     }
   </script>
@@ -104,7 +104,7 @@
 
 <!-- end SEO -->
 
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+<link href="https://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -116,7 +116,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://juan.pallares.me/assets/css/main.css">
+<link rel="stylesheet" href="https://juan.pallares.me/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
@@ -139,10 +139,10 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://juan.pallares.me/">Juan Pallarès Garbí</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://juan.pallares.me/">Juan Pallarès Garbí</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://juan.pallares.me/cv/">cv</a></li>
+            <li class="masthead__menu-item"><a href="https://juan.pallares.me/cv/">cv</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -170,7 +170,7 @@
 
   <div class="author__avatar">
     
-    	<img src="http://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
+    	<img src="https://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
     
   </div>
 
@@ -208,7 +208,7 @@
         <li><a href="https://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
-        <li><a href="https://www.stackoverflow.com/users/http://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+        <li><a href="https://www.stackoverflow.com/users/https://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       
       
       
@@ -272,17 +272,15 @@
 
 <p>For media storage I used a 1TB USB external drive connected to the router, the process is a little bit more complicated than it if you have it directly connected to the Pi, but easy anyway. I followed the steps <a href="http://raspberrypi.stackexchange.com/questions/40974/access-network-samba-share-from-pi-client">here</a>. Basically these commands (for anonymous access):</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
 mkdir /mnt/abc
 mount -t cifs //server/share /mnt/abc
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>I also configured a cronjob so in every reboot it automonts the network disk</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@reboot sleep 10 &amp;&amp; mount -a
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot sleep 10 &amp;&amp; mount -a
+</code></pre></div></div>
 
 <h3 id="rpi-monitor">RPi-Monitor</h3>
 
@@ -305,43 +303,6 @@ mount -t cifs //server/share /mnt/abc
         
 
 
-  
-
-
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i>  </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#auto" class="page__taxonomy-item" rel="tag">auto</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#download" class="page__taxonomy-item" rel="tag">download</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#movies" class="page__taxonomy-item" rel="tag">movies</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">raspberry pi</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#tvshow" class="page__taxonomy-item" rel="tag">tvshow</a>
-    
-    </span>
-  </p>
-
-
 
 
         
@@ -354,13 +315,13 @@ mount -t cifs //server/share /mnt/abc
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/raspberry-pi-autodownloader/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -368,11 +329,11 @@ mount -t cifs //server/share /mnt/abc
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/lean/" class="pagination--pager" title="Lean introduction
+      <a href="https://juan.pallares.me/lean/" class="pagination--pager" title="Lean introduction
 "></a>
     
     
-      <a href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II
+      <a href="https://juan.pallares.me/raspberry-pi-autodownloader-2/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II
 "></a>
     
   </nav>
@@ -403,14 +364,14 @@ mount -t cifs //server/share /mnt/abc
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-hole-vpn/">
+    <a href="https://juan.pallares.me/raspberry-pi-hole-vpn/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -430,14 +391,14 @@ mount -t cifs //server/share /mnt/abc
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader-2/">
+    <a href="https://juan.pallares.me/raspberry-pi-autodownloader-2/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -457,14 +418,14 @@ mount -t cifs //server/share /mnt/abc
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/lean/">
+    <a href="https://juan.pallares.me/lean/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -483,14 +444,14 @@ mount -t cifs //server/share /mnt/abc
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/professional-scrum-master/">
+    <a href="https://juan.pallares.me/professional-scrum-master/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -523,15 +484,15 @@ mount -t cifs //server/share /mnt/abc
       <li><a href="http://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="http://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
+    <li><a href="https://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 
-    <script src="http://juan.pallares.me/assets/js/main.min.js"></script>
+    <script src="https://juan.pallares.me/assets/js/main.min.js"></script>
 
 
 

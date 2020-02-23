@@ -32,8 +32,8 @@
 <meta property="og:title" content="Tratando XML multiref en Biztalk">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
-  <meta property="og:url" content="http://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
+  <link rel="canonical" href="https://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
+  <meta property="og:url" content="https://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
 
 
 
@@ -44,12 +44,12 @@
   <meta name="twitter:site" content="@juanpallares">
   <meta name="twitter:title" content="Tratando XML multiref en Biztalk">
   <meta name="twitter:description" content="Atacando un servicio desde Biztalk, me encontré con que este me devolvía el XML en un formato no aceptado por Biztalk. Tenía etiquetas multiref y esto no le gustaba.&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt; &lt;soapenv:Body&gt;  &lt;ns1:sendSmsSubmissionResponse soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:ns1=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&gt;   &lt;sendSmsSubmissionReturn href=&quot;#id0&quot; /&gt;  &lt;/ns1:sendSmsSubmissionResponse&gt;  &lt;multiRef id=&quot;id0&quot; soapenc:root=&quot;0&quot; soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xsi:type=&quot;ns2:SubmissionStatus&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:ns2=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&gt;   &lt;id xsi:type=&quot;soapenc:string&quot;&gt;4336723&lt;/id&gt;   &lt;message xsi:type=&quot;soapenc:string&quot;&gt;Submisso enviada para processamento.&lt;/message&gt;   &lt;status href=&quot;#id1&quot; /&gt;  &lt;/multiRef&gt;  &lt;multiRef id=&quot;id1&quot; soapenc:root=&quot;0&quot; soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xsi:type=&quot;xsd:int&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;0&lt;/multiRef&gt; &lt;/soapenv:Body&gt;&nbsp;&lt;/soapenv:Envelope&gt;Para poder tratarlo en Biztalk, tuve que desarollar un pequeño código XSL (stylesheet) que después introduje en la Pipeline de entrada custom para decodificarlo.&lt;xsl:stylesheet version=&quot;1.0&quot;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:ns2=&quot;http://mobicomp.com/smsexpress/webservice/server/message&quot;&gt; &lt;xsl:key name=&quot;multiref-by-id&quot; match=&quot;multiRef&quot; use=&quot;@id&quot;/&gt;  &lt;xsl:template match=&quot;/&quot;&gt;  &lt;xsl:copy&gt;   &lt;xsl:apply-templates select=&quot;@* |*&quot;/&gt;  &lt;/xsl:copy&gt; &lt;/xsl:template&gt; &lt;xsl:template match=&quot;*[starts-with(@href, &#39;#&#39;)]&quot;&gt;&nbsp; &nbsp; &lt;xsl:copy&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;xsl:apply-templates select=&quot;@* |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;key(&#39;multiref-by-id&#39;, substring-after(@href, &#39;#&#39;))/@*[not(local-name()=&#39;id&#39; or local-name()=&#39;type&#39;)] |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; key(&#39;multiref-by-id&#39;, substring-after(@href, &#39;#&#39;))/node()&quot;/&gt;  &lt;/xsl:copy&gt; &lt;/xsl:template&gt; &lt;xsl:template match=&quot;@href[starts-with(., &#39;#&#39;)] | multiRef[@id] | @soapenc:root&quot;/&gt; &lt;xsl:template match=&quot;@*|node()&quot;&gt;  &lt;xsl:copy&gt;   &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;  &lt;/xsl:copy&gt; &lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;Una vez hecho esto, todo funcionó como la seda. Para el .xsl me inspiré en esta respuesta de StackOverflow">
-  <meta name="twitter:url" content="http://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
+  <meta name="twitter:url" content="https://juan.pallares.me/tratando-xml-multiref-en-biztalk/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://juan.pallares.me/images/Untitled.png">
+      <meta name="twitter:image" content="https://juan.pallares.me/images/Untitled.png">
     
   
 
@@ -68,10 +68,10 @@
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2013-02-14T09:13:00+01:00">
   
-    <link rel="next" href="http://juan.pallares.me/situaciones-en-la-vida-del-programador/" title="Situaciones en la vida del programador">
+    <link rel="next" href="https://juan.pallares.me/situaciones-en-la-vida-del-programador/" title="Situaciones en la vida del programador">
   
   
-    <link rel="prev" href="http://juan.pallares.me/formatear-queries-en-sql-management/" title="Formatear queries en SQL Management Studio">
+    <link rel="prev" href="https://juan.pallares.me/formatear-queries-en-sql-management/" title="Formatear queries en SQL Management Studio">
   
 
 
@@ -80,8 +80,8 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "url": "http://juan.pallares.me",
-      "logo": "http://juan.pallares.me/images/Untitled.png"
+      "url": "https://juan.pallares.me",
+      "logo": "https://juan.pallares.me/images/Untitled.png"
     }
   </script>
 
@@ -92,7 +92,7 @@
       "@context" : "http://schema.org",
       "@type" : "person",
       "name" : "Juan Pallarès Garbí",
-      "url" : "http://juan.pallares.me",
+      "url" : "https://juan.pallares.me",
       "sameAs" : ["https://twitter.com/juanpallares","https://instagram.com/juan.pallares","https://www.linkedin.com/in/juanpallares"]
     }
   </script>
@@ -104,7 +104,7 @@
 
 <!-- end SEO -->
 
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+<link href="https://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -116,7 +116,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://juan.pallares.me/assets/css/main.css">
+<link rel="stylesheet" href="https://juan.pallares.me/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
@@ -139,10 +139,10 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://juan.pallares.me/">Juan Pallarès Garbí</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://juan.pallares.me/">Juan Pallarès Garbí</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://juan.pallares.me/cv/">cv</a></li>
+            <li class="masthead__menu-item"><a href="https://juan.pallares.me/cv/">cv</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -170,7 +170,7 @@
 
   <div class="author__avatar">
     
-    	<img src="http://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
+    	<img src="https://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
     
   </div>
 
@@ -208,7 +208,7 @@
         <li><a href="https://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
-        <li><a href="https://www.stackoverflow.com/users/http://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+        <li><a href="https://www.stackoverflow.com/users/https://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       
       
       
@@ -256,43 +256,6 @@
         
 
 
-  
-
-
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i>  </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#biztalk" class="page__taxonomy-item" rel="tag">Biztalk</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#multiref" class="page__taxonomy-item" rel="tag">multiref</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#pipeline" class="page__taxonomy-item" rel="tag">Pipeline</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#xml" class="page__taxonomy-item" rel="tag">XML</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#xsl" class="page__taxonomy-item" rel="tag">XSL</a>
-    
-    </span>
-  </p>
-
-
 
 
         
@@ -305,13 +268,13 @@
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/tratando-xml-multiref-en-biztalk/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -319,11 +282,11 @@
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/formatear-queries-en-sql-management/" class="pagination--pager" title="Formatear queries en SQL Management Studio
+      <a href="https://juan.pallares.me/formatear-queries-en-sql-management/" class="pagination--pager" title="Formatear queries en SQL Management Studio
 "></a>
     
     
-      <a href="http://juan.pallares.me/situaciones-en-la-vida-del-programador/" class="pagination--pager" title="Situaciones en la vida del programador
+      <a href="https://juan.pallares.me/situaciones-en-la-vida-del-programador/" class="pagination--pager" title="Situaciones en la vida del programador
 "></a>
     
   </nav>
@@ -354,14 +317,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-hole-vpn/">
+    <a href="https://juan.pallares.me/raspberry-pi-hole-vpn/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -381,14 +344,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader-2/">
+    <a href="https://juan.pallares.me/raspberry-pi-autodownloader-2/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -408,14 +371,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader/">
+    <a href="https://juan.pallares.me/raspberry-pi-autodownloader/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -435,14 +398,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/lean/">
+    <a href="https://juan.pallares.me/lean/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -475,15 +438,15 @@
       <li><a href="http://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="http://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
+    <li><a href="https://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 
-    <script src="http://juan.pallares.me/assets/js/main.min.js"></script>
+    <script src="https://juan.pallares.me/assets/js/main.min.js"></script>
 
 
 

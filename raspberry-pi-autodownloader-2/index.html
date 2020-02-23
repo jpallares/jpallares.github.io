@@ -32,8 +32,8 @@
 <meta property="og:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader II">
 
 
-  <link rel="canonical" href="http://juan.pallares.me/raspberry-pi-autodownloader-2/">
-  <meta property="og:url" content="http://juan.pallares.me/raspberry-pi-autodownloader-2/">
+  <link rel="canonical" href="https://juan.pallares.me/raspberry-pi-autodownloader-2/">
+  <meta property="og:url" content="https://juan.pallares.me/raspberry-pi-autodownloader-2/">
 
 
 
@@ -44,12 +44,12 @@
   <meta name="twitter:site" content="@juanpallares">
   <meta name="twitter:title" content="Raspberry Pi 3 a.k.a the 24/7 auto downloader II">
   <meta name="twitter:description" content="Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended …">
-  <meta name="twitter:url" content="http://juan.pallares.me/raspberry-pi-autodownloader-2/">
+  <meta name="twitter:url" content="https://juan.pallares.me/raspberry-pi-autodownloader-2/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://juan.pallares.me/images/Untitled.png">
+      <meta name="twitter:image" content="https://juan.pallares.me/images/Untitled.png">
     
   
 
@@ -68,10 +68,10 @@
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2017-05-03T00:00:00+02:00">
   
-    <link rel="next" href="http://juan.pallares.me/raspberry-pi-hole-vpn/" title="Raspberry Pi 3 III Pi-hole PiVPN">
+    <link rel="next" href="https://juan.pallares.me/raspberry-pi-hole-vpn/" title="Raspberry Pi 3 III Pi-hole PiVPN">
   
   
-    <link rel="prev" href="http://juan.pallares.me/raspberry-pi-autodownloader/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
+    <link rel="prev" href="https://juan.pallares.me/raspberry-pi-autodownloader/" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader">
   
 
 
@@ -80,8 +80,8 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "url": "http://juan.pallares.me",
-      "logo": "http://juan.pallares.me/images/Untitled.png"
+      "url": "https://juan.pallares.me",
+      "logo": "https://juan.pallares.me/images/Untitled.png"
     }
   </script>
 
@@ -92,7 +92,7 @@
       "@context" : "http://schema.org",
       "@type" : "person",
       "name" : "Juan Pallarès Garbí",
-      "url" : "http://juan.pallares.me",
+      "url" : "https://juan.pallares.me",
       "sameAs" : ["https://twitter.com/juanpallares","https://instagram.com/juan.pallares","https://www.linkedin.com/in/juanpallares"]
     }
   </script>
@@ -104,7 +104,7 @@
 
 <!-- end SEO -->
 
-<link href="http://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+<link href="https://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -116,7 +116,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://juan.pallares.me/assets/css/main.css">
+<link rel="stylesheet" href="https://juan.pallares.me/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
@@ -139,10 +139,10 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://juan.pallares.me/">Juan Pallarès Garbí</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://juan.pallares.me/">Juan Pallarès Garbí</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://juan.pallares.me/cv/">cv</a></li>
+            <li class="masthead__menu-item"><a href="https://juan.pallares.me/cv/">cv</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -170,7 +170,7 @@
 
   <div class="author__avatar">
     
-    	<img src="http://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
+    	<img src="https://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
     
   </div>
 
@@ -208,7 +208,7 @@
         <li><a href="https://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
-        <li><a href="https://www.stackoverflow.com/users/http://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+        <li><a href="https://www.stackoverflow.com/users/https://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       
       
       
@@ -285,24 +285,22 @@
 
 <p>After it, I use Filebot with commands, scripts I configured, not the UI. In Deluge you need to install the <a href="https://www.filebot.net/forums/viewtopic.php?t=3974">Execute plugin</a>. This plugin allows you to run a script after downloading a file, and that’s what we will do:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
 <span class="nv">torrentid</span><span class="o">=</span><span class="nv">$1</span>
 <span class="nv">torrentname</span><span class="o">=</span><span class="nv">$2</span>
 <span class="nv">torrentpath</span><span class="o">=</span><span class="nv">$3</span>
 
-/usr/share/filebot/filebot.sh -script fn:amc --output <span class="s2">"/media/netdisk/PlexMedia"</span> --log-file /home/pi/amc.log --action move --conflict override -non-strict --def <span class="nv">subtitles</span><span class="o">=</span>en,es <span class="nv">artwork</span><span class="o">=</span>y <span class="nv">clean</span><span class="o">=</span>y <span class="nv">reportError</span><span class="o">=</span>y <span class="nv">gmail</span><span class="o">=</span>esbroma:XXXXXXXXXXX <span class="nv">pushbullet</span><span class="o">=</span>XXXXXXXXXXXX <span class="s2">"ut_dir=</span><span class="nv">$torrentpath</span><span class="s2">/</span><span class="nv">$torrentname</span><span class="s2">"</span> <span class="s2">"ut_kind=multi"</span> <span class="s2">"ut_title=</span><span class="nv">$torrentname</span><span class="s2">"</span>
-</code></pre>
-</div>
+/usr/share/filebot/filebot.sh <span class="nt">-script</span> fn:amc <span class="nt">--output</span> <span class="s2">"/media/netdisk/PlexMedia"</span> <span class="nt">--log-file</span> /home/pi/amc.log <span class="nt">--action</span> move <span class="nt">--conflict</span> override <span class="nt">-non-strict</span> <span class="nt">--def</span> <span class="nv">subtitles</span><span class="o">=</span>en,es <span class="nv">artwork</span><span class="o">=</span>y <span class="nv">clean</span><span class="o">=</span>y <span class="nv">reportError</span><span class="o">=</span>y <span class="nv">gmail</span><span class="o">=</span>esbroma:XXXXXXXXXXX <span class="nv">pushbullet</span><span class="o">=</span>XXXXXXXXXXXX <span class="s2">"ut_dir=</span><span class="nv">$torrentpath</span><span class="s2">/</span><span class="nv">$torrentname</span><span class="s2">"</span> <span class="s2">"ut_kind=multi"</span> <span class="s2">"ut_title=</span><span class="nv">$torrentname</span><span class="s2">"</span>
+</code></pre></div></div>
 <p>Basically, the script.sh is moving the media to the PlexMedia folder, there will create a folder for Movies and other for Tv Shows, inside them a folder per movie/tv show and inside TV shows a folder per season. It will also rename it, grab subtitles (if available) in this case in english and spanish. It will also notify me by email and by pushbullet. As you may have noticed, a log is created to track possible issues.</p>
 
 <p>Another possible script you can configure is one that looks for subtitles from time to time. It can be necessary because very often you will download media freshly released and the subtitles won’t be available yet.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
-/usr/share/filebot/filebot.sh -script fn:suball <span class="s2">"/media/netdisk/PlexMedia"</span> --log-file /home/pi/subtitle.log -non-strict --def <span class="nv">maxAgeDays</span><span class="o">=</span>7 <span class="nv">subtitles</span><span class="o">=</span>en,es <span class="nv">ignoreTextLanguage</span><span class="o">=</span>en,es <span class="nv">reportError</span><span class="o">=</span>y <span class="nv">pushbullet</span><span class="o">=</span>XXXXXXXXXXXX
-</code></pre>
-</div>
+/usr/share/filebot/filebot.sh <span class="nt">-script</span> fn:suball <span class="s2">"/media/netdisk/PlexMedia"</span> <span class="nt">--log-file</span> /home/pi/subtitle.log <span class="nt">-non-strict</span> <span class="nt">--def</span> <span class="nv">maxAgeDays</span><span class="o">=</span>7 <span class="nv">subtitles</span><span class="o">=</span>en,es <span class="nv">ignoreTextLanguage</span><span class="o">=</span>en,es <span class="nv">reportError</span><span class="o">=</span>y <span class="nv">pushbullet</span><span class="o">=</span>XXXXXXXXXXXX
+</code></pre></div></div>
 <p>In this example, I’m looking for missing subtitles in media that is one week older at most.</p>
 
 <h3 id="playing-the-media---plex-on-the-pi">Playing the media - Plex on the Pi?</h3>
@@ -320,43 +318,6 @@
         
 
 
-  
-
-
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i>  </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#auto" class="page__taxonomy-item" rel="tag">auto</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#download" class="page__taxonomy-item" rel="tag">download</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#movies" class="page__taxonomy-item" rel="tag">movies</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">raspberry pi</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://juan.pallares.me/tags/#tvshow" class="page__taxonomy-item" rel="tag">tvshow</a>
-    
-    </span>
-  </p>
-
-
 
 
         
@@ -369,13 +330,13 @@
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/raspberry-pi-autodownloader-2/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -383,11 +344,11 @@
 
   <nav class="pagination">
     
-      <a href="http://juan.pallares.me/raspberry-pi-autodownloader/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader
+      <a href="https://juan.pallares.me/raspberry-pi-autodownloader/" class="pagination--pager" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader
 "></a>
     
     
-      <a href="http://juan.pallares.me/raspberry-pi-hole-vpn/" class="pagination--pager" title="Raspberry Pi 3 III Pi-hole PiVPN
+      <a href="https://juan.pallares.me/raspberry-pi-hole-vpn/" class="pagination--pager" title="Raspberry Pi 3 III Pi-hole PiVPN
 "></a>
     
   </nav>
@@ -418,14 +379,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-hole-vpn/">
+    <a href="https://juan.pallares.me/raspberry-pi-hole-vpn/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -445,14 +406,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/raspberry-pi-autodownloader/">
+    <a href="https://juan.pallares.me/raspberry-pi-autodownloader/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -472,14 +433,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/lean/">
+    <a href="https://juan.pallares.me/lean/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -498,14 +459,14 @@
 
 <div class="grid__item">
   
-    <a href="http://juan.pallares.me/professional-scrum-master/">
+    <a href="https://juan.pallares.me/professional-scrum-master/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
           <img src=
             
-              "http://juan.pallares.me/images/black_keyboard.jpg"
+              "https://juan.pallares.me/images/black_keyboard.jpg"
             
             alt="">
         </div>
@@ -538,15 +499,15 @@
       <li><a href="http://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="http://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
+    <li><a href="https://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 
-    <script src="http://juan.pallares.me/assets/js/main.min.js"></script>
+    <script src="https://juan.pallares.me/assets/js/main.min.js"></script>
 
 
 

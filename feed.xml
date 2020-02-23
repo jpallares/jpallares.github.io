@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="http://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="http://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2018-10-28T23:18:07+01:00</updated><id>http://juan.pallares.me/</id><title>Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title>Raspberry Pi 3 III Pi-hole PiVPN</title><link href="http://juan.pallares.me/raspberry-pi-hole-vpn/" rel="alternate" type="text/html" title="Raspberry Pi 3 III Pi-hole PiVPN" /><published>2017-09-03T00:00:00+02:00</published><updated>2017-09-03T00:00:00+02:00</updated><id>http://juan.pallares.me/raspberry-pi-hole-vpn</id><content type="html" xml:base="http://juan.pallares.me/raspberry-pi-hole-vpn/">&lt;p&gt;In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-02-23T17:48:37+01:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Raspberry Pi 3 III Pi-hole PiVPN</title><link href="https://juan.pallares.me/raspberry-pi-hole-vpn/" rel="alternate" type="text/html" title="Raspberry Pi 3 III Pi-hole PiVPN" /><published>2017-09-03T00:00:00+02:00</published><updated>2017-09-03T00:00:00+02:00</updated><id>https://juan.pallares.me/raspberry-pi-hole-vpn</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-hole-vpn/">&lt;p&gt;In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.&lt;/p&gt;
 
-&lt;h3 id=&quot;pi-holehttpspi-holenet---block-ads-in-your-local-network&quot;&gt;&lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-hole&lt;/a&gt; - Block ads in your local network&lt;/h3&gt;
+&lt;h3 id=&quot;pi-hole---block-ads-in-your-local-network&quot;&gt;&lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-hole&lt;/a&gt; - Block ads in your local network&lt;/h3&gt;
 
 &lt;p&gt;I’m used to have always installed an ad-blocker on my browser, the web ads got out of hand long time ago with giant banners that block all the screen so it’s more like a survival thing. The problem comes with the phone browser, there are no good blockers there.&lt;/p&gt;
 
@@ -8,19 +8,17 @@
 
 &lt;p&gt;The installation is very easy and once you have done you can access to manager web with all the info about what’s being blocked, etc.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -sSL https://install.pi-hole.net | bash
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -sSL https://install.pi-hole.net | bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;../images/pihole.PNG&quot; alt=&quot;Pi-hole&quot; title=&quot;Pi-hole&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;pivpnhttpwwwpivpnio&quot;&gt;&lt;a href=&quot;http://www.pivpn.io/&quot;&gt;PiVPN&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;pivpn&quot;&gt;&lt;a href=&quot;http://www.pivpn.io/&quot;&gt;PiVPN&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;It’s really useful to have a VPN available if you need to use internet in a typical airport “free wifi”, the ones that are not recommended to use with sensible data. PiVPN installs &lt;strong&gt;OpenVPN&lt;/strong&gt; on your raspberri in a very simple way. It all starts with a curl command like with pi-hole&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -L https://install.pivpn.io | bash
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -L https://install.pivpn.io | bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Once installed you can create clients for windows/mac/android/iphone.&lt;/p&gt;
 
@@ -33,9 +31,8 @@
 
 &lt;p&gt;Create an image of the card currently in the pi to a network drive / USB drive using the dd command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/my.img bs=1M
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/my.img bs=1M
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;(replace &lt;strong&gt;/dev/mmcblk0p2&lt;/strong&gt; with your own SD card and &lt;strong&gt;/home/pi/networkdrive/my.img&lt;/strong&gt; with your own network drive / USB drive + image file name)&lt;/p&gt;
 
@@ -45,19 +42,17 @@
 
 &lt;p&gt;Last but not least, since the raspberry will be running 24/7 it’s a good idea to run some commands from time to time to have everything running smoothly. I do it with &lt;a href=&quot;https://en.wikipedia.org/wiki/Cron&quot;&gt;cron&lt;/a&gt; jobs. If you run this command&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo crontab -e
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You’ll see the jobs that need root rights to run. I have the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@daily dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/rasp-`date +\%Y\%m\%d\%H\%M\%S`.img bs=1M
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@daily dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/rasp-`date +\%Y\%m\%d\%H\%M\%S`.img bs=1M
 
 0 3 * * * /usr/bin/apt-get update &amp;amp;&amp;amp;  /usr/bin/apt-get upgrade -q -y &amp;gt;&amp;gt; /var/log/apt/myupdates.log
 
 0 5 * * 0 reboot
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Well the first one is the command that makes the backup but the name depends on the date and time so I can have backups of several days in the same folder.&lt;/p&gt;
 
@@ -65,17 +60,15 @@
 
 &lt;p&gt;Now if I run this other command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;I can see more jobs I have, one is the free DNS to work&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 5 * * * find /media/netdisk/backup/ -mindepth 1 -type f -mtime +3 -delete
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 5 * * * find /media/netdisk/backup/ -mindepth 1 -type f -mtime +3 -delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The only one left deletes the backup files older than 3 days, otherwise my HD was full very easily and I had to delete the backups manually, no way!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="ad" /><category term="block" /><category term="VPN" /><category term="raspberry pi" /><category term="openvpn" /><category term="pi-hole" /><category term="pivpn" /><summary>Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)</summary></entry><entry><title>Raspberry Pi 3 a.k.a the 24/7 auto downloader II</title><link href="http://juan.pallares.me/raspberry-pi-autodownloader-2/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II" /><published>2017-05-03T00:00:00+02:00</published><updated>2017-05-03T00:00:00+02:00</updated><id>http://juan.pallares.me/raspberry-pi-autodownloader-2</id><content type="html" xml:base="http://juan.pallares.me/raspberry-pi-autodownloader-2/">&lt;p&gt;Following the guide to have a Raspberry hadling all the media downloads at home, let’s continue:&lt;/p&gt;
+&lt;p&gt;The only one left deletes the backup files older than 3 days, otherwise my HD was full very easily and I had to delete the backups manually, no way!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="ad" /><category term="block" /><category term="VPN" /><category term="raspberry pi" /><category term="openvpn" /><category term="pi-hole" /><category term="pivpn" /><summary type="html">Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)</summary></entry><entry><title type="html">Raspberry Pi 3 a.k.a the 24/7 auto downloader II</title><link href="https://juan.pallares.me/raspberry-pi-autodownloader-2/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader II" /><published>2017-05-03T00:00:00+02:00</published><updated>2017-05-03T00:00:00+02:00</updated><id>https://juan.pallares.me/raspberry-pi-autodownloader-2</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-autodownloader-2/">&lt;p&gt;Following the guide to have a Raspberry hadling all the media downloads at home, let’s continue:&lt;/p&gt;
 
 &lt;h3 id=&quot;bittorrent-client&quot;&gt;BitTorrent client&lt;/h3&gt;
 
@@ -115,24 +108,22 @@
 
 &lt;p&gt;After it, I use Filebot with commands, scripts I configured, not the UI. In Deluge you need to install the &lt;a href=&quot;https://www.filebot.net/forums/viewtopic.php?t=3974&quot;&gt;Execute plugin&lt;/a&gt;. This plugin allows you to run a script after downloading a file, and that’s what we will do:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
 &lt;span class=&quot;nv&quot;&gt;torrentid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;torrentname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;torrentpath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$3&lt;/span&gt;
 
-/usr/share/filebot/filebot.sh -script fn:amc --output &lt;span class=&quot;s2&quot;&gt;&quot;/media/netdisk/PlexMedia&quot;&lt;/span&gt; --log-file /home/pi/amc.log --action move --conflict override -non-strict --def &lt;span class=&quot;nv&quot;&gt;subtitles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en,es &lt;span class=&quot;nv&quot;&gt;artwork&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;clean&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;reportError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;gmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;esbroma:XXXXXXXXXXX &lt;span class=&quot;nv&quot;&gt;pushbullet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;XXXXXXXXXXXX &lt;span class=&quot;s2&quot;&gt;&quot;ut_dir=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$torrentpath&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$torrentname&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ut_kind=multi&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ut_title=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$torrentname&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+/usr/share/filebot/filebot.sh &lt;span class=&quot;nt&quot;&gt;-script&lt;/span&gt; fn:amc &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/media/netdisk/PlexMedia&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--log-file&lt;/span&gt; /home/pi/amc.log &lt;span class=&quot;nt&quot;&gt;--action&lt;/span&gt; move &lt;span class=&quot;nt&quot;&gt;--conflict&lt;/span&gt; override &lt;span class=&quot;nt&quot;&gt;-non-strict&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--def&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;subtitles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en,es &lt;span class=&quot;nv&quot;&gt;artwork&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;clean&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;reportError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;gmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;esbroma:XXXXXXXXXXX &lt;span class=&quot;nv&quot;&gt;pushbullet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;XXXXXXXXXXXX &lt;span class=&quot;s2&quot;&gt;&quot;ut_dir=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$torrentpath&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$torrentname&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ut_kind=multi&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ut_title=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$torrentname&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Basically, the script.sh is moving the media to the PlexMedia folder, there will create a folder for Movies and other for Tv Shows, inside them a folder per movie/tv show and inside TV shows a folder per season. It will also rename it, grab subtitles (if available) in this case in english and spanish. It will also notify me by email and by pushbullet. As you may have noticed, a log is created to track possible issues.&lt;/p&gt;
 
 &lt;p&gt;Another possible script you can configure is one that looks for subtitles from time to time. It can be necessary because very often you will download media freshly released and the subtitles won’t be available yet.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
-/usr/share/filebot/filebot.sh -script fn:suball &lt;span class=&quot;s2&quot;&gt;&quot;/media/netdisk/PlexMedia&quot;&lt;/span&gt; --log-file /home/pi/subtitle.log -non-strict --def &lt;span class=&quot;nv&quot;&gt;maxAgeDays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;7 &lt;span class=&quot;nv&quot;&gt;subtitles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en,es &lt;span class=&quot;nv&quot;&gt;ignoreTextLanguage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en,es &lt;span class=&quot;nv&quot;&gt;reportError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;pushbullet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;XXXXXXXXXXXX
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+/usr/share/filebot/filebot.sh &lt;span class=&quot;nt&quot;&gt;-script&lt;/span&gt; fn:suball &lt;span class=&quot;s2&quot;&gt;&quot;/media/netdisk/PlexMedia&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--log-file&lt;/span&gt; /home/pi/subtitle.log &lt;span class=&quot;nt&quot;&gt;-non-strict&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--def&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;maxAgeDays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;7 &lt;span class=&quot;nv&quot;&gt;subtitles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en,es &lt;span class=&quot;nv&quot;&gt;ignoreTextLanguage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en,es &lt;span class=&quot;nv&quot;&gt;reportError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y &lt;span class=&quot;nv&quot;&gt;pushbullet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;XXXXXXXXXXXX
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;In this example, I’m looking for missing subtitles in media that is one week older at most.&lt;/p&gt;
 
 &lt;h3 id=&quot;playing-the-media---plex-on-the-pi&quot;&gt;Playing the media - Plex on the Pi?&lt;/h3&gt;
@@ -140,7 +131,7 @@
 
 &lt;p&gt;I tried to &lt;a href=&quot;https://raspberrypi.stackexchange.com/questions/50031/raspberry-pi-3-as-plex-media-server-local-without-transcoding&quot;&gt;use Plex on the raspberri pi&lt;/a&gt;, and did some &lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?f=35&amp;amp;t=151924&amp;amp;p=999730#p999730&quot;&gt;research&lt;/a&gt; to see if it was possible. But no luck, only with media that is not too high quality. At the end I run Plex on another computer that uses the media on the net disk. Is in this Plex server where I installed SubZero channel, it will help you download subtitles too (yes I hate searching and adding subtitles manually).&lt;/p&gt;
 
-&lt;p&gt;And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary>Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry><entry><title>Raspberry Pi 3 a.k.a the 24/7 auto downloader</title><link href="http://juan.pallares.me/raspberry-pi-autodownloader/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader" /><published>2017-03-18T00:00:00+01:00</published><updated>2017-03-18T00:00:00+01:00</updated><id>http://juan.pallares.me/raspberry-pi-autodownloader</id><content type="html" xml:base="http://juan.pallares.me/raspberry-pi-autodownloader/">&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
+&lt;p&gt;And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry><entry><title type="html">Raspberry Pi 3 a.k.a the 24/7 auto downloader</title><link href="https://juan.pallares.me/raspberry-pi-autodownloader/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader" /><published>2017-03-18T00:00:00+01:00</published><updated>2017-03-18T00:00:00+01:00</updated><id>https://juan.pallares.me/raspberry-pi-autodownloader</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-autodownloader/">&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
 
 &lt;p&gt;I recently bought a Raspberry pi 3, it was improvised I had bought a Pine A64 but it was taking ages to arrive, then the new powerful version of the Pi appeared and I could not resist, Amazon and in couple days at home.&lt;/p&gt;
 
@@ -167,17 +158,15 @@
 
 &lt;p&gt;For media storage I used a 1TB USB external drive connected to the router, the process is a little bit more complicated than it if you have it directly connected to the Pi, but easy anyway. I followed the steps &lt;a href=&quot;http://raspberrypi.stackexchange.com/questions/40974/access-network-samba-share-from-pi-client&quot;&gt;here&lt;/a&gt;. Basically these commands (for anonymous access):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
 mkdir /mnt/abc
 mount -t cifs //server/share /mnt/abc
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;I also configured a cronjob so in every reboot it automonts the network disk&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sleep 10 &amp;amp;&amp;amp; mount -a
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sleep 10 &amp;amp;&amp;amp; mount -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;rpi-monitor&quot;&gt;RPi-Monitor&lt;/h3&gt;
 
@@ -189,7 +178,7 @@ mount -t cifs //server/share /mnt/abc
 
 &lt;h3 id=&quot;this-is-only-the-beginning&quot;&gt;This is only the beginning&lt;/h3&gt;
 
-&lt;p&gt;Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary>Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry><entry><title>Lean introduction</title><link href="http://juan.pallares.me/lean/" rel="alternate" type="text/html" title="Lean introduction" /><published>2016-07-23T00:00:00+02:00</published><updated>2016-07-23T00:00:00+02:00</updated><id>http://juan.pallares.me/lean</id><content type="html" xml:base="http://juan.pallares.me/lean/">&lt;p&gt;After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on &lt;strong&gt;making obvious what adds value by reducing everything else&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry><entry><title type="html">Lean introduction</title><link href="https://juan.pallares.me/lean/" rel="alternate" type="text/html" title="Lean introduction" /><published>2016-07-23T00:00:00+02:00</published><updated>2016-07-23T00:00:00+02:00</updated><id>https://juan.pallares.me/lean</id><content type="html" xml:base="https://juan.pallares.me/lean/">&lt;p&gt;After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on &lt;strong&gt;making obvious what adds value by reducing everything else&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;It all started with &lt;strong&gt;Toyota&lt;/strong&gt; in the 1930’s. Due to the crisis they had to focus on quality and avoid over-production unlike the standards at that time (Ford - USA). The first step was using “kaizen”, looking for continuous improvement to reduce all they could the errors in the manufacture process. It later evolved to &lt;a href=&quot;https://en.wikipedia.org/wiki/Toyota_Production_System&quot;&gt;Toyota Production System (TPS)&lt;/a&gt;.&lt;/p&gt;
 
@@ -230,7 +219,7 @@ mount -t cifs //server/share /mnt/abc
 &lt;p&gt;&lt;img src=&quot;../images/Lean-Agile-Scrum-XP.gif&quot; alt=&quot;Lean Agile Scrum&quot; title=&quot;Lean Agile Scrum&quot; /&gt; - center&lt;/p&gt;
 
 &lt;p&gt;During the event they showed this video I wanted to share, it shows in a practical and funny way how lean can help:&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wz28yMcDvVM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="lean" /><category term="philosophy" /><category term="manufacturing" /><category term="software" /><category term="development" /><category term="agile" /><category term="scrum" /><summary>After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on making obvious what adds value by reducing everything else.</summary></entry><entry><title>Professional Scrum Master certification</title><link href="http://juan.pallares.me/professional-scrum-master/" rel="alternate" type="text/html" title="Professional Scrum Master certification" /><published>2016-05-08T00:00:00+02:00</published><updated>2016-05-08T00:00:00+02:00</updated><id>http://juan.pallares.me/professional-scrum-master</id><content type="html" xml:base="http://juan.pallares.me/professional-scrum-master/">&lt;p&gt;I recently obtained the Professional Scrum Master certification (PSM I) issued by &lt;a href=&quot;scrum.org&quot;&gt;scrum.org&lt;/a&gt;. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wz28yMcDvVM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="lean" /><category term="philosophy" /><category term="manufacturing" /><category term="software" /><category term="development" /><category term="agile" /><category term="scrum" /><summary type="html">After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on making obvious what adds value by reducing everything else.</summary></entry><entry><title type="html">Professional Scrum Master certification</title><link href="https://juan.pallares.me/professional-scrum-master/" rel="alternate" type="text/html" title="Professional Scrum Master certification" /><published>2016-05-08T00:00:00+02:00</published><updated>2016-05-08T00:00:00+02:00</updated><id>https://juan.pallares.me/professional-scrum-master</id><content type="html" xml:base="https://juan.pallares.me/professional-scrum-master/">&lt;p&gt;I recently obtained the Professional Scrum Master certification (PSM I) issued by &lt;a href=&quot;scrum.org&quot;&gt;scrum.org&lt;/a&gt;. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;There’s no Sprint 0&lt;/strong&gt;. Also no hardening Sprint, integration Sprint, release Sprint, planning Sprint, etc. All Sprints are the same.&lt;/li&gt;
@@ -251,7 +240,7 @@ mount -t cifs //server/share /mnt/abc
 
 &lt;p&gt;During the exam, use the bookmarks to mark the questions you have some doubts and go through them in a second iteration (hahaha the scrum way!)&lt;/p&gt;
 
-&lt;p&gt;Good luck!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="scrum master" /><category term="scrum.org" /><category term="agile" /><category term="scrum" /><category term="training" /><category term="certification" /><summary>I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:</summary></entry><entry><title>Technical debt</title><link href="http://juan.pallares.me/Technical-debt/" rel="alternate" type="text/html" title="Technical debt" /><published>2016-01-04T00:00:00+01:00</published><updated>2016-01-04T00:00:00+01:00</updated><id>http://juan.pallares.me/Technical debt</id><content type="html" xml:base="http://juan.pallares.me/Technical-debt/">&lt;h2 id=&quot;the-analogy&quot;&gt;The analogy&lt;/h2&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="scrum master" /><category term="scrum.org" /><category term="agile" /><category term="scrum" /><category term="training" /><category term="certification" /><summary type="html">I recently obtained the Professional Scrum Master certification (PSM I) issued by scrum.org. In order to do it I had avantage since I received official training but anyway I think is doable without it, some tips:</summary></entry><entry><title type="html">Technical debt</title><link href="https://juan.pallares.me/Technical-debt/" rel="alternate" type="text/html" title="Technical debt" /><published>2016-01-04T00:00:00+01:00</published><updated>2016-01-04T00:00:00+01:00</updated><id>https://juan.pallares.me/Technical%20debt</id><content type="html" xml:base="https://juan.pallares.me/Technical-debt/">&lt;h2 id=&quot;the-analogy&quot;&gt;The analogy&lt;/h2&gt;
 
 &lt;p&gt;The term was first used by Ward Cunninham in 1992. He realized financial debt could be compared to technical debt in order to understand easily causes and consequences of it.&lt;/p&gt;
 
@@ -271,7 +260,7 @@ It is important to clarify that technical debt is only valid when used conscious
 
 &lt;p&gt;Since I did the &lt;a href=&quot;http://pallares.me/mongodb-for-NET-M101N/&quot;&gt;MongoDB course&lt;/a&gt; I got involved in organizing a Hackaton in the &lt;a href=&quot;http://mean.io/&quot;&gt;MEAN stack&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;example-with-possible-scenarios1&quot;&gt;Example with Possible scenarios&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;example-with-possible-scenarios&quot;&gt;Example with Possible scenarios&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
 
 &lt;p&gt;Now let’s make an example. We are a software Company, an start-up. We are just beginning we don’t have much money, but we are lucky some possible customers are coming to see a prototype next week. We would get an initial investment that would help us grow.
 Problem? We don’t have enough time to develop the user roles in the application in a proper way, with all the infrastructure.
@@ -285,7 +274,7 @@ What could we do? There are 3 possible scenarios:&lt;/p&gt;
 
 &lt;p&gt;As you may be guessing, the best option is the first one. It’s one of the main reasons of taking debt, to arrive to a deadline but paying it as soon as possible before it gets out of hand.&lt;/p&gt;
 
-&lt;h2 id=&quot;when-to-take-debt---design-payoff-line2&quot;&gt;When to take debt - Design payoff line&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;when-to-take-debt---design-payoff-line&quot;&gt;When to take debt - Design payoff line&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;../images/DesignPayoffLine.png&quot; alt=&quot;Design payoff line&quot; title=&quot;Design payoff line&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As we saw with the previous example, technical debt is only worth up to a certain point. 
@@ -308,13 +297,13 @@ It can also help us in some scenarios to deliver a functionality.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://medium.com/@joaomilho/festina-lente-e29070811b84#.r5modcn0r&quot;&gt;https://medium.com/@joaomilho/festina-lente-e29070811b84#.r5modcn0r&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://medium.com/@joaomilho/festina-lente-e29070811b84#.r5modcn0r&quot;&gt;https://medium.com/@joaomilho/festina-lente-e29070811b84#.r5modcn0r&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://martinfowler.com/bliki/DesignStaminaHypothesis.html&quot;&gt;http://martinfowler.com/bliki/DesignStaminaHypothesis.html&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://martinfowler.com/bliki/DesignStaminaHypothesis.html&quot;&gt;http://martinfowler.com/bliki/DesignStaminaHypothesis.html&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="technical debt" /><category term="software" /><category term="development" /><category term="risk" /><summary>You may need to use suboptimal designs in the short term, because the schedule does not allow longer term designs to be used</summary></entry><entry><title>MEAN Hackaton</title><link href="http://juan.pallares.me/MEAN-Hackaton/" rel="alternate" type="text/html" title="MEAN Hackaton" /><published>2015-10-12T00:00:00+02:00</published><updated>2015-10-12T00:00:00+02:00</updated><id>http://juan.pallares.me/MEAN-Hackaton</id><content type="html" xml:base="http://juan.pallares.me/MEAN-Hackaton/">&lt;p&gt;Since I did the &lt;a href=&quot;http://pallares.me/mongodb-for-NET-M101N/&quot;&gt;MongoDB course&lt;/a&gt; I got involved in organizing a Hackaton in the &lt;a href=&quot;http://mean.io/&quot;&gt;MEAN stack&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="technical debt" /><category term="software" /><category term="development" /><category term="risk" /><summary type="html">You may need to use suboptimal designs in the short term, because the schedule does not allow longer term designs to be used</summary></entry><entry><title type="html">MEAN Hackaton</title><link href="https://juan.pallares.me/MEAN-Hackaton/" rel="alternate" type="text/html" title="MEAN Hackaton" /><published>2015-10-12T00:00:00+02:00</published><updated>2015-10-12T00:00:00+02:00</updated><id>https://juan.pallares.me/MEAN-Hackaton</id><content type="html" xml:base="https://juan.pallares.me/MEAN-Hackaton/">&lt;p&gt;Since I did the &lt;a href=&quot;http://pallares.me/mongodb-for-NET-M101N/&quot;&gt;MongoDB course&lt;/a&gt; I got involved in organizing a Hackaton in the &lt;a href=&quot;http://mean.io/&quot;&gt;MEAN stack&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-the-hell-is-mean&quot;&gt;What the hell is MEAN?&lt;/h3&gt;
 
@@ -335,7 +324,7 @@ It can also help us in some scenarios to deliver a functionality.&lt;/p&gt;
 
 &lt;p&gt;People got really engaged and didn’t even want to make breaks. We, the MEAN “experts”, were giving support to the teams during all the coding and gave an example application of a library so they could get the basic structure to start.&lt;/p&gt;
 
-&lt;p&gt;We were really surprised by the results and the winning team made a really interesting app. It was difficult to believe they did it in such a short period of time.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="MEAN" /><category term="hackaton" /><category term="mongodb" /><category term="angular.js" /><category term="express" /><category term="node.js" /><summary>Since I did the MongoDB course I got involved in organizing a Hackaton in the MEAN stack.</summary></entry><entry><title>M101N MongoDB for .NET</title><link href="http://juan.pallares.me/mongodb-for-NET-M101N/" rel="alternate" type="text/html" title="M101N MongoDB for .NET" /><published>2015-05-17T00:00:00+02:00</published><updated>2015-05-17T00:00:00+02:00</updated><id>http://juan.pallares.me/mongodb-for-NET-M101N</id><content type="html" xml:base="http://juan.pallares.me/mongodb-for-NET-M101N/">&lt;p&gt;I just finished the online course &lt;a href=&quot;https://university.mongodb.com/courses/M101N/about&quot;&gt;M101N MongoDB for .NET&lt;/a&gt; and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
+&lt;p&gt;We were really surprised by the results and the winning team made a really interesting app. It was difficult to believe they did it in such a short period of time.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="MEAN" /><category term="hackaton" /><category term="mongodb" /><category term="angular.js" /><category term="express" /><category term="node.js" /><summary type="html">Since I did the MongoDB course I got involved in organizing a Hackaton in the MEAN stack.</summary></entry><entry><title type="html">M101N MongoDB for .NET</title><link href="https://juan.pallares.me/mongodb-for-NET-M101N/" rel="alternate" type="text/html" title="M101N MongoDB for .NET" /><published>2015-05-17T00:00:00+02:00</published><updated>2015-05-17T00:00:00+02:00</updated><id>https://juan.pallares.me/mongodb-for-NET-M101N</id><content type="html" xml:base="https://juan.pallares.me/mongodb-for-NET-M101N/">&lt;p&gt;I just finished the online course &lt;a href=&quot;https://university.mongodb.com/courses/M101N/about&quot;&gt;M101N MongoDB for .NET&lt;/a&gt; and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
 I recommend it to every developer who wants to get to know this famous &lt;a href=&quot;http://www.mongodb.com/nosql-explained&quot;&gt;NoSQL&lt;/a&gt; database.&lt;/p&gt;
 
 &lt;p&gt;There are also &lt;a href=&quot;https://university.mongodb.com/courses/catalog&quot;&gt;another possible courses&lt;/a&gt; such as:&lt;/p&gt;
@@ -374,8 +363,7 @@ I recommend it to every developer who wants to get to know this famous &lt;a hre
 &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;A&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_id&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;user_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="mongo" /><category term=".NET" /><category term="mongodb" /><category term="course" /><category term="certification" /><summary>I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam.
-I recommend it to every developer who wants to get to know this famous NoSQL database.</summary></entry><entry><title>Explaining SOLID principles with C# examples</title><link href="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/" rel="alternate" type="text/html" title="Explaining SOLID principles with C# examples" /><published>2015-03-15T00:00:00+01:00</published><updated>2015-03-15T00:00:00+01:00</updated><id>http://juan.pallares.me/Explaining-SOLID-principles-with-C#-examples</id><content type="html" xml:base="http://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/">&lt;h3 id=&quot;what-is-solid&quot;&gt;What is SOLID?&lt;/h3&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;user_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="mongo" /><category term=".NET" /><category term="mongodb" /><category term="course" /><category term="certification" /><summary type="html">I just finished the online course M101N MongoDB for .NET and I really enjoyed it. They combine short videos and a quiz after them checking you understood the explanation. There is also homework every week and a final exam. I recommend it to every developer who wants to get to know this famous NoSQL database.</summary></entry><entry><title type="html">Explaining SOLID principles with C# examples</title><link href="https://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/" rel="alternate" type="text/html" title="Explaining SOLID principles with C# examples" /><published>2015-03-15T00:00:00+01:00</published><updated>2015-03-15T00:00:00+01:00</updated><id>https://juan.pallares.me/Explaining-SOLID-principles-with-C#-examples</id><content type="html" xml:base="https://juan.pallares.me/Explaining-SOLID-principles-with-C-examples/">&lt;h3 id=&quot;what-is-solid&quot;&gt;What is SOLID?&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29&quot;&gt;SOLID&lt;/a&gt; are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time, which helps to create good software architecture. The SOLID acronym stands for:&lt;/p&gt;
 
@@ -393,21 +381,21 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Starter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;starter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Battery&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;battery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//we would put code here to handle the logic for checking
-&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;//whether or not the batter is charged
-&lt;/span&gt; 
-        &lt;span class=&quot;c1&quot;&gt;//then we check the result of our logic
-&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;battery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsCharged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//we would put code here to handle the logic for checking&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//whether or not the batter is charged&lt;/span&gt;
+ 
+        &lt;span class=&quot;c1&quot;&gt;//then we check the result of our logic&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;battery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsCharged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;//we could put logic here to handle
-&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//the actual ignition process
-&lt;/span&gt;            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//we could put logic here to handle&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//the actual ignition process&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;//uh oh! the battery is not charged
-&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//Failure!
-&lt;/span&gt;            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//uh oh! the battery is not charged&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//Failure!&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -428,13 +416,13 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
     &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Battery&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;battery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//since the Battery class now contains that actual charge validation
-&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;//logic, the Starter merely checks the value of that property
-&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;//and the Battery takes care of the rest
-&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;battery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsCharged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//since the Battery class now contains that actual charge validation&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//logic, the Starter merely checks the value of that property&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//and the Battery takes care of the rest&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;battery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsCharged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;//we can put the ignition logic here
-&lt;/span&gt;            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//we can put the ignition logic here&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IgnitionResult&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -561,7 +549,7 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 
 &lt;p&gt;The goal behind ISP is that &lt;strong&gt;no client consuming an interface should be forced to depend on methods it does not use&lt;/strong&gt;. For example, you might have a class that implements an interface called IPersist.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IPersist&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IPersist&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -570,24 +558,24 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	   &lt;span class=&quot;c1&quot;&gt;// saving code.
-&lt;/span&gt;	   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	   &lt;span class=&quot;c1&quot;&gt;// saving code.&lt;/span&gt;
+	   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	   &lt;span class=&quot;c1&quot;&gt;// log code
-&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	   &lt;span class=&quot;c1&quot;&gt;// log code&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SendLogNotification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	   &lt;span class=&quot;c1&quot;&gt;// notifying code
-&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	   &lt;span class=&quot;c1&quot;&gt;// notifying code&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now if we update IPersist to include the two new methods we have in ReservationLog class, it might be useful for more implementations of IPersist.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IPersist&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IPersist&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -600,8 +588,8 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	   &lt;span class=&quot;c1&quot;&gt;// code to save on database
-&lt;/span&gt;	   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	   &lt;span class=&quot;c1&quot;&gt;// code to save on database&lt;/span&gt;
+	   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BookingDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -617,7 +605,7 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 
 &lt;p&gt;To fix it is really easy, we need a new interface to separate responsabilities. And then only the classes that need to log will implement the new interface.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ILog&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ILog&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReservationDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
    &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SendLogNotification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReservationDetails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reservation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -688,7 +676,7 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;I hope the examples I picked were good enough to understand the SOLID principles. This was just an introduction, there is &lt;a href=&quot;http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&quot;&gt;much more detail available&lt;/a&gt;.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="SOLID" /><category term="C#" /><category term="code" /><category term="examples" /><summary>SOLID are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time</summary></entry><entry><title>Some thoughts about pair programming</title><link href="http://juan.pallares.me/pair-programming/" rel="alternate" type="text/html" title="Some thoughts about pair programming" /><published>2015-02-22T00:00:00+01:00</published><updated>2015-02-22T00:00:00+01:00</updated><id>http://juan.pallares.me/pair-programming</id><content type="html" xml:base="http://juan.pallares.me/pair-programming/">&lt;p&gt;After pair programming pretty often for the last months this is what I think about it:&lt;/p&gt;
+&lt;p&gt;I hope the examples I picked were good enough to understand the SOLID principles. This was just an introduction, there is &lt;a href=&quot;http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&quot;&gt;much more detail available&lt;/a&gt;.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="SOLID" /><category term="C#" /><category term="code" /><category term="examples" /><summary type="html">SOLID are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time</summary></entry><entry><title type="html">Some thoughts about pair programming</title><link href="https://juan.pallares.me/pair-programming/" rel="alternate" type="text/html" title="Some thoughts about pair programming" /><published>2015-02-22T00:00:00+01:00</published><updated>2015-02-22T00:00:00+01:00</updated><id>https://juan.pallares.me/pair-programming</id><content type="html" xml:base="https://juan.pallares.me/pair-programming/">&lt;p&gt;After pair programming pretty often for the last months this is what I think about it:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -723,4 +711,4 @@ I recommend it to every developer who wants to get to know this famous NoSQL dat
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;notice&quot;&gt;Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="pair programming" /><category term="xp" /><category term="developing" /><category term="software" /><summary>After pair programming pretty often for the last months this is what I think about it:</summary></entry></feed>
+&lt;p class=&quot;notice&quot;&gt;Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="pair programming" /><category term="xp" /><category term="developing" /><category term="software" /><summary type="html">After pair programming pretty often for the last months this is what I think about it:</summary></entry></feed>
