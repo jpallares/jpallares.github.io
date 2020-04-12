@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-04-12T13:05:12+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Raspberry Pi 3 III Pi-hole PiVPN</title><link href="https://juan.pallares.me/raspberry-pi-hole-vpn/" rel="alternate" type="text/html" title="Raspberry Pi 3 III Pi-hole PiVPN" /><published>2017-09-03T00:00:00+02:00</published><updated>2017-09-03T00:00:00+02:00</updated><id>https://juan.pallares.me/raspberry-pi-hole-vpn</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-hole-vpn/">&lt;p&gt;In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-04-12T17:30:20+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Remote working tips (COVID-19)</title><link href="https://juan.pallares.me/remote-working-tips/" rel="alternate" type="text/html" title="Remote working tips (COVID-19)" /><published>2020-04-11T00:00:00+02:00</published><updated>2020-04-11T00:00:00+02:00</updated><id>https://juan.pallares.me/remote-working-tips</id><content type="html" xml:base="https://juan.pallares.me/remote-working-tips/">&lt;p&gt;Before this pandemic my experience working remotely was almost non-existent. Maybe half a day because I had a personal matter to attend…or one day the whole team works remotely just to see we are able. But then, suddenly, we are forced to work 100% of our time remotely.&lt;/p&gt;
+
+&lt;h3 id=&quot;colocation---i-miss-my-team&quot;&gt;Colocation - I miss my team&lt;/h3&gt;
+
+&lt;p&gt;At the beginning it was hard for us, &lt;strong&gt;we are the kind of team that is in constant communication&lt;/strong&gt;, we sit right to each other, we do pair programming often and we are used to just turn ourselves and ask: “Hey guys this functionality is driving me crazy, can somebody help me?” or “I just created an MR, can somebody take a look?” and now if I turn around I just see my room wall and some old books. Apart from my own team, another teams or the business is also very close, like 5 to 10 meters distance.&lt;/p&gt;
+
+&lt;p&gt;How did we tackle this issue? we do a &lt;strong&gt;sync call every morning via &lt;a href=&quot;https://zoom.us/&quot;&gt;Zoom&lt;/a&gt;&lt;/strong&gt; (which was our default tool for video calls way before this crisis started) and during the day we may do one or two more depending in our needs. We tried having a zoom call all day open with everybody muted and just unmuted and talk if you need help, it didn’t work for us. We also communicate via &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;, every team member notifies when he starts to work and when they are leaving, and also the lunch break. It may feel too strict and I know that &lt;strong&gt;companies that work 100% remote follow a much more async style of working, but remember we are used to work together you can see our way of working as a trade-off between being fully remote and a colocated team pair programming most of the day&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;working-hours&quot;&gt;Working hours&lt;/h3&gt;
+
+&lt;p&gt;This is a &lt;strong&gt;double-edged sword&lt;/strong&gt;. Working remotely can provoke that you &lt;strong&gt;procastinate&lt;/strong&gt; too much, you are at home ad you have much more distractions around or on the other hand, you &lt;strong&gt;never really stop working&lt;/strong&gt;, maybe the only computer you have is the work computer so you get notified about something in slack is difficult to disconnect.
+What I do, and I can do this because I’m not a parent (people in this situation with children are real heroes) is working as close as possible to the schedule I had before. I’m a creature of habit and I’m trying to use this to my advantage, so aproximately I work from 9am to 6pm with a 1h lunch break and if helps me focus much more than working some hours scattered through the day. Anyway, this depends a lot on the person and I’m saying only what worked for me.&lt;/p&gt;
+
+&lt;h3 id=&quot;home-office&quot;&gt;Home office&lt;/h3&gt;
+
+&lt;p&gt;We were lucky our company allowed us to take home the screens, keyboard, etc. everything we would need to work from home. You need to be comfortable and ideally as close as possible and to the desk you have at the office. Anyway is also good to switch the place you work during the day, you gonna stay at home all day at least switch the place you are staying inside home. Half an hour in the balcony now that is sunny?
+My setup is two QHD screens connected a MacBook Pro and external keyboard and mouse I’m pretty comfortable, what I’m struggling with is the placement of the webcam, I want have it in front of my face so people can feel I talk to them but I used to set the laptop on the side, anyway not a big problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;sports&quot;&gt;Sports&lt;/h3&gt;
+
+&lt;p&gt;In a normal situation I do sport almost daily and twice per week I do it at lunch time, me and some coworkers do a 45 minutes HIIT training and then get a shower and eat in front of the computer. This is something I really miss, it helped disconnect a lot and often I was stuck on something and after training I saw clearly what was the issue. What I’m doing now is traying to train everyday too, even if less motivated and just want to be on the sofa I force myself. How to train? there are plenty of videos now in Youtube, I recommend &lt;a href=&quot;https://www.youtube.com/watch?v=vc1E5CfRfos&quot;&gt;this one&lt;/a&gt;. Even if you weren’t training before I believe now is a good time to start, otherwise being confined we almost don’t move and being sedentary can impact your health.&lt;/p&gt;
+
+&lt;p&gt;What has been your experience so far working from home?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="remote work" /><category term="covid-19" /><category term="tips" /><category term="job" /><category term="cofinement" /><summary type="html">Sharing my experience after 4 weeks of working remotely (and confined)</summary></entry><entry><title type="html">Raspberry Pi 3 III Pi-hole PiVPN</title><link href="https://juan.pallares.me/raspberry-pi-hole-vpn/" rel="alternate" type="text/html" title="Raspberry Pi 3 III Pi-hole PiVPN" /><published>2017-09-03T00:00:00+02:00</published><updated>2017-09-03T00:00:00+02:00</updated><id>https://juan.pallares.me/raspberry-pi-hole-vpn</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-hole-vpn/">&lt;p&gt;In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.&lt;/p&gt;
 
 &lt;h3 id=&quot;pi-hole---block-ads-in-your-local-network&quot;&gt;&lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-hole&lt;/a&gt; - Block ads in your local network&lt;/h3&gt;
 
@@ -676,39 +698,4 @@ I recommend it to every developer who wants to get to know this famous &lt;a hre
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;I hope the examples I picked were good enough to understand the SOLID principles. This was just an introduction, there is &lt;a href=&quot;http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&quot;&gt;much more detail available&lt;/a&gt;.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="SOLID" /><category term="C#" /><category term="code" /><category term="examples" /><summary type="html">SOLID are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time</summary></entry><entry><title type="html">Some thoughts about pair programming</title><link href="https://juan.pallares.me/pair-programming/" rel="alternate" type="text/html" title="Some thoughts about pair programming" /><published>2015-02-22T00:00:00+01:00</published><updated>2015-02-22T00:00:00+01:00</updated><id>https://juan.pallares.me/pair-programming</id><content type="html" xml:base="https://juan.pallares.me/pair-programming/">&lt;p&gt;After pair programming pretty often for the last months this is what I think about it:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pair programming improves &lt;strong&gt;code quality&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pair programming improves &lt;strong&gt;team focus&lt;/strong&gt; (for example when the guy behind you says “hey is that stuff really necessary for this sprint?”).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Surprisingly many developers that are strongly against pair programming actually haven’t tried it, and quickly learn to like it once they do try it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pair programming is exhaustive and should not be done all day.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pair programming should be done in complex stories  only(related with the previous).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Shifting pairs&lt;/strong&gt; frequently is good.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pair programming does improve &lt;strong&gt;knowledge spread&lt;/strong&gt; within the group (Related with the previous too).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Some people just aren’t comfortable with pair programming. Don’t throw out an excellent programmer just because he isn’t comfortable with pair programming.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Code review is an OK alternative&lt;/strong&gt; to pair programming.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;It’s useful that the “navigator” (the guy not using the keyboard) has a computer of his own as well. Not for development, but for doing little spikes when necessary, browsing documentation when the “driver” (the guy at the keyboard) gets stuck, etc.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice&quot;&gt;Please try it before criticizing, I was also reluctant at first. I thought it would be a waste of time until I realized all the advantages.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="pair programming" /><category term="xp" /><category term="developing" /><category term="software" /><summary type="html">After pair programming pretty often for the last months this is what I think about it:</summary></entry></feed>
+&lt;p&gt;I hope the examples I picked were good enough to understand the SOLID principles. This was just an introduction, there is &lt;a href=&quot;http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod&quot;&gt;much more detail available&lt;/a&gt;.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="SOLID" /><category term="C#" /><category term="code" /><category term="examples" /><summary type="html">SOLID are five basic principles for object-oriented programming and design. If applied, the solution is more likely to be easy to maintain and extend over time</summary></entry></feed>
