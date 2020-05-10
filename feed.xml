@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-05-02T16:26:44+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Investing in index funds. Why I became a boglehead</title><link href="https://juan.pallares.me/why-i-became-a-bogglehead/" rel="alternate" type="text/html" title="Investing in index funds. Why I became a boglehead" /><published>2020-05-02T00:00:00+02:00</published><updated>2020-05-02T00:00:00+02:00</updated><id>https://juan.pallares.me/why-i-became-a-bogglehead</id><content type="html" xml:base="https://juan.pallares.me/why-i-became-a-bogglehead/">&lt;h2 id=&quot;why-passive-investing&quot;&gt;Why passive investing&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-05-10T18:58:08+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Attending SoCraTes UK remotely</title><link href="https://juan.pallares.me/Atteding-remote-Socrates-UK/" rel="alternate" type="text/html" title="Attending SoCraTes UK remotely" /><published>2020-05-10T00:00:00+02:00</published><updated>2020-05-10T00:00:00+02:00</updated><id>https://juan.pallares.me/Atteding-remote-Socrates-UK</id><content type="html" xml:base="https://juan.pallares.me/Atteding-remote-Socrates-UK/">&lt;h2 id=&quot;what-is-socrates&quot;&gt;What is SoCraTes?&lt;/h2&gt;
+
+&lt;p&gt;I always heard good things about &lt;a href=&quot;https://socratesuk.org/&quot;&gt;SoCraTes&lt;/a&gt;, a friend attended 4 times in a row to the SoCraTes UK version and told me it was his favourite event of the year. This is not the typical conference, in fact they define themselves as an unconference or retreat:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;International Software Craft and Testing Unconference UK
+SoCraTes UK is a non-profit, international Software Crafters retreat for open-minded crafters who want to improve their craft and the software industry as a whole&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;remote-version&quot;&gt;Remote version&lt;/h2&gt;
+
+&lt;p&gt;Due to COVID-19 the normal retreat was cancelled and an online version was held during last Friday, it was a good opportunity to attend and see how it worked. I have to admit I was really suprised by how well it was organized, I didn’t have any problem knowing what was the schedule, the changes, how to switch room, it was fast and easy.&lt;/p&gt;
+
+&lt;p&gt;The tools used to make it work were:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://discord.com/&quot;&gt;Discord&lt;/a&gt; for written communication. Some days before the workspace was created and some help provided if needed.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zoom.us/&quot;&gt;Zoom&lt;/a&gt; for video conferencing. There were several zoom rooms mapping to some rooms I imagine exist in the real house where the conference is usually held.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mural.co/&quot;&gt;Mural&lt;/a&gt; for sharing the schedule and then making diagrams, postits etc from each one of the talks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They have a &lt;a href=&quot;https://socratesuk.org/code_of_conduct.html&quot;&gt;Code of Conduct&lt;/a&gt; that enforces a safe environment for everybody to participate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/socrates_schedule.png&quot; alt=&quot;SoCraTes schedule in Mural.co&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m used to check the conference schedule of the ones I attend, what are the subjects they are going to talk and then decide where to go during the day. In SoCraTes it works totally different, the talks are dedided the very same day and they are not the expert talking and the others listening, is more a like a conversation, a collaboration between all the attendants, sharing their experience. Somebody says “I wanna talk about DDD and how we are struggling in our company”. In fact, according to the organizers the best talks come from people asking open questions that they need help with. Example: “How can we improve in pair programming?”&lt;/p&gt;
+
+&lt;h2 id=&quot;learnings&quot;&gt;Learnings&lt;/h2&gt;
+
+&lt;p&gt;I attended just two talks and both were related to the subject of remote pairing and &lt;strong&gt;remote mob programming&lt;/strong&gt;. I’m &lt;a href=&quot;https://juan.pallares.me/remote-working-tips/&quot;&gt;used to do pair programming&lt;/a&gt; but working remotely has become harder to do it and as a result we do it less often than we would like. What was something new for me is mob programming, I just heard it once when the whole team was looking at one screen trying to solve a problem but I didn’t know it was a thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mob_programming.png&quot; alt=&quot;SoCraTes Mob Programming&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I learned we do pair programming in a very loose way, which does not have to be bad but is good to know how the strict way is and what other people in the community is doing. I was suprised that some guys mentioned they were switching the keyboard every 3 minutes when they were collocated and that they always use the driver and navigator role.&lt;/p&gt;
+
+&lt;p&gt;I found confort in listening that we are not the only ones struggling with remote pairing. Everybody shared which tools were using for pairing, Liveshare, Teams, Zoom, Tuple but agreed that nothing is as good as being collocated.&lt;/p&gt;
+
+&lt;p&gt;Regarding mob programming, I learned a lot of teams are doing it daily. Imagine a big group (8 people?) working all together in the same code, only one writing (driver) one speaking (navigator) and the rest giving input when asked for, then rotating roles frequently. Very interesting topics were raised like, how can we ensure everybody is engaged? How often and for how long are you mobing? What are the reasons to use it? The main benefits are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Knowledge share accross whole team&lt;/li&gt;
+  &lt;li&gt;Less WIP&lt;/li&gt;
+  &lt;li&gt;Quality and diversity of ideas&lt;/li&gt;
+  &lt;li&gt;Less errors and less time finding them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I find it like pair programming on steroids, all the benefits of pair programming multiplied.&lt;/p&gt;
+
+&lt;p&gt;Have you attended any remote conference recently? How was your exprience?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="unconference" /><category term="socrates" /><category term="uk" /><category term="craft" /><category term="software" /><category term="remote" /><summary type="html">My experience attending to SoCraTes UK in this new remote version.</summary></entry><entry><title type="html">Investing in index funds. Why I became a boglehead</title><link href="https://juan.pallares.me/why-i-became-a-bogglehead/" rel="alternate" type="text/html" title="Investing in index funds. Why I became a boglehead" /><published>2020-05-02T00:00:00+02:00</published><updated>2020-05-02T00:00:00+02:00</updated><id>https://juan.pallares.me/why-i-became-a-bogglehead</id><content type="html" xml:base="https://juan.pallares.me/why-i-became-a-bogglehead/">&lt;h2 id=&quot;why-passive-investing&quot;&gt;Why passive investing&lt;/h2&gt;
 
 &lt;p&gt;Recently I read a couple books that triggered and investigation in blogs and forums that was eye-opening:&lt;/p&gt;
 
@@ -93,7 +137,7 @@ I go for global index funds to be really diversified and with 10% of emerging ma
   &lt;li&gt;Minimize Taxes&lt;/li&gt;
   &lt;li&gt;Keep It Simple&lt;/li&gt;
   &lt;li&gt;Stay The Course&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="investment" /><category term="john bogle" /><category term="index funds" /><category term="money" /><category term="boglehead" /><summary type="html">A good investment strategy does not have to be difficult.</summary></entry><entry><title type="html">Merge request handling via slack channel</title><link href="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel-copy/" rel="alternate" type="text/html" title="Merge request handling via slack channel" /><published>2020-04-26T00:00:00+02:00</published><updated>2020-04-26T00:00:00+02:00</updated><id>https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel%20copy</id><content type="html" xml:base="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel-copy/">&lt;p&gt;As I mentioned in the previous post, in my team &lt;a href=&quot;https://juan.pallares.me/remote-working-tips/&quot;&gt;we are very used to be colocated and interact frequently&lt;/a&gt;. Also since we do pair programming the amount of MR that needs to be accepted by a third person was low, but then we started working fully remote and it all changed.&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="investment" /><category term="john bogle" /><category term="index funds" /><category term="money" /><category term="boglehead" /><summary type="html">A good investment strategy does not have to be difficult.</summary></entry><entry><title type="html">Merge request handling via slack channel</title><link href="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel/" rel="alternate" type="text/html" title="Merge request handling via slack channel" /><published>2020-04-26T00:00:00+02:00</published><updated>2020-04-26T00:00:00+02:00</updated><id>https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel</id><content type="html" xml:base="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel/">&lt;p&gt;As I mentioned in the previous post, in my team &lt;a href=&quot;https://juan.pallares.me/remote-working-tips/&quot;&gt;we are very used to be colocated and interact frequently&lt;/a&gt;. Also since we do pair programming the amount of MR that needs to be accepted by a third person was low, but then we started working fully remote and it all changed.&lt;/p&gt;
 
 &lt;p&gt;The team slack channel was flooded with:&lt;/p&gt;
 
@@ -455,25 +499,4 @@ It can also help us in some scenarios to deliver a functionality.&lt;/p&gt;
       &lt;p&gt;&lt;a href=&quot;http://martinfowler.com/bliki/DesignStaminaHypothesis.html&quot;&gt;http://martinfowler.com/bliki/DesignStaminaHypothesis.html&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="technical debt" /><category term="software" /><category term="development" /><category term="risk" /><summary type="html">You may need to use suboptimal designs in the short term, because the schedule does not allow longer term designs to be used</summary></entry><entry><title type="html">MEAN Hackaton</title><link href="https://juan.pallares.me/MEAN-Hackaton/" rel="alternate" type="text/html" title="MEAN Hackaton" /><published>2015-10-12T00:00:00+02:00</published><updated>2015-10-12T00:00:00+02:00</updated><id>https://juan.pallares.me/MEAN-Hackaton</id><content type="html" xml:base="https://juan.pallares.me/MEAN-Hackaton/">&lt;p&gt;Since I did the &lt;a href=&quot;http://pallares.me/mongodb-for-NET-M101N/&quot;&gt;MongoDB course&lt;/a&gt; I got involved in organizing a Hackaton in the &lt;a href=&quot;http://mean.io/&quot;&gt;MEAN stack&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-the-hell-is-mean&quot;&gt;What the hell is MEAN?&lt;/h3&gt;
-
-&lt;p&gt;MEAN is an opinionated fullstack javascript framework which simplifies and accelerates web application development.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;M&lt;/strong&gt; stands for &lt;a href=&quot;https://www.mongodb.org/&quot;&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;E&lt;/strong&gt; stands for &lt;a href=&quot;http://expressjs.com/&quot;&gt;express&lt;/a&gt; - minimal and flexible node.js web application framework&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;A&lt;/strong&gt; stands for &lt;a href=&quot;https://angularjs.org/&quot;&gt;Angular.js&lt;/a&gt; - lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;N&lt;/strong&gt; stands for &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; - a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As you see it covers everything, database, server and web. It let’s you do decent web apps in a short time.&lt;/p&gt;
-
-&lt;h3 id=&quot;hackaton&quot;&gt;Hackaton&lt;/h3&gt;
-
-&lt;p&gt;The people got divided in teams of three and after a brief introduction of the MEAN stack  (20 minutes per technology) they had literally one day and a half to make something cool.&lt;/p&gt;
-
-&lt;p&gt;People got really engaged and didn’t even want to make breaks. We, the MEAN “experts”, were giving support to the teams during all the coding and gave an example application of a library so they could get the basic structure to start.&lt;/p&gt;
-
-&lt;p&gt;We were really surprised by the results and the winning team made a really interesting app. It was difficult to believe they did it in such a short period of time.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="MEAN" /><category term="hackaton" /><category term="mongodb" /><category term="angular.js" /><category term="express" /><category term="node.js" /><summary type="html">Since I did the MongoDB course I got involved in organizing a Hackaton in the MEAN stack.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="technical debt" /><category term="software" /><category term="development" /><category term="risk" /><summary type="html">You may need to use suboptimal designs in the short term, because the schedule does not allow longer term designs to be used</summary></entry></feed>
