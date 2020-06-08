@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-06-01T21:27:02+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Acknowledge your privilege</title><link href="https://juan.pallares.me/acknowledge-your-privilege/" rel="alternate" type="text/html" title="Acknowledge your privilege" /><published>2020-06-01T00:00:00+02:00</published><updated>2020-06-01T00:00:00+02:00</updated><id>https://juan.pallares.me/acknowledge-your-privilege</id><content type="html" xml:base="https://juan.pallares.me/acknowledge-your-privilege/">&lt;p&gt;This last days going through my Twitter timeline was really shocking. I hated what I was watching and I couldn’t stop watching it. How is it possible that in year 2020 in the most important country of the world, a reference for a lot of developing countries, a policeman can kill a man that is totally surredendered and saying that he can’t breathe…&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-06-08T18:41:44+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Browsing blocking ads and trackers</title><link href="https://juan.pallares.me/browsing-blocking-ads-and-trackers/" rel="alternate" type="text/html" title="Browsing blocking ads and trackers" /><published>2020-06-08T00:00:00+02:00</published><updated>2020-06-08T00:00:00+02:00</updated><id>https://juan.pallares.me/browsing-blocking-ads-and-trackers</id><content type="html" xml:base="https://juan.pallares.me/browsing-blocking-ads-and-trackers/">&lt;p&gt;For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/&quot;&gt;The Brave web browser is hijacking links, and inserting affiliate codes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am not directly affected since I don’t use criptocurrency but a browser that markets itself like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;It begins with giving you back power. Get unmatched speed, security and privacy by blocking trackers&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Can not do this actions. The power to choose my affiliate code is taken away :unamused:.&lt;/p&gt;
+
+&lt;p&gt;Since &lt;a href=&quot;https://clark.com/technology/google-chrome-do-not-track/&quot;&gt;Chrome and all his tracking&lt;/a&gt; is a no-go. I looked for a browser that cared about privacy and could have Dashlane and uBlock add-ons installed and I decided to go back to &lt;a href=&quot;https://www.mozilla.org/es-ES/firefox&quot;&gt;Mozilla Firefox&lt;/a&gt;. It was my browser years ago before Chrome arrived but before I continue let’s see what happens when you don’t block anything.&lt;/p&gt;
+
+&lt;h1 id=&quot;ads&quot;&gt;Ads&lt;/h1&gt;
+
+&lt;p&gt;This is an sports website I usually visit with a browser that has no blocking configured:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/marca_browser.png&quot; alt=&quot;marca.com no block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Almost 50% of the website real-state are ads, apart from being annoying it also makes the loading slower and uses more data (concerning if you pay per MB like some data plans). If you are wondering if in a portable devices gets better, let me tell you it does not:&lt;/p&gt;
+
+&lt;h3 id=&quot;tablet&quot;&gt;Tablet:&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/marca_ipad.png&quot; alt=&quot;marca.com iPad&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;phone&quot;&gt;Phone:&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/marca_phone.png&quot; alt=&quot;marca.com phone&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I used this site because the ads are really big and painful and I have even seen full screen ad-popups with a blurry X to close.&lt;/p&gt;
+
+&lt;h1 id=&quot;trackers&quot;&gt;Trackers&lt;/h1&gt;
+
+&lt;p&gt;Not only the ads should worry you, you are also being tracked, for example in the same page we have:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/trackers.png&quot; alt=&quot;marca.com trackers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“But Juan you are starting to be paranoid! Why do you worry about it? I don’t have anything to hide”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also thought this way in the past, but once I read about the experience of an Egyptian guy during the Arab spring and how his “Facebook likes” were used against him and detained and sent to prison. Charge? Political dissidence.&lt;/p&gt;
+
+&lt;p&gt;Let me quote this &lt;a href=&quot;https://www.theguardian.com/commentisfree/2013/feb/11/riot-software-tracked-online-social-networks&quot;&gt;The Guardian Article&lt;/a&gt;. &lt;em&gt;Today, it’s so easy that mass-surveillance is feasible – and so-called “big data” makes it seem tempting and innocuous.
+The “big data” theory works like this: by grabbing hundreds or thousands of datapoints on millions of people, we build a systematic picture of how everyday people act. By analysing these by machine for “outliers”, or suspicious activity, we can catch the bad guys – and it’s OK, because only at that stage is another human being looking through your personal info.
+&lt;strong&gt;This is, by and large, fantasy. For one thing, any algorithm will generate hundreds if not thousands of false positives&lt;/strong&gt; (innocent people who hit a red flag). Given how rare, say, terrorism is, the vast majority of people bothered by these systems will be ordinary people facing previously unbelievable intrusion.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Trust me, better to block as much as possible. There is an area between living in a mountain like a buddhist monk and browsing with no block at all, find it and start making more difficult for them to spy on you. I say “more difficult” because I want to emphasize, is impossible not being tracked, even if you did not have an smartphone and use only Internet only for work purposes, the people around you would do the tracking for you, for example with the photos you appear in.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-solution&quot;&gt;The solution&lt;/h1&gt;
+
+&lt;p&gt;Here you have the same web with Firefox and the &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/&quot;&gt;uBlock Origin&lt;/a&gt; add-on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/marca_adfree.png&quot; alt=&quot;marca.com ad free&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It loads faster and you get to see just the real content and good news, Firefox and uBlock can also be installed in iOS and Android. You can specify how strictily Firefox should block tracking. Another step to prevent tracking is using &lt;a href=&quot;https://duckduckgo.com/&quot;&gt;DuckDuckGo&lt;/a&gt; as default search engine. It comes already as an option in Firefox.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-next-level&quot;&gt;The next level&lt;/h1&gt;
+
+&lt;p&gt;You want to go to the next level? What if I told about &lt;strong&gt;network-wide ad blocking and faster browsing&lt;/strong&gt;? Meet &lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-Hole&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/f9Rrghj6TDckb5nZZR/giphy.gif&quot; alt=&quot;next level funny gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://juan.pallares.me/raspberry-pi-hole-vpn/&quot;&gt;As I mentioned in the past&lt;/a&gt;, if you have a Raspberry Pi lying around this is one of the best uses you can do of it. Is a very active project, they recently released the &lt;a href=&quot;https://pi-hole.net/2020/05/10/pi-hole-v5-0-is-here/&quot;&gt;v5.0&lt;/a&gt;. For the screenshots with all the ads above I had to disable temporarily the PiHole apart from using Edge browser.&lt;/p&gt;
+
+&lt;p&gt;Are you blocking any ads? What is the browser you use? Don’t tell me the google analytics script running on this page will tell me this and more :smirk:.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="adblock" /><category term="ad" /><category term="tracking" /><category term="browser" /><category term="brave" /><category term="firefox" /><category term="chrome" /><category term="pihole" /><category term="ublock origin" /><summary type="html">Why and how I browse blocking ads and trackers</summary></entry><entry><title type="html">Acknowledge your privilege</title><link href="https://juan.pallares.me/acknowledge-your-privilege/" rel="alternate" type="text/html" title="Acknowledge your privilege" /><published>2020-06-01T00:00:00+02:00</published><updated>2020-06-01T00:00:00+02:00</updated><id>https://juan.pallares.me/acknowledge-your-privilege</id><content type="html" xml:base="https://juan.pallares.me/acknowledge-your-privilege/">&lt;p&gt;This last days going through my Twitter timeline was really shocking. I hated what I was watching and I couldn’t stop watching it. How is it possible that in year 2020 in the most important country of the world, a reference for a lot of developing countries, a policeman can kill a man that is totally surredendered and saying that he can’t breathe…&lt;/p&gt;
 
 &lt;p&gt;I honestly don’t know what to do or say. I’m a white man, heterosexual, from a middle-class family in a developed country, tall (at least for Spanish standards) and even blonde with blue eyes (more on why this can be a privilege later). If you are phisically like me you should acknowledge how privileged we are, minorities are in clear disadvantage to us.&lt;/p&gt;
 
@@ -461,45 +524,4 @@ mount -t cifs //server/share /mnt/abc
 
 &lt;h3 id=&quot;this-is-only-the-beginning&quot;&gt;This is only the beginning&lt;/h3&gt;
 
-&lt;p&gt;Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry><entry><title type="html">Lean introduction</title><link href="https://juan.pallares.me/lean/" rel="alternate" type="text/html" title="Lean introduction" /><published>2016-07-23T00:00:00+02:00</published><updated>2016-07-23T00:00:00+02:00</updated><id>https://juan.pallares.me/lean</id><content type="html" xml:base="https://juan.pallares.me/lean/">&lt;p&gt;After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on &lt;strong&gt;making obvious what adds value by reducing everything else&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;It all started with &lt;strong&gt;Toyota&lt;/strong&gt; in the 1930’s. Due to the crisis they had to focus on quality and avoid over-production unlike the standards at that time (Ford - USA). The first step was using “kaizen”, looking for continuous improvement to reduce all they could the errors in the manufacture process. It later evolved to &lt;a href=&quot;https://en.wikipedia.org/wiki/Toyota_Production_System&quot;&gt;Toyota Production System (TPS)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are 8 types of waste that are pretty self-explanatory:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Defects&lt;/li&gt;
-  &lt;li&gt;Overproduction&lt;/li&gt;
-  &lt;li&gt;Waiting&lt;/li&gt;
-  &lt;li&gt;Not utilizing talent&lt;/li&gt;
-  &lt;li&gt;Transportation&lt;/li&gt;
-  &lt;li&gt;Inventory excess&lt;/li&gt;
-  &lt;li&gt;Motion waste&lt;/li&gt;
-  &lt;li&gt;Excess processing&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Continuous improvement can be separeted in three basic principles:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Having a long term vision of the challenges one needs to face to realize one’s ambition. To do so, we have to &lt;strong&gt;challenge ourselves every day&lt;/strong&gt; to see if we are achieving our goals.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Kaizen&lt;/strong&gt;: Good enough never is, &lt;strong&gt;no process can ever be thought perfect&lt;/strong&gt;, so operations must be improved continuously, striving for innovation and evolution.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Genchi Genbutsu&lt;/strong&gt;: Going to the source to see the facts for oneself and make the right decisions, create consensus, and make sure goals are attained at the best possible speed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Lean is also based in the respect for people:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Respect&lt;/li&gt;
-  &lt;li&gt;Teamwork&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The main concepts of lean can be seen in the “Lean house”:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/leanhouse.png&quot; alt=&quot;Lean house&quot; title=&quot;Lean house&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It is easy to see the relation of Lean with agile, scrum…but how do they interact? I like this diagram to explain how they are realted. Lean is the origin of everything.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/Lean-Agile-Scrum-XP.gif&quot; alt=&quot;Lean Agile Scrum&quot; title=&quot;Lean Agile Scrum&quot; /&gt; - center&lt;/p&gt;
-
-&lt;p&gt;During the event they showed this video I wanted to share, it shows in a practical and funny way how lean can help:&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wz28yMcDvVM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="lean" /><category term="philosophy" /><category term="manufacturing" /><category term="software" /><category term="development" /><category term="agile" /><category term="scrum" /><summary type="html">After asisting to a Meetup about Lean, I would like to share the main concepts I learned. Lean is centered on making obvious what adds value by reducing everything else.</summary></entry></feed>
+&lt;p&gt;Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry></feed>
