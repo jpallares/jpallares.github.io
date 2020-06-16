@@ -1,4 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-06-08T18:45:30+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Browse blocking ads and trackers</title><link href="https://juan.pallares.me/browse-blocking-ads-and-trackers/" rel="alternate" type="text/html" title="Browse blocking ads and trackers" /><published>2020-06-08T00:00:00+02:00</published><updated>2020-06-08T00:00:00+02:00</updated><id>https://juan.pallares.me/browse-blocking-ads-and-trackers</id><content type="html" xml:base="https://juan.pallares.me/browse-blocking-ads-and-trackers/">&lt;p&gt;For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-06-16T15:14:01+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">Book - The software developer’s life manual - John Z. Sonmez</title><link href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" rel="alternate" type="text/html" title="Book - The software developer's life manual - John Z. Sonmez" /><published>2020-06-16T00:00:00+02:00</published><updated>2020-06-16T00:00:00+02:00</updated><id>https://juan.pallares.me/soft-skills-the-software-developers-life-manual</id><content type="html" xml:base="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/">&lt;p&gt;I recently finished reading the book &lt;a href=&quot;https://www.amazon.es/Soft-Skills-software-developers-manual/dp/1617292397&quot;&gt;Soft Skills: The software developer’s life manual - John Z. Sonmez&lt;/a&gt;. It is a really interesting and original book, different from what I’m used to read. I uploaded all the &lt;a href=&quot;https://juan.pallares.me/books/soft-skills-the-software-developer-s-life-manual/&quot;&gt;clippings&lt;/a&gt; I had about this book but I wanted to analyze it in a post. It gives you advice in very different areas of life like sport or personal finance. It is divided in 7 sections:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Career&lt;/li&gt;
+  &lt;li&gt;Marketing yourself&lt;/li&gt;
+  &lt;li&gt;Learning&lt;/li&gt;
+  &lt;li&gt;Productivity&lt;/li&gt;
+  &lt;li&gt;Financial&lt;/li&gt;
+  &lt;li&gt;Fitness&lt;/li&gt;
+  &lt;li&gt;Spirit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/softskillsbook.jpg&quot; alt=&quot;Soft Skills: The software developer's life manual&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most interesting ones for me were the first 2. I’m not saying the rest of the books was boring (I wouldn’t have finished it) but for example I skimmed through the Fitness or Financial sections since I already read much more detailed books in this area. This is a feeling I got in general with the whole book, it feels like an introduction to every section, if you want to go deep into any of the areas you have to get books that focun on them. On the other hand, is really nice that it does not get lost into too much detail. It goes straight to the point in what matters to us software developers.&lt;/p&gt;
+
+&lt;p&gt;Something I loved about the book is that every chapter has a “Taking action” section with things to do to practice what you learnt.&lt;/p&gt;
+
+&lt;h1 id=&quot;main-takeaways&quot;&gt;Main takeaways&lt;/h1&gt;
+
+&lt;p&gt;I’m going to enumarate the main points I found interesenting. Of course this is just an opinion, for example there are full chapters about freelancing or startups which is something I’m not interesed in currently.&lt;/p&gt;
+
+&lt;h2 id=&quot;career&quot;&gt;Career&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It’s better to think of an employer as a customer for your business of developing software.&lt;/li&gt;
+  &lt;li&gt;Set long term goals (vision), short term goals and track them.&lt;/li&gt;
+  &lt;li&gt;People skills, we need them more than we think. He makes a brief summary of the concepts in one of my favourite books &lt;a href=&quot;https://www.amazon.es/How-Win-Friends-Influence-People/dp/0091906350&quot;&gt;How to Win Friends and Influence People by Dale Carnegie&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Everybody wants to feel important.&lt;/li&gt;
+      &lt;li&gt;Never criticize.&lt;/li&gt;
+      &lt;li&gt;Think about what the other person wants.&lt;/li&gt;
+      &lt;li&gt;Avoid arguments.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Interview tips, like trying to meet and connect with people working in the company you plan to get interviewed at.
+    &lt;ul&gt;
+      &lt;li&gt;Salary negotiation! It reminded me this &lt;a href=&quot;https://www.kalzumeus.com/2012/01/23/salary-negotiation/&quot;&gt;great article&lt;/a&gt; also the &lt;a href=&quot;https://www.amazon.es/Getting-Yes-Negotiating-Agreement-Without/dp/0140157352&quot;&gt;Getting to Yes&lt;/a&gt; book (this is negotiation in general). &lt;strong&gt;Key thing to remember, first one to says a number, loses&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pick and specialization, try to become an expert in an area but don’t become religious about technology.&lt;/li&gt;
+  &lt;li&gt;Visibility.
+    &lt;ul&gt;
+      &lt;li&gt;Keep a daily log of your activities.&lt;/li&gt;
+      &lt;li&gt;Offer to give presentations or trainigs.&lt;/li&gt;
+      &lt;li&gt;Speak up.&lt;/li&gt;
+      &lt;li&gt;Be seen.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fake it till you make it.&lt;/li&gt;
+  &lt;li&gt;Hire a resume writer or at least take it very seriously.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;marketing-yourself&quot;&gt;Marketing yourself&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a personal brand
+    &lt;ul&gt;
+      &lt;li&gt;Create a logo, like sucessful brands do.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a blog and write often (part of the reason I’m writing on this blog again is reading this chapter)&lt;/li&gt;
+  &lt;li&gt;Do presentations and trainings&lt;/li&gt;
+  &lt;li&gt;Don’t be afraid to look like an idiot. If you want to be successful at your efforts, you have to learn to stop caring about what people think. You have to learn how to not be afraid to look like an idiot.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;learning&quot;&gt;Learning&lt;/h2&gt;
+
+&lt;p&gt;From this section I loved the concept of learning 20% of the concepts in an area should allow you to cover 80% of the daily usage. Also the concept of finding a mentor and becoming a mentor of someone: &lt;strong&gt;One of the greatest ways to learn—perhaps the only way to learn anything deeply—is to teach.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;productivity&quot;&gt;Productivity&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Focus&lt;/strong&gt;. Nowadays we have too much distractions and we are machines very inefficient when multitasking.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quotas&lt;/strong&gt;. Stablish a minimum goal per period of time. For instance, I have the quota of creating a blog post per week.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Self-accountability&lt;/strong&gt;. Internal motivation is key to be productive. You should be able to do work without anybody telling you to.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Routine&lt;/strong&gt;. What you do every day defines and shapes who you are over time. If you want to achieve a goal you have to put in place a routine that slowly but surely moves you in the direction you’re trying to go.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Momentum&lt;/strong&gt;. It’s easier to steer a moving car. Yet, so many of us are sitting in the garages of our lives behind the wheel of a parked car, furiously cranking the steering wheel to the left and right trying to decide which direction we should go before we’ve even pulled out of the driveway. Once a car is moving, it has momentum. That momentum can carry you forward in the wrong direction, but it can be just as easily diverted with a turn of the steering wheel to the correct direction once you figure it out.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;financial&quot;&gt;Financial&lt;/h2&gt;
+
+&lt;p&gt;The author was really successful with agressive real-state investment. But he also worked really around the clock with a remote work, phone applications, podcasts, pluralsight trainings. He was able to generate a lot of different sources of income unlike most people that only has his regular job.&lt;/p&gt;
+
+&lt;h2 id=&quot;spirit&quot;&gt;Spirit&lt;/h2&gt;
+
+&lt;p&gt;I found very interesting that John Sonmez has the habit of asking successful people for their favourite book, the one that created more impact. This way he created a really nice list. It’s also comforting to realize I had read already some of them and some missing ones are already waiting on the Kindle.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/War-Art-Through-Creative-Battles/dp/1936891026&quot;&gt;The War of Art by Steven Pressfield&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/How-Win-Friends-Influence-People/dp/0091906350&quot;&gt;How to Win Friends and Influence People by Dale Carnegie&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Think-Grow-Rich-Napoleon-Hill/dp/0449214923&quot;&gt;Think and Grow Rich by Napoleon Hill&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Psycho-Cybernetics-Maxwell-Maltz/dp/0399176136&quot;&gt;Psycho-Cybernetics by Maxwell Maltz&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Power-Positive-Thinking-English-ebook/dp/B07K2KMHYJ/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=The+Power+of+Positive+Thinking&amp;amp;qid=1592312108&amp;amp;sr=8-1&quot;&gt;The Power of Positive Thinking by Norman Vincent Peale&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.amazon.es/Ayn-Rand-Set-Fountainhead-Shrugged/dp/0451947673/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=Atlas+Shrugged&amp;amp;qid=1592312128&amp;amp;sr=8-1&quot;&gt;Atlas Shrugged by Ayn Rand&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Code-Complete-Practical-Costruction-Professional/dp/0735619670/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=Code+Complete&amp;amp;qid=1592312147&amp;amp;sr=8-1&quot;&gt;Code Complete by Steve McConnell&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=Code+Complete&amp;amp;qid=1592312159&amp;amp;sr=8-2&quot;&gt;Clean Code by Robert M. Martin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.amazon.es/First-Design-Patterns-Brain-Friendly/dp/0596007124/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=Head+First+Design+Patterns&amp;amp;qid=1592312172&amp;amp;sr=8-1&quot;&gt;Head First Design Patterns by Eric Freeman&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Millionaire-Real-Estate-Investor/dp/0071446370/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=The+Millionaire+Real+Estate+Investor&amp;amp;qid=1592312186&amp;amp;sr=8-1&quot;&gt;The Millionaire Real Estate Investor by Gary Keller&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/Rich-Dad-Poor-Robert-Kiyosaki/dp/1612680194/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=Rich+Dad%2C+Poor+Dad&amp;amp;qid=1592312208&amp;amp;sr=8-1&quot;&gt;Rich Dad, Poor Dad by Robert Kiyosaki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/No-Hype-Options-Trading-Realities-Strategies-ebook/dp/B004HFRFO8/ref=sr_1_fkmr0_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=No-Hype+Options+Trading%3A+Myths%2C+Realities%2C+and+Strategies+That+Re-+eally+Work&amp;amp;qid=1592312223&amp;amp;sr=8-1-fkmr0&quot;&gt;No-Hype Options Trading: Myths, Realities, and Strategies That Re- eally Work by Kerry Given&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To sum up, totally recommended book, it can have sections more interesting than others depending on the reader but in general is really great.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="soft skills" /><category term="software developer" /><category term="career" /><category term="personal brand" /><category term="blog" /><summary type="html">Some comments about the last book I read</summary></entry><entry><title type="html">Browse blocking ads and trackers</title><link href="https://juan.pallares.me/browse-blocking-ads-and-trackers/" rel="alternate" type="text/html" title="Browse blocking ads and trackers" /><published>2020-06-08T00:00:00+02:00</published><updated>2020-06-08T00:00:00+02:00</updated><id>https://juan.pallares.me/browse-blocking-ads-and-trackers</id><content type="html" xml:base="https://juan.pallares.me/browse-blocking-ads-and-trackers/">&lt;p&gt;For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/&quot;&gt;The Brave web browser is hijacking links, and inserting affiliate codes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -477,51 +584,4 @@ My setup is two QHD screens connected a MacBook Pro and external keyboard and mo
 
 &lt;p&gt;I tried to &lt;a href=&quot;https://raspberrypi.stackexchange.com/questions/50031/raspberry-pi-3-as-plex-media-server-local-without-transcoding&quot;&gt;use Plex on the raspberri pi&lt;/a&gt;, and did some &lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?f=35&amp;amp;t=151924&amp;amp;p=999730#p999730&quot;&gt;research&lt;/a&gt; to see if it was possible. But no luck, only with media that is not too high quality. At the end I run Plex on another computer that uses the media on the net disk. Is in this Plex server where I installed SubZero channel, it will help you download subtitles too (yes I hate searching and adding subtitles manually).&lt;/p&gt;
 
-&lt;p&gt;And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry><entry><title type="html">Raspberry Pi 3 a.k.a the 24/7 auto downloader</title><link href="https://juan.pallares.me/raspberry-pi-autodownloader/" rel="alternate" type="text/html" title="Raspberry Pi 3 a.k.a the 24/7 auto downloader" /><published>2017-03-18T00:00:00+01:00</published><updated>2017-03-18T00:00:00+01:00</updated><id>https://juan.pallares.me/raspberry-pi-autodownloader</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-autodownloader/">&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
-
-&lt;p&gt;I recently bought a Raspberry pi 3, it was improvised I had bought a Pine A64 but it was taking ages to arrive, then the new powerful version of the Pi appeared and I could not resist, Amazon and in couple days at home.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/raspberrypi.jpg&quot; alt=&quot;Raspberry Pi 3&quot; title=&quot;Raspberry Pi 3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;My plan for it was basically replicating the automatic downloading of torrents (movies and tv shows mainly). I had it in a PC so I had powered on all day. This way I would take advantage of the Pi low consumption. Also I would take the chance to refresh my unix knowledge.&lt;/p&gt;
-
-&lt;p&gt;Ingredientes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Raspberry Pi&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/gp/product/B00J2BU7WO/ref=oh_aui_search_detailpage?ie=UTF8&amp;amp;psc=1&quot;&gt;SD Card&lt;/a&gt; - 16Gb is more than enough, we will use an external disk for video storage&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/gp/product/B00W7S1BFG/ref=oh_aui_search_detailpage?ie=UTF8&amp;amp;psc=1&quot;&gt;Case&lt;/a&gt; (optional)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/gp/product/B01DDW0P1U/ref=oh_aui_search_detailpage?ie=UTF8&amp;amp;psc=1&quot;&gt;Power cable&lt;/a&gt; (optional, you may have a spare one but I wanted a quality one with enough amperage)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;first-steps&quot;&gt;First steps&lt;/h3&gt;
-
-&lt;p&gt;As you already know the Pi works with linux, there are all kind of images available to download but I choose the &lt;a href=&quot;https://www.raspberrypi.org/help/videos/&quot;&gt;recommended one&lt;/a&gt;, Raspbian, looking for flexibility. The installation is very easy but keep in mind you will need a monitor with HDMI connection and a keyboard plugged in the Pi.&lt;/p&gt;
-
-&lt;p&gt;Once you have Raspbian up and running, next thing is to configure the Pi to be able to &lt;a href=&quot;https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md&quot;&gt;work remotely with SHH&lt;/a&gt;, then you can leave it somewhere hidden just connected to the power and the network (I recommend using the ethernet even if the Pi has wifi and the ethernet port is 10/100Mb only, I guess I’m old school)&lt;/p&gt;
-
-&lt;h3 id=&quot;mounting-external-drive&quot;&gt;Mounting external drive&lt;/h3&gt;
-
-&lt;p&gt;For media storage I used a 1TB USB external drive connected to the router, the process is a little bit more complicated than it if you have it directly connected to the Pi, but easy anyway. I followed the steps &lt;a href=&quot;http://raspberrypi.stackexchange.com/questions/40974/access-network-samba-share-from-pi-client&quot;&gt;here&lt;/a&gt;. Basically these commands (for anonymous access):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install  samba-common smbclient samba-common-bin smbclient  cifs-utils
-mkdir /mnt/abc
-mount -t cifs //server/share /mnt/abc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I also configured a cronjob so in every reboot it automonts the network disk&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sleep 10 &amp;amp;&amp;amp; mount -a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;rpi-monitor&quot;&gt;RPi-Monitor&lt;/h3&gt;
-
-&lt;p&gt;To close this first post about the Pi, I want to talk about the RPi-Monitor, as the name says it’s a monitor that tells you basic information about the status of the Pi:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/rpi-monitor.png&quot; alt=&quot;RPi-Monitor&quot; title=&quot;RPi-Monitor&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s perfect to detect if suddenly the CPU is under heavy load or it’s becoming too hot. It also helps track if you have the latest software installed.&lt;/p&gt;
-
-&lt;h3 id=&quot;this-is-only-the-beginning&quot;&gt;This is only the beginning&lt;/h3&gt;
-
-&lt;p&gt;Next post we will start installing a torrent client, Deluge and software like Couch Potato and Sonarr, you will love it ;)&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry></feed>
+&lt;p&gt;And that’s it regarding auto-downloading media, but I still have a couple things to show you about the Raspberry Pi, you will have to wait for next post though.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="auto" /><category term="download" /><category term="movies" /><category term="raspberry pi" /><category term="tvshow" /><summary type="html">Series of posts in which I’ll explain how the raspberry downloads automatically all my tv shows and movies, also the subtitle and the media in an unattended ...</summary></entry></feed>
