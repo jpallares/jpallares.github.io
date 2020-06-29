@@ -1,0 +1,680 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Configure Jekyll to be multi-language without plugins - Juan Pallarès Garbí</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Juan Pallarès Garbí">
+<meta property="og:title" content="Configure Jekyll to be multi-language without plugins">
+
+
+  <link rel="canonical" href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">
+  <meta property="og:url" content="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">
+
+
+
+  <meta property="og:description" content="Basic multi-language hosted on Github Pages">
+
+
+
+  <meta name="twitter:site" content="@juanpallares">
+  <meta name="twitter:title" content="Configure Jekyll to be multi-language without plugins">
+  <meta name="twitter:description" content="Basic multi-language hosted on Github Pages">
+  <meta name="twitter:url" content="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://juan.pallares.me/images/Untitled.png">
+    
+  
+
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-06-28T00:00:00+02:00">
+  
+  
+    <link rel="prev" href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" title="Configura Jekyll para ser multi idioma sin plugins">
+  
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://juan.pallares.me",
+      "logo": "https://juan.pallares.me/images/Untitled.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "person",
+      "name" : "Juan Pallarès Garbí",
+      "url" : "https://juan.pallares.me",
+      "sameAs" : ["https://twitter.com/juanpallares","https://www.linkedin.com/in/juanpallares"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<link href="https://juan.pallares.me/feed.xml" type="application/atom+xml" rel="alternate" title="Juan Pallarès Garbí Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://juan.pallares.me/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://juan.pallares.me/">Juan Pallarès Garbí</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://juan.pallares.me/cv/">cv</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://juan.pallares.me/books/">books</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://juan.pallares.me/images/juanpallares.jpg" class="author__avatar" alt="Juan Pallarès">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Juan Pallarès</h3>
+    <p class="author__bio">Software Engineer, football and technology lover from Barcelona.</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li>
+<i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Barcelona</li>
+      
+      
+      
+        <li><a href="mailto:juan@pallares.me"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> </a></li>
+      
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/juanpallares"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+        <li><a href="https://gitlab.com/jpallares"><i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
+      
+      
+        <li><a href="https://twitter.com/juanpallares"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+        <li><a href="https://www.stackoverflow.com/users/https://stackoverflow.com/users/500843/juan"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Configure Jekyll to be multi-language without plugins">
+    <meta itemprop="description" content="Basic multi-language hosted on Github Pages">
+    <meta itemprop="datePublished" content="June 28, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Configure Jekyll to be multi-language without plugins
+</h1>
+          
+        </header>
+      
+
+      
+        
+        
+          
+            
+          
+            
+              <a href="/configura-jekyll-multi-idioma-sin-plugin/" class="es">Léelo en 🇪🇸 </a>
+            
+          
+        
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Almost 6 years ago I migrated from <a href="https://juan.pallares.me/moving-to-jekyll/">Blogger to Jekyll + Github Pages</a> and I can’t be happier with the change. Still, something I wanted long ago is to make it multi-language. I have entries in mind that I have not written because the clear target is Spain and the average English level in my country is not high. This last weekend I finally comitted to it and here I present my m̵a̵s̵t̵e̵r̵-̵p̵i̵e̵c̵e̵ quick-fix.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>
+<strong>No plugins.</strong> Github Pages is not compatible with many <a href="https://pages.github.com/versions/">plugins</a>. For example, I was unable to use <a href="https://github.com/kurtsson/jekyll-multiple-languages-plugin">jekyll-multiple-languages-plugin</a>
+</li>
+  <li>
+<strong>Compatible with Minimal Mistakes</strong>. My <a href="https://mmistakes.github.io/minimal-mistakes/">Jekyll’s theme</a> that I’m delighted with.</li>
+  <li>
+<strong>Show the entry if it is only in one language</strong>. I have many old posts in Spanish or English that I will not translate, it has no value.</li>
+  <li>
+<strong>Link for language change in each entry</strong>. If there are two languages ​​or more (I don’t think I will ever write in Catalan or Italian <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">) a link to change language ​​will be displayed.</li>
+  <li>
+<strong>Global Link language change</strong>. This functionality has been dropped. The pagination plugin <a href="https://jekyllrb.com/docs/pagination/">jekyll-paginate</a> does not allow more than one page. Sure there are ways to do it, but I did not want to spend the time, it did not compensate me.</li>
+</ul>
+
+<p><img src="../images/pagination_jekyll.png" alt="jekyll-paginate disclaimer"></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>Judging from Google’s results, many warriors have gone but few have returned victorious. There is no standard way to do it and I have used what was best for my requrements from each site.</p>
+
+<h3 id="configure-_configyaml">Configure _config.yaml</h3>
+
+<p>In the _config.yml we set the language of the site adding the line <code class="highlighter-rouge">lang: en</code>. Then we create a file inside the <code class="highlighter-rouge">_data</code> folder, that I have called<code class="highlighter-rouge"> i18n</code>, with the following content:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>in:
+  label: English
+  icon: 🇬🇧
+  read_it_in: "Read it in"
+it is:
+  label: Spanish
+  icon: 🇪🇸
+  read_it_in: "Read it on"
+</code></pre></div></div>
+
+<p>This will allow us to access content according to the language as we will see later.</p>
+
+<h3 id="adapt-the-front-matter-of-the-posts">Adapt the <a href="https://jekyllrb.com/docs/front-matter/">Front Matter</a> of the posts</h3>
+
+<p>In each post, specify your language <code class="highlighter-rouge">lang</code> and unique identifier<code class="highlighter-rouge"> ref</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-
+title: RDP to Windows machine with PIN login
+tags: [RDP, Windows, PIN, MicrosoftAccount, login, hacks]
+excerpt: Don't lose the precious hour I lost
+lang: in
+ref: rdp
+---
+</code></pre></div></div>
+
+<p>If two posts share the same <code class="highlighter-rouge">ref</code> they are the same post in different languages. I’ve seen people grouping the posts by folders according to the language, I have not considered it necessary.</p>
+
+<h3 id="filter-by-language">Filter by language</h3>
+
+<p>My main page is a pagination of all blog entries. Now we want all of them to be displayed, but if they are in more than one language, they should be shown in English.</p>
+
+<p>Before it showed all the posts that came from the paginator:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for post in paginator.posts%}
+  {% include archive-single.html%}
+{% endfor%}
+</code></pre></div></div>
+
+<p>Then what I have done is to group by the field <code class="highlighter-rouge">ref</code>. This way you can know if there is more than one language for each entry since the group will have more than 1 item. If that’s the case, I take only the post that has the same language as the page (English in my case), otherwise I show the post regardless of the language:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign items_grouped = paginator.posts | group_by: 'ref'%}
+{% for group in items_grouped%}
+    {% if group.items.size&gt; 1%}
+        {% assign post = group.items | where: "lang", page.lang | first%}
+    {% else%}
+        {% assign post = group.items [0]%}
+    {% endif%}
+    {% include archive-single.html%}
+{% endfor%}
+</code></pre></div></div>
+
+<p>That beautiful code is <a href="https://jekyllrb.com/docs/liquid/">Liquid</a>, it may already be in the TOP 5 of my most hated languages. Keep in mind that I do the identation for clarity, it is not necessary. In order to display Liquid code in Jekill (escape it) you have to use <code class="highlighter-rouge">raw</code>.</p>
+
+<p><img src="../images/show_liquid.png" alt="Escape liquid code with raw tag"></p>
+
+<h3 id="filter-by-language-1">Filter by language</h3>
+
+<p>In the previous code, <code class="highlighter-rouge">archive-single.html</code> is called and this is what we are going to edit now. We will add a flag emoji with the language in case there is a translation of the post.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign versions = site.posts | where: "ref", post.ref | sort: 'lang'%}
+{% if versions.size&gt; 1%}
+    {% for version in versions%}
+        {% if version.lang! = site.lang%}
+            &lt;a href="{{ version.url }}"&gt;{{site.data.i18n [version.lang] .icon}} &lt;/a&gt;
+        {% endif%}
+    {% endfor%}
+{% endif%}
+</code></pre></div></div>
+
+<p>It is again a similar concept to the previous one, the difference is that we now access the flag emoji that we put in the <code class="highlighter-rouge">_data/i18n.yml</code> file.</p>
+
+<h3 id="link-to-other-languages-within-the-blog">Link to other languages ​​within the blog</h3>
+
+<p>And going from outside to inside, finally we have to edit <code class="highlighter-rouge">single.html</code> which is the <code class="highlighter-rouge">layout</code> of my blog entries. Add where you think is most appropriate:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if page.bookauthor == null and page.permalink == null%}
+    {% assign versions = site.posts | where: "ref", page.ref | sort: 'lang'%}
+    {% if versions.size&gt; 1%}
+        {% for version in versions%}
+            {% if version.lang! = page.lang%}
+                &lt;a href="{{ version.url }}" class="{{ version.lang }}"&gt;{{ site.data.i18n[version.lang].read_it_in] }} {{ site.data.i18n[version.lang].icon }} &lt;/a&gt;
+            {% endif%}
+        {% endfor%}
+    {% endif%}
+{% endif%}
+</code></pre></div></div>
+
+<p>In the first <code class="highlighter-rouge">if</code> I prevent other layouts from being affected and then practically the same. The difference is that I look for a different language than the current one and I show a text located next to the flag.</p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>You are browsing on it right now. Feel free to swap between English and Spanish version. You can also see the <a href="https://github.com/jpallares/minimal-mistakes">code on Github</a>.</p>
+
+<h2 id="dodge-the-black-hole">Dodge the black hole</h2>
+
+<p>All engineers who have a blog/landing page suffer what I call the black hole. This is dedicating all the time to improve the blog technically, now I use Gatsby, now I deploy in Vercel, wow! now I have Github Actions … but not writing any content. This multi-language update was the ideal breeding ground to start a technology change that would never have ended.</p>
+
+<p><img src="https://i.gifer.com/GVXn.gif" alt="Black hole gif"></p>
+
+<p>Luckily I clearly defined the minimum requirements and now I have a basic multi-language blog instead of a last-tech half-baked project. <strong>Deliver value, that should be the focus</strong>. It has helped me by forcing myself to a weekly blog post. What productivity-hacks do you have?</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-06-28T00:00:00+02:00">June 28, 2020</time></p>
+        
+      </footer>
+
+      
+
+<section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" class="pagination--pager" title="Configura Jekyll para ser multi idioma sin plugins
+"></a>
+    
+    
+      <a href="#" class="pagination--pager disabled"></a>
+    
+  </nav>
+
+    </div>
+
+    
+      
+
+<div class="page__comments">
+  <h4 class="page__comments-title"></h4>
+  
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Configura Jekyll para ser multi idioma sin plugins
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Multi-idioma básico alojado en Github Pages
+
+          
+          
+            
+              
+            
+              
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/">🇪🇸 </a>
+              
+            
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          RDP to Windows machine with PIN login
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Don’t lose the precious hour I lost
+
+          
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Book - The software developer’s life manual - John Z. Sonmez
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Some comments about the last book I read
+
+          
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/browse-blocking-ads-and-trackers/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Browse blocking ads and trackers
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Why and how I browse blocking ads and trackers
+
+          
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="https://twitter.com/juanpallares"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="http://github.com/jpallares"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://juan.pallares.me/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> </a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="https://juan.pallares.me/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54458401-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'jpallares';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+
+
+
+
+    <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+
+  </body>
+</html>
+

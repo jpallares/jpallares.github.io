@@ -246,6 +246,11 @@
         </header>
       
 
+      
+        
+        
+      
+
       <section class="page__content" itemprop="text">
         <div class="css-full-post-content js-full-post-content">
 Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de formas de mejorarla.&nbsp;Aquí&nbsp;explicaré como me "ahorro" toda una orquestación configurando un puerto y un schema de una manera determinada<br /><br />ANTES:<br /><br />Había que pedir un array de mensajes a un servicio y luego desmontarlo,&nbsp;mi solución fue un clásico bucle<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-X6WmmM7bD_4/T2m7ktAAceI/AAAAAAAAV4k/5JWmYYThHDM/s1600/debatch.PNG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="584" src="http://4.bp.blogspot.com/-X6WmmM7bD_4/T2m7ktAAceI/AAAAAAAAV4k/5JWmYYThHDM/s640/debatch.PNG" width="640" /></a></div><br /><br />DESPUÉS:<br /><br />Gracias a <a href="http://seroter.wordpress.com/2010/04/08/debatching-inbound-messages-from-biztalk-wcf-sql-adapter/">este artículo</a>, vi como conseguir que entraran los mensajes uno por uno. Básicamente los pasos necesarios son:<br /><br />- Crear un ReceivePort del tipo Scheduler que vaya generando llamadas<br />- Crear un SendPort TwoWay que ataque al servicio, con un filtro para que le vayan entrando las llamas creadas por el Scheduler<br />- Recibir los mensajes de respuesta directamente en la orquestación con un Direct Port y un Receive Message con filtro<br />- Editar los esquemas del paquete en cuestión, de la siguiente forma:<br /><br />El nodo Schema le activamos el modo Envelope<br /><br /><img alt="2010.4.8sql12" src="http://seroter.files.wordpress.com/2010/04/2010-4-8sql12_thumb.jpg?w=454&amp;h=213" /><br /><br />Editamos el XPATH del nodo raiz y le hacemos apuntar al nodo superior al nodo leaf<br /><br /><img alt="2010.4.8sql13" src="http://seroter.files.wordpress.com/2010/04/2010-4-8sql13_thumb.jpg?w=454&amp;h=254" /><br /><br />Finalmente, el nodo leaf le cambiamos el MaxOccurrence a 1<br /><br />Saludos!<br /><br /><br /><br />
@@ -318,6 +323,98 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
 
 <div class="grid__item">
   
+    <a href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Configure Jekyll to be multi-language without plugins
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Basic multi-language hosted on Github Pages
+
+          
+          
+            
+              
+            
+              
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
+              
+            
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Configura Jekyll para ser multi idioma sin plugins
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Multi-idioma básico alojado en Github Pages
+
+          
+          
+            
+              
+            
+              
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
+              
+            
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
     <a href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -330,11 +427,22 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
             alt="">
         </div>
       
-      <h2 class="archive__item-title" itemprop="headline">RDP to Windows machine with PIN login
-</h2>
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          RDP to Windows machine with PIN login
+
+        
+        
+      </h2>
       
-      <p class="archive__item-excerpt" itemprop="description">Don’t lose the precious hour I lost
-</p>
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Don’t lose the precious hour I lost
+
+          
+          
+        </p>
+      
     </article>
   </a>
 </div>
@@ -357,65 +465,22 @@ Después de crear mi primera aplicación con Biztalk estoy viendo infinidad de f
             alt="">
         </div>
       
-      <h2 class="archive__item-title" itemprop="headline">Book - The software developer’s life manual - John Z. Sonmez
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">Some comments about the last book I read
-</p>
-    </article>
-  </a>
-</div>
+      <h2 class="archive__item-title" itemprop="headline">
         
-          
+          Book - The software developer’s life manual - John Z. Sonmez
 
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/browse-blocking-ads-and-trackers/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Browse blocking ads and trackers
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">Why and how I browse blocking ads and trackers
-</p>
-    </article>
-  </a>
-</div>
         
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Some comments about the last book I read
+
           
-
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/acknowledge-your-privilege/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+          
+        </p>
       
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Acknowledge your privilege
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">My humble opinion about George Floyd killing and white privilege
-</p>
     </article>
   </a>
 </div>

@@ -1,4 +1,244 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" /><updated>2020-06-19T11:14:15+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry><title type="html">RDP to Windows machine with PIN login</title><link href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" rel="alternate" type="text/html" title="RDP to Windows machine with PIN login" /><published>2020-06-19T00:00:00+02:00</published><updated>2020-06-19T00:00:00+02:00</updated><id>https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login</id><content type="html" xml:base="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-06-29T16:57:17+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="en"><title type="html">Configure Jekyll to be multi-language without plugins</title><link href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" rel="alternate" type="text/html" title="Configure Jekyll to be multi-language without plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configure-jekyll-multi-language-without-plugin</id><content type="html" xml:base="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">&lt;p&gt;Almost 6 years ago I migrated from &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger to Jekyll + Github Pages&lt;/a&gt; and I can’t be happier with the change. Still, something I wanted long ago is to make it multi-language. I have entries in mind that I have not written because the clear target is Spain and the average English level in my country is not high. This last weekend I finally comitted to it and here I present my m̵a̵s̵t̵e̵r̵-̵p̵i̵e̵c̵e̵ quick-fix.&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;No plugins.&lt;/strong&gt; Github Pages is not compatible with many &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;plugins&lt;/a&gt;. For example, I was unable to use &lt;a href=&quot;https://github.com/kurtsson/jekyll-multiple-languages-plugin&quot;&gt;jekyll-multiple-languages-plugin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Compatible with Minimal Mistakes&lt;/strong&gt;. My &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Jekyll’s theme&lt;/a&gt; that I’m delighted with.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Show the entry if it is only in one language&lt;/strong&gt;. I have many old posts in Spanish or English that I will not translate, it has no value.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Link for language change in each entry&lt;/strong&gt;. If there are two languages ​​or more (I don’t think I will ever write in Catalan or Italian :smile:) a link to change language ​​will be displayed.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Global Link language change&lt;/strong&gt;. This functionality has been dropped. The pagination plugin &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;jekyll-paginate&lt;/a&gt; does not allow more than one page. Sure there are ways to do it, but I did not want to spend the time, it did not compensate me.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/pagination_jekyll.png&quot; alt=&quot;jekyll-paginate disclaimer&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;Judging from Google’s results, many warriors have gone but few have returned victorious. There is no standard way to do it and I have used what was best for my requrements from each site.&lt;/p&gt;
+
+&lt;h3 id=&quot;configure-_configyaml&quot;&gt;Configure _config.yaml&lt;/h3&gt;
+
+&lt;p&gt;In the _config.yml we set the language of the site adding the line &lt;code class=&quot;highlighter-rouge&quot;&gt;lang: en&lt;/code&gt;. Then we create a file inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; folder, that I have called&lt;code class=&quot;highlighter-rouge&quot;&gt; i18n&lt;/code&gt;, with the following content:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;in:
+  label: English
+  icon: 🇬🇧
+  read_it_in: &quot;Read it in&quot;
+it is:
+  label: Spanish
+  icon: 🇪🇸
+  read_it_in: &quot;Read it on&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will allow us to access content according to the language as we will see later.&lt;/p&gt;
+
+&lt;h3 id=&quot;adapt-the-front-matter-of-the-posts&quot;&gt;Adapt the &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;Front Matter&lt;/a&gt; of the posts&lt;/h3&gt;
+
+&lt;p&gt;In each post, specify your language &lt;code class=&quot;highlighter-rouge&quot;&gt;lang&lt;/code&gt; and unique identifier&lt;code class=&quot;highlighter-rouge&quot;&gt; ref&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-
+title: RDP to Windows machine with PIN login
+tags: [RDP, Windows, PIN, MicrosoftAccount, login, hacks]
+excerpt: Don't lose the precious hour I lost
+lang: in
+ref: rdp
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If two posts share the same &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt; they are the same post in different languages. I’ve seen people grouping the posts by folders according to the language, I have not considered it necessary.&lt;/p&gt;
+
+&lt;h3 id=&quot;filter-by-language&quot;&gt;Filter by language&lt;/h3&gt;
+
+&lt;p&gt;My main page is a pagination of all blog entries. Now we want all of them to be displayed, but if they are in more than one language, they should be shown in English.&lt;/p&gt;
+
+&lt;p&gt;Before it showed all the posts that came from the paginator:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% for post in paginator.posts%}
+  {% include archive-single.html%}
+{% endfor%}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then what I have done is to group by the field &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;. This way you can know if there is more than one language for each entry since the group will have more than 1 item. If that’s the case, I take only the post that has the same language as the page (English in my case), otherwise I show the post regardless of the language:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign items_grouped = paginator.posts | group_by: 'ref'%}
+{% for group in items_grouped%}
+    {% if group.items.size&amp;gt; 1%}
+        {% assign post = group.items | where: &quot;lang&quot;, page.lang | first%}
+    {% else%}
+        {% assign post = group.items [0]%}
+    {% endif%}
+    {% include archive-single.html%}
+{% endfor%}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That beautiful code is &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot;&gt;Liquid&lt;/a&gt;, it may already be in the TOP 5 of my most hated languages. Keep in mind that I do the identation for clarity, it is not necessary. In order to display Liquid code in Jekill (escape it) you have to use &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/show_liquid.png&quot; alt=&quot;Escape liquid code with raw tag&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;filter-by-language-1&quot;&gt;Filter by language&lt;/h3&gt;
+
+&lt;p&gt;In the previous code, &lt;code class=&quot;highlighter-rouge&quot;&gt;archive-single.html&lt;/code&gt; is called and this is what we are going to edit now. We will add a flag emoji with the language in case there is a translation of the post.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign versions = site.posts | where: &quot;ref&quot;, post.ref | sort: 'lang'%}
+{% if versions.size&amp;gt; 1%}
+    {% for version in versions%}
+        {% if version.lang! = site.lang%}
+            &amp;lt;a href=&quot;{{ version.url }}&quot;&amp;gt;{{site.data.i18n [version.lang] .icon}} &amp;lt;/a&amp;gt;
+        {% endif%}
+    {% endfor%}
+{% endif%}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is again a similar concept to the previous one, the difference is that we now access the flag emoji that we put in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/i18n.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h3 id=&quot;link-to-other-languages-within-the-blog&quot;&gt;Link to other languages ​​within the blog&lt;/h3&gt;
+
+&lt;p&gt;And going from outside to inside, finally we have to edit &lt;code class=&quot;highlighter-rouge&quot;&gt;single.html&lt;/code&gt; which is the &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; of my blog entries. Add where you think is most appropriate:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if page.bookauthor == null and page.permalink == null%}
+    {% assign versions = site.posts | where: &quot;ref&quot;, page.ref | sort: 'lang'%}
+    {% if versions.size&amp;gt; 1%}
+        {% for version in versions%}
+            {% if version.lang! = page.lang%}
+                &amp;lt;a href=&quot;{{ version.url }}&quot; class=&quot;{{ version.lang }}&quot;&amp;gt;{{ site.data.i18n[version.lang].read_it_in] }} {{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
+            {% endif%}
+        {% endfor%}
+    {% endif%}
+{% endif%}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the first &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; I prevent other layouts from being affected and then practically the same. The difference is that I look for a different language than the current one and I show a text located next to the flag.&lt;/p&gt;
+
+&lt;h2 id=&quot;outcome&quot;&gt;Outcome&lt;/h2&gt;
+
+&lt;p&gt;You are browsing on it right now. Feel free to swap between English and Spanish version. You can also see the &lt;a href=&quot;https://github.com/jpallares/minimal-mistakes&quot;&gt;code on Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;dodge-the-black-hole&quot;&gt;Dodge the black hole&lt;/h2&gt;
+
+&lt;p&gt;All engineers who have a blog/landing page suffer what I call the black hole. This is dedicating all the time to improve the blog technically, now I use Gatsby, now I deploy in Vercel, wow! now I have Github Actions … but not writing any content. This multi-language update was the ideal breeding ground to start a technology change that would never have ended.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Luckily I clearly defined the minimum requirements and now I have a basic multi-language blog instead of a last-tech half-baked project. &lt;strong&gt;Deliver value, that should be the focus&lt;/strong&gt;. It has helped me by forcing myself to a weekly blog post. What productivity-hacks do you have?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Basic multi-language hosted on Github Pages</summary></entry><entry xml:lang="es"><title type="html">Configura Jekyll para ser multi idioma sin plugins</title><link href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" rel="alternate" type="text/html" title="Configura Jekyll para ser multi idioma sin plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin</id><content type="html" xml:base="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">&lt;p&gt;Han pasado casi 6 años desde que migré de &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger a Jekyll + Github Pages&lt;/a&gt; y no puedo estar más contento con el cambio. Aún así, algo que quería hace tiempo es convertirlo en multi-idioma. Tengo entradas en mente que no he escrito porque el target claro es España y como bien sabemos el nivel de inglés no es alto. Este último fin de semana me he decidio y aquí os presento mi o̵b̵r̵a̵ chapuza.&lt;/p&gt;
+
+&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Sin plugins.&lt;/strong&gt; Github Pages no es compatible con muchos &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;plugins&lt;/a&gt;. Por ejemplo, no he podido usar &lt;a href=&quot;https://github.com/kurtsson/jekyll-multiple-languages-plugin&quot;&gt;jekyll-multiple-languages-plugin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Compatible con Minimal Mistakes&lt;/strong&gt;. Mi &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;tema de Jekyll&lt;/a&gt; con el cual estoy encantado.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mostrar la entrada si solo esta en un idioma&lt;/strong&gt;. Tengo muchísimos post antiguos en castellano o en inglés que no traduciré, no tiene valor.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Link para cambio de idioma en cada entrada&lt;/strong&gt;. Si hay dos idiomas o más (no creo que llegue a escribir en catalán o italiano :smile:) que se muestre un link para cambiar de idioma.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Link global cambio de idioma&lt;/strong&gt;. Esta funcionalidad se ha caído. El plugin de paginación &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;jekyll-paginate&lt;/a&gt; no permite más de una página. Seguro hay formas de hacerlo, pero no he querido dedicar el tiempo, no me compensaba.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/pagination_jekyll.png&quot; alt=&quot;jekyll-paginate disclaimer&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;implementación&quot;&gt;Implementación&lt;/h2&gt;
+
+&lt;p&gt;A juzgar por los resultados de Google, muchos guerreros han ido pero pocos han vuelto victoriosos. No hay una manera estándar de hacerlo y he cogido lo que mejor me venía de cada sitio.&lt;/p&gt;
+
+&lt;h3 id=&quot;configura-_configyaml&quot;&gt;Configura _config.yaml&lt;/h3&gt;
+
+&lt;p&gt;En el _config.yml seteamos el lenguage del site añadiendo la linea &lt;code class=&quot;highlighter-rouge&quot;&gt;lang: en&lt;/code&gt;. Y luego creamos un fichero dentro de la carpeta &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;que yo he llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;i18n&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;en:
+  label: English
+  icon: 🇬🇧
+  read_it_in: &quot;Read it in&quot;
+es:
+  label: Español
+  icon: 🇪🇸
+  read_it_in: &quot;Léelo en&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto nos permitirá acceder a contenido según el idioma como veremos más adelante.&lt;/p&gt;
+
+&lt;h3 id=&quot;adapta-el-front-matter-de-los-posts&quot;&gt;Adapta el &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;Front Matter&lt;/a&gt; de los posts&lt;/h3&gt;
+
+&lt;p&gt;Especifica en cada post su idioma &lt;code class=&quot;highlighter-rouge&quot;&gt;lang&lt;/code&gt; y identificador único &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;--
+title: RDP to Windows machine with PIN login
+tags: [RDP, Windows, PIN, MicrosoftAccount, login, hacks]
+excerpt: Don't lose the precious hour I lost
+lang: en
+ref: rdp
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si dos posts comparten el mismo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt; son el mismo post en diferentes idiomas. Algunos agrupan los posts por carpetas según el idioma, no lo he considerado necesario.&lt;/p&gt;
+
+&lt;h3 id=&quot;filtra-por-idioma&quot;&gt;Filtra por idioma&lt;/h3&gt;
+
+&lt;p&gt;Mi página principal es una paginacioón de todas las entradas del blog. Ahora queremos que se muestren todos pero si están en más de un idioma que se muestren en inglés.&lt;/p&gt;
+
+&lt;p&gt;Antes mostraba todos los posts que venian del paginator:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Después lo que he hecho ha sido agrupar por el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;. De esta manera puede saber si hay más de un idioma para cada entrada ya que el grupo tendrá más de 1 item. Si ese es el caso, cojo solo el post que tiene el mismo idioma que la página (Inglés en mi caso), de lo contrario muestro el post independientemente del idioma:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign items_grouped = paginator.posts | group_by: 'ref' %}
+{% for group in items_grouped %}
+    {% if group.items.size &amp;gt; 1 %}
+        {% assign post = group.items | where: &quot;lang&quot;,page.lang | first %}
+    {% else %}
+        {% assign post = group.items[0] %}
+    {% endif %}
+    {% include archive-single.html %}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ese código tan bonito es &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot;&gt;Liquid&lt;/a&gt;, puede que ya esté en el TOP 5 de mis lenguajes más odiados. Tened en cuenta que el sangrado lo hago yo por claridad, no es necesario. Para poder mostrar código Liquid en Jekill, escaparlo, hay que usar &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/show_liquid.png&quot; alt=&quot;Escape liquid code with raw tag&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;filtra-por-idioma-1&quot;&gt;Filtra por idioma&lt;/h3&gt;
+
+&lt;p&gt;Desde el código anterior se llama a &lt;code class=&quot;highlighter-rouge&quot;&gt;archive-single.html&lt;/code&gt; y ese código es el que vamos a editar ahora para añadir una bandera con el idioma en caso que haya una traducción del post.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign versions=site.posts | where:&quot;ref&quot;, post.ref | sort: 'lang' %}
+{% if versions.size &amp;gt; 1 %}
+    {% for version in versions %}
+        {% if version.lang != site.lang %}
+            &amp;lt;a href=&quot;{{ version.url }}&quot; &amp;gt;{{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
+        {% endif %}
+    {% endfor %}
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Vuelve a ser un concepto similar al anterior, la diferencia es que ahora accedemos al emoji de bandera que pusimos en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/i18n.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;link-a-otros-idiomas-dentro-del-blog&quot;&gt;Link a otros idiomas dentro del blog&lt;/h3&gt;
+
+&lt;p&gt;Y yendo de fuera hacia a dentro nos queda editar &lt;code class=&quot;highlighter-rouge&quot;&gt;single.html&lt;/code&gt; que es el &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; de mis entradas. Añade donde creas más oportuno esto:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if page.bookauthor == null and page.permalink == null %}
+    {% assign versions=site.posts | where:&quot;ref&quot;, page.ref | sort: 'lang' %}
+    {% if versions.size &amp;gt; 1 %}
+        {% for version in versions %}
+            {% if version.lang != page.lang %}
+                &amp;lt;a href=&quot;{{ version.url }}&quot; class=&quot;{{ version.lang }}&quot;&amp;gt;{{ site.data.i18n[version.lang].read_it_in] }} {{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En el primer &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; evito que otros layouts se vean afectados y luego prácticamente igual. La diferencia es que busco el lenguaje diferente al actual y muestro un texto localizado al lado de la bandera.&lt;/p&gt;
+
+&lt;h2 id=&quot;resultado&quot;&gt;Resultado&lt;/h2&gt;
+
+&lt;p&gt;Estás navegando sobre él ahora mismo. También puedes ver el &lt;a href=&quot;https://github.com/jpallares/minimal-mistakes&quot;&gt;código en Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;esquivar-el-agujero-negro&quot;&gt;Esquivar el agujero negro&lt;/h2&gt;
+
+&lt;p&gt;Todos los ingenieros que tenemos un blog/landing page sufrimos lo que llamo el agujero negro. Esto es dedicar todo el tiempo a mejorar el blog técnicamente, ahora uso Gatsby, ahora deploy en Vercel, ojo que ahora tengo Github Actions…pero no escribir nada de contenido. Este update a multi-idioma era el caldo de cultivo ideal para venirme arriba y empezar un cambio de tecnología que nunca habría acabado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por suerte, me definí claramente los mínimos y ahora tengo un multi-idioma básico en lugar de un proyecto con las últimas tecnologías a medias. &lt;strong&gt;Entregar valor, ese debe ser el foco&lt;/strong&gt;. Me ha ayudado el auto-obligarme a una entreda semanal. Que productivity-hacks tienes?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Multi-idioma básico alojado en Github Pages</summary></entry><entry xml:lang="en"><title type="html">RDP to Windows machine with PIN login</title><link href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" rel="alternate" type="text/html" title="RDP to Windows machine with PIN login" /><published>2020-06-19T00:00:00+02:00</published><updated>2020-06-19T00:00:00+02:00</updated><id>https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login</id><content type="html" xml:base="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Disable PIN login&lt;/li&gt;
@@ -21,7 +261,7 @@
 
 &lt;p&gt;This has happened me twice and both times I lost too much time googling the fix. I thought let’s write a post about it so at least the third time I can look it here.&lt;/p&gt;
 
-&lt;p&gt;Let’s be clear, &lt;strong&gt;you don’t want to remote with the PIN&lt;/strong&gt;. I believe is not possible but even if it was I wouldn’t recommend it. So as I said in the quick steps in the TL;DR section, the trick is to disable temporarily the PIN. It seems it needs to remote login a first time with PIN disabled and then it will work afterwards.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="RDP" /><category term="Windows" /><category term="PIN" /><category term="MicrosoftAccount" /><category term="login" /><category term="hacks" /><summary type="html">Don't lose the precious hour I lost</summary></entry><entry><title type="html">Book - The software developer’s life manual - John Z. Sonmez</title><link href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" rel="alternate" type="text/html" title="Book - The software developer's life manual - John Z. Sonmez" /><published>2020-06-16T00:00:00+02:00</published><updated>2020-06-16T00:00:00+02:00</updated><id>https://juan.pallares.me/soft-skills-the-software-developers-life-manual</id><content type="html" xml:base="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/">&lt;p&gt;I recently finished reading the book &lt;a href=&quot;https://www.amazon.es/Soft-Skills-software-developers-manual/dp/1617292397&quot;&gt;Soft Skills: The software developer’s life manual - John Z. Sonmez&lt;/a&gt;. It is a really interesting and original book, different from what I’m used to read. I uploaded all the &lt;a href=&quot;https://juan.pallares.me/books/soft-skills-the-software-developer-s-life-manual/&quot;&gt;clippings&lt;/a&gt; I had about this book but I wanted to analyze it in a post. It gives you advice in very different areas of life like sport or personal finance. It is divided in 7 sections:&lt;/p&gt;
+&lt;p&gt;Let’s be clear, &lt;strong&gt;you don’t want to remote with the PIN&lt;/strong&gt;. I believe is not possible but even if it was I wouldn’t recommend it. So as I said in the quick steps in the TL;DR section, the trick is to disable temporarily the PIN. It seems it needs to remote login a first time with PIN disabled and then it will work afterwards.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="RDP" /><category term="Windows" /><category term="PIN" /><category term="MicrosoftAccount" /><category term="login" /><category term="hacks" /><summary type="html">Don't lose the precious hour I lost</summary></entry><entry xml:lang="en"><title type="html">Book - The software developer’s life manual - John Z. Sonmez</title><link href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" rel="alternate" type="text/html" title="Book - The software developer's life manual - John Z. Sonmez" /><published>2020-06-16T00:00:00+02:00</published><updated>2020-06-16T00:00:00+02:00</updated><id>https://juan.pallares.me/soft-skills-the-software-developers-life-manual</id><content type="html" xml:base="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/">&lt;p&gt;I recently finished reading the book &lt;a href=&quot;https://www.amazon.es/Soft-Skills-software-developers-manual/dp/1617292397&quot;&gt;Soft Skills: The software developer’s life manual - John Z. Sonmez&lt;/a&gt;. It is a really interesting and original book, different from what I’m used to read. I uploaded all the &lt;a href=&quot;https://juan.pallares.me/books/soft-skills-the-software-developer-s-life-manual/&quot;&gt;clippings&lt;/a&gt; I had about this book but I wanted to analyze it in a post. It gives you advice in very different areas of life like sport or personal finance. It is divided in 7 sections:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Career&lt;/li&gt;
@@ -128,7 +368,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/No-Hype-Options-Trading-Realities-Strategies-ebook/dp/B004HFRFO8/ref=sr_1_fkmr0_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=No-Hype+Options+Trading%3A+Myths%2C+Realities%2C+and+Strategies+That+Re-+eally+Work&amp;amp;qid=1592312223&amp;amp;sr=8-1-fkmr0&quot;&gt;No-Hype Options Trading: Myths, Realities, and Strategies That Re- eally Work by Kerry Given&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;To sum up, totally recommended book, it can have sections more interesting than others depending on the reader but in general is really great.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="soft skills" /><category term="software developer" /><category term="career" /><category term="personal brand" /><category term="blog" /><summary type="html">Some comments about the last book I read</summary></entry><entry><title type="html">Browse blocking ads and trackers</title><link href="https://juan.pallares.me/browse-blocking-ads-and-trackers/" rel="alternate" type="text/html" title="Browse blocking ads and trackers" /><published>2020-06-08T00:00:00+02:00</published><updated>2020-06-08T00:00:00+02:00</updated><id>https://juan.pallares.me/browse-blocking-ads-and-trackers</id><content type="html" xml:base="https://juan.pallares.me/browse-blocking-ads-and-trackers/">&lt;p&gt;For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:&lt;/p&gt;
+&lt;p&gt;To sum up, totally recommended book, it can have sections more interesting than others depending on the reader but in general is really great.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="soft skills" /><category term="software developer" /><category term="career" /><category term="personal brand" /><category term="blog" /><summary type="html">Some comments about the last book I read</summary></entry><entry xml:lang="en"><title type="html">Browse blocking ads and trackers</title><link href="https://juan.pallares.me/browse-blocking-ads-and-trackers/" rel="alternate" type="text/html" title="Browse blocking ads and trackers" /><published>2020-06-08T00:00:00+02:00</published><updated>2020-06-08T00:00:00+02:00</updated><id>https://juan.pallares.me/browse-blocking-ads-and-trackers</id><content type="html" xml:base="https://juan.pallares.me/browse-blocking-ads-and-trackers/">&lt;p&gt;For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/&quot;&gt;The Brave web browser is hijacking links, and inserting affiliate codes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -191,7 +431,7 @@ The “big data” theory works like this: by grabbing hundreds or thousands of 
 
 &lt;p&gt;&lt;a href=&quot;https://juan.pallares.me/raspberry-pi-hole-vpn/&quot;&gt;As I mentioned in the past&lt;/a&gt;, if you have a Raspberry Pi lying around this is one of the best uses you can do of it. Is a very active project, they recently released the &lt;a href=&quot;https://pi-hole.net/2020/05/10/pi-hole-v5-0-is-here/&quot;&gt;v5.0&lt;/a&gt;. For the screenshots with all the ads above I had to disable temporarily the PiHole apart from using Edge browser.&lt;/p&gt;
 
-&lt;p&gt;Are you blocking any ads? What is the browser you use? Don’t tell me the google analytics script running on this page will tell me this and more :smirk:.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="adblock" /><category term="ad" /><category term="tracking" /><category term="browser" /><category term="brave" /><category term="firefox" /><category term="chrome" /><category term="pihole" /><category term="ublock origin" /><summary type="html">Why and how I browse blocking ads and trackers</summary></entry><entry><title type="html">Acknowledge your privilege</title><link href="https://juan.pallares.me/acknowledge-your-privilege/" rel="alternate" type="text/html" title="Acknowledge your privilege" /><published>2020-06-01T00:00:00+02:00</published><updated>2020-06-01T00:00:00+02:00</updated><id>https://juan.pallares.me/acknowledge-your-privilege</id><content type="html" xml:base="https://juan.pallares.me/acknowledge-your-privilege/">&lt;p&gt;This last days going through my Twitter timeline was really shocking. I hated what I was watching and I couldn’t stop watching it. How is it possible that in year 2020 in the most important country of the world, a reference for a lot of developing countries, a policeman can kill a man that is totally surredendered and saying that he can’t breathe…&lt;/p&gt;
+&lt;p&gt;Are you blocking any ads? What is the browser you use? Don’t tell me the google analytics script running on this page will tell me this and more :smirk:.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="adblock" /><category term="ad" /><category term="tracking" /><category term="browser" /><category term="brave" /><category term="firefox" /><category term="chrome" /><category term="pihole" /><category term="ublock origin" /><summary type="html">Why and how I browse blocking ads and trackers</summary></entry><entry xml:lang="en"><title type="html">Acknowledge your privilege</title><link href="https://juan.pallares.me/acknowledge-your-privilege/" rel="alternate" type="text/html" title="Acknowledge your privilege" /><published>2020-06-01T00:00:00+02:00</published><updated>2020-06-01T00:00:00+02:00</updated><id>https://juan.pallares.me/acknowledge-your-privilege</id><content type="html" xml:base="https://juan.pallares.me/acknowledge-your-privilege/">&lt;p&gt;This last days going through my Twitter timeline was really shocking. I hated what I was watching and I couldn’t stop watching it. How is it possible that in year 2020 in the most important country of the world, a reference for a lot of developing countries, a policeman can kill a man that is totally surredendered and saying that he can’t breathe…&lt;/p&gt;
 
 &lt;p&gt;I honestly don’t know what to do or say. I’m a white man, heterosexual, from a middle-class family in a developed country, tall (at least for Spanish standards) and even blonde with blue eyes (more on why this can be a privilege later). If you are phisically like me you should acknowledge how privileged we are, minorities are in clear disadvantage to us.&lt;/p&gt;
 
@@ -224,7 +464,7 @@ Think about it. Why are blue and green contact lenses sold? Why so many people d
 
 &lt;p&gt;&lt;a href=&quot;https://www.imdb.com/title/tt4916630/?ref_=tt_sims_tt&quot;&gt;Just Mercy&lt;/a&gt; - World-renowned civil rights defense attorney Bryan Stevenson works to free a wrongly condemned death row prisoner.&lt;/p&gt;
 
-&lt;p&gt;Finally I want to send all my support and love to the protesters #BlackLivesMatter&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="blacklivesmatter" /><category term="white" /><category term="privileges" /><category term="george" /><category term="floyd" /><summary type="html">My humble opinion about George Floyd killing and white privilege</summary></entry><entry><title type="html">Automate your email processing with Google Apps Script</title><link href="https://juan.pallares.me/automate-email-processing-google-apps-script/" rel="alternate" type="text/html" title="Automate your email processing with Google Apps Script" /><published>2020-05-24T00:00:00+02:00</published><updated>2020-05-24T00:00:00+02:00</updated><id>https://juan.pallares.me/automate-email-processing-google-apps-script</id><content type="html" xml:base="https://juan.pallares.me/automate-email-processing-google-apps-script/">&lt;p&gt;Bill Gates is often credited with the quote, &lt;em&gt;“I will always choose a lazy person to do a difficult job because a lazy person will find an easy way to do it.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Finally I want to send all my support and love to the protesters #BlackLivesMatter&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="blacklivesmatter" /><category term="white" /><category term="privileges" /><category term="george" /><category term="floyd" /><summary type="html">My humble opinion about George Floyd killing and white privilege</summary></entry><entry xml:lang="en"><title type="html">Automate your email processing with Google Apps Script</title><link href="https://juan.pallares.me/automate-email-processing-google-apps-script/" rel="alternate" type="text/html" title="Automate your email processing with Google Apps Script" /><published>2020-05-24T00:00:00+02:00</published><updated>2020-05-24T00:00:00+02:00</updated><id>https://juan.pallares.me/automate-email-processing-google-apps-script</id><content type="html" xml:base="https://juan.pallares.me/automate-email-processing-google-apps-script/">&lt;p&gt;Bill Gates is often credited with the quote, &lt;em&gt;“I will always choose a lazy person to do a difficult job because a lazy person will find an easy way to do it.”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I hate doing manual tasks that a machine would do faster and with less errors. I keep track of expenses (water, electricity, etc.) in a Google SpreadSheet that I fill every month, this way I can see my average cost, year cost…I love data, what can I say?&lt;/p&gt;
 
@@ -278,7 +518,7 @@ var sheet = spreadSheet.getSheetByName(SHEET_NAME);
 
 &lt;p&gt;Once the script is ready, you have to configure when you want to run it. In the &lt;a href=&quot;https://script.google.com/home/triggers&quot;&gt;triggers view&lt;/a&gt; I configured it to run daily at 5am.&lt;/p&gt;
 
-&lt;p&gt;Any ideas for more scripts?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="google" /><category term="apps" /><category term="script" /><category term="javascript" /><category term="gmail" /><category term="spreadsheet" /><summary type="html">How to read your bill email data and create a row in an Spreadsheet automatically.</summary></entry><entry><title type="html">Attending SoCraTes UK remotely</title><link href="https://juan.pallares.me/Atteding-remote-Socrates-UK/" rel="alternate" type="text/html" title="Attending SoCraTes UK remotely" /><published>2020-05-10T00:00:00+02:00</published><updated>2020-05-10T00:00:00+02:00</updated><id>https://juan.pallares.me/Atteding-remote-Socrates-UK</id><content type="html" xml:base="https://juan.pallares.me/Atteding-remote-Socrates-UK/">&lt;h2 id=&quot;what-is-socrates&quot;&gt;What is SoCraTes?&lt;/h2&gt;
+&lt;p&gt;Any ideas for more scripts?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="google" /><category term="apps" /><category term="script" /><category term="javascript" /><category term="gmail" /><category term="spreadsheet" /><summary type="html">How to read your bill email data and create a row in an Spreadsheet automatically.</summary></entry><entry xml:lang="en"><title type="html">Attending SoCraTes UK remotely</title><link href="https://juan.pallares.me/Atteding-remote-Socrates-UK/" rel="alternate" type="text/html" title="Attending SoCraTes UK remotely" /><published>2020-05-10T00:00:00+02:00</published><updated>2020-05-10T00:00:00+02:00</updated><id>https://juan.pallares.me/Atteding-remote-Socrates-UK</id><content type="html" xml:base="https://juan.pallares.me/Atteding-remote-Socrates-UK/">&lt;h2 id=&quot;what-is-socrates&quot;&gt;What is SoCraTes?&lt;/h2&gt;
 
 &lt;p&gt;I always heard good things about &lt;a href=&quot;https://socratesuk.org/&quot;&gt;SoCraTes&lt;/a&gt;, a friend attended 4 times in a row to the SoCraTes UK version and told me it was his favourite event of the year. This is not the typical conference, in fact they define themselves as an unconference or retreat:&lt;/p&gt;
 
@@ -322,7 +562,7 @@ SoCraTes UK is a non-profit, international Software Crafters retreat for open-mi
 
 &lt;p&gt;I find it like pair programming on steroids, all the benefits of pair programming multiplied.&lt;/p&gt;
 
-&lt;p&gt;Have you attended any remote conference recently? How was your experience?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="unconference" /><category term="socrates" /><category term="uk" /><category term="craft" /><category term="software" /><category term="remote" /><summary type="html">My experience attending to SoCraTes UK in this new remote version.</summary></entry><entry><title type="html">Investing in index funds. Why I became a boglehead</title><link href="https://juan.pallares.me/why-i-became-a-bogglehead/" rel="alternate" type="text/html" title="Investing in index funds. Why I became a boglehead" /><published>2020-05-02T00:00:00+02:00</published><updated>2020-05-02T00:00:00+02:00</updated><id>https://juan.pallares.me/why-i-became-a-bogglehead</id><content type="html" xml:base="https://juan.pallares.me/why-i-became-a-bogglehead/">&lt;h2 id=&quot;why-passive-investing&quot;&gt;Why passive investing&lt;/h2&gt;
+&lt;p&gt;Have you attended any remote conference recently? How was your experience?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="unconference" /><category term="socrates" /><category term="uk" /><category term="craft" /><category term="software" /><category term="remote" /><summary type="html">My experience attending to SoCraTes UK in this new remote version.</summary></entry><entry xml:lang="en"><title type="html">Investing in index funds. Why I became a boglehead</title><link href="https://juan.pallares.me/why-i-became-a-bogglehead/" rel="alternate" type="text/html" title="Investing in index funds. Why I became a boglehead" /><published>2020-05-02T00:00:00+02:00</published><updated>2020-05-02T00:00:00+02:00</updated><id>https://juan.pallares.me/why-i-became-a-bogglehead</id><content type="html" xml:base="https://juan.pallares.me/why-i-became-a-bogglehead/">&lt;h2 id=&quot;why-passive-investing&quot;&gt;Why passive investing&lt;/h2&gt;
 
 &lt;p&gt;Recently I read a couple books that triggered and investigation in blogs and forums that was eye-opening:&lt;/p&gt;
 
@@ -417,7 +657,7 @@ I go for global index funds to be really diversified and with 10% of emerging ma
   &lt;li&gt;Minimize Taxes&lt;/li&gt;
   &lt;li&gt;Keep It Simple&lt;/li&gt;
   &lt;li&gt;Stay The Course&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="investment" /><category term="john bogle" /><category term="index funds" /><category term="money" /><category term="boglehead" /><summary type="html">A good investment strategy does not have to be difficult.</summary></entry><entry><title type="html">Merge request handling via slack channel</title><link href="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel/" rel="alternate" type="text/html" title="Merge request handling via slack channel" /><published>2020-04-26T00:00:00+02:00</published><updated>2020-04-26T00:00:00+02:00</updated><id>https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel</id><content type="html" xml:base="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel/">&lt;p&gt;As I mentioned in the previous post, in my team &lt;a href=&quot;https://juan.pallares.me/remote-working-tips/&quot;&gt;we are very used to be colocated and interact frequently&lt;/a&gt;. Also since we do pair programming the amount of MR that needs to be accepted by a third person was low, but then we started working fully remote and it all changed.&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="investment" /><category term="john bogle" /><category term="index funds" /><category term="money" /><category term="boglehead" /><summary type="html">A good investment strategy does not have to be difficult.</summary></entry><entry xml:lang="en"><title type="html">Merge request handling via slack channel</title><link href="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel/" rel="alternate" type="text/html" title="Merge request handling via slack channel" /><published>2020-04-26T00:00:00+02:00</published><updated>2020-04-26T00:00:00+02:00</updated><id>https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel</id><content type="html" xml:base="https://juan.pallares.me/merge-request-handling-remotely-via-slack-channel/">&lt;p&gt;As I mentioned in the previous post, in my team &lt;a href=&quot;https://juan.pallares.me/remote-working-tips/&quot;&gt;we are very used to be colocated and interact frequently&lt;/a&gt;. Also since we do pair programming the amount of MR that needs to be accepted by a third person was low, but then we started working fully remote and it all changed.&lt;/p&gt;
 
 &lt;p&gt;The team slack channel was flooded with:&lt;/p&gt;
 
@@ -452,96 +692,4 @@ I go for global index funds to be really diversified and with 10% of emerging ma
 
 &lt;p&gt;&lt;img src=&quot;../images/mr_channel_example.png&quot; alt=&quot;MR channel&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Finally, we restored the order and peace in our beloved team channel. What are the challenges you are facing these days?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="merge request" /><category term="slack" /><category term="emoji" /><category term="remote working" /><category term="channel" /><category term="covid-19" /><category term="tips" /><category term="job" /><category term="cofinement" /><summary type="html">How we decided to manage the MR now that we work remotely</summary></entry><entry><title type="html">Remote working tips (COVID-19)</title><link href="https://juan.pallares.me/remote-working-tips/" rel="alternate" type="text/html" title="Remote working tips (COVID-19)" /><published>2020-04-11T00:00:00+02:00</published><updated>2020-04-11T00:00:00+02:00</updated><id>https://juan.pallares.me/remote-working-tips</id><content type="html" xml:base="https://juan.pallares.me/remote-working-tips/">&lt;p&gt;Before this pandemic my experience working remotely was almost non-existent. Maybe half a day because I had a personal matter to attend…or one day the whole team works remotely just to see we are able. But then, suddenly, we are forced to work 100% of our time remotely.&lt;/p&gt;
-
-&lt;h3 id=&quot;colocation---i-miss-my-team&quot;&gt;Colocation - I miss my team&lt;/h3&gt;
-
-&lt;p&gt;At the beginning it was hard for us, &lt;strong&gt;we are the kind of team that is in constant communication&lt;/strong&gt;, we sit right to each other, we do pair programming often and we are used to just turn ourselves and ask: “Hey guys this functionality is driving me crazy, can somebody help me?” or “I just created an MR, can somebody take a look?” and now if I turn around I just see my room wall and some old books. Apart from my own team, another teams or the business is also very close, like 5 to 10 meters distance.&lt;/p&gt;
-
-&lt;p&gt;How did we tackle this issue? we do a &lt;strong&gt;sync call every morning via &lt;a href=&quot;https://zoom.us/&quot;&gt;Zoom&lt;/a&gt;&lt;/strong&gt; (which was our default tool for video calls way before this crisis started) and during the day we may do one or two more depending in our needs. We tried having a zoom call all day open with everybody muted and just unmuted and talk if you need help, it didn’t work for us. We also communicate via &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;, every team member notifies when he starts to work and when they are leaving, and also the lunch break. It may feel too strict and I know that &lt;strong&gt;companies that work 100% remote follow a much more async style of working, but remember we are used to work together you can see our way of working as a trade-off between being fully remote and a colocated team pair programming most of the day&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;working-hours&quot;&gt;Working hours&lt;/h3&gt;
-
-&lt;p&gt;This is a &lt;strong&gt;double-edged sword&lt;/strong&gt;. Working remotely can provoke that you &lt;strong&gt;procastinate&lt;/strong&gt; too much, you are at home ad you have much more distractions around or on the other hand, you &lt;strong&gt;never really stop working&lt;/strong&gt;, maybe the only computer you have is the work computer so you get notified about something in slack is difficult to disconnect.
-What I do, and I can do this because I’m not a parent (people in this situation with children are real heroes) is working as close as possible to the schedule I had before. I’m a creature of habit and I’m trying to use this to my advantage, so aproximately I work from 9am to 6pm with a 1h lunch break and if helps me focus much more than working some hours scattered through the day. Anyway, this depends a lot on the person and I’m saying only what worked for me.&lt;/p&gt;
-
-&lt;h3 id=&quot;home-office&quot;&gt;Home office&lt;/h3&gt;
-
-&lt;p&gt;We were lucky our company allowed us to take home the screens, keyboard, etc. everything we would need to work from home. You need to be comfortable and ideally as close as possible and to the desk you have at the office. Anyway is also good to switch the place you work during the day, you gonna stay at home all day at least switch the place you are staying inside home. Half an hour in the balcony now that is sunny?
-My setup is two QHD screens connected a MacBook Pro and external keyboard and mouse I’m pretty comfortable, what I’m struggling with is the placement of the webcam, I want have it in front of my face so people can feel I talk to them but I used to set the laptop on the side, anyway not a big problem.&lt;/p&gt;
-
-&lt;h3 id=&quot;sports&quot;&gt;Sports&lt;/h3&gt;
-
-&lt;p&gt;In a normal situation I do sport almost daily and twice per week I do it at lunch time, me and some coworkers do a 45 minutes HIIT training and then get a shower and eat in front of the computer. This is something I really miss, it helped disconnect a lot and often I was stuck on something and after training I saw clearly what was the issue. What I’m doing now is traying to train everyday too, even if less motivated and just want to be on the sofa I force myself. How to train? there are plenty of videos now in Youtube, I recommend &lt;a href=&quot;https://www.youtube.com/watch?v=vc1E5CfRfos&quot;&gt;this one&lt;/a&gt;. Even if you weren’t training before I believe now is a good time to start, otherwise being confined we almost don’t move and being sedentary can impact your health.&lt;/p&gt;
-
-&lt;p&gt;What has been your experience so far working from home?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="remote work" /><category term="covid-19" /><category term="tips" /><category term="job" /><category term="cofinement" /><summary type="html">Sharing my experience after 4 weeks of working remotely (and confined)</summary></entry><entry><title type="html">Raspberry Pi 3 III Pi-hole PiVPN</title><link href="https://juan.pallares.me/raspberry-pi-hole-vpn/" rel="alternate" type="text/html" title="Raspberry Pi 3 III Pi-hole PiVPN" /><published>2017-09-03T00:00:00+02:00</published><updated>2017-09-03T00:00:00+02:00</updated><id>https://juan.pallares.me/raspberry-pi-hole-vpn</id><content type="html" xml:base="https://juan.pallares.me/raspberry-pi-hole-vpn/">&lt;p&gt;In this final post I will talk about things you can do with an always running pi not related to media. That’s why is a bonus track.&lt;/p&gt;
-
-&lt;h3 id=&quot;pi-hole---block-ads-in-your-local-network&quot;&gt;&lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-hole&lt;/a&gt; - Block ads in your local network&lt;/h3&gt;
-
-&lt;p&gt;I’m used to have always installed an ad-blocker on my browser, the web ads got out of hand long time ago with giant banners that block all the screen so it’s more like a survival thing. The problem comes with the phone browser, there are no good blockers there.&lt;/p&gt;
-
-&lt;p&gt;So imagine a software that blocks the ads but not once they are in the browser, before, they don’t even arrive to your network, your network performance improves, this is Pi-Hole. It even blocks the ads you get on the phone games, amazing.&lt;/p&gt;
-
-&lt;p&gt;The installation is very easy and once you have done you can access to manager web with all the info about what’s being blocked, etc.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -sSL https://install.pi-hole.net | bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/pihole.PNG&quot; alt=&quot;Pi-hole&quot; title=&quot;Pi-hole&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;pivpn&quot;&gt;&lt;a href=&quot;http://www.pivpn.io/&quot;&gt;PiVPN&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;It’s really useful to have a VPN available if you need to use internet in a typical airport “free wifi”, the ones that are not recommended to use with sensible data. PiVPN installs &lt;strong&gt;OpenVPN&lt;/strong&gt; on your raspberri in a very simple way. It all starts with a curl command like with pi-hole&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -L https://install.pivpn.io | bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Once installed you can create clients for windows/mac/android/iphone.&lt;/p&gt;
-
-&lt;h3 id=&quot;free-dns&quot;&gt;Free DNS&lt;/h3&gt;
-
-&lt;p&gt;The only totally free dns provider I found, that does not even send an email monthly to reactivate your account is freedns.afraid.org. You can refresh the IP with a cron job (later more detail about that)&lt;/p&gt;
-
-&lt;h3 id=&quot;backup&quot;&gt;Backup&lt;/h3&gt;
-&lt;p&gt;You can create a backup (.img) of your SD card to a network / USB drive while the card is inserted in your pi.&lt;/p&gt;
-
-&lt;p&gt;Create an image of the card currently in the pi to a network drive / USB drive using the dd command:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/my.img bs=1M
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;(replace &lt;strong&gt;/dev/mmcblk0p2&lt;/strong&gt; with your own SD card and &lt;strong&gt;/home/pi/networkdrive/my.img&lt;/strong&gt; with your own network drive / USB drive + image file name)&lt;/p&gt;
-
-&lt;p&gt;And if we want this to run periodically? keep reading&lt;/p&gt;
-
-&lt;h3 id=&quot;self-maintenance-with-cron-jobs&quot;&gt;Self maintenance with cron jobs&lt;/h3&gt;
-
-&lt;p&gt;Last but not least, since the raspberry will be running 24/7 it’s a good idea to run some commands from time to time to have everything running smoothly. I do it with &lt;a href=&quot;https://en.wikipedia.org/wiki/Cron&quot;&gt;cron&lt;/a&gt; jobs. If you run this command&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo crontab -e
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You’ll see the jobs that need root rights to run. I have the following:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@daily dd if=/dev/mmcblk0p2 of=/home/pi/networkdrive/rasp-`date +\%Y\%m\%d\%H\%M\%S`.img bs=1M
-
-0 3 * * * /usr/bin/apt-get update &amp;amp;&amp;amp;  /usr/bin/apt-get upgrade -q -y &amp;gt;&amp;gt; /var/log/apt/myupdates.log
-
-0 5 * * 0 reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Well the first one is the command that makes the backup but the name depends on the date and time so I can have backups of several days in the same folder.&lt;/p&gt;
-
-&lt;p&gt;The second one is simply and update and an upgrade that writes a log for debug purposes. It runs daily at 3am. The third is that once a week I want the raspberry to do a reboot at 5am.&lt;/p&gt;
-
-&lt;p&gt;Now if I run this other command:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I can see more jobs I have, one is the free DNS to work&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 5 * * * find /media/netdisk/backup/ -mindepth 1 -type f -mtime +3 -delete
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The only one left deletes the backup files older than 3 days, otherwise my HD was full very easily and I had to delete the backups manually, no way!&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="ad" /><category term="block" /><category term="VPN" /><category term="raspberry pi" /><category term="openvpn" /><category term="pi-hole" /><category term="pivpn" /><summary type="html">Filter all the ads in you local net (Pi-Hole) and create VPN server (PiVPN)</summary></entry></feed>
+&lt;p&gt;Finally, we restored the order and peace in our beloved team channel. What are the challenges you are facing these days?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="merge request" /><category term="slack" /><category term="emoji" /><category term="remote working" /><category term="channel" /><category term="covid-19" /><category term="tips" /><category term="job" /><category term="cofinement" /><summary type="html">How we decided to manage the MR now that we work remotely</summary></entry></feed>

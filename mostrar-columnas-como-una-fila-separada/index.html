@@ -248,6 +248,11 @@
         </header>
       
 
+      
+        
+        
+      
+
       <section class="page__content" itemprop="text">
         <div class="css-full-post-content js-full-post-content">
 <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-ONNIymTq6k8/UxMfiA0IJfI/AAAAAAAAt5I/g7pIhUjeMRo/s1600/descarga.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-ONNIymTq6k8/UxMfiA0IJfI/AAAAAAAAt5I/g7pIhUjeMRo/s1600/descarga.jpeg" height="61" width="320" /></a></div><br />Usamos actualmente Crystal Reports para mostrar facturas, presupuestos, balances y demás información. Uno de los últimos requerimientos era mostrar la información en una sola línea separada por comas en lugar de una columna. Antes:<br /><blockquote class="tr_bq">CONCEPTO &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PRECIO<br />concepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3% &nbsp; &nbsp; &nbsp; &nbsp;24€<br />concepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5% &nbsp; &nbsp; &nbsp; &nbsp;10€<br />concepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2% &nbsp; &nbsp; &nbsp; &nbsp;40€<br />concepto2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4% &nbsp; &nbsp; &nbsp; &nbsp;15€<br />concepto2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5% &nbsp; &nbsp; &nbsp; &nbsp;10€</blockquote>Después:<br /><blockquote class="tr_bq">CONCEPTO&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PRECIO<br />concepto1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3% 24€, 5% 10€, 2% 40€<br />concepto2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4% 15€, 5% 10€</blockquote>Para poder realizar esto hay dos puntos claves, la instrucción "WhilePrintingRecords" y una variable global, una variable que pueda ser accedida desde fórmulas diferentes.<br /><br />Pasamos a comentar paso por paso. Lo primero es crear una fórmula en el Detalle, el cual suprimiremos (ocultaremos). Fijaos que esta en sintaxis VisualBasic<br /><blockquote class="tr_bq">WhilePrintingRecords<br /><br />global precioList as string<br /><br />if len(precioList&nbsp;) = 0 then<br />&nbsp; &nbsp; &nbsp;precioList&nbsp;= {db.porcentajeVariable} + " &nbsp;"&nbsp;+&nbsp;{db.precioVariable}<br />else<br />&nbsp; &nbsp; &nbsp;precioList&nbsp;=&nbsp;precioList&nbsp;+ ", " + {db.porcentajeVariable}&nbsp;+ " &nbsp;"&nbsp;+<br />&nbsp;{db.nombreVariable}<br />end if<br /><br />formula = ""</blockquote>El segundo paso es crear otra formula en el pie de grupo donde mostraremos el acumulado y lo reiniciaremos:<br /><br /><blockquote class="tr_bq">WhilePrintingRecords<br />global nameList as string<br />formula = nameList<br />nameList = ""</blockquote>Espero que os sirva!<br /><br />Fuente <a href="http://scn.sap.com/thread/1620836" target="_blank">Foro SAP Community Network</a>
@@ -321,6 +326,98 @@
 
 <div class="grid__item">
   
+    <a href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Configure Jekyll to be multi-language without plugins
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Basic multi-language hosted on Github Pages
+
+          
+          
+            
+              
+            
+              
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
+              
+            
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Configura Jekyll para ser multi idioma sin plugins
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Multi-idioma básico alojado en Github Pages
+
+          
+          
+            
+              
+            
+              
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
+              
+            
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
     <a href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -333,11 +430,22 @@
             alt="">
         </div>
       
-      <h2 class="archive__item-title" itemprop="headline">RDP to Windows machine with PIN login
-</h2>
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          RDP to Windows machine with PIN login
+
+        
+        
+      </h2>
       
-      <p class="archive__item-excerpt" itemprop="description">Don’t lose the precious hour I lost
-</p>
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Don’t lose the precious hour I lost
+
+          
+          
+        </p>
+      
     </article>
   </a>
 </div>
@@ -360,65 +468,22 @@
             alt="">
         </div>
       
-      <h2 class="archive__item-title" itemprop="headline">Book - The software developer’s life manual - John Z. Sonmez
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">Some comments about the last book I read
-</p>
-    </article>
-  </a>
-</div>
+      <h2 class="archive__item-title" itemprop="headline">
         
-          
+          Book - The software developer’s life manual - John Z. Sonmez
 
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/browse-blocking-ads-and-trackers/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Browse blocking ads and trackers
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">Why and how I browse blocking ads and trackers
-</p>
-    </article>
-  </a>
-</div>
         
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Some comments about the last book I read
+
           
-
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/acknowledge-your-privilege/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+          
+        </p>
       
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">Acknowledge your privilege
-</h2>
-      
-      <p class="archive__item-excerpt" itemprop="description">My humble opinion about George Floyd killing and white privilege
-</p>
     </article>
   </a>
 </div>
