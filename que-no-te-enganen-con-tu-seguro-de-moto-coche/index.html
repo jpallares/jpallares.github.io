@@ -19,7 +19,7 @@
 
 
 
-<title>RDP to Windows machine with PIN login - Juan Pallarès Garbí</title>
+<title>Que no te engañen con tu seguro de moto o coche - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="RDP to Windows machine with PIN login">
+<meta property="og:title" content="Que no te engañen con tu seguro de moto o coche">
 
 
-  <link rel="canonical" href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
-  <meta property="og:url" content="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
+  <link rel="canonical" href="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/">
+  <meta property="og:url" content="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/">
 
 
 
-  <meta property="og:description" content="Don’t lose the precious hour I lost">
+  <meta property="og:description" content="Paga el mínimo posible cada año">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="RDP to Windows machine with PIN login">
-  <meta name="twitter:description" content="Don’t lose the precious hour I lost">
-  <meta name="twitter:url" content="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
+  <meta name="twitter:title" content="Que no te engañen con tu seguro de moto o coche">
+  <meta name="twitter:description" content="Paga el mínimo posible cada año">
+  <meta name="twitter:url" content="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,10 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-06-19T00:00:00+02:00">
-  
-    <link rel="next" href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" title="Configura Jekyll para ser multi idioma sin plugins">
+  <meta property="article:published_time" content="2020-07-05T00:00:00+02:00">
   
   
-    <link rel="prev" href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" title="Book - The software developer&#39;s life manual - John Z. Sonmez">
+    <link rel="prev" href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" title="Configure Jekyll to be multi-language without plugins">
   
 
 
@@ -186,7 +184,8 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Barcelona</li>
+        <li>
+<i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Barcelona</li>
       
       
       
@@ -234,15 +233,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="RDP to Windows machine with PIN login">
-    <meta itemprop="description" content="Don’t lose the precious hour I lost">
-    <meta itemprop="datePublished" content="June 19, 2020">
+    <meta itemprop="headline" content="Que no te engañen con tu seguro de moto o coche">
+    <meta itemprop="description" content="Paga el mínimo posible cada año">
+    <meta itemprop="datePublished" content="July 05, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">RDP to Windows machine with PIN login
+          <h1 class="page__title" itemprop="headline">Que no te engañen con tu seguro de moto o coche
 </h1>
           
         </header>
@@ -254,30 +253,55 @@
       
 
       <section class="page__content" itemprop="text">
-        <h2 id="tldr">TL;DR</h2>
+        <p>Cuánto pagas por tu seguro? Si no lo sabes, revísalo. Y el año anterior? Y el previo? Te ha ido subiendo cada año? No te preocupes, no estás solo. Las aseguradoras por lo general te suben el precio cada año aunque no tengas ningún parte. Aunque envejezcas y estadísticamente salgas de la franjas más peligrosas. Da lo mismo, el precio subirá igual que el sol sale cada mañana.</p>
 
-<ol>
-  <li>Disable PIN login</li>
-  <li>Remote connect with user@domain.com and password</li>
-  <li>Renable PIN (I had to do it connected locally)</li>
-  <li>Remote connection will keep working with the previous credentials</li>
-</ol>
+<p>Por qué hacen esto? Opino que aprovechan varios factores:</p>
+<ul>
+  <li>El seguro es obligatorio.</li>
+  <li>La gente no tiene un gran control de sus finanzas y no notan esa subida. No se dan ni cuenta.</li>
+  <li>El más importante. <strong>Da pereza cambiar, igual que da pereza cambiar de banco, de compañía de teléfono, etc. Esto lo aprovechan sin piedad.</strong>
+</li>
+</ul>
 
-<h2 id="the-problem">The problem</h2>
+<h2 id="mi-caso">Mi caso</h2>
 
-<p>I have a PC machine working as a server with Windows 10 installed. I almost never use it phisically, I always remote to it. For remoting I use integrated authentication, this is my Microsoft account (usually an account ending in @live.com, @outlook.com or even @hotmail.com if you are old like me). This account has a very long and complicated password that <a href="https://www.dashlane.com/">Dashlane</a> remembers for me.</p>
+<p>En 2010 compré una moto 125cc que venía con seguro incluído, otro truco ya que te tienen atado y no te sueltan por los anteriores motivos. Cuando pasó el primer año, renovado automáticamente por la nada despreciable cantidad de <strong>242,05€</strong> (no es que me acuerde, tengo el mail) con Allianz. Yo sabía que podía obtener el mismo seguro (terceros con asistencia) por <strong>menos de 200€ y así fue</strong>. Devolví el recibo y contacté con una correduría para que me buscaran el presupuesto más bajo y me dieran de baja de la otra aseguradora. Además todo por email, llámame asocial o llámame práctico.</p>
 
-<p>If I loging phisically, I can’t use Dashlane to get my password that’s why I have enabled <a href="https://petri.com/windows-10-use-a-pin-instead-of-a-password-to-sign-in">PIN authentication</a>.</p>
+<h2 id="la-solución">La solución</h2>
 
-<p><img src="../images/WindowsPIN.jpg" alt="Windows PIN Sing-in" /></p>
+<p>Desde entonces, <strong>un par de meses antes de que caduque el seguro tengo una alarma de Google Calendar CADUCA SEGURO</strong> y en ese momento decido si quiero tragar este año con la subida o cambio de compañía? si decido cambiar envío un mensaje así a la correduría que he venido usando estos años: <a href="https://www.peris.es/">Peris</a>, en concreto a <a href="mailto:correduria@peris.es,motos@peris.es">correduria@peris.es y motos@peris.es</a>. Este es un ejemplo con mi actual moto, una 300cc:</p>
 
-<p>So what’s the problem? <strong>When you try to remote with a machine that has never remoted before it won’t work</strong>.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hola,
 
-<h2 id="the-fix">The fix</h2>
+He gestionado varias veces el seguro con vosotros, soy Juan Pallarès Garbí con DNI XXXXXXXX y fecha de nacimiento 1985, 34 años en breve. Carné de conducir A2 con fecha de expedición XX/XX/XXXX (adjunto).
 
-<p>This has happened me twice and both times I lost too much time googling the fix. I thought let’s write a post about it so at least the third time I can look it here.</p>
+Mi moto es Honda Forza 300cc comprada en Octubre 2013 con matrícula XXXXXXX. Con permiso de circulación XXXXXXXXXXXXXXXXXXXX (adjunto) y también adjunto tarjeta inspección técnica.
 
-<p>Let’s be clear, <strong>you don’t want to remote with the PIN</strong>. I believe is not possible but even if it was I wouldn’t recommend it. So as I said in the quick steps in the TL;DR section, the trick is to disable temporarily the PIN. It seems it needs to remote login a first time with PIN disabled and then it will work afterwards.</p>
+Mi actual póliza es con Mapfre a terceros con asistencia en carretera. Número de póliza XXXXXXXXXXXXXX
+Llevo dos años con ellos, cobrando los siguientes recibos
+2017 - 141,07€
+2018 - 150,93€
+Esta póliza caduca a 23 de Octubre 2019.
+
+Me puede pasar un listado de posible pólizas que pueda contratar?
+Comuníqueme si falta algún dato o documento
+
+Saludos
+</code></pre></div></div>
+
+<p>Fíjate en las subidas que se van produciendo y la próxima iba a ser 160€. Lo sé porque esta vez quise darles una oportunidad, llamé a Mapfre y les expliqué educadamente que o me bajaban el precio o me iba…da igual, seguían empecinados en que “han subido los costes”. Llamé a otras aseguradoras, estilo Línea Directa, casi una hora al teléfono para ofrecerme algo más caro de lo que tenía. <em>“Por qué pensaste que habrían cambiado?”</em> Me dije y volví a mi mail anual a Peris. Te responden con un mail donde adjuntan un presupuesto de este estilo:</p>
+
+<p><img src="../images/presupuesto_peris.png" alt="Captura presupuesto Peris"></p>
+
+<p>132€ de coste, unos 30€ de ahorro.</p>
+
+<h2 id="vale-la-pena">Vale la pena?</h2>
+
+<p><em>“Como te pones Juan por 30€!”</em> Que es como si os oyera decirme. Eso ha sido solo un año, imagina el Juan incauto del pasado que sigue con el seguro de 242€ que aumenta año tras año. Y además que si nos le dais valor a 30€ os paso mi número de cuenta que yo si les daré todo el amor que merecen <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">.</p>
+
+<p>Opino que vale la pena, ya no solo económicamente sino también para no sentir que te están tomando el pelo. Todo se puede gestionar por mail y es enviar un par de email una vez al año. Se ha dado el caso que he estado en la aseguradora AXA, he ido a Mapfre y luego he vuelto AXA. AXA podría haberme tenido como cliente todo el tiempo si hubiera accedido a darme un precio de mercado, no lo hacen. También he estado estos años en Generali y Allianz, siempre al mejor postor, cúal mercenario.</p>
+
+<p>Después de leer todo esto, seguirás con tu actual compañía? Me encantaría que compartieras tu experiencia conmigo.</p>
 
         
       </section>
@@ -290,7 +314,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-06-19T00:00:00+02:00">June 19, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-07-05T00:00:00+02:00">July 05, 2020</time></p>
         
       </footer>
 
@@ -299,13 +323,13 @@
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -313,12 +337,11 @@
 
   <nav class="pagination">
     
-      <a href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" class="pagination--pager" title="Book - The software developer’s life manual - John Z. Sonmez
+      <a href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" class="pagination--pager" title="Configure Jekyll to be multi-language without plugins
 "></a>
     
     
-      <a href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" class="pagination--pager" title="Configura Jekyll para ser multi idioma sin plugins
-"></a>
+      <a href="#" class="pagination--pager disabled"></a>
     
   </nav>
 
@@ -348,54 +371,12 @@
 
 <div class="grid__item">
   
-    <a href="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">
-        
-          Que no te engañen con tu seguro de moto o coche
-
-        
-        
-      </h2>
-      
-      
-        <p class="archive__item-excerpt" itemprop="description">
-          Paga el mínimo posible cada año
-
-          
-          
-        </p>
-      
-    </article>
-  </a>
-</div>
-        
-          
-
-
-
-<div class="grid__item">
-  
     <a href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">
   
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
@@ -416,7 +397,7 @@
               
             
               
-                <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/">🇪🇸 </a>
               
             
           
@@ -437,11 +418,7 @@
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
@@ -462,9 +439,43 @@
               
             
               
-                <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
+                <a href="/configura-jekyll-multi-idioma-sin-plugin/">🇪🇸 </a>
               
             
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          RDP to Windows machine with PIN login
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Don’t lose the precious hour I lost
+
+          
           
         </p>
       
@@ -483,11 +494,7 @@
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
@@ -534,7 +541,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">© 2020 Juan Pallarès Garbí.  <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 
@@ -578,7 +585,8 @@
   		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   	}());
   </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 
 
 
