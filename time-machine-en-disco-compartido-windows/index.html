@@ -19,7 +19,7 @@
 
 
 
-<title>Resharper favourite hotkeys - Juan Pallarès Garbí</title>
+<title>Copia de seguridad de tu Mac (Time Machine) en unna carpeta compartida de Windows - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Resharper favourite hotkeys">
+<meta property="og:title" content="Copia de seguridad de tu Mac (Time Machine) en unna carpeta compartida de Windows">
 
 
-  <link rel="canonical" href="https://juan.pallares.me/resharper-favourite-hotkeys/">
-  <meta property="og:url" content="https://juan.pallares.me/resharper-favourite-hotkeys/">
+  <link rel="canonical" href="https://juan.pallares.me/time-machine-en-disco-compartido-windows/">
+  <meta property="og:url" content="https://juan.pallares.me/time-machine-en-disco-compartido-windows/">
 
 
 
-  <meta property="og:description" content="When coding in C# with Visual Studio usually you get enough help with Intellisense and Visual Studio shortcuts, which there are plenty:">
+  <meta property="og:description" content="Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Resharper favourite hotkeys">
-  <meta name="twitter:description" content="When coding in C# with Visual Studio usually you get enough help with Intellisense and Visual Studio shortcuts, which there are plenty:">
-  <meta name="twitter:url" content="https://juan.pallares.me/resharper-favourite-hotkeys/">
+  <meta name="twitter:title" content="Copia de seguridad de tu Mac (Time Machine) en unna carpeta compartida de Windows">
+  <meta name="twitter:description" content="Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.">
+  <meta name="twitter:url" content="https://juan.pallares.me/time-machine-en-disco-compartido-windows/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,10 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2014-11-16T00:00:00+01:00">
-  
-    <link rel="next" href="https://juan.pallares.me/jekyll-windows/" title="Using Jekyll on Windows">
+  <meta property="article:published_time" content="2020-07-19T00:00:00+02:00">
   
   
-    <link rel="prev" href="https://juan.pallares.me/markdown-syntax/" title="Markdown syntax introduction">
+    <link rel="prev" href="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" title="Que no te engañen con tu seguro de moto o coche">
   
 
 
@@ -234,15 +232,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Resharper favourite hotkeys">
-    <meta itemprop="description" content="When coding in C# with Visual Studio usually you get enough help with Intellisense and Visual Studio shortcuts, which there are plenty:">
-    <meta itemprop="datePublished" content="November 16, 2014">
+    <meta itemprop="headline" content="Copia de seguridad de tu Mac (Time Machine) en unna carpeta compartida de Windows">
+    <meta itemprop="description" content="Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.">
+    <meta itemprop="datePublished" content="July 19, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Resharper favourite hotkeys
+          <h1 class="page__title" itemprop="headline">Copia de seguridad de tu Mac (Time Machine) en unna carpeta compartida de Windows
 </h1>
           
         </header>
@@ -254,54 +252,62 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>When coding in C# with Visual Studio usually you get enough help with Intellisense and <a href="http://visualstudioshortcuts.com/">Visual Studio shortcuts</a>, which there are plenty:</p>
+        <p>MacOS tiene un sistema de backup llamado <a href="https://support.apple.com/es-es/HT201250">Time Machine</a> que funciona muy al estilo Apple, rápido y fácil pero siempre que tengas su hardware (Time Capsule) o un disco externo que tendrías que ir conectando. Si tienes un PC Windows a modo de servidor (como yo) y espacio libre, puedes utilizarlo como Time Capsule. El setup es un poco más difícil pero una vez hecho se harán las copias de seguridad en background mientras trabajas/procastinas tranquilo.</p>
 
-<blockquote>
-  <p><img src="../images/VisualStudioShortcuts.png" alt="Visual Studio Shortcuts" title="Visual Studio Shortcuts" /></p>
-</blockquote>
+<p><img src="../images/windows_shared_drive.png" alt="Windows shared drive" /></p>
 
-<p>Anyway, it’s very common to see developers using extra tools as <a href="https://www.jetbrains.com/resharper">Resharper</a>. I’ll copy paste the definition from their website:</p>
+<p>He utilizado <a href="https://www.imore.com/how-use-time-machine-backup-your-mac-windows-shared-folder">esta guía</a> la cúal lo explica genial.</p>
 
-<p class="notice">ReSharper is a renowned productivity tool that makes Microsoft Visual Studio a much better IDE. Thousands of .NET developers worldwide wonder how they’ve ever lived without ReSharper’s code inspections, automated code refactorings, blazing fast navigation, and coding assistance.</p>
+<h2 id="1-crea-una-carpeta-compartida-en-windows-como-time-capsule">1 Crea una carpeta compartida en Windows como Time Capsule</h2>
 
-<p>I have used it in several projects, but in the last one it is compulsory and it’s when I have seen it’s true power. I’m going to go through my favourite shortcuts and tricks from Resharper, it’s important to notice I use the “Visual Studio scheme” but there is also option for the “IntelliJ scheme”.</p>
+<p>Esto debería ser fácil y seguramente ya tienes alguna compartida. En tú máquina Windows selecciona la carpeta disco a compartir: <code class="highlighter-rouge">Botón derecho &gt; Propiedades &gt; Pestaña Compartir</code>. Recuerda darte permisos administrador a ti mismo. En mi caso he compartido un disco entero pero puedes compartir solo una carpeta dentro del disco si lo prefieres.</p>
 
-<blockquote>
-  <p><img src="../images/Resharper8Keymap.png" alt="Resharper 8 Keymap" title="Resharper 8 Keymap" /></p>
-</blockquote>
+<p><img src="../images/share_folder.png" alt="Permisos carpeta" /></p>
 
-<p>OK, enough introductions, what are my favourite shortcuts? here you go:</p>
+<h2 id="2-conecta-desde-mac-a-esta-carpeta-compartida">2 Conecta desde Mac a esta carpeta compartida</h2>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Alt</span> <span class="o">+</span> <span class="nt">Enter</span></code></pre></figure>
+<p>Desde el Finder: <code class="highlighter-rouge">Ir &gt; Conecta a Servidor</code>. O más facil/pro <code class="highlighter-rouge">Cmd + K</code>. Como dirección debes poner <code class="highlighter-rouge">smb://servidor/carpeta</code></p>
 
-<p>For everything, all the time Resharper will suggest actions in how to improve the code and with this shortcut you can go throught them. At the beginning simple things like an if else clause that can be converted to ?:, but you can also put a new paremeter in the constructor and “alt enter” it will suggest to create the field and initialize it inside the constructor, lovely.</p>
+<p><img src="../images/connect_server.png" alt="Conecta a servidor" /></p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">T</span></code></pre></figure>
+<p>Te pedirá usuario y contraseña y aquí pondras tus credenciales de Windows (justo las que les has dado permiso en el paso anterior). <strong>Marca la opción de recordar y así no tendrás que volver a introducirlos</strong>.</p>
 
-<p>Go to everything, and you can use wildcards or initials.</p>
+<h2 id="3-crea-una-imagen-sparsebundle">3 Crea una imagen sparsebundle</h2>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">R</span> <span class="o">+</span> <span class="nt">R</span></code></pre></figure>
+<p>Esta imagen será del tipo HFS+ que es la que necesita Mac para usarla como backup.</p>
 
-<p>Renaming, can include comments.</p>
+<ol>
+  <li>Abre la Disk Utility y ve al menú <code class="highlighter-rouge">Archivo &gt; Nueva Imagen &gt; Imagen en Blanco</code>.</li>
+  <li>Renombrala como te parezca.</li>
+  <li>Escoge la carpeta compartida de Windows a la que te conectaste anteriorment como destino.</li>
+  <li>Renombra también el sparsebundle.</li>
+  <li>Escoge el tamaño, idealmente igual o más que el tamaño de disco de tu Mac.</li>
+  <li><strong>Valida que el tipo de Formato es Mac OS Extended (Journaled)</strong>.</li>
+</ol>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">R</span> <span class="o">+</span> <span class="nt">M</span></code></pre></figure>
+<p><strong>Cuando grabes puede llegar a tardar horas en crear la imagen, dependiendo del tamaño</strong>. Paciencia y déjalo trabajando. Quizá tenerlo conectado por red sea buena idea para acelerar el proceso.</p>
 
-<p>Extract a method from the selected piece of code which takes me to the next shortcut:</p>
+<h2 id="4-haz-que-se-monte-automáticamente">4 Haz que se monte automáticamente</h2>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">Alt</span> <span class="o">+</span> <span class="nt">Right</span>
-<span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">Alt</span> <span class="o">+</span> <span class="nt">Left</span></code></pre></figure>
+<p>Para que cada vez que reinicies el disco se monte, tienes que configurarlo como Login Item, el único problema es que solo funcionará para tu usuario.</p>
 
-<p>Expand and shrink selection.</p>
+<ol>
+  <li><code class="highlighter-rouge">Preferencias del Sistema &gt; Usuarios y Grupos</code>.</li>
+  <li>Escoges tu usuario y entras a la pestaña Login Items.</li>
+  <li><strong>Añades la carpeta montada y el fichero.dmg</strong> que hemos creado.</li>
+</ol>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Ctrl</span> <span class="o">+</span> <span class="o">,</span>
-<span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">Shift</span> <span class="o">+</span> <span class="o">,</span></code></pre></figure>
+<p><img src="../images/login_items.png" alt="Login Items" /></p>
 
-<p>View recent files and recent edits. And finally</p>
+<h2 id="5-configura-timemachine-para-usar-esa-imagen">5 Configura TimeMachine para usar esa imagen</h2>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">Ctrl</span> <span class="o">+</span> <span class="nt">Shift</span> <span class="o">+</span> <span class="nt">V</span></code></pre></figure>
+<p>Por último, tenemos que comprobar que Time Machine puede ver esta imagen y usarla. En <code class="highlighter-rouge">Preferencias del Sistema &gt; Time Machine</code> valida que la disco configurado es el sparsebundle que hemos creado.</p>
 
-<p>Will show you a window with all your history in the clipboard, very useful when copypasting some code.
-What are your favourite ones?</p>
+<p><img src="../images/TimeMachine_disk.png" alt="Disco Time Machine" /></p>
+
+<h2 id="6-disfruta">6 Disfruta</h2>
+
+<p>La primera copia de seguridad será larga pero luego solo los archivos que han cambiado se guaradarán y todo se hará automáticamente en background.</p>
 
         
       </section>
@@ -314,7 +320,7 @@ What are your favourite ones?</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2014-11-16T00:00:00+01:00">November 16, 2014</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-07-19T00:00:00+02:00">July 19, 2020</time></p>
         
       </footer>
 
@@ -323,13 +329,13 @@ What are your favourite ones?</p>
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/resharper-favourite-hotkeys/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/time-machine-en-disco-compartido-windows/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/resharper-favourite-hotkeys/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/time-machine-en-disco-compartido-windows/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://juan.pallares.me/resharper-favourite-hotkeys/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/time-machine-en-disco-compartido-windows/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/resharper-favourite-hotkeys/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/time-machine-en-disco-compartido-windows/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -337,12 +343,11 @@ What are your favourite ones?</p>
 
   <nav class="pagination">
     
-      <a href="https://juan.pallares.me/markdown-syntax/" class="pagination--pager" title="Markdown syntax introduction
+      <a href="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" class="pagination--pager" title="Que no te engañen con tu seguro de moto o coche
 "></a>
     
     
-      <a href="https://juan.pallares.me/jekyll-windows/" class="pagination--pager" title="Using Jekyll on Windows
-"></a>
+      <a href="#" class="pagination--pager disabled"></a>
     
   </nav>
 
@@ -365,44 +370,6 @@ What are your favourite ones?</p>
     <div class="page__related">
       
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/time-machine-en-disco-compartido-windows/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">
-        
-          Copia de seguridad de tu Mac (Time Machine) en unna carpeta compartida de Windows
-
-        
-        
-      </h2>
-      
-      
-        <p class="archive__item-excerpt" itemprop="description">
-          Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.
-
-          
-          
-        </p>
-      
-    </article>
-  </a>
-</div>
         
           
 
@@ -527,6 +494,44 @@ What are your favourite ones?</p>
                 <a href="/configura-jekyll-multi-idioma-sin-plugin/" >🇪🇸 </a>
               
             
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          RDP to Windows machine with PIN login
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Don’t lose the precious hour I lost
+
+          
           
         </p>
       
