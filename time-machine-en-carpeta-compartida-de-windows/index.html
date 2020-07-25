@@ -297,6 +297,8 @@
   <li><strong>Añades la carpeta montada y el fichero.dmg</strong> que hemos creado.</li>
 </ol>
 
+<p>Esta parte me ha dado problemas, en cada login me pedía los credenciales aunque marcara que los guardara en KeyChain. Valida que no tengas varios logins sobre el mismo disco en KeyChain, cuando he eliminado duplicados me ha funcionado.</p>
+
 <p><img src="../images/login_items.png" alt="Login Items" /></p>
 
 <h2 id="5-configura-timemachine-para-usar-esa-imagen">5 Configura TimeMachine para usar esa imagen</h2>
@@ -304,6 +306,15 @@
 <p>Por último, tenemos que comprobar que Time Machine puede ver esta imagen y usarla. En <code class="highlighter-rouge">Preferencias del Sistema &gt; Time Machine</code> valida que la disco configurado es el sparsebundle que hemos creado.</p>
 
 <p><img src="../images/TimeMachine_disk.png" alt="Disco Time Machine" /></p>
+
+<p>Para poder añadirlo sino aparece, con el disco montado, ejecuta el comando:
+<code class="highlighter-rouge">ls /Volumes</code>
+y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nombrado sparsebundle, ejecuta:
+<code class="highlighter-rouge">sudo tmutil setdestination /Volumes/sparsebundle</code></p>
+
+<p><img src="../images/timemachine_image_name.png" alt="Time Machine image name" /></p>
+
+<p>Puede que también tengas que utilizar <code class="highlighter-rouge">sudo tmutil enable</code> si no tienes Time Machine activado.</p>
 
 <h2 id="6-disfruta">6 Disfruta</h2>
 
