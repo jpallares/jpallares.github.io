@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-08-30T19:07:42+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="en"><title type="html">Book - Getting Things Done. The Art of Stress-free Productivity - David Allen</title><link href="https://juan.pallares.me/getting-things-done/" rel="alternate" type="text/html" title="Book - Getting Things Done. The Art of Stress-free Productivity - David Allen" /><published>2020-08-29T00:00:00+02:00</published><updated>2020-08-29T00:00:00+02:00</updated><id>https://juan.pallares.me/getting-things-done</id><content type="html" xml:base="https://juan.pallares.me/getting-things-done/">&lt;p&gt;Do you have a TODO list? Have you ever used one? Do you remember that time you had so many things to do and the moment you wrote all down in a list you felt much more in control and relaxed? You can learn how to properly manage all your professional and personal life in the last book I read &lt;a href=&quot;https://www.amazon.es/Getting-Things-Done-Arts-Stresss/dp/0349408947/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=getting+things+done&amp;amp;qid=1598698866&amp;amp;sr=8-1&quot;&gt;Getting Things Done The Art of Stress-free Productivity by David Allen&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-09-27T14:13:28+02:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="en"><title type="html">Book - Factfulness - Hans Rosling, Ola Rosling, Anna Rosling</title><link href="https://juan.pallares.me/factfulness/" rel="alternate" type="text/html" title="Book - Factfulness - Hans Rosling, Ola Rosling, Anna Rosling" /><published>2020-09-27T00:00:00+02:00</published><updated>2020-09-27T00:00:00+02:00</updated><id>https://juan.pallares.me/factfulness</id><content type="html" xml:base="https://juan.pallares.me/factfulness/">&lt;h2 id=&quot;the-gapminder-test&quot;&gt;The Gapminder Test&lt;/h2&gt;
+
+&lt;p&gt;Before I start commenting on &lt;a href=&quot;https://www.amazon.com/-/es/Hans-Rosling/dp/1250107814&quot;&gt;Factfulness&lt;/a&gt; I would like you to do &lt;a href=&quot;https://forms.gapminder.org/s3/test-2018&quot;&gt;the gapminder online test&lt;/a&gt;. The book starts the same way, asking you to answer the questionnaire.&lt;/p&gt;
+
+&lt;p&gt;How did you perform? If it was bad, do not worry. World leaders who should have more context about these trends perform below than a monkey would do (what the author uses to refer to answering randomly the test). The world is better than we think, why do we have such negative thoughts about it?.&lt;/p&gt;
+
+&lt;p&gt;Factfulness is one of Bill Gates favorite books. He thinks it’s so important to read it that he decided to &lt;a href=&quot;https://www.goodnet.org/articles/bill-gates-gifts-graduates-his-favorite-book-on-positivity&quot;&gt;give it away to all 2018 American graduates&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As usual, I added all the quotes I found interesting &lt;a href=&quot;https://juan.pallares.me/books/factfulness/&quot;&gt;here&lt;/a&gt;. Let’s deep dive into Factulness, a book so interesting I read it just in some days.&lt;/p&gt;
+
+&lt;h2 id=&quot;10-biases&quot;&gt;10 biases&lt;/h2&gt;
+
+&lt;p&gt;Facts over feelings. That’s the book in three words. Hans shows publicly available data, usually ignored, in eye-catchy graphics to demonstrate how pessimistic we are. Why are we this way?&lt;/p&gt;
+
+&lt;p&gt;We, as humans, have 10 different instincts that prevent us from analyzing the world factfully. Is important to know them and to master the ability to disabling them.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-the-gap-instinct&quot;&gt;1. The &lt;strong&gt;Gap&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;The reality is often not polarized at all. Usually, the majority is right there in the middle, where the gap is supposed to be. We tend to divide the countries in developed and non-developed. The author divides them into 4 levels ordered by income per person. Guess which levels are the more crowded? The ones in the middle, 2 and 3.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-the-negativity-instinct&quot;&gt;2. The &lt;strong&gt;Negativity&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Information about bad news is much more likely to reach us. When things are getting better we often don’t hear about them. This gives us a too-negative impression of the world. Things can be bad and improving. Example:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The PIN code of the world is 1-1-1-4. That’s how to remember the map. From left to right, the number of billions, as a PIN code. Americas: 1, Europe: 1, Africa: 1, Asia: 4. (I have rounded the numbers.) Like all PIN codes, this one will change. By the end of this century, the UN expects there to have been almost no change in the Americas and Europe but 3 billion more people in Africa and 1 billion more in Asia. By 2100 the new PIN code of the world will be 1-1-4-5. More than 80 percent of the world’s population will live in Africa and Asia.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Think of the world as a premature baby in an incubator. The baby’s health status is extremely bad and her breathing, heart rate, and other important signs are tracked constantly so that changes for better or worse can quickly be seen. After a week, she is getting a lot better. On all the main measures, she is improving, but she still has to stay in the incubator because her health is still critical. Does it make sense to say that the infant’s situation is improving? Yes. Absolutely. Does it make sense to say it is bad? Yes, absolutely. Does saying “things are improving” imply that everything is fine, and we should all relax and not worry? No, not at all. Is it helpful to have to choose between bad and improving? Definitely not. It’s both. It’s both bad and better. Better, and bad, at the same time.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-the-straight-line-instinct&quot;&gt;3. The &lt;strong&gt;Straight Line&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Curves (in data graphics) come in different shapes. Don’t assume it will continue straight.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-the-fear-instinct&quot;&gt;4. The &lt;strong&gt;Fear&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Frightening things get our attention. Remember these are not necessarily the riskiest. Our natural fears (genetic) make us overestimate these risks.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-the-size-instinct&quot;&gt;5. The &lt;strong&gt;Size&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;If a lonely number seems impressive. Compare it with another relevant number. Get things in proportion. Example:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I had for some time been appalled by the systematic blaming of climate change on China and India based on total emissions per nation. It was like claiming that obesity was worse in China than in the United States because the total bodyweight of the Chinese population was higher than that of the US population.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-the-generalization-instinct&quot;&gt;6. The &lt;strong&gt;Generalization&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Generation can’t be stopped but we can check if the use is correct. Look for differences within groups, similarities across groups and differences across groups. Example:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;It makes no sense to talk about “African countries” and “Africa’s problems” and yet people do, all the time. It leads to ridiculous outcomes like Ebola in Liberia and Sierra Leone affecting tourism in Kenya, a 100-hour drive across the continent. That is farther than London to Tehran.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-the-destiny-instinct&quot;&gt;7. The &lt;strong&gt;Destiny&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Slow change is still change. Slow changes gradually add up to big changes. Don’t think something (country, culture, etc.) remains constant because the change is small.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-the-single-perspective-instinct&quot;&gt;8. The &lt;strong&gt;Single Perspective&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Get a toolbox, not a hammer. Single perspective can limit your imagination. Look at problems from different angles.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-the-blame-instinct&quot;&gt;9. The &lt;strong&gt;Blame&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Blaming an individual often steals the focus from other possible explanations and blocks our ability to prevent similar problems in the future. Resist finding a scapegoat and notice when one is being used,&lt;/p&gt;
+
+&lt;h3 id=&quot;10-the-urgency-instinct&quot;&gt;10. The &lt;strong&gt;Urgency&lt;/strong&gt; Instinct.&lt;/h3&gt;
+
+&lt;p&gt;Rarely a decision is urgent. Take a breath. Insist on data. Be careful of taking drastic actions.&lt;/p&gt;
+
+&lt;h2 id=&quot;world-future---economic-shift&quot;&gt;World future - Economic shift&lt;/h2&gt;
+
+&lt;p&gt;One of my favorite parts of the book is when the population growth forecast are analyzed:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If the UN forecasts for population growth are correct, and if incomes in Asia and Africa keep growing as now, then the center of gravity of the world market will shift over the next 20 years from the Atlantic to the Indian Ocean. Today, the people living in rich countries around the North Atlantic, who represent 11 percent of the world population, make up 60 percent of the Level 4 consumer market. Already by 2027, if incomes keep growing worldwide as they are doing now, then that figure will have shrunk to 50 percent. By 2040, 60 percent of Level 4 consumers will live outside the West. Yes, &lt;strong&gt;I think the Western domination of the world economy will soon be over&lt;/strong&gt;. People in North America and Europe need to understand that most of the world population lives in Asia. In terms of economic muscles “we” are becoming the 20 percent, not the 80 percent. But many of “us” can’t fit these numbers into our nostalgic minds. Not only do we misjudge how big our war monuments should be in Vietnam, we also misjudge our importance in the future global marketplace. Many of us forget to behave properly with those who will control the future trade deals.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That is some food for thought. How easily we ignore all other countries while we are on top but…for how long? A couple more quotes in the same direction:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In sales and marketing, if you run a big business in Europe or the United States, you and your employees need to understand that the world market of the future will be growing primarily in Asia and Africa, not at home.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In making investment decisions, you need to shake off any naïve views of Africa shaped by the colonial past (and maintained by today’s media) and understand that Ghana, Nigeria, and Kenya are where some of the best investment opportunities can be found today.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fake-news&quot;&gt;Fake news&lt;/h2&gt;
+
+&lt;p&gt;Nowadays is common to receive all kind of fake news, rumors, clickbait. For this reason, I see even more value in reading this book. I’m pretty sure that with a population that knew more about all this instincts and how to tackle them, some presidential elections would have gone differently.&lt;/p&gt;
+
+&lt;div style=&quot;width:100%;height:0;padding-bottom:93%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/26tknCqiJrBQG6bxC&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/election2016-election-2016-presidential-debate-26tknCqiJrBQG6bxC&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Easy to read. Interesting, funny, and revealing experiences from the author around the world. Great summaries after every chapter. Do you love data? 100% recommended. Better to read it in a tablet than in a e-reader because of the graphics.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="factfulness" /><category term="facts" /><category term="fake news" /><category term="clickbait" /><summary type="html">Ten reasons we're wrong about the world and why things are better than you think</summary></entry><entry xml:lang="en"><title type="html">Book - Getting Things Done. The Art of Stress-free Productivity - David Allen</title><link href="https://juan.pallares.me/getting-things-done/" rel="alternate" type="text/html" title="Book - Getting Things Done. The Art of Stress-free Productivity - David Allen" /><published>2020-08-29T00:00:00+02:00</published><updated>2020-08-29T00:00:00+02:00</updated><id>https://juan.pallares.me/getting-things-done</id><content type="html" xml:base="https://juan.pallares.me/getting-things-done/">&lt;p&gt;Do you have a TODO list? Have you ever used one? Do you remember that time you had so many things to do and the moment you wrote all down in a list you felt much more in control and relaxed? You can learn how to properly manage all your professional and personal life in the last book I read &lt;a href=&quot;https://www.amazon.es/Getting-Things-Done-Arts-Stresss/dp/0349408947/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=getting+things+done&amp;amp;qid=1598698866&amp;amp;sr=8-1&quot;&gt;Getting Things Done The Art of Stress-free Productivity by David Allen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I have to admit, the book feels old. It talks a lot about filers (who uses that?), trays with physical documents, bills and a lot of hand-writing. Well, it was 1st published in 2001 and, even if I read a more modern edition, the feeling is there. Having said that, in my opinion, the main learnings are timeless and universal. I will quote a quote (Inception) from the book that explains this better: 
 &lt;em&gt;As to methods there may be a million and then some, but principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble.&lt;/em&gt;&lt;/p&gt;
@@ -170,127 +255,7 @@ Saludos
 
 &lt;p&gt;Opino que vale la pena, ya no solo económicamente sino también para no sentir que te están tomando el pelo. Todo se puede gestionar por mail y es enviar un par de mail una vez al año. Se ha dado el caso que he estado en la aseguradora AXA, he ido a Mapfre y luego he vuelto AXA. AXA podría haberme tenido como cliente todo el tiempo si hubiera accedido a darme un precio de mercado, no lo hacen. También he estado estos años en Generali y Allianz, siempre al mejor postor, cúal mercenario.&lt;/p&gt;
 
-&lt;p&gt;Después de leer todo esto, seguirás con tu actual compañía? Me encantaría que compartieras tu experiencia conmigo.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Paga el mínimo posible cada año</summary></entry><entry xml:lang="es"><title type="html">Configura Jekyll para ser multi idioma sin plugins</title><link href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" rel="alternate" type="text/html" title="Configura Jekyll para ser multi idioma sin plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin</id><content type="html" xml:base="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">&lt;p&gt;Han pasado casi 6 años desde que migré de &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger a Jekyll + Github Pages&lt;/a&gt; y no puedo estar más contento con el cambio. Aún así, algo que quería hace tiempo es convertirlo en multi-idioma. Tengo entradas en mente que no he escrito porque el target claro es España y como bien sabemos el nivel de inglés no es alto. Este último fin de semana me he decidio y aquí os presento mi o̵b̵r̵a̵ chapuza.&lt;/p&gt;
-
-&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Sin plugins.&lt;/strong&gt; Github Pages no es compatible con muchos &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;plugins&lt;/a&gt;. Por ejemplo, no he podido usar &lt;a href=&quot;https://github.com/kurtsson/jekyll-multiple-languages-plugin&quot;&gt;jekyll-multiple-languages-plugin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Compatible con Minimal Mistakes&lt;/strong&gt;. Mi &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;tema de Jekyll&lt;/a&gt; con el cual estoy encantado.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Mostrar la entrada si solo esta en un idioma&lt;/strong&gt;. Tengo muchísimos post antiguos en castellano o en inglés que no traduciré, no tiene valor.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Link para cambio de idioma en cada entrada&lt;/strong&gt;. Si hay dos idiomas o más (no creo que llegue a escribir en catalán o italiano :smile:) que se muestre un link para cambiar de idioma.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Link global cambio de idioma&lt;/strong&gt;. Esta funcionalidad se ha caído. El plugin de paginación &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;jekyll-paginate&lt;/a&gt; no permite más de una página. Seguro hay formas de hacerlo, pero no he querido dedicar el tiempo, no me compensaba.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/pagination_jekyll.png&quot; alt=&quot;jekyll-paginate disclaimer&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;implementación&quot;&gt;Implementación&lt;/h2&gt;
-
-&lt;p&gt;A juzgar por los resultados de Google, muchos guerreros han ido pero pocos han vuelto victoriosos. No hay una manera estándar de hacerlo y he cogido lo que mejor me venía de cada sitio.&lt;/p&gt;
-
-&lt;h3 id=&quot;configura-_configyaml&quot;&gt;Configura _config.yaml&lt;/h3&gt;
-
-&lt;p&gt;En el _config.yml seteamos el lenguage del site añadiendo la linea &lt;code class=&quot;highlighter-rouge&quot;&gt;lang: en&lt;/code&gt;. Y luego creamos un fichero dentro de la carpeta &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;que yo he llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;i18n&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;en:
-  label: English
-  icon: 🇬🇧
-  read_it_in: &quot;Read it in&quot;
-es:
-  label: Español
-  icon: 🇪🇸
-  read_it_in: &quot;Léelo en&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Esto nos permitirá acceder a contenido según el idioma como veremos más adelante.&lt;/p&gt;
-
-&lt;h3 id=&quot;adapta-el-front-matter-de-los-posts&quot;&gt;Adapta el &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;Front Matter&lt;/a&gt; de los posts&lt;/h3&gt;
-
-&lt;p&gt;Especifica en cada post su idioma &lt;code class=&quot;highlighter-rouge&quot;&gt;lang&lt;/code&gt; y identificador único &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;--
-title: RDP to Windows machine with PIN login
-tags: [RDP, Windows, PIN, MicrosoftAccount, login, hacks]
-excerpt: Don't lose the precious hour I lost
-lang: en
-ref: rdp
----
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Si dos posts comparten el mismo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt; son el mismo post en diferentes idiomas. Algunos agrupan los posts por carpetas según el idioma, no lo he considerado necesario.&lt;/p&gt;
-
-&lt;h3 id=&quot;filtra-por-idioma&quot;&gt;Filtra por idioma&lt;/h3&gt;
-
-&lt;p&gt;Mi página principal es una paginacioón de todas las entradas del blog. Ahora queremos que se muestren todos pero si están en más de un idioma que se muestren en inglés.&lt;/p&gt;
-
-&lt;p&gt;Antes mostraba todos los posts que venian del paginator:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Después lo que he hecho ha sido agrupar por el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;. De esta manera puede saber si hay más de un idioma para cada entrada ya que el grupo tendrá más de 1 item. Si ese es el caso, cojo solo el post que tiene el mismo idioma que la página (Inglés en mi caso), de lo contrario muestro el post independientemente del idioma:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign items_grouped = paginator.posts | group_by: 'ref' %}
-{% for group in items_grouped %}
-    {% if group.items.size &amp;gt; 1 %}
-        {% assign post = group.items | where: &quot;lang&quot;,page.lang | first %}
-    {% else %}
-        {% assign post = group.items[0] %}
-    {% endif %}
-    {% include archive-single.html %}
-{% endfor %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ese código tan bonito es &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot;&gt;Liquid&lt;/a&gt;, puede que ya esté en el TOP 5 de mis lenguajes más odiados. Tened en cuenta que el sangrado lo hago yo por claridad, no es necesario. Para poder mostrar código Liquid en Jekill, escaparlo, hay que usar &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/show_liquid.png&quot; alt=&quot;Escape liquid code with raw tag&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;filtra-por-idioma-1&quot;&gt;Filtra por idioma&lt;/h3&gt;
-
-&lt;p&gt;Desde el código anterior se llama a &lt;code class=&quot;highlighter-rouge&quot;&gt;archive-single.html&lt;/code&gt; y ese código es el que vamos a editar ahora para añadir una bandera con el idioma en caso que haya una traducción del post.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign versions=site.posts | where:&quot;ref&quot;, post.ref | sort: 'lang' %}
-{% if versions.size &amp;gt; 1 %}
-    {% for version in versions %}
-        {% if version.lang != site.lang %}
-            &amp;lt;a href=&quot;{{ version.url }}&quot; &amp;gt;{{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
-        {% endif %}
-    {% endfor %}
-{% endif %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Vuelve a ser un concepto similar al anterior, la diferencia es que ahora accedemos al emoji de bandera que pusimos en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/i18n.yml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;link-a-otros-idiomas-dentro-del-blog&quot;&gt;Link a otros idiomas dentro del blog&lt;/h3&gt;
-
-&lt;p&gt;Y yendo de fuera hacia a dentro nos queda editar &lt;code class=&quot;highlighter-rouge&quot;&gt;single.html&lt;/code&gt; que es el &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; de mis entradas. Añade donde creas más oportuno esto:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if page.bookauthor == null and page.permalink == null %}
-    {% assign versions=site.posts | where:&quot;ref&quot;, page.ref | sort: 'lang' %}
-    {% if versions.size &amp;gt; 1 %}
-        {% for version in versions %}
-            {% if version.lang != page.lang %}
-                &amp;lt;a href=&quot;{{ version.url }}&quot; class=&quot;{{ version.lang }}&quot;&amp;gt;{{ site.data.i18n[version.lang].read_it_in] }} {{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-{% endif %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;En el primer &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; evito que otros layouts se vean afectados y luego prácticamente igual. La diferencia es que busco el lenguaje diferente al actual y muestro un texto localizado al lado de la bandera.&lt;/p&gt;
-
-&lt;h2 id=&quot;resultado&quot;&gt;Resultado&lt;/h2&gt;
-
-&lt;p&gt;Estás navegando sobre él ahora mismo. También puedes ver el &lt;a href=&quot;https://github.com/jpallares/minimal-mistakes&quot;&gt;código en Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;esquivar-el-agujero-negro&quot;&gt;Esquivar el agujero negro&lt;/h2&gt;
-
-&lt;p&gt;Todos los ingenieros que tenemos un blog/landing page sufrimos lo que llamo el agujero negro. Esto es dedicar todo el tiempo a mejorar el blog técnicamente, ahora uso Gatsby, ahora deploy en Vercel, ojo que ahora tengo Github Actions…pero no escribir nada de contenido. Este update a multi-idioma era el caldo de cultivo ideal para venirme arriba y empezar un cambio de tecnología que nunca habría acabado.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Por suerte, me definí claramente los mínimos y ahora tengo un multi-idioma básico en lugar de un proyecto con las últimas tecnologías a medias. &lt;strong&gt;Entregar valor, ese debe ser el foco&lt;/strong&gt;. Me ha ayudado el auto-obligarme a una entreda semanal. Que productivity-hacks tienes?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Multi-idioma básico alojado en Github Pages</summary></entry><entry xml:lang="en"><title type="html">Configure Jekyll to be multi-language without plugins</title><link href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" rel="alternate" type="text/html" title="Configure Jekyll to be multi-language without plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configure-jekyll-multi-language-without-plugin</id><content type="html" xml:base="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">&lt;p&gt;Almost 6 years ago I migrated from &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger to Jekyll + Github Pages&lt;/a&gt; and I can’t be happier with the change. Still, something I wanted long ago is to make it multi-language. I have entries in mind that I have not written because the clear target is Spain and the average English level in my country is not high. This last weekend I finally comitted to it and here I present my m̵a̵s̵t̵e̵r̵-̵p̵i̵e̵c̵e̵ quick-fix.&lt;/p&gt;
+&lt;p&gt;Después de leer todo esto, seguirás con tu actual compañía? Me encantaría que compartieras tu experiencia conmigo.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Paga el mínimo posible cada año</summary></entry><entry xml:lang="en"><title type="html">Configure Jekyll to be multi-language without plugins</title><link href="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/" rel="alternate" type="text/html" title="Configure Jekyll to be multi-language without plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configure-jekyll-multi-language-without-plugin</id><content type="html" xml:base="https://juan.pallares.me/configure-jekyll-multi-language-without-plugin/">&lt;p&gt;Almost 6 years ago I migrated from &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger to Jekyll + Github Pages&lt;/a&gt; and I can’t be happier with the change. Still, something I wanted long ago is to make it multi-language. I have entries in mind that I have not written because the clear target is Spain and the average English level in my country is not high. This last weekend I finally comitted to it and here I present my m̵a̵s̵t̵e̵r̵-̵p̵i̵e̵c̵e̵ quick-fix.&lt;/p&gt;
 
 &lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
@@ -410,7 +375,127 @@ ref: rdp
 
 &lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Luckily I clearly defined the minimum requirements and now I have a basic multi-language blog instead of a last-tech half-baked project. &lt;strong&gt;Deliver value, that should be the focus&lt;/strong&gt;. It has helped me by forcing myself to a weekly blog post. What productivity-hacks do you have?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Basic multi-language hosted on Github Pages</summary></entry><entry xml:lang="en"><title type="html">RDP to Windows machine with PIN login</title><link href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" rel="alternate" type="text/html" title="RDP to Windows machine with PIN login" /><published>2020-06-19T00:00:00+02:00</published><updated>2020-06-19T00:00:00+02:00</updated><id>https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login</id><content type="html" xml:base="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Luckily I clearly defined the minimum requirements and now I have a basic multi-language blog instead of a last-tech half-baked project. &lt;strong&gt;Deliver value, that should be the focus&lt;/strong&gt;. It has helped me by forcing myself to a weekly blog post. What productivity-hacks do you have?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Basic multi-language hosted on Github Pages</summary></entry><entry xml:lang="es"><title type="html">Configura Jekyll para ser multi idioma sin plugins</title><link href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" rel="alternate" type="text/html" title="Configura Jekyll para ser multi idioma sin plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin</id><content type="html" xml:base="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">&lt;p&gt;Han pasado casi 6 años desde que migré de &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger a Jekyll + Github Pages&lt;/a&gt; y no puedo estar más contento con el cambio. Aún así, algo que quería hace tiempo es convertirlo en multi-idioma. Tengo entradas en mente que no he escrito porque el target claro es España y como bien sabemos el nivel de inglés no es alto. Este último fin de semana me he decidio y aquí os presento mi o̵b̵r̵a̵ chapuza.&lt;/p&gt;
+
+&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Sin plugins.&lt;/strong&gt; Github Pages no es compatible con muchos &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;plugins&lt;/a&gt;. Por ejemplo, no he podido usar &lt;a href=&quot;https://github.com/kurtsson/jekyll-multiple-languages-plugin&quot;&gt;jekyll-multiple-languages-plugin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Compatible con Minimal Mistakes&lt;/strong&gt;. Mi &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;tema de Jekyll&lt;/a&gt; con el cual estoy encantado.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mostrar la entrada si solo esta en un idioma&lt;/strong&gt;. Tengo muchísimos post antiguos en castellano o en inglés que no traduciré, no tiene valor.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Link para cambio de idioma en cada entrada&lt;/strong&gt;. Si hay dos idiomas o más (no creo que llegue a escribir en catalán o italiano :smile:) que se muestre un link para cambiar de idioma.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Link global cambio de idioma&lt;/strong&gt;. Esta funcionalidad se ha caído. El plugin de paginación &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;jekyll-paginate&lt;/a&gt; no permite más de una página. Seguro hay formas de hacerlo, pero no he querido dedicar el tiempo, no me compensaba.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/pagination_jekyll.png&quot; alt=&quot;jekyll-paginate disclaimer&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;implementación&quot;&gt;Implementación&lt;/h2&gt;
+
+&lt;p&gt;A juzgar por los resultados de Google, muchos guerreros han ido pero pocos han vuelto victoriosos. No hay una manera estándar de hacerlo y he cogido lo que mejor me venía de cada sitio.&lt;/p&gt;
+
+&lt;h3 id=&quot;configura-_configyaml&quot;&gt;Configura _config.yaml&lt;/h3&gt;
+
+&lt;p&gt;En el _config.yml seteamos el lenguage del site añadiendo la linea &lt;code class=&quot;highlighter-rouge&quot;&gt;lang: en&lt;/code&gt;. Y luego creamos un fichero dentro de la carpeta &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;que yo he llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;i18n&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;en:
+  label: English
+  icon: 🇬🇧
+  read_it_in: &quot;Read it in&quot;
+es:
+  label: Español
+  icon: 🇪🇸
+  read_it_in: &quot;Léelo en&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto nos permitirá acceder a contenido según el idioma como veremos más adelante.&lt;/p&gt;
+
+&lt;h3 id=&quot;adapta-el-front-matter-de-los-posts&quot;&gt;Adapta el &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;Front Matter&lt;/a&gt; de los posts&lt;/h3&gt;
+
+&lt;p&gt;Especifica en cada post su idioma &lt;code class=&quot;highlighter-rouge&quot;&gt;lang&lt;/code&gt; y identificador único &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;--
+title: RDP to Windows machine with PIN login
+tags: [RDP, Windows, PIN, MicrosoftAccount, login, hacks]
+excerpt: Don't lose the precious hour I lost
+lang: en
+ref: rdp
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si dos posts comparten el mismo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt; son el mismo post en diferentes idiomas. Algunos agrupan los posts por carpetas según el idioma, no lo he considerado necesario.&lt;/p&gt;
+
+&lt;h3 id=&quot;filtra-por-idioma&quot;&gt;Filtra por idioma&lt;/h3&gt;
+
+&lt;p&gt;Mi página principal es una paginacioón de todas las entradas del blog. Ahora queremos que se muestren todos pero si están en más de un idioma que se muestren en inglés.&lt;/p&gt;
+
+&lt;p&gt;Antes mostraba todos los posts que venian del paginator:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Después lo que he hecho ha sido agrupar por el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;. De esta manera puede saber si hay más de un idioma para cada entrada ya que el grupo tendrá más de 1 item. Si ese es el caso, cojo solo el post que tiene el mismo idioma que la página (Inglés en mi caso), de lo contrario muestro el post independientemente del idioma:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign items_grouped = paginator.posts | group_by: 'ref' %}
+{% for group in items_grouped %}
+    {% if group.items.size &amp;gt; 1 %}
+        {% assign post = group.items | where: &quot;lang&quot;,page.lang | first %}
+    {% else %}
+        {% assign post = group.items[0] %}
+    {% endif %}
+    {% include archive-single.html %}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ese código tan bonito es &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot;&gt;Liquid&lt;/a&gt;, puede que ya esté en el TOP 5 de mis lenguajes más odiados. Tened en cuenta que el sangrado lo hago yo por claridad, no es necesario. Para poder mostrar código Liquid en Jekill, escaparlo, hay que usar &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/show_liquid.png&quot; alt=&quot;Escape liquid code with raw tag&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;filtra-por-idioma-1&quot;&gt;Filtra por idioma&lt;/h3&gt;
+
+&lt;p&gt;Desde el código anterior se llama a &lt;code class=&quot;highlighter-rouge&quot;&gt;archive-single.html&lt;/code&gt; y ese código es el que vamos a editar ahora para añadir una bandera con el idioma en caso que haya una traducción del post.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign versions=site.posts | where:&quot;ref&quot;, post.ref | sort: 'lang' %}
+{% if versions.size &amp;gt; 1 %}
+    {% for version in versions %}
+        {% if version.lang != site.lang %}
+            &amp;lt;a href=&quot;{{ version.url }}&quot; &amp;gt;{{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
+        {% endif %}
+    {% endfor %}
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Vuelve a ser un concepto similar al anterior, la diferencia es que ahora accedemos al emoji de bandera que pusimos en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/i18n.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;link-a-otros-idiomas-dentro-del-blog&quot;&gt;Link a otros idiomas dentro del blog&lt;/h3&gt;
+
+&lt;p&gt;Y yendo de fuera hacia a dentro nos queda editar &lt;code class=&quot;highlighter-rouge&quot;&gt;single.html&lt;/code&gt; que es el &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; de mis entradas. Añade donde creas más oportuno esto:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if page.bookauthor == null and page.permalink == null %}
+    {% assign versions=site.posts | where:&quot;ref&quot;, page.ref | sort: 'lang' %}
+    {% if versions.size &amp;gt; 1 %}
+        {% for version in versions %}
+            {% if version.lang != page.lang %}
+                &amp;lt;a href=&quot;{{ version.url }}&quot; class=&quot;{{ version.lang }}&quot;&amp;gt;{{ site.data.i18n[version.lang].read_it_in] }} {{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En el primer &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; evito que otros layouts se vean afectados y luego prácticamente igual. La diferencia es que busco el lenguaje diferente al actual y muestro un texto localizado al lado de la bandera.&lt;/p&gt;
+
+&lt;h2 id=&quot;resultado&quot;&gt;Resultado&lt;/h2&gt;
+
+&lt;p&gt;Estás navegando sobre él ahora mismo. También puedes ver el &lt;a href=&quot;https://github.com/jpallares/minimal-mistakes&quot;&gt;código en Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;esquivar-el-agujero-negro&quot;&gt;Esquivar el agujero negro&lt;/h2&gt;
+
+&lt;p&gt;Todos los ingenieros que tenemos un blog/landing page sufrimos lo que llamo el agujero negro. Esto es dedicar todo el tiempo a mejorar el blog técnicamente, ahora uso Gatsby, ahora deploy en Vercel, ojo que ahora tengo Github Actions…pero no escribir nada de contenido. Este update a multi-idioma era el caldo de cultivo ideal para venirme arriba y empezar un cambio de tecnología que nunca habría acabado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por suerte, me definí claramente los mínimos y ahora tengo un multi-idioma básico en lugar de un proyecto con las últimas tecnologías a medias. &lt;strong&gt;Entregar valor, ese debe ser el foco&lt;/strong&gt;. Me ha ayudado el auto-obligarme a una entreda semanal. Que productivity-hacks tienes?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Multi-idioma básico alojado en Github Pages</summary></entry><entry xml:lang="en"><title type="html">RDP to Windows machine with PIN login</title><link href="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/" rel="alternate" type="text/html" title="RDP to Windows machine with PIN login" /><published>2020-06-19T00:00:00+02:00</published><updated>2020-06-19T00:00:00+02:00</updated><id>https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login</id><content type="html" xml:base="https://juan.pallares.me/RDP-to-windows-machine-with-PIN-login/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Disable PIN login&lt;/li&gt;
@@ -636,58 +721,4 @@ Think about it. Why are blue and green contact lenses sold? Why so many people d
 
 &lt;p&gt;&lt;a href=&quot;https://www.imdb.com/title/tt4916630/?ref_=tt_sims_tt&quot;&gt;Just Mercy&lt;/a&gt; - World-renowned civil rights defense attorney Bryan Stevenson works to free a wrongly condemned death row prisoner.&lt;/p&gt;
 
-&lt;p&gt;Finally I want to send all my support and love to the protesters #BlackLivesMatter&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="blacklivesmatter" /><category term="white" /><category term="privileges" /><category term="george" /><category term="floyd" /><summary type="html">My humble opinion about George Floyd killing and white privilege</summary></entry><entry xml:lang="en"><title type="html">Automate your email processing with Google Apps Script</title><link href="https://juan.pallares.me/automate-email-processing-google-apps-script/" rel="alternate" type="text/html" title="Automate your email processing with Google Apps Script" /><published>2020-05-24T00:00:00+02:00</published><updated>2020-05-24T00:00:00+02:00</updated><id>https://juan.pallares.me/automate-email-processing-google-apps-script</id><content type="html" xml:base="https://juan.pallares.me/automate-email-processing-google-apps-script/">&lt;p&gt;Bill Gates is often credited with the quote, &lt;em&gt;“I will always choose a lazy person to do a difficult job because a lazy person will find an easy way to do it.”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I hate doing manual tasks that a machine would do faster and with less errors. I keep track of expenses (water, electricity, etc.) in a Google SpreadSheet that I fill every month, this way I can see my average cost, year cost…I love data, what can I say?&lt;/p&gt;
-
-&lt;p&gt;Recently I discovered &lt;a href=&quot;https://developers.google.com/apps-script&quot;&gt;Google Apps Script&lt;/a&gt;. It allows you to create javascript code that can automatize all the apps under Google Apps. You can even create a chat bot, but I wanted just to parse data from an email and write it in a sheet, far-less ambituous.&lt;/p&gt;
-
-&lt;p&gt;Something that can be improved is the online editor…I would love to edit the script locally and then push it (repo style) but it only works with an online editor. I ended up coding a Node app and the copy pasting the code.&lt;/p&gt;
-
-&lt;h2 id=&quot;reading-email&quot;&gt;Reading email&lt;/h2&gt;
-
-&lt;p&gt;To read email, after going through the &lt;a href=&quot;https://developers.google.com/apps-script/reference/gmail&quot;&gt;Gmail Service Reference&lt;/a&gt; I started tagging automatically the emails I wanna read in the script so later they are easy to find:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var label = GmailApp.getUserLabelByName(&quot;TAG_NAME&quot;);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I just pick the unread threads:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var threads = label.getThreads().filter(t =&amp;gt; t.isUnread());&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now I iterate through all the unread emails, get the first email in the thread (there is only one when you receive a bill from your company) and then I get the date, get the plain text and split the lines.:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;threads.forEach(thread =&amp;gt; {
-  var message = thread.getMessages()[0];
-  var date = message.getDate().toLocaleString('en-us', {year: 'numeric', month: '2-digit', day: '2-digit'});
-  var body = message.getPlainBody();
-  var bodyLines = body.split('\n');
-  ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Once here it’s all your choice, I use &lt;code class=&quot;highlighter-rouge&quot;&gt;findIndex&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt; to get the data and create a little object with date, money and consumption (kWh).&lt;/p&gt;
-
-&lt;p&gt;As a final step, to prevent the script to get the same email again and again I mark it as read and archive it:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;thread.markRead();
-thread.moveToArchive();
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;adding-row-to-spreadsheet&quot;&gt;Adding row to SpreadSheet&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://developers.google.com/apps-script/reference/spreadsheet&quot;&gt;Spreadsheet Service Reference&lt;/a&gt; is very similar. First we have to open the Spreadsheet and then the sheet, &lt;a href=&quot;https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#openbyidid&quot;&gt;the spreadsheet id can be retrieved from the URL&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var spreadSheet = SpreadsheetApp.openById(SPREADSHEET_ID);
-var sheet = spreadSheet.getSheetByName(SHEET_NAME);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you have to create and array with the data you got in previous email step and add it:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sheet.appendRow([DATA,DATA2,DATA3]);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will add a row in the first empty row of your sheet. If you wanna leave empty cells before the data, you can use empty string &lt;code class=&quot;highlighter-rouge&quot;&gt;''&lt;/code&gt;, here I have 3 empty cells before a cell with data: &lt;code class=&quot;highlighter-rouge&quot;&gt;['','','',DATA]&lt;/code&gt;. In the reference you have methods available for inserting the row in a specific position if needed.&lt;/p&gt;
-
-&lt;h2 id=&quot;triggers&quot;&gt;Triggers&lt;/h2&gt;
-
-&lt;p&gt;Once the script is ready, you have to configure when you want to run it. In the &lt;a href=&quot;https://script.google.com/home/triggers&quot;&gt;triggers view&lt;/a&gt; I configured it to run daily at 5am.&lt;/p&gt;
-
-&lt;p&gt;Any ideas for more scripts?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="google" /><category term="apps" /><category term="script" /><category term="javascript" /><category term="gmail" /><category term="spreadsheet" /><summary type="html">How to read your bill email data and create a row in an Spreadsheet automatically.</summary></entry></feed>
+&lt;p&gt;Finally I want to send all my support and love to the protesters #BlackLivesMatter&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="blacklivesmatter" /><category term="white" /><category term="privileges" /><category term="george" /><category term="floyd" /><summary type="html">My humble opinion about George Floyd killing and white privilege</summary></entry></feed>
