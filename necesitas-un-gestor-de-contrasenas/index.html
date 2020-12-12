@@ -19,7 +19,7 @@
 
 
 
-<title>Copia de seguridad de tu Mac (Time Machine) en una carpeta compartida de Windows - Juan Pallarès Garbí</title>
+<title>Necesitas un gestor de contraseñas - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Copia de seguridad de tu Mac (Time Machine) en una carpeta compartida de Windows">
+<meta property="og:title" content="Necesitas un gestor de contraseñas">
 
 
-  <link rel="canonical" href="https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/">
-  <meta property="og:url" content="https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/">
+  <link rel="canonical" href="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/">
+  <meta property="og:url" content="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/">
 
 
 
-  <meta property="og:description" content="Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.">
+  <meta property="og:description" content="Navega más seguro y recuerda solo una contraseña.">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Copia de seguridad de tu Mac (Time Machine) en una carpeta compartida de Windows">
-  <meta name="twitter:description" content="Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.">
-  <meta name="twitter:url" content="https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/">
+  <meta name="twitter:title" content="Necesitas un gestor de contraseñas">
+  <meta name="twitter:description" content="Navega más seguro y recuerda solo una contraseña.">
+  <meta name="twitter:url" content="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,10 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-07-19T00:00:00+02:00">
-  
-    <link rel="next" href="https://juan.pallares.me/getting-things-done/" title="Book - Getting Things Done. The Art of Stress-free Productivity - David Allen">
+  <meta property="article:published_time" content="2020-12-12T00:00:00+01:00">
   
   
-    <link rel="prev" href="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" title="Que no te engañen con tu seguro de moto o coche">
+    <link rel="prev" href="https://juan.pallares.me/factfulness/" title="Book - Factfulness - Hans Rosling, Ola Rosling, Anna Rosling">
   
 
 
@@ -234,15 +232,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Copia de seguridad de tu Mac (Time Machine) en una carpeta compartida de Windows">
-    <meta itemprop="description" content="Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.">
-    <meta itemprop="datePublished" content="July 19, 2020">
+    <meta itemprop="headline" content="Necesitas un gestor de contraseñas">
+    <meta itemprop="description" content="Navega más seguro y recuerda solo una contraseña.">
+    <meta itemprop="datePublished" content="December 12, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Copia de seguridad de tu Mac (Time Machine) en una carpeta compartida de Windows
+          <h1 class="page__title" itemprop="headline">Necesitas un gestor de contraseñas
 </h1>
           
         </header>
@@ -254,73 +252,51 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>MacOS tiene un sistema de backup llamado <a href="https://support.apple.com/es-es/HT201250">Time Machine</a> que funciona muy al estilo Apple, rápido y fácil pero siempre que tengas su hardware (Time Capsule) o un disco externo que tendrías que ir conectando. Si tienes un PC Windows a modo de servidor (como yo) y espacio libre, puedes utilizarlo como Time Capsule. El setup es un poco más difícil pero una vez hecho se harán las copias de seguridad en background mientras trabajas/procastinas tranquilo.</p>
+        <h2 id="problema">Problema</h2>
 
-<p><img src="../images/windows_shared_drive.png" alt="Windows shared drive" /></p>
+<p>Es muy común tener una o dos contraseñas para todo. Para el mail, para Netflix, para Amazon, para el usuario del ordenador. Incluso algunos se vienen arriba y usan la misma contraseña pero van cambiando algo al final, indetectable! deben pensar. Cuando avisas que eso es muy poco seguro la respuesta es:</p>
 
-<p>He utilizado <a href="https://www.imore.com/how-use-time-machine-backup-your-mac-windows-shared-folder">esta guía</a> la cúal lo explica genial.</p>
+<ul>
+  <li>Pero si tengo muchas se me olvidan!</li>
+</ul>
 
-<h2 id="1-crea-una-carpeta-compartida-en-windows-como-time-capsule">1 Crea una carpeta compartida en Windows como Time Capsule</h2>
+<p>Estoy de acuerdo, son díficiles de recordar tantas contraseñas y más cuando nos piden que tengan números, símbolos, mayúsculas, sangre de uniconrnio, etc. Y no hablemos de los <a href="https://es.wikipedia.org/wiki/Captcha">CAPTCHA</a>.</p>
 
-<p>Esto debería ser fácil y seguramente ya tienes alguna compartida. En tú máquina Windows selecciona la carpeta disco a compartir: <code class="highlighter-rouge">Botón derecho &gt; Propiedades &gt; Pestaña Compartir</code>. Recuerda darte permisos administrador a ti mismo. En mi caso he compartido un disco entero pero puedes compartir solo una carpeta dentro del disco si lo prefieres.</p>
+<p><img src="../images/captcha.jpg" alt="meme CAPTCHA" /></p>
 
-<p><img src="../images/share_folder.png" alt="Permisos carpeta" /></p>
+<p>El problema con reutilizar la contraseña es muy sencillo de entender. Imagina esta situación:</p>
 
-<h2 id="2-conecta-desde-mac-a-esta-carpeta-compartida">2 Conecta desde Mac a esta carpeta compartida</h2>
+<ul>
+  <li>Hace mucho tiempo te registraste en “foro pepito” para preguntar algo, te contestaron y ya nunca más volviste a entrar.</li>
+  <li>Al cabo de un tiempo, un ataque consigue las contraseñas de todos los usuarios de “foro pepito”. A “foro pepito” nunca le preocupó la seguridad de sus usuarios.</li>
+  <li>En el registro del foro piden email, por lo que lo hackers lo siguiente que hacen es intentar entrar en todos las cuentas más famosas con ese correo y contraseña robada.</li>
+  <li>Ya has perdido todas las cuentas que compartían contraseña. Si solo cambias un número al final o algo muy obvio, es muy probable que también lo prueben.</li>
+</ul>
 
-<p>Desde el Finder: <code class="highlighter-rouge">Ir &gt; Conecta a Servidor</code>. O más facil/pro <code class="highlighter-rouge">Cmd + K</code>. Como dirección debes poner <code class="highlighter-rouge">smb://servidor/carpeta</code></p>
+<h2 id="solución">Solución</h2>
 
-<p><img src="../images/connect_server.png" alt="Conecta a servidor" /></p>
+<p>Posiblemente pienses que con guardar las contraseñas en el navegador es suficiente, pero no es un método igual de seguro. Además, solo estarán en un dispositivo, te tocará escribirlas en el móvil o en otro ordenador.</p>
 
-<p>Te pedirá usuario y contraseña y aquí pondras tus credenciales de Windows (justo las que les has dado permiso en el paso anterior). <strong>Marca la opción de recordar y así no tendrás que volver a introducirlos</strong>.</p>
+<p><strong>Usa un gestor de contraseñas</strong>. Tendrás que acordate de una sola contraseña y el resto las puedes autogenerar largas y complicadas porque no tendrás que escribirlas, el gestor lo hará por ti. No sabes lo cómodo que se convierte navegar hasta que lo usas. En el móvil además si tienes lector de huellas es una gozada.</p>
 
-<h2 id="3-crea-una-imagen-sparsebundle">3 Crea una imagen sparsebundle</h2>
+<p>Además, los hay gratuítos y que funcionan muy bien. En mi caso, estoy usando <a href="https://bitwarden.com/">Bitwarden</a>. Lo tengo instalado en todos mis dispositivos, se sincroniza, me autorellena usuario y contraseña de las páginas y tiene generador de contraseñas.
+He probado varios más (Lastpass, 1password…). Usé <a href="https://www.dashlane.com/">Dashlane</a> durante dos años y es francamente mejor que Bitwarden, pero se paga. Te notifica cuando ha habido ataques en paginas donde tu tienes cuenta, tiene VPN y se integra mejor con los navegadores. Además estan ganando tanta fuerza que hicieron el famoso anuncio de la Superbowl.</p>
 
-<p>Esta imagen será del tipo HFS+ que es la que necesita Mac para usarla como backup.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B5lslSPfhkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<ol>
-  <li>Abre la Disk Utility y ve al menú <code class="highlighter-rouge">Archivo &gt; Nueva Imagen &gt; Imagen en Blanco</code>.</li>
-  <li>Renombrala como te parezca.</li>
-  <li>Escoge la carpeta compartida de Windows a la que te conectaste anteriorment como destino.</li>
-  <li>Renombra también el sparsebundle.</li>
-  <li>Escoge el tamaño, idealmente igual o más que el tamaño de disco de tu Mac.</li>
-  <li><strong>Valida que el tipo de Formato es Mac OS Extended (Journaled)</strong>.</li>
-</ol>
+<p>Mi sugerencia, prueba con uno gratuíto y si ves que con el tiempo se te queda pequeño, haz el upgrade. Todos suelen permitir exportar y importar todos los datos para cambiar fácilmente de gestor.</p>
 
-<p><strong>Cuando grabes puede llegar a tardar horas en crear la imagen, dependiendo del tamaño</strong>. Paciencia y déjalo trabajando. Quizá tenerlo conectado por red sea buena idea para acelerar el proceso.</p>
+<h2 id="cómo-es-una-buena-contraseña">Cómo es una buena contraseña</h2>
 
-<h2 id="4-haz-que-se-monte-automáticamente">4 Haz que se monte automáticamente</h2>
+<p><strong>LARGA</strong>, conforme más larga, más segura. Por ejemplo, MiPerroTobyLadraMucho es muchísimo más segura que S0yH4cker.</p>
 
-<p>Para que cada vez que reinicies el disco se monte, tienes que configurarlo como Login Item, el único problema es que solo funcionará para tu usuario.</p>
+<p><img src="../images/tiempo-password.png" alt="Tabla de tiempos de crackeo de contraseñas" /></p>
 
-<ol>
-  <li><code class="highlighter-rouge">Preferencias del Sistema &gt; Usuarios y Grupos</code>.</li>
-  <li>Escoges tu usuario y entras a la pestaña Login Items.</li>
-  <li><strong>Añades la carpeta montada y el fichero.dmg</strong> que hemos creado.</li>
-</ol>
+<p>Y, por favor, no uses tu cumpleaños, tu nombre, tu DNI o otros datos que se pueden obtener fácilmente. Tampoco uses las que usa todo el mundo:</p>
 
-<p>Esta parte me ha dado problemas, en cada login me pedía los credenciales aunque marcara que los guardara en KeyChain. Valida que no tengas varios logins sobre el mismo disco en KeyChain, cuando he eliminado duplicados me ha funcionado.</p>
+<p><img src="../images/Spain-Most-Used-Passwords.png" alt="contraseñas mas usadas de España" /></p>
 
-<p><img src="../images/login_items.png" alt="Login Items" /></p>
-
-<h2 id="5-configura-timemachine-para-usar-esa-imagen">5 Configura TimeMachine para usar esa imagen</h2>
-
-<p>Por último, tenemos que comprobar que Time Machine puede ver esta imagen y usarla. En <code class="highlighter-rouge">Preferencias del Sistema &gt; Time Machine</code> valida que la disco configurado es el sparsebundle que hemos creado.</p>
-
-<p><img src="../images/TimeMachine_disk.png" alt="Disco Time Machine" /></p>
-
-<p>Para poder añadirlo sino aparece, con el disco montado, ejecuta el comando:
-<code class="highlighter-rouge">ls /Volumes</code>
-y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nombrado sparsebundle, ejecuta:
-<code class="highlighter-rouge">sudo tmutil setdestination /Volumes/sparsebundle</code></p>
-
-<p><img src="../images/timemachine_image_name.png" alt="Time Machine image name" /></p>
-
-<p>Puede que también tengas que utilizar <code class="highlighter-rouge">sudo tmutil enable</code> si no tienes Time Machine activado.</p>
-
-<h2 id="6-disfruta">6 Disfruta</h2>
-
-<p>La primera copia de seguridad será larga pero luego solo los archivos que han cambiado se guaradarán y todo se hará automáticamente en background.</p>
+<p><a href="https://www.safetydetectives.com/blog/the-most-hacked-passwords-in-the-world/">Fuente</a> y <a href="https://www.osi.es/es/contrasenas">Fuente</a></p>
 
         
       </section>
@@ -333,7 +309,7 @@ y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nom
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-07-19T00:00:00+02:00">July 19, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-12-12T00:00:00+01:00">December 12, 2020</time></p>
         
       </footer>
 
@@ -342,13 +318,13 @@ y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nom
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -356,12 +332,11 @@ y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nom
 
   <nav class="pagination">
     
-      <a href="https://juan.pallares.me/que-no-te-enganen-con-tu-seguro-de-moto-coche/" class="pagination--pager" title="Que no te engañen con tu seguro de moto o coche
+      <a href="https://juan.pallares.me/factfulness/" class="pagination--pager" title="Book - Factfulness - Hans Rosling, Ola Rosling, Anna Rosling
 "></a>
     
     
-      <a href="https://juan.pallares.me/getting-things-done/" class="pagination--pager" title="Book - Getting Things Done. The Art of Stress-free Productivity - David Allen
-"></a>
+      <a href="#" class="pagination--pager disabled"></a>
     
   </nav>
 
@@ -384,44 +359,6 @@ y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nom
     <div class="page__related">
       
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">
-        
-          Necesitas un gestor de contraseñas
-
-        
-        
-      </h2>
-      
-      
-        <p class="archive__item-excerpt" itemprop="description">
-          Navega más seguro y recuerda solo una contraseña.
-
-          
-          
-        </p>
-      
-    </article>
-  </a>
-</div>
         
           
 
@@ -490,6 +427,44 @@ y luego con el nombre de la imagen creada en el paso 3, en mi caso lo había nom
       
         <p class="archive__item-excerpt" itemprop="description">
           Great tips from one of the best books about productivity.
+
+          
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/time-machine-en-carpeta-compartida-de-windows/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Copia de seguridad de tu Mac (Time Machine) en una carpeta compartida de Windows
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Configura una carpeta compartido de Windows como Time Machine poder hacer copias de seguridad de tu Mac.
 
           
           
