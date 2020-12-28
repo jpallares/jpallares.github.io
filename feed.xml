@@ -1,4 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-12-13T21:18:47+01:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="es"><title type="html">Necesitas un gestor de contraseñas</title><link href="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/" rel="alternate" type="text/html" title="Necesitas un gestor de contraseñas" /><published>2020-12-12T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>https://juan.pallares.me/necesitas-un-gestor-de-contrasenas</id><content type="html" xml:base="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/">&lt;h2 id=&quot;problema&quot;&gt;Problema&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-12-28T22:00:29+01:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="en"><title type="html">Book - Atomic Habits - James Clear</title><link href="https://juan.pallares.me/atomic-habits-james-clear/" rel="alternate" type="text/html" title="Book - Atomic Habits - James Clear" /><published>2020-12-28T00:00:00+01:00</published><updated>2020-12-28T00:00:00+01:00</updated><id>https://juan.pallares.me/atomic-habits-james-clear</id><content type="html" xml:base="https://juan.pallares.me/atomic-habits-james-clear/">&lt;p&gt;2021 is starting soon and with it the usual new year resolutions. &lt;em&gt;I’m going to eat healthier&lt;/em&gt;. &lt;em&gt;I’m going to the gym this year for sure!&lt;/em&gt;. Once March arrives no resolution has survived. Why is it so difficult to create healthy habits? New habits in general?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.es/Atomic-Habits-Proven-Build-Break/dp/1847941834&quot;&gt;Atomic Habits&lt;/a&gt; is the answer. A book that even if most things that are mentioned can be obvious I couldn’t stop highlighting interesting quotes. It took me a month to read but could have been days. It starts every chapter with a story that captures your attention and it is used as an example of the concept that is going to be explained and then closed with a summary, something my engineer/order freak mind loves.&lt;/p&gt;
+
+&lt;h2 id=&quot;compound-interest&quot;&gt;Compound interest&lt;/h2&gt;
+
+&lt;p&gt;The Compound Interest concept is mainly used in economic terms, &lt;a href=&quot;http://pallares.me/why-i-became-a-bogglehead/&quot;&gt;when investing long-term&lt;/a&gt; is one of the keys for having great benefits. But the concept can be applied to almost everything and in this book it’s applied to self-improvement, acquiring good habits. That’s why with tiny changes you get remarkable results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/compoundinterest.png&quot; alt=&quot;Compound Interest Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cue---craving---response---reward&quot;&gt;Cue -&amp;gt; Craving -&amp;gt; Response -&amp;gt; Reward&lt;/h2&gt;
+
+&lt;p&gt;There are 4 steps involved in any habit:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;cue&lt;/strong&gt; is about &lt;strong&gt;noticing&lt;/strong&gt; the reward.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;craving&lt;/strong&gt; is about &lt;strong&gt;wanting&lt;/strong&gt; the reward.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;response&lt;/strong&gt; is about &lt;strong&gt;obtaining&lt;/strong&gt; the reward.&lt;/li&gt;
+  &lt;li&gt;We chase &lt;strong&gt;rewards&lt;/strong&gt; because they serve two purposes: (1) they &lt;strong&gt;satisfy&lt;/strong&gt; us and (2) they &lt;strong&gt;teach&lt;/strong&gt; us.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To improve the way we manage habits, we need to work with these 4 steps.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-it-so-difficult-to-change-our-habits&quot;&gt;Why is it so difficult to change our habits?&lt;/h2&gt;
+
+&lt;p&gt;Changing our habits is challenging for two reasons: (1) we try to change the wrong thing and (2) we try to change our habits in the wrong way. If you want better results, then forget about setting goals. Focus on your system instead. Focus on your identity.&lt;/p&gt;
+
+&lt;p&gt;Outcomes are about what you get. Processes are about what you do. Identity is about what you believe. We usually say, &lt;em&gt;“I’ll do sport every day”&lt;/em&gt; instead it should be &lt;em&gt;“I’m a fit person”&lt;/em&gt;. The focus is who we wish to become.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/LayersOfBehaviorChange.png&quot; alt=&quot;Layers of Behavior Change Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Instead of acting from the outside to the inside. We have to create our identity and it will change the outer layers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/IdentityBasedHabits.png&quot; alt=&quot;Identity-Based Habits Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once we have an identity, it will be very conflicting for us to act against it.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-a-good-habit---4-laws-of-behavioral-change&quot;&gt;How to create a Good Habit - 4 Laws of behavioral change&lt;/h2&gt;
+
+&lt;p&gt;For creating a good habit, we have to use the 4 Laws of behavioral change.
+&lt;strong&gt;Make it obvious, attractive, easy and satisfying.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Cardinal Rule of Behavior Change: What is rewarded is repeated. What is punished is avoided. You learn what to do in the future based on what you were rewarded for doing (or punished for doing) in the past. Positive emotions cultivate habits. Negative emotions destroy them.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Add a little bit of immediate pleasure to the habits that pay off in the long-run and a little bit of immediate pain to ones that don’t.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here I’m going to copy-paste the final version of the summary that James Clear creates after every chapter.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1st Law: Make it &lt;strong&gt;obvious&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;1.1 Fill out the &lt;a href=&quot;https://s3.amazonaws.com/jamesclear/Atomic+Habits/The+Habits+Scorecard.pdf&quot;&gt;&lt;strong&gt;Habits Scorecard&lt;/strong&gt;&lt;/a&gt;. Write down your current habits to become aware of them.&lt;/li&gt;
+      &lt;li&gt;1.2 Use &lt;strong&gt;implementation intentions&lt;/strong&gt;: “I will [BEHAVIOR] at [TIME] in [LOCATION].”&lt;/li&gt;
+      &lt;li&gt;1.3 Use &lt;strong&gt;habit stacking&lt;/strong&gt;: “After [CURRENT HABIT], I will [NEW HABIT].”&lt;/li&gt;
+      &lt;li&gt;1.4 Design your &lt;strong&gt;environment&lt;/strong&gt;. Make the cues of good habits obvious and visible.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2nd Law: Make it &lt;strong&gt;attractive&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;2.1 Use &lt;strong&gt;temptation bundling&lt;/strong&gt;. Pair an action you want to do with an action you need to do.&lt;/li&gt;
+      &lt;li&gt;2.2 Join a &lt;strong&gt;culture&lt;/strong&gt; where your desired behavior is the normal behavior.&lt;/li&gt;
+      &lt;li&gt;2.3 Create a &lt;strong&gt;motivation ritual&lt;/strong&gt;. Do something you enjoy immediately before a difficult habit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;3rd Law: Make it &lt;strong&gt;easy&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;3.1 &lt;strong&gt;Reduce friction&lt;/strong&gt;. Decrease the number of steps between you and your good habits.&lt;/li&gt;
+      &lt;li&gt;3.2 Prime the &lt;strong&gt;environment&lt;/strong&gt;. Prepare your environment to make future actions easier.&lt;/li&gt;
+      &lt;li&gt;3.3 &lt;strong&gt;Master the decisive moment&lt;/strong&gt;. Optimize the small choices that deliver outsized impact.&lt;/li&gt;
+      &lt;li&gt;3.4 Use the &lt;strong&gt;Two-Minute Rule&lt;/strong&gt;. Downscale your habits until they can be done in two minutes or less.&lt;/li&gt;
+      &lt;li&gt;3.5 &lt;strong&gt;Automate&lt;/strong&gt; your habits. Invest in technology and onetime purchases that lock in future behavior.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;4th Law: Make it &lt;strong&gt;satisfying&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;4.1 Use &lt;strong&gt;reinforcement&lt;/strong&gt;. Give yourself an immediate reward when you complete your habit.&lt;/li&gt;
+      &lt;li&gt;4.2 Make “doing nothing” enjoyable. When avoiding a bad habit, design a way to see the benefits.&lt;/li&gt;
+      &lt;li&gt;4.3 Use a &lt;strong&gt;habit tracker&lt;/strong&gt;. Keep track of your habit streak and “don’t break the chain.”.&lt;/li&gt;
+      &lt;li&gt;4.4 &lt;strong&gt;Never miss twice&lt;/strong&gt;. When you forget to do a habit, make sure you get back on track immediately.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the book, it goes over all these laws and explains with examples how to do it and why it’s useful.&lt;/p&gt;
+
+&lt;h2 id=&quot;quitting-bad-habits&quot;&gt;Quitting bad Habits&lt;/h2&gt;
+
+&lt;p&gt;It also explains how to quit bad habits, as you guessed is doing the opposite actions you do for acquiring good habits.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Inversion of the 1st Law: Make it &lt;strong&gt;invisible&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;1.5 &lt;strong&gt;Reduce exposure&lt;/strong&gt;. Remove the cues of your bad habits from your environment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Inversion of the 2nd Law: Make it &lt;strong&gt;unattractive&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;2.4 &lt;strong&gt;Reframe your mind-set&lt;/strong&gt;. Highlight the benefits of avoiding your bad habits.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Inversion of the 3rd Law: Make it &lt;strong&gt;difficult&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;3.6 &lt;strong&gt;Increase friction&lt;/strong&gt;. Increase the number of steps between you and your bad habits.&lt;/li&gt;
+      &lt;li&gt;3.7 Use a &lt;strong&gt;commitment device&lt;/strong&gt;. Restrict your future choices to the ones that benefit you.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Inversion of the 4th Law: Make it &lt;strong&gt;unsatisfying&lt;/strong&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;4.5 Get an &lt;strong&gt;accountability partner&lt;/strong&gt;. Ask someone to watch your behavior.&lt;/li&gt;
+      &lt;li&gt;4.6 Create a &lt;strong&gt;habit contract&lt;/strong&gt;. Make the costs of your bad habits public and painful.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;powerful-concepts&quot;&gt;Powerful concepts&lt;/h2&gt;
+
+&lt;p&gt;Now I’m gonna go over some quotes that I liked specially from the book.&lt;/p&gt;
+
+&lt;h3 id=&quot;no-freedom-will-i-become-a-robot&quot;&gt;No freedom? Will I become a robot?&lt;/h3&gt;
+
+&lt;p&gt;Some people can be concerned with all these habits, it seems to be too much planning, no room for improvising? being original?:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Such questions set up a false dichotomy. They make you think that you have to choose between building habits and attaining freedom. In reality, the two complement each other. Habits do not restrict freedom. They create it. In fact, the people who don’t have their habits handled are often the ones with the least amount of freedom. Without good financial habits, you will always be struggling for the next dollar. Without good health habits, you will always seem to be short on energy. Without good learning habits, you will always feel like you’re behind the curve.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tremendous-self-control-or-less-temptations&quot;&gt;Tremendous self-control or less temptations&lt;/h3&gt;
+
+&lt;p&gt;I never have pastries, ice-cream or other sugar-added foods at home, why? if they are there I can’t resist eating them for long. I try to be the less time possible in tempting situations:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;When scientists analyze people who appear to have tremendous self-control, it turns out those individuals aren’t all that different from those who are struggling. Instead, “disciplined” people are better at structuring their lives in a way that does not require heroic willpower and self-control. In other words, they spend less time in tempting situations.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;similar-concepts-to-gtd&quot;&gt;Similar concepts to GTD&lt;/h3&gt;
+
+&lt;p&gt;I recently read the &lt;a href=&quot;&quot;&gt;Getting Things Done book&lt;/a&gt; and I found some ideas linked from both books. One of the benefits of GTD is getting clarity, you know what to do next, in Atomic Habits is mentioned that many people believe they lack motivation when what they really lack is clarity. For example, making decisions about simple tasks like when should I work out, where do I go to write, when do I pay the bills provokes that you have less time for freedom. Also, we often say yes to little requests because we are not clear enough about what we need to be doing instead.&lt;/p&gt;
+
+&lt;p&gt;Another similar concept is doing it perfectly or not doing it. I also consider it “Analysis paralysis”. Both books enforce starting simple and get better with time. In the habits world, it’s really important to accumulate reps, the more you do the more you forge your identity.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;It is easy to get bogged down trying to find the optimal plan for change: the fastest way to lose weight, the best program to build muscle, the perfect idea for a side hustle. We are so focused on figuring out the best approach that we never get around to taking action. As Voltaire once wrote, “The best is the enemy of the good.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;personal-experience&quot;&gt;Personal experience&lt;/h2&gt;
+
+&lt;p&gt;I already did some of the actions suggested. I usually go to the gym in the early morning and I tend to leave everything ready (clothes, bag, etc.) the night before so there is no friction/excuses in the morning. I tend to plan my training routine, so there is commitment and clarity, I avoid the “What should I do now?”. I also followed the rule of “Never miss twice” even without knowing about it. I’m known by my friends as a gym rat so I guess it’s my identity already.&lt;/p&gt;
+
+&lt;p&gt;I also limit myself to one chapter per day from Netflix (this one is hard) or read for at least 30 minutes before sleeping, trying to increase the time and situations for reading, but step by step.
+Even this blog post you are reading is part of a new habit I’m trying to build. &lt;del&gt;I want to write often&lt;/del&gt; I want to be a writer.&lt;/p&gt;
+
+&lt;p&gt;Something I tried to implement is using less social media. I used to go over Instagram and Twitter feeds too often. It was super easy having it on the phone ready to be checked and opened and also with the notification in case you happen to ignore it for some time. I discovered myself at the toilet checking the phone while brushing my teeth, that can’t be right. Hardcore solution, deleting both apps from the phone. Having them only on the iPad made it uncomfortable and I checked it once or twice per day. After some days like that, I evolved to use the web version of both apps, which are more slow and difficult to use (there is still friction) and I use them less frequently than before but I can use them when I’m away from the iPad. Something positive of Instagram web version, no ads :).&lt;/p&gt;
+
+&lt;p&gt;Another bad habits on my radar:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The way I sit down which is clearly wrong and created back pain.&lt;/li&gt;
+  &lt;li&gt;Eating super fast.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’ll try to use the learnings of the book to improve there. What is your experience with habits/resolutions? What would you like to start/stop doing?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="amotic" /><category term="habits" /><category term="productivity" /><summary type="html">Tiny changes - Remarkable results</summary></entry><entry xml:lang="es"><title type="html">Necesitas un gestor de contraseñas</title><link href="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/" rel="alternate" type="text/html" title="Necesitas un gestor de contraseñas" /><published>2020-12-12T00:00:00+01:00</published><updated>2020-12-12T00:00:00+01:00</updated><id>https://juan.pallares.me/necesitas-un-gestor-de-contrasenas</id><content type="html" xml:base="https://juan.pallares.me/necesitas-un-gestor-de-contrasenas/">&lt;h2 id=&quot;problema&quot;&gt;Problema&lt;/h2&gt;
 
 &lt;p&gt;Es muy común tener una o dos contraseñas para todo. Para el mail, para Netflix, para Amazon, para el usuario del ordenador. Incluso algunos se vienen arriba y usan la misma contraseña pero van cambiando algo al final, indetectable! deben pensar. Cuando avisas que eso es muy poco seguro la respuesta es:&lt;/p&gt;
 
@@ -671,67 +827,4 @@ ref: rdp
   &lt;li&gt;&lt;a href=&quot;https://www.amazon.es/No-Hype-Options-Trading-Realities-Strategies-ebook/dp/B004HFRFO8/ref=sr_1_fkmr0_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=No-Hype+Options+Trading%3A+Myths%2C+Realities%2C+and+Strategies+That+Re-+eally+Work&amp;amp;qid=1592312223&amp;amp;sr=8-1-fkmr0&quot;&gt;No-Hype Options Trading: Myths, Realities, and Strategies That Re- eally Work by Kerry Given&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;To sum up, totally recommended book, it can have sections more interesting than others depending on the reader but in general is really great.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="soft skills" /><category term="software developer" /><category term="career" /><category term="personal brand" /><category term="blog" /><summary type="html">Some comments about the last book I read</summary></entry><entry xml:lang="en"><title type="html">Browse blocking ads and trackers</title><link href="https://juan.pallares.me/browse-blocking-ads-and-trackers/" rel="alternate" type="text/html" title="Browse blocking ads and trackers" /><published>2020-06-08T00:00:00+02:00</published><updated>2020-06-08T00:00:00+02:00</updated><id>https://juan.pallares.me/browse-blocking-ads-and-trackers</id><content type="html" xml:base="https://juan.pallares.me/browse-blocking-ads-and-trackers/">&lt;p&gt;For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/&quot;&gt;The Brave web browser is hijacking links, and inserting affiliate codes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I am not directly affected since I don’t use criptocurrency but a browser that markets itself like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;It begins with giving you back power. Get unmatched speed, security and privacy by blocking trackers&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Can not do this actions. The power to choose my affiliate code is taken away :unamused:.&lt;/p&gt;
-
-&lt;p&gt;Since &lt;a href=&quot;https://clark.com/technology/google-chrome-do-not-track/&quot;&gt;Chrome and all his tracking&lt;/a&gt; is a no-go. I looked for a browser that cared about privacy and could have Dashlane and uBlock add-ons installed and I decided to go back to &lt;a href=&quot;https://www.mozilla.org/es-ES/firefox&quot;&gt;Mozilla Firefox&lt;/a&gt;. It was my browser years ago before Chrome arrived but before I continue let’s see what happens when you don’t block anything.&lt;/p&gt;
-
-&lt;h1 id=&quot;ads&quot;&gt;Ads&lt;/h1&gt;
-
-&lt;p&gt;This is an sports website I usually visit with a browser that has no blocking configured:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/marca_browser.png&quot; alt=&quot;marca.com no block&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Almost 50% of the website real-state are ads, apart from being annoying it also makes the loading slower and uses more data (concerning if you pay per MB like some data plans). If you are wondering if in a portable devices gets better, let me tell you it does not:&lt;/p&gt;
-
-&lt;h3 id=&quot;tablet&quot;&gt;Tablet:&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/marca_ipad.png&quot; alt=&quot;marca.com iPad&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;phone&quot;&gt;Phone:&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/marca_phone.png&quot; alt=&quot;marca.com phone&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I used this site because the ads are really big and painful and I have even seen full screen ad-popups with a blurry X to close.&lt;/p&gt;
-
-&lt;h1 id=&quot;trackers&quot;&gt;Trackers&lt;/h1&gt;
-
-&lt;p&gt;Not only the ads should worry you, you are also being tracked, for example in the same page we have:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/trackers.png&quot; alt=&quot;marca.com trackers&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;“But Juan you are starting to be paranoid! Why do you worry about it? I don’t have anything to hide”&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also thought this way in the past, but once I read about the experience of an Egyptian guy during the Arab spring and how his “Facebook likes” were used against him and detained and sent to prison. Charge? Political dissidence.&lt;/p&gt;
-
-&lt;p&gt;Let me quote this &lt;a href=&quot;https://www.theguardian.com/commentisfree/2013/feb/11/riot-software-tracked-online-social-networks&quot;&gt;The Guardian Article&lt;/a&gt;. &lt;em&gt;Today, it’s so easy that mass-surveillance is feasible – and so-called “big data” makes it seem tempting and innocuous.
-The “big data” theory works like this: by grabbing hundreds or thousands of datapoints on millions of people, we build a systematic picture of how everyday people act. By analysing these by machine for “outliers”, or suspicious activity, we can catch the bad guys – and it’s OK, because only at that stage is another human being looking through your personal info.
-&lt;strong&gt;This is, by and large, fantasy. For one thing, any algorithm will generate hundreds if not thousands of false positives&lt;/strong&gt; (innocent people who hit a red flag). Given how rare, say, terrorism is, the vast majority of people bothered by these systems will be ordinary people facing previously unbelievable intrusion.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Trust me, better to block as much as possible. There is an area between living in a mountain like a buddhist monk and browsing with no block at all, find it and start making more difficult for them to spy on you. I say “more difficult” because I want to emphasize, is impossible not being tracked, even if you did not have an smartphone and use only Internet only for work purposes, the people around you would do the tracking for you, for example with the photos you appear in.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-solution&quot;&gt;The solution&lt;/h1&gt;
-
-&lt;p&gt;Here you have the same web with Firefox and the &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/&quot;&gt;uBlock Origin&lt;/a&gt; add-on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/marca_adfree.png&quot; alt=&quot;marca.com ad free&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It loads faster and you get to see just the real content and good news, Firefox and uBlock can also be installed in iOS and Android. You can specify how strictily Firefox should block tracking. Another step to prevent tracking is using &lt;a href=&quot;https://duckduckgo.com/&quot;&gt;DuckDuckGo&lt;/a&gt; as default search engine. It comes already as an option in Firefox.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-next-level&quot;&gt;The next level&lt;/h1&gt;
-
-&lt;p&gt;You want to go to the next level? What if I told about &lt;strong&gt;network-wide ad blocking and faster browsing&lt;/strong&gt;? Meet &lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-Hole&lt;/a&gt; .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/f9Rrghj6TDckb5nZZR/giphy.gif&quot; alt=&quot;next level funny gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://juan.pallares.me/raspberry-pi-hole-vpn/&quot;&gt;As I mentioned in the past&lt;/a&gt;, if you have a Raspberry Pi lying around this is one of the best uses you can do of it. Is a very active project, they recently released the &lt;a href=&quot;https://pi-hole.net/2020/05/10/pi-hole-v5-0-is-here/&quot;&gt;v5.0&lt;/a&gt;. For the screenshots with all the ads above I had to disable temporarily the PiHole apart from using Edge browser.&lt;/p&gt;
-
-&lt;p&gt;Are you blocking any ads? What is the browser you use? Don’t tell me the google analytics script running on this page will tell me this and more :smirk:.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="adblock" /><category term="ad" /><category term="tracking" /><category term="browser" /><category term="brave" /><category term="firefox" /><category term="chrome" /><category term="pihole" /><category term="ublock origin" /><summary type="html">Why and how I browse blocking ads and trackers</summary></entry></feed>
+&lt;p&gt;To sum up, totally recommended book, it can have sections more interesting than others depending on the reader but in general is really great.&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="books" /><category term="soft skills" /><category term="software developer" /><category term="career" /><category term="personal brand" /><category term="blog" /><summary type="html">Some comments about the last book I read</summary></entry></feed>
