@@ -19,7 +19,7 @@
 
 
 
-<title>Automate your email processing with Google Apps Script - Juan Pallarès Garbí</title>
+<title>serverless common issues and errors - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Automate your email processing with Google Apps Script">
+<meta property="og:title" content="serverless common issues and errors">
 
 
-  <link rel="canonical" href="https://juan.pallares.me/automate-email-processing-google-apps-script/">
-  <meta property="og:url" content="https://juan.pallares.me/automate-email-processing-google-apps-script/">
+  <link rel="canonical" href="https://juan.pallares.me/serverless-common-issues-and-errors/">
+  <meta property="og:url" content="https://juan.pallares.me/serverless-common-issues-and-errors/">
 
 
 
-  <meta property="og:description" content="How to read your bill email data and create a row in an Spreadsheet automatically.">
+  <meta property="og:description" content="protected variables, custom domains, plugins order, using it locally…">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Automate your email processing with Google Apps Script">
-  <meta name="twitter:description" content="How to read your bill email data and create a row in an Spreadsheet automatically.">
-  <meta name="twitter:url" content="https://juan.pallares.me/automate-email-processing-google-apps-script/">
+  <meta name="twitter:title" content="serverless common issues and errors">
+  <meta name="twitter:description" content="protected variables, custom domains, plugins order, using it locally…">
+  <meta name="twitter:url" content="https://juan.pallares.me/serverless-common-issues-and-errors/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,10 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-05-24T00:00:00+02:00">
-  
-    <link rel="next" href="https://juan.pallares.me/acknowledge-your-privilege/" title="Acknowledge your privilege">
+  <meta property="article:published_time" content="2021-01-23T00:00:00+01:00">
   
   
-    <link rel="prev" href="https://juan.pallares.me/Atteding-remote-Socrates-UK/" title="Attending SoCraTes UK remotely">
+    <link rel="prev" href="https://juan.pallares.me/balance-2020/" title="Balance 2020">
   
 
 
@@ -234,15 +232,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Automate your email processing with Google Apps Script">
-    <meta itemprop="description" content="How to read your bill email data and create a row in an Spreadsheet automatically.">
-    <meta itemprop="datePublished" content="May 24, 2020">
+    <meta itemprop="headline" content="serverless common issues and errors">
+    <meta itemprop="description" content="protected variables, custom domains, plugins order, using it locally…">
+    <meta itemprop="datePublished" content="January 23, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Automate your email processing with Google Apps Script
+          <h1 class="page__title" itemprop="headline">serverless common issues and errors
 </h1>
           
         </header>
@@ -254,61 +252,75 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Bill Gates is often credited with the quote, <em>“I will always choose a lazy person to do a difficult job because a lazy person will find an easy way to do it.”</em></p>
+        <p>At my job, we have had recurring issues with <a href="https://www.serverless.com/">serverless</a> that have slowed down us frequently. This guide aims to avoid that by compiling the main pain points we have experienced. Keep in mind we use AWS and Gitlab.</p>
 
-<p>I hate doing manual tasks that a machine would do faster and with less errors. I keep track of expenses (water, electricity, etc.) in a Google SpreadSheet that I fill every month, this way I can see my average cost, year cost…I love data, what can I say?</p>
+<h2 id="avoid-gitlab-protected-variables">Avoid gitlab protected variables</h2>
 
-<p>Recently I discovered <a href="https://developers.google.com/apps-script">Google Apps Script</a>. It allows you to create javascript code that can automatize all the apps under Google Apps. You can even create a chat bot, but I wanted just to parse data from an email and write it in a sheet, far-less ambituous.</p>
+<p>When configuring Serverless to be deployed from Gitlab CI/CD. <strong>Remember to not set AWS env variables as protected</strong> (default option) since it will make the deployment fail and <strong>it won’t give you a meaningful error</strong>.</p>
 
-<p>Something that can be improved is the online editor…I would love to edit the script locally and then push it (repo style) but it only works with an online editor. I ended up coding a Node app and the copy pasting the code.</p>
+<p><img src="../images/gitlabProtectedVariables.png" alt="Gitlab protected variables" /></p>
 
-<h2 id="reading-email">Reading email</h2>
+<h2 id="serverless-offline-plugins-order-is-important">Serverless offline plugins order is important</h2>
 
-<p>To read email, after going through the <a href="https://developers.google.com/apps-script/reference/gmail">Gmail Service Reference</a> I started tagging automatically the emails I wanna read in the script so later they are easy to find:</p>
+<p>Plugins order in serverless.yml matters. Rule of thumb, <strong>serverless offline should be always one of the latest</strong>.</p>
 
-<p><code class="highlighter-rouge">var label = GmailApp.getUserLabelByName("TAG_NAME");</code></p>
+<p><img src="../images/PluginsOrder.png" alt="Plugins Order" /></p>
 
-<p>Then I just pick the unread threads:</p>
+<h2 id="serverless-custom-domain">Serverless custom domain</h2>
 
-<p><code class="highlighter-rouge">var threads = label.getThreads().filter(t =&gt; t.isUnread());</code></p>
+<p>To configure the deployment to sandbox and to production AWS in custom domain you can use the plugin <a href="https://www.npmjs.com/package/serverless-domain-manager">serverless-domain-manager</a>. <strong>Keep in mind, before being able to deploy you have to call (only once per domain)</strong>:</p>
 
-<p>Now I iterate through all the unread emails, get the first email in the thread (there is only one when you receive a bill from your company) and then I get the date, get the plain text and split the lines.:</p>
+<p><code class="highlighter-rouge">sls create_domain --aws-profile LAT-serverless-cheetah-bff --stage production</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>threads.forEach(thread =&gt; {
-  var message = thread.getMessages()[0];
-  var date = message.getDate().toLocaleString('en-us', {year: 'numeric', month: '2-digit', day: '2-digit'});
-  var body = message.getPlainBody();
-  var bodyLines = body.split('\n');
-  ...
+<p>The key point is specifying the stage when deploying.</p>
+
+<p><code class="highlighter-rouge">serverless deploy --stage staging</code></p>
+
+<h2 id="using-aws-credentials-locally">Using AWS credentials locally</h2>
+
+<p>Check the file in ~/.aws. There you should configure different credentials depending on the IAM user/AWS account. If no profile is called, the default will be used.</p>
+
+<p><img src="../images/AWSaccessKey.png" alt="AWS Access Key" /></p>
+
+<p>Then later you can use them like this:</p>
+
+<p><code class="highlighter-rouge">sls deploy --stage production --aws-profile LAT-serverless-cheetah-bff</code></p>
+
+<h2 id="serverless-dynamodb-locally">Serverless DynamoDB Locally</h2>
+
+<p>Two plugins are needed <a href="https://github.com/99x/serverless-dynamodb-local">serverless-dynamodb-local</a> and <a href="https://www.npmjs.com/package/serverless-dynamodb-client">serverless-dynamodb-client</a>.
+<strong>After installing the packages the normal way. You have to install it to serverless</strong>:</p>
+
+<p><code class="highlighter-rouge">sls dynamodb install</code></p>
+
+<p>Then to make it work we used to terminals. In one we run <code class="highlighter-rouge">sls dynamodb start --migrate</code>, in the second one we run <code class="highlighter-rouge">sls offline</code>.</p>
+
+<h2 id="serverless-dotenv---environment-variables">Serverless Dotenv - Environment variables</h2>
+
+<p>To use environment variables locally, <strong>do not use dotenv package</strong>. Use <a href="https://www.serverless.com/plugins/serverless-dotenv-plugin">serverless-dotenv-plugin</a>.</p>
+
+<h2 id="import-issues---failure-xxxxxxdefault-is-not-a-constructor">Import issues - Failure: xxxxxx.default is not a constructor</h2>
+
+<p>The only way we could fix this issue was doing require instead of import. Most probably an issue with not properly configured <code class="highlighter-rouge">tsconfig.json</code>.</p>
+
+<p>For the problematic imports use:</p>
+
+<p><code class="highlighter-rouge">const pLimit = require('p-limit');</code></p>
+
+<p>instead of</p>
+
+<p><code class="highlighter-rouge">import pLimit from 'p-limit';</code></p>
+
+<h2 id="include-json-files-in-build">Include JSON files in build</h2>
+
+<p>If using typescript and JSON files, you will need to include this files so they are copied to the <code class="highlighter-rouge">.build</code> folder in the <code class="highlighter-rouge">serverless.yml</code> file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package:
+    include:
+        - localizations/\*.json
 </code></pre></div></div>
 
-<p>Once here it’s all your choice, I use <code class="highlighter-rouge">findIndex</code>, <code class="highlighter-rouge">replace</code>, <code class="highlighter-rouge">filter</code> to get the data and create a little object with date, money and consumption (kWh).</p>
-
-<p>As a final step, to prevent the script to get the same email again and again I mark it as read and archive it:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thread.markRead();
-thread.moveToArchive();
-</code></pre></div></div>
-
-<h2 id="adding-row-to-spreadsheet">Adding row to SpreadSheet</h2>
-
-<p>The <a href="https://developers.google.com/apps-script/reference/spreadsheet">Spreadsheet Service Reference</a> is very similar. First we have to open the Spreadsheet and then the sheet, <a href="https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#openbyidid">the spreadsheet id can be retrieved from the URL</a>.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var spreadSheet = SpreadsheetApp.openById(SPREADSHEET_ID);
-var sheet = spreadSheet.getSheetByName(SHEET_NAME);
-</code></pre></div></div>
-
-<p>Then you have to create and array with the data you got in previous email step and add it:</p>
-
-<p><code class="highlighter-rouge">sheet.appendRow([DATA,DATA2,DATA3]);</code></p>
-
-<p>This will add a row in the first empty row of your sheet. If you wanna leave empty cells before the data, you can use empty string <code class="highlighter-rouge">''</code>, here I have 3 empty cells before a cell with data: <code class="highlighter-rouge">['','','',DATA]</code>. In the reference you have methods available for inserting the row in a specific position if needed.</p>
-
-<h2 id="triggers">Triggers</h2>
-
-<p>Once the script is ready, you have to configure when you want to run it. In the <a href="https://script.google.com/home/triggers">triggers view</a> I configured it to run daily at 5am.</p>
-
-<p>Any ideas for more scripts?</p>
+<p>Have you experienced any other issue? My main concern is that the errors messages are not clear enough.</p>
 
         
       </section>
@@ -321,7 +333,7 @@ var sheet = spreadSheet.getSheetByName(SHEET_NAME);
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-05-24T00:00:00+02:00">May 24, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2021-01-23T00:00:00+01:00">January 23, 2021</time></p>
         
       </footer>
 
@@ -330,13 +342,13 @@ var sheet = spreadSheet.getSheetByName(SHEET_NAME);
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/automate-email-processing-google-apps-script/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/serverless-common-issues-and-errors/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/automate-email-processing-google-apps-script/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/serverless-common-issues-and-errors/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://juan.pallares.me/automate-email-processing-google-apps-script/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/serverless-common-issues-and-errors/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/automate-email-processing-google-apps-script/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juan.pallares.me/serverless-common-issues-and-errors/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -344,12 +356,11 @@ var sheet = spreadSheet.getSheetByName(SHEET_NAME);
 
   <nav class="pagination">
     
-      <a href="https://juan.pallares.me/Atteding-remote-Socrates-UK/" class="pagination--pager" title="Attending SoCraTes UK remotely
+      <a href="https://juan.pallares.me/balance-2020/" class="pagination--pager" title="Balance 2020
 "></a>
     
     
-      <a href="https://juan.pallares.me/acknowledge-your-privilege/" class="pagination--pager" title="Acknowledge your privilege
-"></a>
+      <a href="#" class="pagination--pager disabled"></a>
     
   </nav>
 
@@ -372,44 +383,6 @@ var sheet = spreadSheet.getSheetByName(SHEET_NAME);
     <div class="page__related">
       
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/serverless-common-issues-and-errors/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src=
-            
-              "https://juan.pallares.me/images/black_keyboard.jpg"
-            
-            alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">
-        
-          serverless common issues and errors
-
-        
-        
-      </h2>
-      
-      
-        <p class="archive__item-excerpt" itemprop="description">
-          protected variables, custom domains, plugins order, using it locally…
-
-          
-          
-        </p>
-      
-    </article>
-  </a>
-</div>
         
           
 
@@ -516,6 +489,44 @@ var sheet = spreadSheet.getSheetByName(SHEET_NAME);
       
         <p class="archive__item-excerpt" itemprop="description">
           Navega más seguro y recuerda solo una contraseña.
+
+          
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/factfulness/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "https://juan.pallares.me/images/black_keyboard.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Book - Factfulness - Hans Rosling, Ola Rosling, Anna Rosling
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Ten reasons we’re wrong about the world and why things are better than you think
 
           
           
