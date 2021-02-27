@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-01-23T21:31:39+01:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="en"><title type="html">Serverless common issues and errors</title><link href="https://juan.pallares.me/serverless-common-issues-and-errors/" rel="alternate" type="text/html" title="Serverless common issues and errors" /><published>2021-01-23T00:00:00+01:00</published><updated>2021-01-23T00:00:00+01:00</updated><id>https://juan.pallares.me/serverless-common-issues-and-errors</id><content type="html" xml:base="https://juan.pallares.me/serverless-common-issues-and-errors/">&lt;p&gt;At my job, we have had recurring issues with &lt;a href=&quot;https://www.serverless.com/&quot;&gt;serverless&lt;/a&gt; that have slowed down us frequently. This guide aims to avoid that by compiling the main pain points we have experienced. Keep in mind we use AWS and Gitlab.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://juan.pallares.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://juan.pallares.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-02-27T08:54:42+01:00</updated><id>https://juan.pallares.me/feed.xml</id><title type="html">Juan Pallarès Garbí</title><subtitle>Landing page.</subtitle><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><entry xml:lang="es"><title type="html">Lebron James tiene sobrepeso - Mide mejor tu evolución física</title><link href="https://juan.pallares.me/lebron-james-tiene-sobrepeso-mide-mejor-evolucion-fisica/" rel="alternate" type="text/html" title="Lebron James tiene sobrepeso - Mide mejor tu evolución física" /><published>2021-02-27T00:00:00+01:00</published><updated>2021-02-27T00:00:00+01:00</updated><id>https://juan.pallares.me/lebron-james-tiene-sobrepeso-mide-mejor-evolucion-fisica</id><content type="html" xml:base="https://juan.pallares.me/lebron-james-tiene-sobrepeso-mide-mejor-evolucion-fisica/">&lt;p&gt;&lt;img src=&quot;../images/lebronjames.jpg&quot; alt=&quot;Lebron James mostrando músculo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con 2,06m y 113kg, el IMC (Índice de Masa Corporal) del cuatro veces campeón de la NBA indica que tiene sobrepeso. Personalmente no le veo sobrepeso por ningún sitio, sobrepeso de éxitos deportivos si me apuras.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/IMCLebron.png&quot; alt=&quot;IMC Lebron James&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En todas las revisiones de salud anuales típicas del trabajo me han dado el valor de IMC. ¿Veis esta medida creíble? ¿Útil? Para mi es demasiado general y puede llegar a confundirte en algunos casos. Después de esta introducción que coquetea con el clickbait, voy a explicar cómo creo que es mejor medir la evolución física.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-quieres-bajar-peso-quieres-bajar-grasa&quot;&gt;No quieres bajar peso, quieres bajar grasa&lt;/h2&gt;
+
+&lt;p&gt;Es muy común pesarse y si se va bajando de peso asumir que estamos en el buen camino. Grave error. &lt;strong&gt;Te interesa perder grasa pero no músculo&lt;/strong&gt;, o al menos perder el mínimo posible. Si haces un dieta estricta con poca proteína y casi sin entrenar fuerza es la receta perfecta para perder mucho músculo y grasa. Además el músculo es muy fácil perderlo, es caro de mantener. Tu cuerpo si nota que no lo usas te lo quita. La grasa tarda mucho más en irse, son tus reservas en caso de ausencia de comida, no las cosumirá hasta que le obligues de verdad.&lt;/p&gt;
+
+&lt;p&gt;Esto lo se porque lo he experimentado yo mismo. Desde el 2014 me voy pesando semanalmente (hay temporadas que se me pasa pero en general lo hago) y fué ese primer año que bajé bastante de peso y para mi era un exitazo&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/201480kg.png&quot; alt=&quot;80kg septiembre 2014&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3 años después si solo me fijo en el peso estoy igual. Pero realmente estaba en un estado de forma mucho mejor, ¿cómo puedo saberlo?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/201780kg.png&quot; alt=&quot;80kg marzo 2017&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;como-mido-la-grasa&quot;&gt;Como mido la grasa?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Medir la grasa de forma precisa es bastante difícil&lt;/strong&gt;. Las básculas que dan el porcentaje de grasa tienen mucho margen de error, es solo una aproximación. Puedes probar también con un adipómetro pero es un proceso tedioso y también poco preciso. Hay formas precisa de medirla pero es con máquinas especializadas y por un elevador precio. ¿Qué uso yo? algo mucho más sencillo, &lt;strong&gt;mido la cintura a la altura del ombligo y el pecho a la altura del pezón&lt;/strong&gt;. Ya esta, eso es todo. Acumulamos mucha grasa en el abdomen, si tenemos menos cintura que pecho, estamos en la buena dirección. Veamos los pesos anteriores acompañados de las medidas:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/201480kgCompleto.png&quot; alt=&quot;80kg septiembre 2014 con medidas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/201780kgCompleto.png&quot; alt=&quot;80kg marzo 2017 con medidas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ignora las medidas extras (biceps, butlock, thigh), en 2017 tenía más pecho (2,5cm) y menos cintura (4,5cm), estaba mucho mejor. &lt;strong&gt;Para tener un solo número de referencia de mi evolución física, hago la resta entre pecho y cintura&lt;/strong&gt; para calcular los “Johans”.&lt;/p&gt;
+
+&lt;p&gt;Fórmula&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Pecho - Cintura = Johans&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;103,5 - 83,5 = 20&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cuánto más alto son los Johans mejor, más forma de V. No sabía como llamarlo y se quedo con este nickname de la infancia 🤣.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Es muy importante pesarse y medirse en las mismas condiciones siempre.&lt;/strong&gt; Yo suelo hacerlo el sábado o el domingo justo después de levantarme. Por favor, no es pongais a tomar medidas después de una comilona, un super entreno, etc. Os estáreis autoengañando. Tampoco va bien pesarse diariamente, el peso oscila mucho según como de hidratamos estamos, tránsito intestinal, etc. &lt;strong&gt;Te interesa la evolución general.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez ya tienes controladas esas medidas, si quieres dar un paso más puedes medir otras partes. La clave es tener una referencia clara donde medir para que siempre midas en el mismo lugar, en el caso de cintura y pectoral es fácil. Para medir el muslo ya no lo es tanto, ojo con eso. No te pierdas en el detalle, las relevantes son esas dos, las otras son un extra. Por ejemplo, tengo últimamente el objetivo de ganar músculo en las piernas, en este caso si tiene valor medirlas para ver evolución.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Un muy buen complemento a las medidas/peso es una foto. El espejo no miente&lt;/strong&gt;. Una foto en el mismo lugar y condiciones (la puedes hacer justo después de medirte) sin camiseta te puede ayudar a mucho a ver evolución visual. Guardas todas las fotos en el mismo lugar (en mi caso álbum de Google Photos) y luego comparar es fácil.&lt;/p&gt;
+
+&lt;h2 id=&quot;bondades-del-tracking&quot;&gt;Bondades del Tracking&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://juan.pallares.me/atomic-habits-james-clear/&quot;&gt;Hacer tracking de un hábito puede ayudarte a mantenerlo&lt;/a&gt;. En este caso además, puede motivarte y llevarte en la buena dirección. Quizá no pierdes peso porque estas ganando algo de músculo, pero te obsesionas por no ver bajar ese número y dejas de comer todo lo que deberías, si haces un tracking correcto no caerás en ese error.&lt;/p&gt;
+
+&lt;p&gt;Me encanta tener datos históricos, luego puedes hacer gráficos muy interesantes:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/graficoPesoCintura.png&quot; alt=&quot;Grafico evolucion peso-cintura&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En este gráfico comparo la evolución del peso y de la cintura. Se puede apreciar como en 2014 bajé peso pero no lo hice del todo bien, en 2017 decidí tomar el control de la alimentación (leer &lt;a href=&quot;https://www.amazon.es/Fitness-revolucionario-Lecciones-ancestrales-Singulares/dp/8441540195/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;crid=F387RQSNTRQP&amp;amp;dchild=1&amp;amp;keywords=fitness+revolucionario&amp;amp;qid=1610232623&amp;amp;sprefix=fitness+revo,aps,169&amp;amp;sr=8-1&quot;&gt;Fitness Revolucionario&lt;/a&gt; esa Navidad fué clave) y bajé bastante de peso (sobretodo grasa) aunque ese mismo verano tuve una apendicitis que ya me remató y quedé un poco esquelético. Pude remontar y he venido manteniendo una cintura baja comparada a tiempos pre 2017. Idealmente, me gustaría subir peso sin subir cintura (o que suba muy poco) eso indicaría que estoy ganando sobretodo músculo, lo que me lleva a la conclusión.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Si me preguntan &lt;code class=&quot;highlighter-rouge&quot;&gt;- ¿Cúal es tu peso ideal?&lt;/code&gt; mi respuesta sería &lt;code class=&quot;highlighter-rouge&quot;&gt;- No me importa mucho, pero quisiera tener 10% de grasa o menos&lt;/code&gt;.
+Si me preguntan por el IMC pues puedo decir que mejor que el de Lebron y luego recomendarles este artículo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR Te interesa perder grasa, no peso&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;posts-recomendados&quot;&gt;Posts recomendados&lt;/h3&gt;
+
+&lt;p&gt;Recomiendo estos posts concretos y blogs en general para ir más al detalle:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.fitnessrevolucionario.com/perdida-de-grasa/&quot;&gt;Pérdida de grasa&lt;/a&gt;
+&lt;a href=&quot;https://www.fitnessrevolucionario.com/2012/02/26/fuerza-la-base-de-todo/&quot;&gt;Fuerza, la base de todo&lt;/a&gt;
+&lt;a href=&quot;https://www.nerdfitness.com/blog/body-fat-percentage/&quot;&gt;Body fat percentage&lt;/a&gt;
+&lt;a href=&quot;https://www.nerdfitness.com/blog/strength-training-101/&quot;&gt;Strength Training 101&lt;/a&gt;&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><category term="health" /><category term="salud" /><category term="sport" /><category term="fitness" /><category term="imc" /><category term="bmi" /><category term="training" /><category term="tracking" /><summary type="html">Mide mejor tu evolución física fijándote en lo que realmente importa.</summary></entry><entry xml:lang="en"><title type="html">Serverless common issues and errors</title><link href="https://juan.pallares.me/serverless-common-issues-and-errors/" rel="alternate" type="text/html" title="Serverless common issues and errors" /><published>2021-01-23T00:00:00+01:00</published><updated>2021-01-23T00:00:00+01:00</updated><id>https://juan.pallares.me/serverless-common-issues-and-errors</id><content type="html" xml:base="https://juan.pallares.me/serverless-common-issues-and-errors/">&lt;p&gt;At my job, we have had recurring issues with &lt;a href=&quot;https://www.serverless.com/&quot;&gt;serverless&lt;/a&gt; that have slowed down us frequently. This guide aims to avoid that by compiling the main pain points we have experienced. Keep in mind we use AWS and Gitlab.&lt;/p&gt;
 
 &lt;h2 id=&quot;avoid-gitlab-protected-variables&quot;&gt;Avoid gitlab protected variables&lt;/h2&gt;
 
@@ -681,124 +751,4 @@ ref: rdp
 
 &lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Luckily I clearly defined the minimum requirements and now I have a basic multi-language blog instead of a last-tech half-baked project. &lt;strong&gt;Deliver value, that should be the focus&lt;/strong&gt;. It has helped me by forcing myself to a weekly blog post. What productivity-hacks do you have?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Basic multi-language hosted on Github Pages</summary></entry><entry xml:lang="es"><title type="html">Configura Jekyll para ser multi idioma sin plugins</title><link href="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/" rel="alternate" type="text/html" title="Configura Jekyll para ser multi idioma sin plugins" /><published>2020-06-28T00:00:00+02:00</published><updated>2020-06-28T00:00:00+02:00</updated><id>https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin</id><content type="html" xml:base="https://juan.pallares.me/configura-jekyll-multi-idioma-sin-plugin/">&lt;p&gt;Han pasado casi 6 años desde que migré de &lt;a href=&quot;https://juan.pallares.me/moving-to-jekyll/&quot;&gt;Blogger a Jekyll + Github Pages&lt;/a&gt; y no puedo estar más contento con el cambio. Aún así, algo que quería hace tiempo es convertirlo en multi-idioma. Tengo entradas en mente que no he escrito porque el target claro es España y como bien sabemos el nivel de inglés no es alto. Este último fin de semana me he decidio y aquí os presento mi o̵b̵r̵a̵ chapuza.&lt;/p&gt;
-
-&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Sin plugins.&lt;/strong&gt; Github Pages no es compatible con muchos &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;plugins&lt;/a&gt;. Por ejemplo, no he podido usar &lt;a href=&quot;https://github.com/kurtsson/jekyll-multiple-languages-plugin&quot;&gt;jekyll-multiple-languages-plugin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Compatible con Minimal Mistakes&lt;/strong&gt;. Mi &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;tema de Jekyll&lt;/a&gt; con el cual estoy encantado.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Mostrar la entrada si solo esta en un idioma&lt;/strong&gt;. Tengo muchísimos post antiguos en castellano o en inglés que no traduciré, no tiene valor.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Link para cambio de idioma en cada entrada&lt;/strong&gt;. Si hay dos idiomas o más (no creo que llegue a escribir en catalán o italiano :smile:) que se muestre un link para cambiar de idioma.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Link global cambio de idioma&lt;/strong&gt;. Esta funcionalidad se ha caído. El plugin de paginación &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;jekyll-paginate&lt;/a&gt; no permite más de una página. Seguro hay formas de hacerlo, pero no he querido dedicar el tiempo, no me compensaba.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/pagination_jekyll.png&quot; alt=&quot;jekyll-paginate disclaimer&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;implementación&quot;&gt;Implementación&lt;/h2&gt;
-
-&lt;p&gt;A juzgar por los resultados de Google, muchos guerreros han ido pero pocos han vuelto victoriosos. No hay una manera estándar de hacerlo y he cogido lo que mejor me venía de cada sitio.&lt;/p&gt;
-
-&lt;h3 id=&quot;configura-_configyaml&quot;&gt;Configura _config.yaml&lt;/h3&gt;
-
-&lt;p&gt;En el _config.yml seteamos el lenguage del site añadiendo la linea &lt;code class=&quot;highlighter-rouge&quot;&gt;lang: en&lt;/code&gt;. Y luego creamos un fichero dentro de la carpeta &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;que yo he llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;i18n&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;en:
-  label: English
-  icon: 🇬🇧
-  read_it_in: &quot;Read it in&quot;
-es:
-  label: Español
-  icon: 🇪🇸
-  read_it_in: &quot;Léelo en&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Esto nos permitirá acceder a contenido según el idioma como veremos más adelante.&lt;/p&gt;
-
-&lt;h3 id=&quot;adapta-el-front-matter-de-los-posts&quot;&gt;Adapta el &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;Front Matter&lt;/a&gt; de los posts&lt;/h3&gt;
-
-&lt;p&gt;Especifica en cada post su idioma &lt;code class=&quot;highlighter-rouge&quot;&gt;lang&lt;/code&gt; y identificador único &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;--
-title: RDP to Windows machine with PIN login
-tags: [RDP, Windows, PIN, MicrosoftAccount, login, hacks]
-excerpt: Don't lose the precious hour I lost
-lang: en
-ref: rdp
----
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Si dos posts comparten el mismo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt; son el mismo post en diferentes idiomas. Algunos agrupan los posts por carpetas según el idioma, no lo he considerado necesario.&lt;/p&gt;
-
-&lt;h3 id=&quot;filtra-por-idioma&quot;&gt;Filtra por idioma&lt;/h3&gt;
-
-&lt;p&gt;Mi página principal es una paginacioón de todas las entradas del blog. Ahora queremos que se muestren todos pero si están en más de un idioma que se muestren en inglés.&lt;/p&gt;
-
-&lt;p&gt;Antes mostraba todos los posts que venian del paginator:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Después lo que he hecho ha sido agrupar por el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;ref&lt;/code&gt;. De esta manera puede saber si hay más de un idioma para cada entrada ya que el grupo tendrá más de 1 item. Si ese es el caso, cojo solo el post que tiene el mismo idioma que la página (Inglés en mi caso), de lo contrario muestro el post independientemente del idioma:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign items_grouped = paginator.posts | group_by: 'ref' %}
-{% for group in items_grouped %}
-    {% if group.items.size &amp;gt; 1 %}
-        {% assign post = group.items | where: &quot;lang&quot;,page.lang | first %}
-    {% else %}
-        {% assign post = group.items[0] %}
-    {% endif %}
-    {% include archive-single.html %}
-{% endfor %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ese código tan bonito es &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot;&gt;Liquid&lt;/a&gt;, puede que ya esté en el TOP 5 de mis lenguajes más odiados. Tened en cuenta que el sangrado lo hago yo por claridad, no es necesario. Para poder mostrar código Liquid en Jekill, escaparlo, hay que usar &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/show_liquid.png&quot; alt=&quot;Escape liquid code with raw tag&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;filtra-por-idioma-1&quot;&gt;Filtra por idioma&lt;/h3&gt;
-
-&lt;p&gt;Desde el código anterior se llama a &lt;code class=&quot;highlighter-rouge&quot;&gt;archive-single.html&lt;/code&gt; y ese código es el que vamos a editar ahora para añadir una bandera con el idioma en caso que haya una traducción del post.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% assign versions=site.posts | where:&quot;ref&quot;, post.ref | sort: 'lang' %}
-{% if versions.size &amp;gt; 1 %}
-    {% for version in versions %}
-        {% if version.lang != site.lang %}
-            &amp;lt;a href=&quot;{{ version.url }}&quot; &amp;gt;{{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
-        {% endif %}
-    {% endfor %}
-{% endif %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Vuelve a ser un concepto similar al anterior, la diferencia es que ahora accedemos al emoji de bandera que pusimos en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/i18n.yml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;link-a-otros-idiomas-dentro-del-blog&quot;&gt;Link a otros idiomas dentro del blog&lt;/h3&gt;
-
-&lt;p&gt;Y yendo de fuera hacia a dentro nos queda editar &lt;code class=&quot;highlighter-rouge&quot;&gt;single.html&lt;/code&gt; que es el &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; de mis entradas. Añade donde creas más oportuno esto:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% if page.bookauthor == null and page.permalink == null %}
-    {% assign versions=site.posts | where:&quot;ref&quot;, page.ref | sort: 'lang' %}
-    {% if versions.size &amp;gt; 1 %}
-        {% for version in versions %}
-            {% if version.lang != page.lang %}
-                &amp;lt;a href=&quot;{{ version.url }}&quot; class=&quot;{{ version.lang }}&quot;&amp;gt;{{ site.data.i18n[version.lang].read_it_in] }} {{ site.data.i18n[version.lang].icon }} &amp;lt;/a&amp;gt;
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-{% endif %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;En el primer &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; evito que otros layouts se vean afectados y luego prácticamente igual. La diferencia es que busco el lenguaje diferente al actual y muestro un texto localizado al lado de la bandera.&lt;/p&gt;
-
-&lt;h2 id=&quot;resultado&quot;&gt;Resultado&lt;/h2&gt;
-
-&lt;p&gt;Estás navegando sobre él ahora mismo. También puedes ver el &lt;a href=&quot;https://github.com/jpallares/minimal-mistakes&quot;&gt;código en Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;esquivar-el-agujero-negro&quot;&gt;Esquivar el agujero negro&lt;/h2&gt;
-
-&lt;p&gt;Todos los ingenieros que tenemos un blog/landing page sufrimos lo que llamo el agujero negro. Esto es dedicar todo el tiempo a mejorar el blog técnicamente, ahora uso Gatsby, ahora deploy en Vercel, ojo que ahora tengo Github Actions…pero no escribir nada de contenido. Este update a multi-idioma era el caldo de cultivo ideal para venirme arriba y empezar un cambio de tecnología que nunca habría acabado.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.gifer.com/GVXn.gif&quot; alt=&quot;Black hole gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Por suerte, me definí claramente los mínimos y ahora tengo un multi-idioma básico en lugar de un proyecto con las últimas tecnologías a medias. &lt;strong&gt;Entregar valor, ese debe ser el foco&lt;/strong&gt;. Me ha ayudado el auto-obligarme a una entreda semanal. Que productivity-hacks tienes?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Multi-idioma básico alojado en Github Pages</summary></entry></feed>
+&lt;p&gt;Luckily I clearly defined the minimum requirements and now I have a basic multi-language blog instead of a last-tech half-baked project. &lt;strong&gt;Deliver value, that should be the focus&lt;/strong&gt;. It has helped me by forcing myself to a weekly blog post. What productivity-hacks do you have?&lt;/p&gt;</content><author><name>Juan Pallarès</name><email>juan@pallares.me</email></author><summary type="html">Basic multi-language hosted on Github Pages</summary></entry></feed>
