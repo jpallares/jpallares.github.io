@@ -19,7 +19,7 @@
 
 
 
-<title>Browse blocking ads and trackers - Juan Pallarès Garbí</title>
+<title>Calculadora de sueldo neto - Juan Pallarès Garbí</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Juan Pallarès Garbí">
-<meta property="og:title" content="Browse blocking ads and trackers">
+<meta property="og:title" content="Calculadora de sueldo neto">
 
 
-  <link rel="canonical" href="https://juan.pallares.me/browse-blocking-ads-and-trackers/">
-  <meta property="og:url" content="https://juan.pallares.me/browse-blocking-ads-and-trackers/">
+  <link rel="canonical" href="https://juan.pallares.me/calculadora-de-sueldo-neto/">
+  <meta property="og:url" content="https://juan.pallares.me/calculadora-de-sueldo-neto/">
 
 
 
-  <meta property="og:description" content="Why and how I browse blocking ads and trackers">
+  <meta property="og:description" content="Cómo funciona realmente el cálculo del IRPF, seguridad social, etc.">
 
 
 
   <meta name="twitter:site" content="@juanpallares">
-  <meta name="twitter:title" content="Browse blocking ads and trackers">
-  <meta name="twitter:description" content="Why and how I browse blocking ads and trackers">
-  <meta name="twitter:url" content="https://juan.pallares.me/browse-blocking-ads-and-trackers/">
+  <meta name="twitter:title" content="Calculadora de sueldo neto">
+  <meta name="twitter:description" content="Cómo funciona realmente el cálculo del IRPF, seguridad social, etc.">
+  <meta name="twitter:url" content="https://juan.pallares.me/calculadora-de-sueldo-neto/">
 
   
     <meta name="twitter:card" content="summary">
@@ -66,12 +66,10 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-06-08T00:00:00+02:00">
-  
-    <link rel="next" href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" title="Book - The software developer&#39;s life manual - John Z. Sonmez">
+  <meta property="article:published_time" content="2021-07-04T00:00:00+02:00">
   
   
-    <link rel="prev" href="https://juan.pallares.me/acknowledge-your-privilege/" title="Acknowledge your privilege">
+    <link rel="prev" href="https://juan.pallares.me/the-psychology-of-money/" title="Book - The Psychology of Money Timeless Lessons on Wealth, Greed, and Happiness - Morgan Hausel">
   
 
 
@@ -238,15 +236,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Browse blocking ads and trackers">
-    <meta itemprop="description" content="Why and how I browse blocking ads and trackers">
-    <meta itemprop="datePublished" content="June 08, 2020">
+    <meta itemprop="headline" content="Calculadora de sueldo neto">
+    <meta itemprop="description" content="Cómo funciona realmente el cálculo del IRPF, seguridad social, etc.">
+    <meta itemprop="datePublished" content="July 04, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Browse blocking ads and trackers
+          <h1 class="page__title" itemprop="headline">Calculadora de sueldo neto
 </h1>
           
         </header>
@@ -258,70 +256,117 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>For the last months I have been using Brave as my browser for all my devices. The idea of having a Chrome fork that blocks ads and trackers seemed perfect. But Brave is not reliable at all:</p>
+        <p>Imagina que tienes una oferta de trabajo, un nuevo sueldo bruto anual que suena tentador, pero ¿Cúal es el neto mensual? ¿Cuál es la subida? Imagina que puedes comparar tu sueldo actual con el futuro simplemente arrastrando un slider, te traigo la solución:</p>
+
+<p><img class="emoji" title=":moneybag:" alt=":moneybag:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4b0.png" height="20" width="20"> <a href="https://tusueldoneto.pallares.me" target="\_blank"><strong>Calculadora de sueldo neto</strong></a></p>
+
+<p>Si eres como yo, para calcular el sueldo neto a partir del bruto recurrías al <a href="https://cincodias.elpais.com/herramientas/calculadora-sueldo-neto/" target="\_blank">primer resultado de Google</a>. Sin parar de hacer scroll arriba y abajo, refrescando la página que por cierto, es poco usable desde el móvil.</p>
+
+<p>Y si querías hilar fino, te creas un Excel con la típica tabla de tramos y te lo calculas manual:</p>
+
+<p><img src="../images/tramos.jpg" alt="Tramos IPRF Estatales"></p>
+
+<p>¿Ya está, no? Pues no no…para calcular bien el sueldo neto de verdad hay muchos más detalles a tener en cuenta.</p>
+
+<p>Un día quise derrotar ese dragón y entender lo mejor posible como se calcula. Mientras investigaba he ido desarrollando esta <a href="https://tusueldoneto.pallares.me" target="\_blank">calculadora de sueldo neto</a> para validar lo que iba aprendiendo. Le faltan muchos casos y la UX es abominable pero he priorizado que sea cómodo de usar <del>y soy nefasto haciendo UX</del>. Agárrate que vienen curvas.</p>
+
+<h2 id="conocimientos-básicos-primero">Conocimientos básicos primero</h2>
+
+<p>Hay un especie de leyenda urbana que dice: <em>“Si te suben el sueldo y cambias de tramo puedes acabar cobrando menos”.</em> La he escuchado varias veces y explica muy bien que poca educación financiera hay en las escuelas, supongo que es más importante aprender que una persona separó los mares y multiplicó los panes…bueno, que me lío.</p>
+
+<p>NO.</p>
+
+<p><strong>Es imposible que una subida de tu sueldo implique ganar menos en neto</strong>. Los tramos son acumulables. Ejemplo, imaginemos que Paco cobra 24.000 cucas brutas al año:</p>
+
+<p><img src="../images/tramosExplicados.png" alt="Tramos explicados"></p>
+
+<p>Los primeros 12.450€ tienen 19% de retención.
+Lo que va entre 12.450€ y 20.200€, es decir, los siguientes 7.750 machacantes tienen el 24% de retención.
+Finalmente, la diferencia entre 24.000€ y 20.200€ =&gt; 3.800€ le retienen el 30%.</p>
+
+<p>Siempre la primera parte del salario va a tener un retención mas baja y sube progresivamente en cada tramo. He intentado mostrar esto mediante gráficos en la <a href="https://tusueldoneto.pallares.me" target="\_blank">calculadora</a>, pruébala.</p>
+
+<h2 id="irpf-estatal-y-autónomico">IRPF Estatal y Autónomico</h2>
+
+<p>Las calculadoras online normalmente solo te muestran unos tramos de IRPF. Esos tramos son los estatales y aplican a todos excepto vascos y navarros. Lo que no solemos tener en cuenta es que <a href="https://www.businessinsider.es/tablas-irpf-comunidades-autonomas-cuanto-pagas-renta-625415">cada autonomía tiene sus tramos</a>, y en TODAS son diferentes.</p>
+
+<p><img src="../images/dosTramos.png" alt="Tramos del estado y catalanes"></p>
+
+<p>La tabla Estatal típica solo aplica a españoles no residentes, si resides en territorio español, se usa la tabla de tu comunidad y la estatal (<strong>con la mitad del porcentaje en cada tramo</strong>).
+Siguiendo el ejemplo de Paco, tendríamos el siguiente IRPF:</p>
+
 <ul>
-  <li><a href="https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/">The Brave web browser is hijacking links, and inserting affiliate codes</a></li>
+  <li>Estatal - 1.626,90€</li>
+  <li>Autonómico - 1.846,49€</li>
+  <li>Total - 3.473,39€ (14,47%)</li>
 </ul>
 
-<p>I am not directly affected since I don’t use criptocurrency but a browser that markets itself like this:</p>
+<p>Si estas haciendo los cálculos por tu lado y no te cuadran los números es normal, mira el siguiente punto.</p>
 
-<p><em>It begins with giving you back power. Get unmatched speed, security and privacy by blocking trackers</em></p>
+<h2 id="deducciones-y-gastos">Deducciones y gastos</h2>
 
-<p>Can not do this actions. The power to choose my affiliate code is taken away <img class="emoji" title=":unamused:" alt=":unamused:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f612.png" height="20" width="20">.</p>
+<p>Primero de todo, hay un mínimo de gastos de 2.000€, todos los calculos deben hacerse restando incialmente este valor del bruto, en el caso de Paquito 22.000€ es la cifra con la que se empieza a calcular el IPRF.</p>
 
-<p>Since <a href="https://clark.com/technology/google-chrome-do-not-track/">Chrome and all his tracking</a> is a no-go. I looked for a browser that cared about privacy and could have Dashlane and uBlock add-ons installed and I decided to go back to <a href="https://www.mozilla.org/es-ES/firefox">Mozilla Firefox</a>. It was my browser years ago before Chrome arrived but before I continue let’s see what happens when you don’t block anything.</p>
+<p>Posiblemente te suene la cifra 5.550€. Es el mínimo deducible. El caso más común persona soltera sin hijos etc. tiene ese mínimo deducible. Para deducirlo se aplican los tramos también. Es decir, para saber cuanto nos podemos deducir si vivimos en Cataluña tenemos que aplicar los tramos del estado y de la autonomía a la cifra a deducir. Ejemplo:</p>
 
-<h1 id="ads">Ads</h1>
+<p>5.550€ está tanto en el primer tramo del Estado (hasta 12.450€) como de Cataluña (hasta 17.707,02€), por lo tanto se aplica el tipo del primer tramo:</p>
 
-<p>This is an sports website I usually visit with a browser that has no blocking configured:</p>
+<ul>
+  <li>Estado 9,5% - 527,25€</li>
+  <li>Cataluña 12% - 666,00€</li>
+</ul>
 
-<p><img src="../images/marca_browser.png" alt="marca.com no block"></p>
+<p>A los impuestos totales del estado se les resta la deducción calculada, igual con la autonomía.</p>
 
-<p>Almost 50% of the website real-state are ads, apart from being annoying it also makes the loading slower and uses more data (concerning if you pay per MB like some data plans). If you are wondering if in a portable devices gets better, let me tell you it does not:</p>
+<p>Este es el caso estándar, las deducciones aumentan por cada hijo, por cada ancestro dependiente, etc. He recogido algunos de estos casos en la <a href="https://tusueldoneto.pallares.me" target="\_blank">calculadora de sueldo neto</a>, pero me quedan varios por añadir.</p>
 
-<h3 id="tablet">Tablet:</h3>
+<p>Imaginemos que Paco tiene gemelos, 2 hijos de menores de 3 años. Pues las deducciones aumentan hasta quedar:</p>
 
-<p><img src="../images/marca_ipad.png" alt="marca.com iPad"></p>
+<ul>
+  <li>Estado 4,66% - 1035,50€</li>
+  <li>Cataluña 5,2% - 1308,0€</li>
+</ul>
 
-<h3 id="phone">Phone:</h3>
+<p>El sueldo neto mensual con 12 pagas resultante es 1679,4€, que comparado con el sueldo sin hijos (1583,55€) resulta en casi 100€ más al mes por tener dos hijos menores de 3 años, no se si llega para los pañales.</p>
 
-<p><img src="../images/marca_phone.png" alt="marca.com phone"></p>
+<h2 id="seguridad-social">Seguridad Social</h2>
 
-<p>I used this site because the ads are really big and painful and I have even seen full screen ad-popups with a blurry X to close.</p>
+<p>Una vez tienes el IRPF puedes pensar que ya lo tienes para calcular el neto, craso error. También cotizas a la seguridad social y eso también se quita del bruto. Esto debería ser facil, es el 6,35% pero con un matiz, <a href="https://www.campmanyabogados.com/blog/bases-cotizacion">hay un mínimo y un máximo</a>. El máximo se alcanza con 48.841€ brutos anuales, todos los sueldos a partir de ahí pagan lo mismo. El mínimo* es 12.600€ brutos anuales.</p>
 
-<h1 id="trackers">Trackers</h1>
+<p>A Paco le queda un pago a Seguridad Social de 1.524,00€</p>
 
-<p>Not only the ads should worry you, you are also being tracked, for example in the same page we have:</p>
+<h2 id="la-fórmula-tada">La fórmula <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">
+</h2>
 
-<p><img src="../images/trackers.png" alt="marca.com trackers"></p>
+<p>A grandes rasgos la fórmula es la siguiente:</p>
 
-<p><em>“But Juan you are starting to be paranoid! Why do you worry about it? I don’t have anything to hide”</em>.</p>
+<p><code class="highlighter-rouge">Salario neto = salario bruto - IRPF Estatal - IRPF Autonomico - Seguridad Social</code></p>
 
-<p>I also thought this way in the past, but once I read about the experience of an Egyptian guy during the Arab spring and how his “Facebook likes” were used against him and detained and sent to prison. Charge? Political dissidence.</p>
+<p>Con los matices ya comentados:</p>
 
-<p>Let me quote this <a href="https://www.theguardian.com/commentisfree/2013/feb/11/riot-software-tracked-online-social-networks">The Guardian Article</a>. <em>Today, it’s so easy that mass-surveillance is feasible – and so-called “big data” makes it seem tempting and innocuous.
-The “big data” theory works like this: by grabbing hundreds or thousands of datapoints on millions of people, we build a systematic picture of how everyday people act. By analysing these by machine for “outliers”, or suspicious activity, we can catch the bad guys – and it’s OK, because only at that stage is another human being looking through your personal info.
-<strong>This is, by and large, fantasy. For one thing, any algorithm will generate hundreds if not thousands of false positives</strong> (innocent people who hit a red flag). Given how rare, say, terrorism is, the vast majority of people bothered by these systems will be ordinary people facing previously unbelievable intrusion.</em></p>
+<ul>
+  <li>Los gastos y las deducciones modifican el IRPF final.</li>
+  <li>Hay mínimo y máximo de Seguridad Social.</li>
+</ul>
 
-<p>Trust me, better to block as much as possible. There is an area between living in a mountain like a buddhist monk and browsing with no block at all, find it and start making more difficult for them to spy on you. I say “more difficult” because I want to emphasize, is impossible not being tracked, even if you did not have an smartphone and use only Internet only for work purposes, the people around you would do the tracking for you, for example with the photos you appear in.</p>
+<p>Espero haber aclarado un poco como funciona este cálculo, es importanto conocer esta información, la pela es la pela.</p>
 
-<h1 id="the-solution">The solution</h1>
+<h2 id="siguientes-pasos">Siguientes pasos</h2>
 
-<p>Here you have the same web with Firefox and the <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a> add-on.</p>
+<ul>
+  <li>Añadir los deducciones que faltan.</li>
+  <li>Añadir tickets restaurant, guardería, etc. como cotizan.</li>
+  <li>Mejorar la UX.</li>
+</ul>
 
-<p><img src="../images/marca_adfree.png" alt="marca.com ad free"></p>
+<h4 id="fuentes">Fuentes</h4>
 
-<p>It loads faster and you get to see just the real content and good news, Firefox and uBlock can also be installed in iOS and Android. You can specify how strictily Firefox should block tracking. Another step to prevent tracking is using <a href="https://duckduckgo.com/">DuckDuckGo</a> as default search engine. It comes already as an option in Firefox.</p>
-
-<h1 id="the-next-level">The next level</h1>
-
-<p>You want to go to the next level? What if I told about <strong>network-wide ad blocking and faster browsing</strong>? Meet <a href="https://pi-hole.net/">Pi-Hole</a> .</p>
-
-<p><img src="https://media.giphy.com/media/f9Rrghj6TDckb5nZZR/giphy.gif" alt="next level funny gif"></p>
-
-<p><a href="https://juan.pallares.me/raspberry-pi-hole-vpn/">As I mentioned in the past</a>, if you have a Raspberry Pi lying around this is one of the best uses you can do of it. Is a very active project, they recently released the <a href="https://pi-hole.net/2020/05/10/pi-hole-v5-0-is-here/">v5.0</a>. For the screenshots with all the ads above I had to disable temporarily the PiHole apart from using Edge browser.</p>
-
-<p>Are you blocking any ads? What is the browser you use? Don’t tell me the google analytics script running on this page will tell me this and more <img class="emoji" title=":smirk:" alt=":smirk:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60f.png" height="20" width="20">.</p>
+<ul>
+  <li><a href="https://www.businessinsider.es/tablas-irpf-comunidades-autonomas-cuanto-pagas-renta-625415">Tablas de IRPF por comunidades autónomas</a></li>
+  <li><a href="https://ekuatio.com/como-se-calcula-el-porcentaje-de-irpf-en-la-nomina/">Como se cálcula el porcantaje de IRPF</a></li>
+  <li><a href="https://www2.agenciatributaria.gob.es/wlpl/PRET-R170/index.zul">Cálculo de rentenciones</a></li>
+  <li><a href="https://www.finect.com/usuario/Josetrecet/articulos/hijos-declaracion-renta">Cuánto puedes desgravarte en la renta por tus hijos</a></li>
+</ul>
 
         
       </section>
@@ -348,7 +393,7 @@ The “big data” theory works like this: by grabbing hundreds or thousands of 
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2020-06-08T00:00:00+02:00">June 08, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> </strong> <time datetime="2021-07-04T00:00:00+02:00">July 04, 2021</time></p>
         
       </footer>
 
@@ -357,13 +402,13 @@ The “big data” theory works like this: by grabbing hundreds or thousands of 
 <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/browse-blocking-ads-and-trackers/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://juan.pallares.me/calculadora-de-sueldo-neto/" class="btn btn--twitter" title=" Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/browse-blocking-ads-and-trackers/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://juan.pallares.me/calculadora-de-sueldo-neto/" class="btn btn--facebook" title=" Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://juan.pallares.me/browse-blocking-ads-and-trackers/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://juan.pallares.me/calculadora-de-sueldo-neto/" class="btn btn--google-plus" title=" Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://juan.pallares.me/browse-blocking-ads-and-trackers/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://juan.pallares.me/calculadora-de-sueldo-neto/" class="btn btn--linkedin" title=" LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -371,12 +416,11 @@ The “big data” theory works like this: by grabbing hundreds or thousands of 
 
   <nav class="pagination">
     
-      <a href="https://juan.pallares.me/acknowledge-your-privilege/" class="pagination--pager" title="Acknowledge your privilege
+      <a href="https://juan.pallares.me/the-psychology-of-money/" class="pagination--pager" title="Book - The Psychology of Money Timeless Lessons on Wealth, Greed, and Happiness - Morgan Hausel
 "></a>
     
     
-      <a href="https://juan.pallares.me/soft-skills-the-software-developers-life-manual/" class="pagination--pager" title="Book - The software developer’s life manual - John Z. Sonmez
-"></a>
+      <a href="#" class="pagination--pager disabled"></a>
     
   </nav>
 
@@ -399,40 +443,6 @@ The “big data” theory works like this: by grabbing hundreds or thousands of 
     <div class="page__related">
       
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  
-    <a href="https://juan.pallares.me/calculadora-de-sueldo-neto/">
-  
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-      
-        <div class="archive__item-teaser">
-          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
-        </div>
-      
-      <h2 class="archive__item-title" itemprop="headline">
-        
-          Calculadora de sueldo neto
-
-        
-        
-      </h2>
-      
-      
-        <p class="archive__item-excerpt" itemprop="description">
-          Cómo funciona realmente el cálculo del IRPF, seguridad social, etc.
-
-          
-          
-        </p>
-      
-    </article>
-  </a>
-</div>
         
           
 
@@ -527,6 +537,40 @@ The “big data” theory works like this: by grabbing hundreds or thousands of 
       
         <p class="archive__item-excerpt" itemprop="description">
           protected variables, custom domains, plugins order, using it locally…
+
+          
+          
+        </p>
+      
+    </article>
+  </a>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  
+    <a href="https://juan.pallares.me/balance-2020/">
+  
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="https://juan.pallares.me/images/black_keyboard.jpg" alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          Balance 2020
+
+        
+        
+      </h2>
+      
+      
+        <p class="archive__item-excerpt" itemprop="description">
+          Lo más leído del año
 
           
           
